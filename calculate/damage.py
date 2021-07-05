@@ -151,29 +151,39 @@ class Damage:
 
             now_purgatory = calculate.calculation.equipment_purgatory_option[equipment]  # 연옥 옵션 조회
             if now_purgatory[0] != 0:
-                for_weapon_previous_value = 0
-                is_weapon = False
                 if len(equipment) == 6:  # 무기
-                    now_index = 0
-                    if self.purgatory_auto_converting_weapon_ult_mode == 1:  # 연옥 무기 태생유지
-
-                    elif self.purgatory_auto_converting_weapon_ult_mode == 2:  # 연옥 무기 각성강제
-
-                    else:  # 연옥 무기 각성해제
-
+                    if now_purgatory[0] == 106 and self.purgatory_converting_option != 0:  # 원초
+                        self.purgatory_converted_value[0] = 0
+                        self.purgatory_converting_value[0] = 0
+                        self.now_damage_array[6] += 15
+                    else:
+                        now_index = 0
+                        self.purgatory_converted_value[now_index] = now_purgatory[1]
+                        if now_purgatory[0] == 27:
+                            self.purgatory_converted_option[now_index] = 0
+                        else:
+                            self.purgatory_converted_option[now_index] = now_purgatory[0]
+                        if self.purgatory_auto_converting_weapon_ult_mode == 1:  # 연옥 무기 태생유지
+                            if now_purgatory[0] == 27:
+                                self.purgatory_converted_value[now_index] = 0
+                            else:
+                                self.purgatory_converted_value[now_index] = 14
+                        elif self.purgatory_auto_converting_weapon_ult_mode == 2:  # 연옥 무기 각성강제
+                            if now_purgatory[0] == 27:
+                                self.purgatory_converted_value[now_index] = 0
+                            else:
+                                self.purgatory_ult_value += 2
+                                self.purgatory_converting_value[now_index] -= 14
+                        else:  # 연옥 무기 각성해제
+                            self.purgatory_converted_value[now_index] = 14
+                            if now_purgatory[0] == 27:
+                                self.purgatory_ult_value -= 2
+                                self.purgatory_converted_value[now_index] = 0
+                                self.purgatory_converting_value[now_index] += 14
                 else:
                     now_index = int(equipment[0])
-
-                if now_purgatory[0] == 27:  # 각성기 무기
-                    self.purgatory_ult_value -= 2
-                elif now_purgatory[0] == 106:  # 원초
-                    self.purgatory_converted_value[now_index] = 0
-                    self.purgatory_converting_value[now_index] = 0
-                    self.now_damage_array[6] += 15
-                else:
                     self.purgatory_converted_option[now_index] = now_purgatory[0]
-
-                self.purgatory_converted_value[now_index] = now_purgatory[1]
+                    self.purgatory_converted_value[now_index] = now_purgatory[1]
 
         for i in range(4):
             if self.purgatory_converting_option[i] == 0:
@@ -218,7 +228,7 @@ class Damage:
             converting_index_arr = []
             for i in range(4):
                 self.converting_value_arr[i+2] = self.purgatory_converting_value[i] + self.purgatory_converted_value[i]
-            log("converting_value_arr", self.converting_value_arr)
+            # log("converting_value_arr", self.converting_value_arr)
             for v in self.converting_value_arr:
                 if v == 0:
                     converting_index_arr.append([9])
@@ -242,14 +252,14 @@ class Damage:
                     max_damage = now_damage
                     max_sum_options = now_sum_options
                     self.auto_converting_index = case
-            log("auto_converting_index", self.auto_converting_index)
+            # log("auto_converting_index", self.auto_converting_index)
             # log("max_sum_options", max_sum_options)
             for i in range(6):
                 if self.total_converting_index[i] == 9:
                     self.total_converting_index[i] = hexagon_option_index[self.auto_converting_index[i]]
             for i, value in enumerate(max_sum_options):
                 self.now_damage_array[hexagon_option_index[i]] = value
-            log("total_converting_index", self.total_converting_index)
+            # log("total_converting_index", self.total_converting_index)
 
         else:  # 간이식 계산 모드
             simple_sum_options = [self.now_damage_array[2], self.now_damage_array[3], self.now_damage_array[4],
@@ -282,6 +292,9 @@ class Damage:
                                                            self.now_leveling_array[i])
         # log("total_passive_damage", total_passive_damage)
 
+        self.now_damage_array[16] += self.purgatory_ult_value
+        self.now_damage_array[18] += self.purgatory_ult_value
+        self.now_damage_array[20] += self.purgatory_ult_value
         active_ratio_arr = \
             [(self.now_damage_array[i + 15] * standard_leveling_efficiency[i] + 1) * self.job_active_efficiency[i]
              for i in range(6)]
