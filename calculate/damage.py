@@ -1,9 +1,14 @@
 import calculate.calculation
+import data.load_job
 from collections import Counter
 from itertools import product
 
 hexagon_option_index = [2, 3, 4, 6, 7, 8, 0, 0, 0, 0]
 hexagon_option_index_reverse = [9, '', 0, 1, 2, '', 3, 4, 5, 0]
+
+index_passive = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 48, 50, 60, 70, 75, 80, 85, 95, 100]
+index_active = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 75, 80, 85, 95, 100]
+leveling_efficiency = [0, 0.05, 0.101443, 0.159328, 0, 0.231886]
 
 simple_sum_index = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25]
 complex_sum_index = [11, 28, 29, 30]
@@ -60,16 +65,28 @@ class Damage:
         self.job_basic_element = job_data['nowBasicSkillElementalReinforce']
         self.job_passive_element = job_data['nowLvSkillElementalReinforce']
 
+        self.weapon_type = "공통"
         self.basic_damage_arr = basic_damage_arr
         self.basic_leveling_arr = basic_leveling_arr
 
         self.is_calc_detail = is_calc_detail
+        if is_calc_detail is True:
+            try:
+                job_detail_data = data.load_job.load_job_json(job)
+                self.detail_active_list = job_detail_data["active"]
+                self.detail_passive_list = job_detail_data["passive"]
+                self.detail_special_list = job_detail_data["special"]
+                self.detail_weapon_list = job_detail_data["weapon"]
+                self.is_job_detail = True
+            except FileNotFoundError:
+                self.is_job_detail = False
+        else:
+            self.is_job_detail = False
+            self.detail_code = None
 
         self.job_active_sum_groggy = sum(self.job_active_efficiency)
         self.job_active_sum_sustain = sum([self.job_active_efficiency[i] for i in [0, 2, 4]])
         self.job_active_sum_ult = sum([self.job_active_efficiency[i] for i in [1, 3, 5]])
-
-        self.basic_damage_arr[9] += (self.base_element + standard_base_element)
 
         self.selected_stat_efficiency = standard_stat / 250 + 1
         self.selected_atk_point = standard_atk_point
@@ -93,6 +110,15 @@ class Damage:
 
     now_damage_array = []
     now_leveling_array = []
+    equipments_sets = []
+
+    def get_detail_code(self, code):
+        # detail_code
+        # 0: total
+        # 1: groggy
+        # 2: sustain
+        # 3: ult
+        self.detail_code = code
 
     def prepare_calc(self):
         self.now_damage_array = self.basic_damage_arr.copy()
@@ -103,7 +129,7 @@ class Damage:
         self.total_converting_index[0] = self.scent_option_input[0]
         self.total_converting_index[1] = self.scent_option_input[1]
         for i in range(4):
-            self.total_converting_index[i+2] = self.purgatory_converting_option[i]
+            self.total_converting_index[i + 2] = self.purgatory_converting_option[i]
         self.purgatory_converted_option = [0, 0, 0, 0]
         self.purgatory_converted_value = [0, 0, 0, 0]
         self.total_auto_converting_value = []
@@ -142,7 +168,9 @@ class Damage:
         damage_list = []
         leveling_list = []
 
-        for equipment in equipments + sets:
+        self.equipments_sets = equipments + sets
+
+        for equipment in self.equipments_sets:
             try:  # 장비 옵션 조회
                 damage_list.append(calculate.calculation.equipment_damage_option[equipment])
                 leveling_list.append(calculate.calculation.equipment_leveling_option[equipment])
@@ -152,6 +180,8 @@ class Damage:
             now_purgatory = calculate.calculation.equipment_purgatory_option[equipment]  # 연옥 옵션 조회
             if now_purgatory[0] != 0:
                 if len(equipment) == 6:  # 무기
+                    self.weapon_type = calculate.calculation.equipment_type_by_code[equipment]
+                    # log("self.weapon_type", self.weapon_type)
                     if now_purgatory[0] == 106 and self.purgatory_converting_option != 0:  # 원초
                         self.purgatory_converted_value[0] = 0
                         self.purgatory_converting_value[0] = 0
@@ -195,9 +225,9 @@ class Damage:
                 )
             else:
                 self.now_damage_array[self.purgatory_converted_option[i]] -= self.purgatory_converted_value[i]
-                self.total_converting_value[i+2] = \
+                self.total_converting_value[i + 2] = \
                     self.purgatory_converted_value[i] + self.purgatory_converting_value[i]
-                self.now_damage_array[self.purgatory_converting_option[i]] += self.total_converting_value[i+2]
+                self.now_damage_array[self.purgatory_converting_option[i]] += self.total_converting_value[i + 2]
                 self.purgatory_converting_value[i] = 0
                 self.purgatory_converted_value[i] = 0
 
@@ -208,6 +238,9 @@ class Damage:
         self.now_damage_array[26] = anti_multiply_list([damage_list[x][26] for x in range(0, size)])
         for i in range(19):
             self.now_leveling_array[i] += sum([leveling_list[x][i] for x in range(0, size)])
+        self.now_leveling_array[18] += self.purgatory_ult_value
+        self.now_leveling_array[16] += self.purgatory_ult_value
+        self.now_leveling_array[11] += self.purgatory_ult_value
         # log("self.now_damage_array", self.now_damage_array)
         # log("self.now_leveling_array", self.now_leveling_array)
         self.total_auto_converting_value.sort(reverse=True)
@@ -216,18 +249,21 @@ class Damage:
     def calculate_damage(self):
         job_element = self.job_basic_element + sum([self.job_passive_element[i] * self.now_leveling_array[i]
                                                     for i in range(19)])
-        self.now_damage_array[9] += job_element
-        # log("total_element", total_element)
+        self.now_damage_array[9] += job_element + self.base_element + standard_base_element
+        # log("total_element", self.now_damage_array[9])
 
-        self.now_damage_array[4] += (1.05 + 0.0045 * self.now_damage_array[9]) * self.now_damage_array[5]
+        self.now_damage_array[4] += \
+            (1.05 + 0.0045 * self.now_damage_array[9]) * self.now_damage_array[5]
         # log("total_additional_damage", total_additional_damage)
 
         if self.is_calc_detail:  # 정밀 계산 모드
+            # 1. 변환 옵션 정밀 재계산
             simple_sum_options = [self.now_damage_array[2], self.now_damage_array[3], self.now_damage_array[4],
                                   self.now_damage_array[6], self.now_damage_array[7], self.now_damage_array[8]]
             converting_index_arr = []
             for i in range(4):
-                self.converting_value_arr[i+2] = self.purgatory_converting_value[i] + self.purgatory_converted_value[i]
+                self.converting_value_arr[i + 2] = self.purgatory_converting_value[i] + self.purgatory_converted_value[
+                    i]
             # log("converting_value_arr", self.converting_value_arr)
             for v in self.converting_value_arr:
                 if v == 0:
@@ -261,6 +297,152 @@ class Damage:
                 self.now_damage_array[hexagon_option_index[i]] = value
             # log("total_converting_index", self.total_converting_index)
 
+            # 2. 계수 정밀계산
+            damage_tran_array = []
+            if self.is_job_detail:
+                # 무기 보정 판정
+                weapon_atk_rate = 1
+                weapon_cool_rate = 1
+                if self.weapon_type == "공통":
+                    pass
+                else:
+                    for weapon in self.detail_weapon_list:
+                        if self.weapon_type == weapon["type"]:
+                            weapon_atk_rate = weapon["damage"]
+                            weapon_cool_rate = weapon["coolTime"]
+                            break
+                # 구간별 쿨타임 감소 계산
+                cool_down_list = []
+                cool_recover_list = []
+                size = len(self.equipments_sets)
+                for equipment in self.equipments_sets:
+                    try:
+                        cool_down_list.append(calculate.calculation.equipment_cool_down_option[equipment])
+                        cool_recover_list.append(calculate.calculation.equipment_cool_recover_option[equipment])
+                    except KeyError:
+                        print(equipment, "누락")
+                total_cool_down = []
+                for i in range(0, 18):
+                    now_cool_down = anti_multiply_list([cool_down_list[x][i] for x in range(0, size)])
+                    now_cool_recover = sum([cool_recover_list[x][i] for x in range(0, size)])
+                    total_cool_down.append((1 - now_cool_down / 100) / (1 + now_cool_recover / 100) * weapon_cool_rate)
+                # log("total_cool_down", total_cool_down)
+
+                # 액티브 정리
+                active_leveling_arr = self.now_leveling_array.copy()
+                # 사전에 패시브 전용 레벨링 반영
+                if self.equipments_sets.__contains__("111016"):
+                    active_leveling_arr[5] -= 3
+                elif self.equipments_sets.__contains__("111024"):
+                    active_leveling_arr[3] -= 1
+                elif self.equipments_sets.__contains__("111029"):
+                    active_leveling_arr[14] -= 2
+                elif self.equipments_sets.__contains__("111036"):
+                    active_leveling_arr[10] -= 4
+                elif self.equipments_sets.__contains__("111059"):
+                    active_leveling_arr[5] -= 1.5
+                elif self.equipments_sets.__contains__("111060"):
+                    active_leveling_arr[5] -= 2
+                    active_leveling_arr[10] -= 2
+                    active_leveling_arr[14] -= 2
+                elif self.equipments_sets.__contains__("111062"):
+                    active_leveling_arr[10] -= 3
+                    active_leveling_arr[14] -= 3
+                elif self.equipments_sets.__contains__("111069"):
+                    active_leveling_arr[10] -= 3
+                    active_leveling_arr[14] -= 3
+                elif self.equipments_sets.__contains__("111075"):
+                    active_leveling_arr[4] -= 4.5
+                active_dict = {}
+                for active in self.detail_active_list:
+                    now_lv = active["nowLv"]
+                    if now_lv == 1:
+                        continue
+                    if active.get("talisman") is None:
+                        damage = active["damage"]
+                        cool_time = active["coolTime"]
+                    else:
+                        if active["talisman"]["available"] == 0:
+                            damage = active["damage"]
+                            cool_time = active["coolTime"]
+                        else:
+                            damage = active["talisman"]["damage"]
+                            cool_time = active["talisman"]["coolTime"]
+                            if self.equipments_sets.__contains__("15140"):
+                                if active["talisman"]["available"] == 1:
+                                    damage = damage * 1.55
+                                    cool_time = cool_time * 0.7
+                                elif active["talisman"]["available"] == 2:
+                                    damage = damage * 1.45
+                                    cool_time = cool_time * 0.75
+                    max_lv = active["maxLv"]
+                    up_lv = active_leveling_arr[index_passive.index(active["requireLv"])]
+                    now_tp = active["nowTp"]
+                    max_tp = active["maxTp"]
+                    now_eff = leveling_efficiency[active["gapLv"]]
+                    damage = int(damage *
+                                 (1 + now_eff * (now_lv + up_lv - 1)) / (1 + now_eff * (max_lv - 1)) *
+                                 (1 + 0.1 * now_tp) / (1 + 0.1 * max_tp) *
+                                 weapon_atk_rate)
+                    if cool_time is None:
+                        cool_time = 0
+                    cool_time = round(cool_time * total_cool_down[index_active.index(active["requireLv"])], 1)
+                    # log("스킬명", active["name"])
+                    # log("damage", damage)
+                    # log("cool_time", cool_time)
+                    active_dict[active["name"]] = [damage, cool_time]
+                # log("active_dict", active_dict)
+
+                # 패시브 레벨링 판정
+                for passive in self.detail_passive_list:
+                    up_lv = self.now_leveling_array[index_passive.index(passive["requireLv"])]
+                    if passive["type"] == "DAMAGE":
+                        index = 0
+                        standard_value = 100 + passive["maxValue"]
+                        now_value = standard_value + up_lv * passive["upValue"]
+                    else:
+                        index = 1
+                        standard_value = 100 - passive["maxValue"]
+                        now_value = standard_value - up_lv * passive["upValue"]
+                    total_rate = now_value / standard_value
+                    if passive["target"] == "ALL":
+                        for name, value_list in active_dict.items():
+                            value_list[index] = value_list[index] * total_rate
+                    else:
+                        target_list = passive["target"].split("^")  # ^ 구분자를 기준으로 split
+                        for name, value_list in active_dict.items():
+                            if target_list.__contains__(name):
+                                value_list[index] = value_list[index] * total_rate
+                # log("active_dict", active_dict)
+
+                # 특수 처리
+                for special in self.detail_special_list:
+                    requirement_type = special["requirementType"]
+                    is_condition = False
+                    if requirement_type == "WEAPON":
+                        if self.weapon_type == "공통" or self.weapon_type == special["requirementValue"]:
+                            is_condition = True
+                    if is_condition is True:
+                        if special["type"] == "DAMAGE":
+                            index = 0
+                            value = special["value"] / 100 + 1
+                        else:
+                            index = 1
+                            value = 1 - special["value"] / 100
+                        if special["target"] == "ALL":
+                            for name, value_list in active_dict.items():
+                                value_list[index] = value_list[index] * value
+                        else:
+                            target_list = special["target"].split("^")  # ^ 구분자를 기준으로 split
+                            for name, value_list in active_dict.items():
+                                if target_list.__contains__(name):
+                                    value_list[index] = value_list[index] * value
+
+                for name, value_list in active_dict.items():
+                    value_list[0] = int(value_list[0])
+                    value_list[1] = round(value_list[1], 1)
+                # log("active_dict", active_dict)
+
         else:  # 간이식 계산 모드
             simple_sum_options = [self.now_damage_array[2], self.now_damage_array[3], self.now_damage_array[4],
                                   self.now_damage_array[6], self.now_damage_array[7], self.now_damage_array[8]]
@@ -286,52 +468,60 @@ class Damage:
                                   (self.now_damage_array[11] / 100 + 1))
         # log("total_damage_no_active", total_damage_no_active)
 
-        total_passive_damage = 1
-        for i in range(19):
-            total_passive_damage = total_passive_damage * (1 + self.job_passive_efficiency[i] *
-                                                           self.now_leveling_array[i])
-        # log("total_passive_damage", total_passive_damage)
+        if self.is_job_detail and self.is_calc_detail:
+            for name, value_list in active_dict.items():
+                value_list[0] = int(value_list[0] * total_damage_no_active / 383.20)
+            # log("active_dict", active_dict)
 
-        self.now_damage_array[16] += self.purgatory_ult_value
-        self.now_damage_array[18] += self.purgatory_ult_value
-        self.now_damage_array[20] += self.purgatory_ult_value
-        active_ratio_arr = \
-            [(self.now_damage_array[i + 15] * standard_leveling_efficiency[i] + 1) * self.job_active_efficiency[i]
-             for i in range(6)]
-        active_ratio_arr[1] = active_ratio_arr[1] * (self.now_damage_array[28] / 100 + 1)
-        active_ratio_arr[3] = active_ratio_arr[3] * (self.now_damage_array[29] / 100 + 1)
-        active_ratio_arr[5] = active_ratio_arr[5] * (self.now_damage_array[30] / 100 + 1)
-        # log("active_ratio_arr", active_ratio_arr)
+        else:
+            total_passive_damage = 1
+            for i in range(19):
+                total_passive_damage = total_passive_damage * (1 + self.job_passive_efficiency[i] *
+                                                               self.now_leveling_array[i])
+            # log("total_passive_damage", total_passive_damage)
 
-        active_efficiency_groggy = sum(active_ratio_arr) / self.job_active_sum_groggy
-        active_efficiency_sustain = sum([active_ratio_arr[i] for i in [0, 2, 4]]) / self.job_active_sum_sustain
-        active_efficiency_ult = sum([active_ratio_arr[i] for i in [1, 3, 5]]) / self.job_active_sum_ult
-        # log("active_efficiency_groggy", active_efficiency_groggy)
-        # log("active_efficiency_sustain", active_efficiency_sustain)
-        # log("active_efficiency_ult", active_efficiency_ult)
+            self.now_damage_array[16] += self.purgatory_ult_value
+            self.now_damage_array[18] += self.purgatory_ult_value
+            self.now_damage_array[20] += self.purgatory_ult_value
+            active_ratio_arr = \
+                [(self.now_damage_array[i + 15] * standard_leveling_efficiency[i] + 1) * self.job_active_efficiency[i]
+                 for i in range(6)]
+            active_ratio_arr[1] = active_ratio_arr[1] * (self.now_damage_array[28] / 100 + 1)
+            active_ratio_arr[3] = active_ratio_arr[3] * (self.now_damage_array[29] / 100 + 1)
+            active_ratio_arr[5] = active_ratio_arr[5] * (self.now_damage_array[30] / 100 + 1)
+            # log("active_ratio_arr", active_ratio_arr)
 
-        cool_down_point = (1 - self.now_damage_array[26] / 100)
-        cool_down_value = (1.0 / cool_down_point - 1.0) / (
-                ((1 - cool_down_point) / 0.55) * ((1 - cool_down_point) / 0.55) * ((1 - cool_down_point) / 0.55) + 1)
-        cool_down_groggy = cool_down_value * self.cool_efficiency_groggy + 1
-        cool_down_sustain = cool_down_value * self.cool_efficiency_sustain + 1
+            active_efficiency_groggy = sum(active_ratio_arr) / self.job_active_sum_groggy
+            active_efficiency_sustain = sum([active_ratio_arr[i] for i in [0, 2, 4]]) / self.job_active_sum_sustain
+            active_efficiency_ult = sum([active_ratio_arr[i] for i in [1, 3, 5]]) / self.job_active_sum_ult
+            # log("active_efficiency_groggy", active_efficiency_groggy)
+            # log("active_efficiency_sustain", active_efficiency_sustain)
+            # log("active_efficiency_ult", active_efficiency_ult)
 
-        total_damage = total_damage_no_active * total_passive_damage
+            cool_down_point = (1 - self.now_damage_array[26] / 100)
+            cool_down_value = (1.0 / cool_down_point - 1.0) / (
+                    ((1 - cool_down_point) / 0.55) * ((1 - cool_down_point) / 0.55) * (
+                        (1 - cool_down_point) / 0.55) + 1)
+            cool_down_groggy = cool_down_value * self.cool_efficiency_groggy + 1
+            cool_down_sustain = cool_down_value * self.cool_efficiency_sustain + 1
 
-        total_damage_groggy = total_damage * cool_down_groggy * (
-                active_efficiency_groggy + self.now_damage_array[12] / 100)
-        total_damage_sustain = total_damage * cool_down_sustain * (
-                active_efficiency_sustain + self.now_damage_array[12] / 100)
-        total_damage_ult = total_damage * active_efficiency_ult
-        total_damage_sum = (total_damage_groggy * self.ratio_groggy_sustain +
-                            total_damage_sustain * (1 - self.ratio_groggy_sustain))
-        log("total_damage_groggy", total_damage_groggy)
-        # log("total_damage_sustain", total_damage_sustain)
-        # log("total_damage_ult", total_damage_ult)
-        # log("total_damage_sum", total_damage_sum)
-        log("now_damage_array", self.now_damage_array)
+            total_damage = total_damage_no_active * total_passive_damage
 
-        return [total_damage_sum, total_damage_groggy, total_damage_sustain, total_damage_ult]
+            total_damage_groggy = total_damage * cool_down_groggy * (
+                    active_efficiency_groggy + self.now_damage_array[12] / 100)
+            total_damage_sustain = total_damage * cool_down_sustain * (
+                    active_efficiency_sustain + self.now_damage_array[12] / 100)
+            total_damage_ult = total_damage * active_efficiency_ult
+            total_damage_sum = (total_damage_groggy * self.ratio_groggy_sustain +
+                                total_damage_sustain * (1 - self.ratio_groggy_sustain))
+            log("total_damage_groggy", total_damage_groggy)
+            # log("total_damage_sustain", total_damage_sustain)
+            # log("total_damage_ult", total_damage_ult)
+            # log("total_damage_sum", total_damage_sum)
+
+            # 상태 원복
+            log("now_damage_array", self.now_damage_array)
+            return [total_damage_sum, total_damage_groggy, total_damage_sustain, total_damage_ult]
 
 
 def multiply_list(arr):

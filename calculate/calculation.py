@@ -40,30 +40,29 @@ def get_database(total_database):
 
 class Calculation:
 
-    is_buffer = False
-    damage_class = None
-
-    # sum, groggy, sustain, ult
-    min_value = [0 for i in range(4)]
-    result_value_saved = [[0 for i in range(20)], [0 for i in range(20)],
-                          [0 for i in range(20)], [0 for i in range(20)]]
-    result_equipment_saved = [[0 for i in range(20)], [0 for i in range(20)],
-                              [0 for i in range(20)], [0 for i in range(20)]]
-
     def __init__(self, return_list, job, total_database, equipment_cases,
                  weapon_cases, fusion_cases,
                  basic_damage_arr, basic_leveling_arr,
                  is_scent2_on, scent_option_input,
                  purgatory_option_input, purgatory_value_input, purgatory_weapon_ult_input,
                  purgatory_auto_converting_weapon_ult_mode):
+
+        is_buffer = False
+        # sum, groggy, sustain, ult
+        min_value = [0 for i in range(4)]
+        result_value_saved = [[0 for i in range(20)], [0 for i in range(20)],
+                              [0 for i in range(20)], [0 for i in range(20)]]
+        result_equipment_saved = [[0 for i in range(20)], [0 for i in range(20)],
+                                  [0 for i in range(20)], [0 for i in range(20)]]
+
         if len(equipment_cases) * len(weapon_cases) == 0:
             return
         get_database(total_database)
         if len(job) > 5 and job[0:4] == "(버퍼)":
-            self.is_buffer = True
-        if self.is_buffer is False:
-            self.damage_class = calculate.damage.Damage(
-                job, basic_damage_arr, basic_leveling_arr, True,
+            is_buffer = True
+        if is_buffer is False:  # 딜러
+            damage_class = calculate.damage.Damage(
+                job, basic_damage_arr, basic_leveling_arr, False,
                 is_scent2_on, scent_option_input,
                 purgatory_option_input, purgatory_value_input, purgatory_weapon_ult_input,
                 purgatory_auto_converting_weapon_ult_mode
@@ -71,22 +70,38 @@ class Calculation:
             for fusion in fusion_cases:
                 for weapon in weapon_cases:
                     for case in equipment_cases:
-                        self.damage_class.combine_damage_option(case + [weapon] + fusion)
-                        now_result = self.damage_class.calculate_damage()
+                        damage_class.combine_damage_option(case + [weapon] + fusion)
+                        now_result = damage_class.calculate_damage()
                         # print(now_result)
                         for i in range(4):
-                            if self.min_value[i] < now_result[i]:
-                                removing_index = self.result_value_saved[i].index(self.min_value[i])
-                                self.result_value_saved[i][removing_index] = now_result[i]
-                                self.result_equipment_saved[i][removing_index] = case + [weapon] + fusion
-                                self.min_value[i] = min(self.result_value_saved[i])
-        for i in range(4):
-            while self.result_value_saved[i].__contains__(0):
-                self.result_value_saved[i].remove(0)
-                self.result_equipment_saved[i].remove(0)
+                            if min_value[i] < now_result[i]:
+                                removing_index = result_value_saved[i].index(min_value[i])
+                                result_value_saved[i][removing_index] = now_result[i]
+                                result_equipment_saved[i][removing_index] = case + [weapon] + fusion
+                                min_value[i] = min(result_value_saved[i])
+            for i in range(4):
+                while result_value_saved[i].__contains__(0):
+                    result_value_saved[i].remove(0)
+                    result_equipment_saved[i].remove(0)
 
-        return_list.append(self.result_value_saved)
-        return_list.append(self.result_equipment_saved)
+            # 정밀 재계산
+            damage_class_detail = calculate.damage.Damage(
+                job, basic_damage_arr, basic_leveling_arr, True,
+                is_scent2_on, scent_option_input,
+                purgatory_option_input, purgatory_value_input, purgatory_weapon_ult_input,
+                purgatory_auto_converting_weapon_ult_mode
+            )
+            for i in range(4):
+                damage_class_detail.get_detail_code(i)
+                for now_case in result_equipment_saved[i]:
+                    damage_class_detail.combine_damage_option(now_case)
+                    now_result_detail = damage_class_detail.calculate_damage()
+
+            return_list.append(result_value_saved)
+            return_list.append(result_equipment_saved)
+
+        else:
+            pass
 
 
 

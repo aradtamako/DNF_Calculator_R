@@ -1,0 +1,364 @@
+{
+	"active": [
+		{
+			"name": "월하무즉정야",
+			"damage": 3592622,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"talisman": null
+		},
+		{
+			"name": "월광비무",
+			"damage": 2112200,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"talisman": null
+		},
+		{
+			"name": "경전지화",
+			"damage": 1681423,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 12,
+			"maxTp": 0,
+			"nowTp": 0,
+			"talisman": null
+		},
+		{
+			"name": "엽해소옥",
+			"damage": 1204487,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"talisman": null
+		},
+		{
+			"name": "연화섬",
+			"damage": 1084147,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"talisman": {
+				"name": "이형환위섬",
+				"damage": 1409391,
+				"coolTime": 40.5,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "연화검무",
+			"damage": 1038428,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"talisman": {
+				"name": "무비일검",
+				"damage": 1381109,
+				"coolTime": 40,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "백보신장",
+			"damage": 1014178,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5,
+			"nowTp": 0,
+			"talisman": {
+				"name": "무형장",
+				"damage": 1281885,
+				"coolTime": 50,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "혜성만리",
+			"damage": 932005,
+			"coolTime": 40,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5,
+			"nowTp": 5,
+			"talisman": {
+				"name": "만리일섬",
+				"damage": 1189251,
+				"coolTime": 40,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "폭멸장",
+			"damage": 767260,
+			"coolTime": 30,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5,
+			"nowTp": 5,
+			"talisman": {
+				"name": "파적공",
+				"damage": 997439,
+				"coolTime": 30,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "난화검",
+			"damage": 676403,
+			"coolTime": 25,
+			"requireLv": 35,
+			"gapLv": 3,
+			"maxLv": 24,
+			"nowLv": 24,
+			"maxTp": 5,
+			"nowTp": 5,
+			"talisman": {
+				"name": "일화통암",
+				"damage": 913248,
+				"coolTime": 25,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "십자검",
+			"damage": 667059,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"talisman": {
+				"name": "일몰여평섬",
+				"damage": 728473,
+				"coolTime": 24,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "폭검",
+			"damage": 591342,
+			"coolTime": 20,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5,
+			"nowTp": 5,
+			"talisman": null
+		},
+		{
+			"name": "비연장",
+			"damage": 440477,
+			"coolTime": 12,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"talisman": null
+		},
+		{
+			"name": "거압",
+			"damage": 344209,
+			"coolTime": 12,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 30,
+			"maxTp": 5,
+			"nowTp": 1,
+			"talisman": null
+		},
+		{
+			"name": "극검",
+			"damage": 255852,
+			"coolTime": 11,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"talisman": null
+		},
+		{
+			"name": "회륜",
+			"damage": 223739,
+			"coolTime": 7,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"talisman": null
+		},
+		{
+			"name": "비상",
+			"damage": 216328,
+			"coolTime": 7,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"talisman": null
+		},
+		{
+			"name": "일화도강",
+			"damage": 205393,
+			"coolTime": 5,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"talisman": null
+		},
+		{
+			"name": "삼재검",
+			"damage": 164994,
+			"coolTime": 5,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"talisman": null
+		},
+		{
+			"name": "평타(1사이클)",
+			"damage": 73235,
+			"coolTime": null,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 1,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "삼화취정",
+			"requireLv": 20,
+			"maxValue": 32,
+			"upValue": 4,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "삼매진화",
+			"requireLv": 48,
+			"maxValue": 46.5,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "등봉조극",
+			"requireLv": 75,
+			"maxValue": 42,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "검선지경",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "광검",
+			"type": "COOLDOWN",
+			"target": "ALL",
+			"value": 10
+		}
+	],
+	"weapon": [
+		{
+			"type": "광검",
+			"damage": 1,
+			"coolTime": 0.9
+		},
+		{
+			"type": "대검",
+			"damage": 1.0693049812955306,
+			"coolTime": 1.1
+		},
+		{
+			"type": "둔기",
+			"damage": 1.0431187241582989,
+			"coolTime": 1.05
+		},
+		{
+			"type": "도",
+			"damage": 1.004725339633786,
+			"coolTime": 0.95
+		},
+		{
+			"type": "소검",
+			"damage": 1.004725339633786,
+			"coolTime": 1
+		}
+	]
+}
