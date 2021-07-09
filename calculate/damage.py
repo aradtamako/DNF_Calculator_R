@@ -79,6 +79,7 @@ class Damage:
                 self.detail_weapon_list = job_detail_data["weapon"]
                 self.is_job_detail = True
             except FileNotFoundError:
+                print("직업 계수 데이터 미존재")
                 self.is_job_detail = False
         else:
             self.is_job_detail = False
@@ -97,7 +98,8 @@ class Damage:
         self.purgatory_auto_converting_weapon_ult_mode = purgatory_auto_converting_weapon_ult_mode
         self.purgatory_weapon_ult_input = purgatory_weapon_ult_input
         self.purgatory_converting_option = purgatory_option_input  # 변경 될 리스트
-        self.purgatory_converting_value = purgatory_value_input  # 변경 될 추가 값
+        self.purgatory_converting_value_fixed = purgatory_value_input # 변경 될 추가 값
+        self.purgatory_converting_value = []
         self.purgatory_converted_option = [0, 0, 0, 0]  # 변경 전 리스트
         self.purgatory_converted_value = [0, 0, 0, 0]  # 변경 전 값
         self.purgatory_ult_value = 0
@@ -121,6 +123,7 @@ class Damage:
         self.detail_code = code
 
     def prepare_calc(self):
+        self.purgatory_converting_value = self.purgatory_converting_value_fixed.copy()
         self.now_damage_array = self.basic_damage_arr.copy()
         self.now_leveling_array = self.basic_leveling_arr.copy()
         self.total_converting_value = [0, 0, 0, 0, 0, 0]
@@ -182,34 +185,44 @@ class Damage:
                 if len(equipment) == 6:  # 무기
                     self.weapon_type = calculate.calculation.equipment_type_by_code[equipment]
                     # log("self.weapon_type", self.weapon_type)
-                    if now_purgatory[0] == 106 and self.purgatory_converting_option != 0:  # 원초
+                    if now_purgatory[0] == 106 and self.purgatory_converting_option[0] != 0:  # 원초
                         self.purgatory_converted_value[0] = 0
                         self.purgatory_converting_value[0] = 0
                         self.now_damage_array[6] += 15
                     else:
                         now_index = 0
-                        self.purgatory_converted_value[now_index] = now_purgatory[1]
                         if now_purgatory[0] == 27:
                             self.purgatory_converted_option[now_index] = 0
+                            self.purgatory_converted_value[now_index] = 0
                         else:
                             self.purgatory_converted_option[now_index] = now_purgatory[0]
-                        if self.purgatory_auto_converting_weapon_ult_mode == 1:  # 연옥 무기 태생유지
-                            if now_purgatory[0] == 27:
-                                self.purgatory_converted_value[now_index] = 0
+                            self.purgatory_converted_value[now_index] = now_purgatory[1]
+
+                        if self.purgatory_converting_option[0] == 0:
+                            continue
+                        elif self.purgatory_converting_option[0] == 9:
+                            # 각성 토글 판정식
+                            if self.purgatory_auto_converting_weapon_ult_mode == 1:  # 연옥 무기 태생유지
+                                if now_purgatory[0] != 27:
+                                    self.purgatory_converted_value[now_index] = 14
+                            elif self.purgatory_auto_converting_weapon_ult_mode == 2:  # 연옥 무기 각성강제
+                                if now_purgatory[0] != 27:
+                                    self.purgatory_ult_value += 2
+                                    self.purgatory_converting_value[now_index] -= 14
+                            else:  # 연옥 무기 각성해제
+                                if now_purgatory[0] == 27:
+                                    self.purgatory_ult_value -= 2
+                                    self.purgatory_converting_value[now_index] += 14
+                        else:
+                            if self.purgatory_weapon_ult_input:
+                                if now_purgatory[0] != 27:
+                                    self.purgatory_ult_value += 2
+                                    self.purgatory_converting_value[now_index] -= 14
                             else:
-                                self.purgatory_converted_value[now_index] = 14
-                        elif self.purgatory_auto_converting_weapon_ult_mode == 2:  # 연옥 무기 각성강제
-                            if now_purgatory[0] == 27:
-                                self.purgatory_converted_value[now_index] = 0
-                            else:
-                                self.purgatory_ult_value += 2
-                                self.purgatory_converting_value[now_index] -= 14
-                        else:  # 연옥 무기 각성해제
-                            self.purgatory_converted_value[now_index] = 14
-                            if now_purgatory[0] == 27:
-                                self.purgatory_ult_value -= 2
-                                self.purgatory_converted_value[now_index] = 0
-                                self.purgatory_converting_value[now_index] += 14
+                                if now_purgatory[0] == 27:
+                                    self.purgatory_ult_value -= 2
+                                    self.purgatory_converted_value[now_index] = 0
+                                    self.purgatory_converting_value[now_index] += 14
                 else:
                     now_index = int(equipment[0])
                     self.purgatory_converted_option[now_index] = now_purgatory[0]
@@ -254,7 +267,7 @@ class Damage:
 
         self.now_damage_array[4] += \
             (1.05 + 0.0045 * self.now_damage_array[9]) * self.now_damage_array[5]
-        # log("total_additional_damage", total_additional_damage)
+        # log("total_additional_damage", self.now_damage_array[4])
 
         if self.is_calc_detail:  # 정밀 계산 모드
             # 1. 변환 옵션 정밀 재계산
@@ -329,8 +342,9 @@ class Damage:
                 # log("total_cool_down", total_cool_down)
 
                 # 액티브 정리
+                ult_name = []
                 active_leveling_arr = self.now_leveling_array.copy()
-                # 사전에 패시브 전용 레벨링 반영
+                # 사전에 패시브 전용 레벨링 제거
                 if self.equipments_sets.__contains__("111016"):
                     active_leveling_arr[5] -= 3
                 elif self.equipments_sets.__contains__("111024"):
@@ -356,7 +370,7 @@ class Damage:
                 active_dict = {}
                 for active in self.detail_active_list:
                     now_lv = active["nowLv"]
-                    if now_lv == 1:
+                    if now_lv == 0:
                         continue
                     if active.get("talisman") is None:
                         damage = active["damage"]
@@ -379,23 +393,48 @@ class Damage:
                     up_lv = active_leveling_arr[index_passive.index(active["requireLv"])]
                     now_tp = active["nowTp"]
                     max_tp = active["maxTp"]
+                    skill_delay = active["delay"]
                     now_eff = leveling_efficiency[active["gapLv"]]
                     damage = int(damage *
                                  (1 + now_eff * (now_lv + up_lv - 1)) / (1 + now_eff * (max_lv - 1)) *
                                  (1 + 0.1 * now_tp) / (1 + 0.1 * max_tp) *
                                  weapon_atk_rate)
+                    if active["requireLv"] == 50:
+                        if now_lv != 0:
+                            ult_name.append(active["name"])
+                        damage = int(damage * (self.now_damage_array[28] / 100 + 1))
+                    elif active["requireLv"] == 85:
+                        if now_lv != 0:
+                            ult_name.append(active["name"])
+                        damage = int(damage * (self.now_damage_array[29] / 100 + 1))
+                    elif active["requireLv"] == 100:
+                        if now_lv != 0:
+                            ult_name.append(active["name"])
+                        damage = int(damage * (self.now_damage_array[30] / 100 + 1))
                     if cool_time is None:
                         cool_time = 0
                     cool_time = round(cool_time * total_cool_down[index_active.index(active["requireLv"])], 1)
                     # log("스킬명", active["name"])
                     # log("damage", damage)
                     # log("cool_time", cool_time)
-                    active_dict[active["name"]] = [damage, cool_time]
+                    active_dict[active["name"]] = [damage, cool_time, skill_delay]
                 # log("active_dict", active_dict)
 
                 # 패시브 레벨링 판정
                 for passive in self.detail_passive_list:
+                    requirement_type = passive["requirementType"]
+                    if requirement_type is None:
+                        is_condition = True
+                    else:
+                        is_condition = False
+                    if requirement_type == "WEAPON":
+                        if passive["requirementValue"][-1] != "!" and self.weapon_type == "공통":
+                            is_condition = True
+                        elif self.weapon_type == passive["requirementValue"]:
+                            is_condition = True
                     up_lv = self.now_leveling_array[index_passive.index(passive["requireLv"])]
+                    if is_condition is False:
+                        continue
                     if passive["type"] == "DAMAGE":
                         index = 0
                         standard_value = 100 + passive["maxValue"]
@@ -418,25 +457,31 @@ class Damage:
                 # 특수 처리
                 for special in self.detail_special_list:
                     requirement_type = special["requirementType"]
-                    is_condition = False
+                    if requirement_type is None:
+                        is_condition = True
+                    else:
+                        is_condition = False
                     if requirement_type == "WEAPON":
-                        if self.weapon_type == "공통" or self.weapon_type == special["requirementValue"]:
+                        if special["requirementValue"][-1] != "!" and self.weapon_type == "공통":
                             is_condition = True
-                    if is_condition is True:
-                        if special["type"] == "DAMAGE":
-                            index = 0
-                            value = special["value"] / 100 + 1
-                        else:
-                            index = 1
-                            value = 1 - special["value"] / 100
-                        if special["target"] == "ALL":
-                            for name, value_list in active_dict.items():
+                        elif self.weapon_type == special["requirementValue"]:
+                            is_condition = True
+                    if is_condition is False:
+                        continue
+                    if special["type"] == "DAMAGE":
+                        index = 0
+                        value = special["value"] / 100 + 1
+                    else:
+                        index = 1
+                        value = 1 - special["value"] / 100
+                    if special["target"] == "ALL":
+                        for name, value_list in active_dict.items():
+                            value_list[index] = value_list[index] * value
+                    else:
+                        target_list = special["target"].split("^")  # ^ 구분자를 기준으로 split
+                        for name, value_list in active_dict.items():
+                            if target_list.__contains__(name):
                                 value_list[index] = value_list[index] * value
-                        else:
-                            target_list = special["target"].split("^")  # ^ 구분자를 기준으로 split
-                            for name, value_list in active_dict.items():
-                                if target_list.__contains__(name):
-                                    value_list[index] = value_list[index] * value
 
                 for name, value_list in active_dict.items():
                     value_list[0] = int(value_list[0])
@@ -469,9 +514,92 @@ class Damage:
         # log("total_damage_no_active", total_damage_no_active)
 
         if self.is_job_detail and self.is_calc_detail:
+            final_damage_ult = 0
+            case = 0
+            index_name = []
+            index_cool = []
+            index_damage = []
+            index_delay = []
+            index_use = []
             for name, value_list in active_dict.items():
+                if value_list[1] == 0:
+                    # 무쿨타임(평타)는 일단 제외
+                    continue
+                case += 1
                 value_list[0] = int(value_list[0] * total_damage_no_active / 383.20)
+                index_damage.append(value_list[0])
+                index_cool.append(int(value_list[1]*10*0.8))  # 0.8 정신자극
+                index_delay.append(int(value_list[2]*10))
+                if ult_name.__contains__(name):
+                    final_damage_ult += value_list[0]
             # log("active_dict", active_dict)
+
+            damage_trans = []
+            damage_25 = 0
+            delay_25 = 0
+            delay_time = []
+            # 초반 25초: 쿨타임 위주의 계산
+            for index in range(case):
+                interval_time = index_cool[index]+index_delay[index]
+                if interval_time > 270:
+                    use = 1
+                    delay_time.append(index_cool[index] - 250)
+                elif interval_time > 130:
+                    delay_time.append(int(index_cool[index] / 2 + 190) - 250)
+                    use = 2
+                elif interval_time > 86:
+                    delay_time.append(int(index_cool[index] / 2 + 210) - 250)
+                    use = 3
+                elif interval_time > 62:
+                    delay_time.append(int(index_cool[index] / 2 + 230) - 250)
+                    use = 4
+                else:
+                    delay_time.append(int(index_cool[index] / 2 + 250) - 250)
+                    use = 5
+                damage_25 += index_damage[index] * use
+                delay_25 += index_delay[index] * use
+                index_use.append(use)
+            for i in range(len(delay_time)):
+                if delay_time[i] < 0:
+                    delay_time[i] = 0
+            # log("damage_25", damage_25)
+
+            # 중후반 25~초: 쿨타임과 딜레이의 종합 계산
+            now_time_damage = damage_25
+            for c_sec in range(0, 251):
+                damage_trans.append(now_time_damage)
+            for c_sec in range(251, 1200):
+                for index in range(case):
+                    delay_time[index] -= 1
+                    if delay_time[index] == 0:
+                        delay_time[index] += index_cool[index] + index_delay[index]
+                        if c_sec > 40:
+                            now_time_damage += index_damage[index] * 0.6
+                        else:
+                            now_time_damage += index_damage[index]
+                damage_trans.append(now_time_damage)
+            cases = 0
+            temp_damage_sum = 0
+            for c_sec in range(245, 261):
+                cases += 1
+                temp_damage_sum += damage_trans[c_sec]
+            final_damage_25 = int(temp_damage_sum / cases)
+            cases = 0
+            temp_damage_sum = 0
+            for c_sec in range(391, 420):
+                cases += 1
+                temp_damage_sum += damage_trans[c_sec]
+            final_damage_40 = int(temp_damage_sum / cases)
+            cases = 0
+            temp_damage_sum = 0
+            for c_sec in range(1100, 1200):
+                cases += 1
+                temp_damage_sum += damage_trans[c_sec]
+            final_damage_120 = int(temp_damage_sum / cases)
+            # log("final_damage_40", final_damage_40)
+            # log("final_damage_25", final_damage_25)
+            # log("final_damage_120", final_damage_120)
+            return [final_damage_40, final_damage_25, final_damage_120, final_damage_ult, damage_trans]
 
         else:
             total_passive_damage = 1
@@ -514,13 +642,12 @@ class Damage:
             total_damage_ult = total_damage * active_efficiency_ult
             total_damage_sum = (total_damage_groggy * self.ratio_groggy_sustain +
                                 total_damage_sustain * (1 - self.ratio_groggy_sustain))
-            log("total_damage_groggy", total_damage_groggy)
+            # log("total_damage_groggy", total_damage_groggy)
             # log("total_damage_sustain", total_damage_sustain)
             # log("total_damage_ult", total_damage_ult)
             # log("total_damage_sum", total_damage_sum)
 
-            # 상태 원복
-            log("now_damage_array", self.now_damage_array)
+            # log("now_damage_array", self.now_damage_array)
             return [total_damage_sum, total_damage_groggy, total_damage_sustain, total_damage_ult]
 
 

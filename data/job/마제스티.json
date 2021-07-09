@@ -1,0 +1,504 @@
+{
+	"active": [
+		{
+			"name": "리전 오브 슈프림",
+			"damage": 3701183,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "궁극의 검 : 레바테인",
+			"damage": 1782426,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 4,
+			"talisman": null
+		},
+		{
+			"name": "극 귀검술 : 시공섬",
+			"damage": 1649509,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "악즉참",
+			"damage": 1425245,
+			"coolTime": 40,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 2,
+			"talisman": {
+				"name": "데빌슬레이어",
+				"damage": 1820020,
+				"coolTime": 38,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "극 마검술 : 창륜검",
+			"damage": 1225404,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "참마검",
+			"damage": 1083052,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 2,
+			"talisman": {
+				"name": "엑스트라 익스플로전",
+				"damage": 1364664,
+				"coolTime": 50,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "극 귀검술 : 파검무",
+			"damage": 827685,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "올 포 원(즉폭)",
+				"damage": 1109098,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "용성락",
+			"damage": 674431,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "피어싱 블레이드",
+				"damage": 845764,
+				"coolTime": 28.5,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "반월",
+			"damage": 653138,
+			"coolTime": 15,
+			"requireLv": 35,
+			"gapLv": 3,
+			"maxLv": 24,
+			"nowLv": 24,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "문플래쉬",
+				"damage": 868673,
+				"coolTime": 15,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "마검방출",
+			"damage": 648988,
+			"coolTime": 25,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "블레이드 템페스트",
+				"damage": 845366,
+				"coolTime": 25,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "폭명기검",
+			"damage": 521004,
+			"coolTime": 20,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": {
+				"name": "파괴증식",
+				"damage": 700622,
+				"coolTime": 20,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "섬광",
+			"damage": 459278,
+			"coolTime": 15,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "비연참",
+			"damage": 389455,
+			"coolTime": 12,
+			"requireLv": 30,
+			"gapLv": 3,
+			"maxLv": 26,
+			"nowLv": 26,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "승천",
+			"damage": 296194,
+			"coolTime": 8,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "환검",
+			"damage": 276296,
+			"coolTime": 8,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 23,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "연환격",
+			"damage": 249241,
+			"coolTime": 9,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "쾌속검",
+			"damage": 198471,
+			"coolTime": 7,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "제국검술",
+			"damage": 108043,
+			"coolTime": null,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 3,
+			"delay": 0,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "마스터리",
+			"requireLv": 15,
+			"maxValue": 37,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "마스터리",
+			"requireLv": 15,
+			"maxValue": 35,
+			"upValue": 0.61,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "마검일체",
+			"requireLv": 30,
+			"maxValue": 11,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "참격혼",
+			"requireLv": 48,
+			"maxValue": 39.5,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "고대의 맹약",
+			"requireLv": 75,
+			"maxValue": 50,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "엑시던스",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "대검 마스터리",
+			"requireLv": 15,
+			"maxValue": 19,
+			"upValue": 0.3,
+			"type": "DAMAGE",
+			"target": "반월^악즉참",
+			"requirementType": "WEAPON",
+			"requirementValue": "대검"
+		},
+		{
+			"name": "도 마스터리",
+			"requireLv": 15,
+			"maxValue": 21,
+			"upValue": 0.5,
+			"type": "DAMAGE",
+			"target": "속성변환",
+			"requirementType": "WEAPON",
+			"requirementValue": "도!"
+		},
+		{
+			"name": "소검 마스터리",
+			"requireLv": 15,
+			"maxValue": 30,
+			"upValue": 1,
+			"type": "DAMAGE",
+			"target": "섬광",
+			"requirementType": "WEAPON",
+			"requirementValue": "소검!"
+		},
+		{
+			"name": "둔기 마스터리",
+			"requireLv": 15,
+			"maxValue": 30,
+			"upValue": 1,
+			"type": "DAMAGE",
+			"target": "비연참^환검^폭명기검",
+			"requirementType": "WEAPON",
+			"requirementValue": "둔기!"
+		}
+	],
+	"special": [
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "도!",
+			"type": "COOLDOWN",
+			"target": "ALL",
+			"value": 10
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "도!",
+			"type": "DAMAGE",
+			"target": "악즉참",
+			"value": -22.2
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "도!",
+			"type": "DAMAGE",
+			"target": "반월",
+			"value": -16.7
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "도!",
+			"type": "DAMAGE",
+			"target": "제국검술",
+			"value": -30
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "소검!",
+			"type": "DAMAGE",
+			"target": "악즉참",
+			"value": -22.2
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "소검!",
+			"type": "DAMAGE",
+			"target": "반월",
+			"value": -16.7
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "소검!",
+			"type": "DAMAGE",
+			"target": "제국검술",
+			"value": -34
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "둔기!",
+			"type": "DAMAGE",
+			"target": "악즉참",
+			"value": -22.2
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "둔기!",
+			"type": "DAMAGE",
+			"target": "반월",
+			"value": -16.7
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "둔기!",
+			"type": "DAMAGE",
+			"target": "제국검술",
+			"value": -25
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "도!",
+			"type": "DAMAGE",
+			"target": "섬광",
+			"value": 33
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "소검!",
+			"type": "DAMAGE",
+			"target": "섬광",
+			"value": 57
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "둔기!",
+			"type": "DAMAGE",
+			"target": "환검",
+			"value": 38.5
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "둔기!",
+			"type": "DAMAGE",
+			"target": "폭명기검",
+			"value": 33
+		}
+	],
+	"weapon": [
+		{
+			"type": "대검",
+			"damage": 1,
+			"coolTime": 1.1
+		},
+		{
+			"type": "둔기",
+			"damage": 0.9736803372833629,
+			"coolTime": 1.05
+		},
+		{
+			"type": "도",
+			"damage": 0.9326459215614064,
+			"coolTime": 0.95
+		},
+		{
+			"type": "소검",
+			"damage": 0.9325657042571348,
+			"coolTime": 1
+		}
+	]
+}

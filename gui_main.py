@@ -8,6 +8,7 @@ import data.weapon as weapon
 import data.job as job
 import common
 import calculate.terminal as terminal
+import gui_result
 
 
 class MainGUI(tkinter.Frame):
@@ -22,6 +23,7 @@ class MainGUI(tkinter.Frame):
     select_weapon_list = []
     equipment_toggle = {}
     main_window = None
+    result_class = None
 
     def __init__(self, master):
         super(MainGUI, self).__init__(master)
@@ -40,6 +42,14 @@ class MainGUI(tkinter.Frame):
         self.set_function_purgatory()
         self.set_function_extra()
         self.set_extra()
+
+        self.create_result_gui()
+
+    def create_result_gui(self):
+        self.result_class = gui_result.ResultGUI(
+            self.main_window,
+            self.image_equipment, self.image_extra, self.image_weapon
+        )
 
     def create_main(self):
         self.main_window.geometry("909x720+0+0")
@@ -176,7 +186,7 @@ class MainGUI(tkinter.Frame):
     def set_function_extra(self):
         # 계산모드 설정
         self.create_dropdown('mode', 15, [
-            '풀셋모드', '메타몽풀셋모드', '단품제외', '단품포함', '세트필터↓'
+            'AUTO MODE', 'ALL MODE'
         ], 750, 11)
         # 칭호/크리쳐/쿨감보정
         self.create_dropdown('title', 13, ['증뎀15%', '속강32', '증뎀10%', '추뎀10%', '크증10%', '기타(직접비교)'], 373, 302)
@@ -343,8 +353,11 @@ class MainGUI(tkinter.Frame):
 
     def set_function_button(self):
         def start_calc_thread():
-            threading.Thread(target=terminal.Terminal, args=(self.dropdown_list, self.select_weapon_list,
-                                                             self.equipment_toggle), daemon=True).start()
+            calc_start = threading.Thread(target=terminal.Terminal, args=(
+                self.dropdown_list, self.select_weapon_list, self.equipment_toggle,
+                self.result_class
+            ), daemon=True)
+            calc_start.start()
 
         self.btn_list["calculate"] = tkinter.Button(self.main_window, relief='flat', bd=0,
                                                     activebackground=self.color_list[0],

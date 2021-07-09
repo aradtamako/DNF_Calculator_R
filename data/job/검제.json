@@ -10,6 +10,7 @@
 			"nowLv": 2,
 			"maxTp": 0,
 			"nowTp": 0,
+			"delay": 5,
 			"talisman": null
 		},
 		{
@@ -22,6 +23,7 @@
 			"nowLv": 5,
 			"maxTp": 0,
 			"nowTp": 0,
+			"delay": 3,
 			"talisman": null
 		},
 		{
@@ -31,9 +33,10 @@
 			"requireLv": 50,
 			"gapLv": 5,
 			"maxLv": 12,
-			"nowLv": 12,
+			"nowLv": 0,
 			"maxTp": 0,
 			"nowTp": 0,
+			"delay": 3,
 			"talisman": null
 		},
 		{
@@ -46,6 +49,7 @@
 			"nowLv": 6,
 			"maxTp": 0,
 			"nowTp": 0,
+			"delay": 0.5,
 			"talisman": null
 		},
 		{
@@ -58,6 +62,7 @@
 			"nowLv": 13,
 			"maxTp": 0,
 			"nowTp": 0,
+			"delay": 1.5,
 			"talisman": {
 				"name": "이형환위섬",
 				"damage": 1409391,
@@ -76,6 +81,7 @@
 			"nowLv": 16,
 			"maxTp": 0,
 			"nowTp": 0,
+			"delay": 1,
 			"talisman": {
 				"name": "무비일검",
 				"damage": 1381109,
@@ -94,6 +100,7 @@
 			"nowLv": 18,
 			"maxTp": 5,
 			"nowTp": 0,
+			"delay": 0.5,
 			"talisman": {
 				"name": "무형장",
 				"damage": 1281885,
@@ -112,6 +119,7 @@
 			"nowLv": 31,
 			"maxTp": 5,
 			"nowTp": 5,
+			"delay": 0.5,
 			"talisman": {
 				"name": "만리일섬",
 				"damage": 1189251,
@@ -130,6 +138,7 @@
 			"nowLv": 33,
 			"maxTp": 5,
 			"nowTp": 5,
+			"delay": 0.5,
 			"talisman": {
 				"name": "파적공",
 				"damage": 997439,
@@ -148,6 +157,7 @@
 			"nowLv": 24,
 			"maxTp": 5,
 			"nowTp": 5,
+			"delay": 1,
 			"talisman": {
 				"name": "일화통암",
 				"damage": 913248,
@@ -166,6 +176,7 @@
 			"nowLv": 0,
 			"maxTp": 5,
 			"nowTp": 0,
+			"delay": 2,
 			"talisman": {
 				"name": "일몰여평섬",
 				"damage": 728473,
@@ -184,6 +195,7 @@
 			"nowLv": 33,
 			"maxTp": 5,
 			"nowTp": 5,
+			"delay": 0.5,
 			"talisman": null
 		},
 		{
@@ -196,6 +208,7 @@
 			"nowLv": 36,
 			"maxTp": 5,
 			"nowTp": 5,
+			"delay": 1,
 			"talisman": null
 		},
 		{
@@ -208,6 +221,7 @@
 			"nowLv": 30,
 			"maxTp": 5,
 			"nowTp": 1,
+			"delay": 0.5,
 			"talisman": null
 		},
 		{
@@ -220,6 +234,7 @@
 			"nowLv": 0,
 			"maxTp": 5,
 			"nowTp": 0,
+			"delay": 1,
 			"talisman": null
 		},
 		{
@@ -232,6 +247,7 @@
 			"nowLv": 0,
 			"maxTp": 5,
 			"nowTp": 0,
+			"delay": 1,
 			"talisman": null
 		},
 		{
@@ -244,6 +260,7 @@
 			"nowLv": 0,
 			"maxTp": 5,
 			"nowTp": 0,
+			"delay": 1,
 			"talisman": null
 		},
 		{
@@ -256,6 +273,7 @@
 			"nowLv": 0,
 			"maxTp": 5,
 			"nowTp": 0,
+			"delay": 0.5,
 			"talisman": null
 		},
 		{
@@ -268,6 +286,7 @@
 			"nowLv": 0,
 			"maxTp": 5,
 			"nowTp": 0,
+			"delay": 0.5,
 			"talisman": null
 		},
 		{
@@ -280,6 +299,7 @@
 			"nowLv": 100,
 			"maxTp": 3,
 			"nowTp": 1,
+			"delay": 0,
 			"talisman": null
 		}
 	],
@@ -307,7 +327,7 @@
 		{
 			"name": "등봉조극",
 			"requireLv": 75,
-			"maxValue": 42,
+			"maxValue": 40,
 			"upValue": 2,
 			"type": "DAMAGE",
 			"target": "ALL",

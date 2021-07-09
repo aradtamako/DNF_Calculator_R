@@ -7,6 +7,7 @@ from datetime import datetime
 
 import data.dataload
 import data.basic_arr
+import gui_result
 
 
 def divide_case(equipment_list, core_num):
@@ -21,11 +22,12 @@ def divide_case(equipment_list, core_num):
 
 class Terminal:
 
-    def __init__(self, dropdown_list, select_weapon_list, equipment_toggle):
+    def __init__(self, dropdown_list, select_weapon_list, equipment_toggle, result_class):
         self.start_time = datetime.now()
         self.dropdown_list = dropdown_list
         self.select_weapon_list = select_weapon_list
         self.equipment_toggle = equipment_toggle
+        self.result_class = result_class
 
         self.values = {}  # 설정값 저장
         self.equipment_list = {
@@ -235,6 +237,7 @@ class Terminal:
 
         result_values_sum = [[], [], [], []]
         result_equipments_sum = [[], [], [], []]
+        result_tran_sum = [[], [], [], []]
         for i in range(len(mp_list)):
             mp_list[i].join()
             if result_list[i] is not None:
@@ -242,10 +245,35 @@ class Terminal:
                     try:
                         result_values_sum[j] += result_list[i][0][j]
                         result_equipments_sum[j] += result_list[i][1][j]
+                        result_tran_sum[j] += result_list[i][2][j]
                     except IndexError:
                         pass
-        # print(result_values_sum[0])
-        # print(result_equipments_sum[0])
+        print(result_values_sum[0])
+        print(result_equipments_sum[0])
+        # print(result_tran_sum[0])
+
+        ranked_result_values_sum = [[], [], [], []]
+        ranked_result_equipments_sum = [[], [], [], []]
+        ranked_result_tran_sum = [[], [], [], []]
+        # 순위 정렬
+        cycles = len(result_values_sum[0])
+        for i in range(4):
+            for j in range(cycles):
+                now_max_value = max(result_values_sum[i])
+                now_max_index = result_values_sum[i].index(now_max_value)
+
+                ranked_result_values_sum[i].append(now_max_value)
+                ranked_result_equipments_sum[i].append(result_equipments_sum[i][now_max_index])
+                ranked_result_tran_sum[i].append(result_tran_sum[i][now_max_index])
+
+                result_values_sum[i][now_max_index] = 0
+
+        print(ranked_result_values_sum[0])
+
+        self.result_class.get_result_data(
+            ranked_result_values_sum, ranked_result_equipments_sum, ranked_result_tran_sum
+        )
+        self.result_class.start_gui()
 
         # print(max(result_values_sum[1]))
         # print(result_equipments_sum[1][result_values_sum[1].index(max(result_values_sum[1]))])

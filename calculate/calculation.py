@@ -85,6 +85,10 @@ class Calculation:
                     result_equipment_saved[i].remove(0)
 
             # 정밀 재계산
+            detail_result_value_saved = [[], [], [], []]
+            detail_result_equipment_saved = [[], [], [], []]
+            detail_result_tran_saved = [[], [], [], []]
+
             damage_class_detail = calculate.damage.Damage(
                 job, basic_damage_arr, basic_leveling_arr, True,
                 is_scent2_on, scent_option_input,
@@ -96,9 +100,16 @@ class Calculation:
                 for now_case in result_equipment_saved[i]:
                     damage_class_detail.combine_damage_option(now_case)
                     now_result_detail = damage_class_detail.calculate_damage()
+                    detail_result_value_saved[i].append(now_result_detail[i])
+                    detail_result_equipment_saved[i].append(now_case)
+                    if len(now_result_detail) == 5:
+                        detail_result_tran_saved[i].append(now_result_detail[4])
+                    else:
+                        detail_result_tran_saved[i].append([0])
 
-            return_list.append(result_value_saved)
-            return_list.append(result_equipment_saved)
+            return_list.append(detail_result_value_saved)
+            return_list.append(detail_result_equipment_saved)
+            return_list.append(detail_result_tran_saved)
 
         else:
             pass
