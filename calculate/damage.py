@@ -599,7 +599,10 @@ class Damage:
             # log("final_damage_40", final_damage_40)
             # log("final_damage_25", final_damage_25)
             # log("final_damage_120", final_damage_120)
-            return [final_damage_40, final_damage_25, final_damage_120, final_damage_ult, damage_trans]
+            return [
+                final_damage_40, final_damage_25, final_damage_120, final_damage_ult,
+                damage_trans, self.now_damage_array, self.now_leveling_array
+            ]
 
         else:
             total_passive_damage = 1
@@ -648,7 +651,8 @@ class Damage:
             # log("total_damage_sum", total_damage_sum)
 
             # log("now_damage_array", self.now_damage_array)
-            return [total_damage_sum, total_damage_groggy, total_damage_sustain, total_damage_ult]
+            return [total_damage_sum, total_damage_groggy, total_damage_sustain, total_damage_ult,
+                    [0], self.now_damage_array, self.now_leveling_array]
 
 
 def multiply_list(arr):

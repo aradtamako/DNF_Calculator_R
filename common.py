@@ -42,11 +42,4 @@ def load_extra_image():
     return image_list
 
 
-def load_weapon_image():
-    image_list = {}
-    file_list = os.listdir("image_wep")
-    for i in file_list:
-        if i[-3:] != 'png':
-            continue
-        image_list[i] = tkinter.PhotoImage(file="image_wep/{}".format(i))
-    return image_list
+

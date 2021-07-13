@@ -14,7 +14,6 @@ import gui_result
 class MainGUI(tkinter.Frame):
     font_list = []  # [guide_font, small_font, mid_font, big_font]
     color_list = []  # [dark_main, dark_sub, dark_blue, result_sub]
-    image_weapon = {}
     image_equipment = []
     image_extra = {}
     btn_list = {}
@@ -32,7 +31,6 @@ class MainGUI(tkinter.Frame):
         self.color_list = common.load_color()
         self.image_equipment = common.load_equipment_image()
         self.image_extra = common.load_extra_image()
-        self.image_weapon = common.load_weapon_image()
         self.create_main()
         self.set_btn_equipment()
         self.set_function_button()
@@ -48,7 +46,7 @@ class MainGUI(tkinter.Frame):
     def create_result_gui(self):
         self.result_class = gui_result.ResultGUI(
             self.main_window,
-            self.image_equipment, self.image_extra, self.image_weapon
+            self.image_equipment, self.image_extra
         )
 
     def create_main(self):
@@ -235,7 +233,7 @@ class MainGUI(tkinter.Frame):
         def wep_img_list_refresh():
             for i in range(0, 10):
                 if len(self.select_weapon_list) > i:
-                    now_image = self.image_weapon[weapon.wep_filename_image[self.select_weapon_list[i]] + '.png']
+                    now_image = self.image_equipment[weapon.wep_filename_image[self.select_weapon_list[i]] + '.png']
                 else:
                     now_image = self.image_extra['00000.png']
                 self.label_list['weapon_select_image'][i].configure(image=now_image)

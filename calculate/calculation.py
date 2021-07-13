@@ -88,6 +88,8 @@ class Calculation:
             detail_result_value_saved = [[], [], [], []]
             detail_result_equipment_saved = [[], [], [], []]
             detail_result_tran_saved = [[], [], [], []]
+            detail_result_stat_saved = [[], [], [], []]
+            detail_result_level_saved = [[], [], [], []]
 
             damage_class_detail = calculate.damage.Damage(
                 job, basic_damage_arr, basic_leveling_arr, True,
@@ -101,15 +103,16 @@ class Calculation:
                     damage_class_detail.combine_damage_option(now_case)
                     now_result_detail = damage_class_detail.calculate_damage()
                     detail_result_value_saved[i].append(now_result_detail[i])
+                    detail_result_tran_saved[i].append(now_result_detail[4])
+                    detail_result_stat_saved[i].append(now_result_detail[5])
+                    detail_result_level_saved[i].append(now_result_detail[6])
                     detail_result_equipment_saved[i].append(now_case)
-                    if len(now_result_detail) == 5:
-                        detail_result_tran_saved[i].append(now_result_detail[4])
-                    else:
-                        detail_result_tran_saved[i].append([0])
 
             return_list.append(detail_result_value_saved)
             return_list.append(detail_result_equipment_saved)
             return_list.append(detail_result_tran_saved)
+            return_list.append(detail_result_stat_saved)
+            return_list.append(detail_result_level_saved)
 
         else:
             pass
