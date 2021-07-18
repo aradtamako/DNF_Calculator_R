@@ -68,7 +68,12 @@ class Terminal:
         elif self.core_num < 1:
             self.core_num = 1
         print("최대 가용 코어 개수 = " + str(self.core_num))
-        self.case_terminal()
+        try:
+            self.case_terminal()
+        except IndexError as e:
+            print("에러 발생으로 인한 강제 종료")
+        finally:
+            is_running = False
 
     def get_equipment_values(self):
         # 무기
@@ -318,8 +323,6 @@ class Terminal:
             ranked_result_invert_sum
         )
         self.result_class.start_gui()
-        global is_running
-        is_running = False
 
         # print(max(result_values_sum[1]))
         # print(result_equipments_sum[1][result_values_sum[1].index(max(result_values_sum[1]))])

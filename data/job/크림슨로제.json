@@ -1,0 +1,386 @@
+{
+	"active": [
+		{
+			"name": "크림슨 가든",
+			"damage": 3472192,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 5,
+			"talisman": null
+		},
+		{
+			"name": "블러드 앤 체인",
+			"damage": 1859193,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "더블 건호크",
+			"damage": 1665683,
+			"coolTime": 44.6,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 3,
+			"talisman": {
+				"name": "스피닝 탑 건호크",
+				"damage": 2137374,
+				"coolTime": 44.6,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "블러디 카니발",
+			"damage": 1590145,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "루이네이션 에어리어",
+			"damage": 1319077,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "제압 사격",
+			"damage": 1173781,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "블레이드 스톰",
+				"damage": 1521849,
+				"coolTime": 50,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "킬 포인트",
+			"damage": 870433,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 3,
+			"maxLv": 11,
+			"nowLv": 11,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "핀 포인트",
+				"damage": 1177275,
+				"coolTime": 40,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "체인 디바이더",
+			"damage": 844848,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "윈드 디바인더",
+				"damage": 1132097,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "이동사격",
+			"damage": 786238,
+			"coolTime": 24.3,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "블러디 스파이크",
+			"damage": 614312,
+			"coolTime": 25,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "블러디 스타",
+				"damage": 843084,
+				"coolTime": 25,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "권총의 춤",
+			"damage": 531071,
+			"coolTime": 17.6,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "블레이드 댄싱",
+				"damage": 703531,
+				"coolTime": 15.84,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "멀티 헤드샷",
+			"damage": 522738,
+			"coolTime": 19.8,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "스타일리쉬 헤드샷",
+				"damage": 663877,
+				"coolTime": 19.8,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "소닉 스파이크",
+			"damage": 202490,
+			"coolTime": 4.4,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 1,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "체인 스내치",
+			"damage": 180756,
+			"coolTime": 5,
+			"requireLv": 25,
+			"gapLv": 3,
+			"maxLv": 27,
+			"nowLv": 27,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "더스트 샷",
+			"damage": 155249,
+			"coolTime": 5,
+			"requireLv": 10,
+			"gapLv": 2,
+			"maxLv": 48,
+			"nowLv": 48,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "니들 소배트",
+			"damage": 142753,
+			"coolTime": 4.4,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "웨스턴 파이어",
+			"damage": 126380,
+			"coolTime": 12.5,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "탑스핀",
+			"damage": 124491,
+			"coolTime": 4.5,
+			"requireLv": 10,
+			"gapLv": 2,
+			"maxLv": 48,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "헤드샷",
+			"damage": 105317,
+			"coolTime": 6.2,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "평타(한 탄창)",
+			"damage": 84687,
+			"coolTime": null,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 1,
+			"delay": 0,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "리볼버 강화",
+			"requireLv": 15,
+			"maxValue": 20,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "스타일리쉬",
+			"requireLv": 20,
+			"maxValue": 16,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "베일드 컷",
+			"requireLv": 48,
+			"maxValue": 42.5,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "쏘우 블레이드",
+			"requireLv": 75,
+			"maxValue": 46,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "체인 인라이튼",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [],
+	"weapon": [
+		{
+			"type": "리볼버",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "자동권총",
+			"damage": 0.41059775515531194,
+			"coolTime": 1
+		},
+		{
+			"type": "머스켓",
+			"damage": 0.4534934307839555,
+			"coolTime": 1.05
+		},
+		{
+			"type": "보우건",
+			"damage": 0.42660750021752375,
+			"coolTime": 1
+		},
+		{
+			"type": "핸드캐넌",
+			"damage": 0.4639345688680066,
+			"coolTime": 1.1
+		}
+	]
+}

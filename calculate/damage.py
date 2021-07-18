@@ -268,6 +268,22 @@ class Damage:
         self.total_auto_converting_value.sort(reverse=True)
         # log("total_auto_converting_value", self.total_auto_converting_value)
 
+        # 특수 케이스 처리
+        if self.equipments_sets.__contains__('11111'):  # 역작신화
+            if self.equipments_sets.__contains__('1112') or self.equipments_sets.__contains__('1113'):
+                self.now_damage_array[26] = self.now_damage_array[26] * 0.8902
+        if self.equipments_sets.__contains__('11061'):  # 베테랑신화
+            if self.equipments_sets.__contains__('12060'):
+                self.now_damage_array[3] += 1
+            if self.equipments_sets.__contains__('13060'):
+                self.now_damage_array[11] = self.now_damage_array[11] * 1.35 / 1.34
+            if self.equipments_sets.__contains__('14060'):
+                self.now_damage_array[9] += 4
+            if self.equipments_sets.__contains__('15060'):
+                self.now_damage_array[8] += 1
+            if self.equipments_sets.__contains__('1063'):
+                self.now_damage_array[4] += 1
+
     def calculate_damage(self):
         job_element = self.job_basic_element + sum([self.job_passive_element[i] * self.now_leveling_array[i]
                                                     for i in range(19)])
@@ -295,6 +311,12 @@ class Damage:
                 now_cool_recover = sum([cool_recover_list[x][i] for x in range(0, size)])
                 total_cool_down.append((1 - now_cool_down / 100) / (1 + now_cool_recover / 100))
             # log("total_cool_down", total_cool_down)
+            if self.equipments_sets.__contains__('11111'):  # 역작신화
+                if self.equipments_sets.__contains__('1112') or self.equipments_sets.__contains__('1113'):
+                    for i in range(0, 15):
+                        if i == 10:
+                            continue
+                        total_cool_down[i] = total_cool_down[i] * 0.7 / 0.8
 
             # 1. 변환 옵션 정밀 재계산
             simple_sum_options = [self.now_damage_array[2], self.now_damage_array[3], self.now_damage_array[4],
@@ -424,6 +446,22 @@ class Damage:
                         if now_lv != 0:
                             ult_name.append(active["name"])
                         damage = int(damage * (self.now_damage_array[30] / 100 + 1))
+                    # 흐름
+                    elif active["requireLv"] == 45:
+                        if self.equipments_sets.__contains__("11130") or self.equipments_sets.__contains__("11131"):
+                            damage = int(damage * 0.7)
+                    elif active["requireLv"] == 40:
+                        if self.equipments_sets.__contains__("12130"):
+                            damage = int(damage * 0.7)
+                    elif active["requireLv"] == 35:
+                        if self.equipments_sets.__contains__("13130"):
+                            damage = int(damage * 0.7)
+                    elif active["requireLv"] == 30:
+                        if self.equipments_sets.__contains__("14130"):
+                            damage = int(damage * 0.7)
+                    elif active["requireLv"] == 25:
+                        if self.equipments_sets.__contains__("15130"):
+                            damage = int(damage * 0.7)
                     if cool_time is None:
                         cool_time = 0
                     cool_time = round(cool_time * weapon_cool_rate *
@@ -586,21 +624,30 @@ class Damage:
             for i in range(len(delay_time)):
                 if delay_time[i] < 0:
                     delay_time[i] = 0
+            # log("delay_25", delay_25)
             # log("damage_25", damage_25)
 
             # 중후반 25~초: 쿨타임과 딜레이의 종합 계산
             now_time_damage = damage_25
             for c_sec in range(0, 251):
                 damage_trans.append(now_time_damage)
+            cannot_damage_time = 0
             for c_sec in range(251, 1200):
+                cannot_damage_time -= 1
                 for index in range(case):
                     delay_time[index] -= 1
-                    if delay_time[index] == 0:
-                        delay_time[index] += index_cool[index] + index_delay[index]
-                        if c_sec > 40:
+                if cannot_damage_time > 0:
+                    damage_trans.append(now_time_damage)
+                    continue
+                for index in range(case):
+                    if delay_time[index] <= 0:
+                        cannot_damage_time = index_delay[index]
+                        delay_time[index] = index_cool[index]
+                        if c_sec > 400:
                             now_time_damage += index_damage[index] * 0.6
                         else:
                             now_time_damage += index_damage[index]
+                        break
                 damage_trans.append(now_time_damage)
             cases = 0
             temp_damage_sum = 0
