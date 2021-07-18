@@ -70,14 +70,14 @@ class Calculation:
             for fusion in fusion_cases:
                 for weapon in weapon_cases:
                     for case in equipment_cases:
-                        damage_class.combine_damage_option(case + [weapon] + fusion)
+                        damage_class.combine_damage_option(list(case) + [weapon] + fusion)
                         now_result = damage_class.calculate_damage()
                         # print(now_result)
                         for i in range(4):
                             if min_value[i] < now_result[i]:
                                 removing_index = result_value_saved[i].index(min_value[i])
                                 result_value_saved[i][removing_index] = now_result[i]
-                                result_equipment_saved[i][removing_index] = case + [weapon] + fusion
+                                result_equipment_saved[i][removing_index] = list(case) + [weapon] + fusion
                                 min_value[i] = min(result_value_saved[i])
             for i in range(4):
                 while result_value_saved[i].__contains__(0):
@@ -90,6 +90,10 @@ class Calculation:
             detail_result_tran_saved = [[], [], [], []]
             detail_result_stat_saved = [[], [], [], []]
             detail_result_level_saved = [[], [], [], []]
+            detail_result_base_saved = [[], [], [], []]
+            detail_result_cool_saved = [[], [], [], []]
+            detail_result_all_saved = [[], [], [], []]
+            detail_result_invert_saved = [[], [], [], []]
 
             damage_class_detail = calculate.damage.Damage(
                 job, basic_damage_arr, basic_leveling_arr, True,
@@ -106,6 +110,11 @@ class Calculation:
                     detail_result_tran_saved[i].append(now_result_detail[4])
                     detail_result_stat_saved[i].append(now_result_detail[5])
                     detail_result_level_saved[i].append(now_result_detail[6])
+                    detail_result_base_saved[i].append(now_result_detail[7])
+                    detail_result_cool_saved[i].append(now_result_detail[8])
+                    detail_result_all_saved[i].append([now_result_detail[0], now_result_detail[1],
+                                                       now_result_detail[2], now_result_detail[3]])
+                    detail_result_invert_saved[i].append(now_result_detail[9])
                     detail_result_equipment_saved[i].append(now_case)
 
             return_list.append(detail_result_value_saved)
@@ -113,6 +122,10 @@ class Calculation:
             return_list.append(detail_result_tran_saved)
             return_list.append(detail_result_stat_saved)
             return_list.append(detail_result_level_saved)
+            return_list.append(detail_result_base_saved)
+            return_list.append(detail_result_cool_saved)
+            return_list.append(detail_result_all_saved)
+            return_list.append(detail_result_invert_saved)
 
         else:
             pass

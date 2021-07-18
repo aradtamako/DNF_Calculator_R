@@ -42,17 +42,24 @@ class MainGUI(tkinter.Frame):
         self.set_extra()
 
         self.create_result_gui()
+        self.debug(True)
+
+    def debug(self, is_debug):
+        if is_debug is False:
+            return
+        tkinter.Label(self.main_window, text='베타 버전(기능 구현중)', font=self.font_list[3],
+                      fg="red", bg=self.color_list[0]).place(x=640, y=50)
 
     def create_result_gui(self):
         self.result_class = gui_result.ResultGUI(
             self.main_window,
-            self.image_equipment, self.image_extra
+            self.image_equipment, self.image_extra, self.dropdown_list
         )
 
     def create_main(self):
         self.main_window.geometry("909x720+0+0")
         self.main_window.resizable(False, False)
-        self.main_window.title('에픽 조합 계산기')
+        self.main_window.title('에픽조합계산기R Beta')
         self.main_window.iconbitmap('ext_img/icon.ico')
         tkinter.Label(self.main_window, image=self.image_extra['bg_img.png']).place(x=-2, y=0)
         self.main_window.configure(bg=self.color_list[0])
@@ -351,8 +358,16 @@ class MainGUI(tkinter.Frame):
 
     def set_function_button(self):
         def start_calc_thread():
+            if terminal.is_running is True:
+                print("이미 작동중입니다")
+                return
+            if len(self.select_weapon_list) == 0:
+                now_selected = str(self.dropdown_list['weapon'].get())
+                select_weapon_list = [now_selected]
+            else:
+                select_weapon_list = self.select_weapon_list
             calc_start = threading.Thread(target=terminal.Terminal, args=(
-                self.dropdown_list, self.select_weapon_list, self.equipment_toggle,
+                self.dropdown_list, select_weapon_list, self.equipment_toggle,
                 self.result_class
             ), daemon=True)
             calc_start.start()
@@ -367,9 +382,8 @@ class MainGUI(tkinter.Frame):
     def set_extra(self):
         def guide_speed():
             tkinter.messagebox.showinfo("정확도 선택",
-                                        "매우빠름=세트옵션7개 풀적용 경우의 수만 계산. 중간세팅은 고려하지 않음\n"
-                                        "빠름=단일 선택 부위를 전부 제거\n중간=단일은 포함하되, 신화에 우선권 부여\n"
-                                        "느림=세트 수 우선권 완화, 신화 우선권 삭제")
+                                        "AUTO MODE: 신화풀셋 > 일반풀셋 = 신화혼합 > 일반혼합 순으로 진행\n\n"
+                                        "ALL MODE: 모든 경우의 수 계산")
 
         tkinter.Button(self.main_window, command=guide_speed, image=self.image_extra['select_speed.png'], bd=0,
                        activebackground=self.color_list[0], bg=self.color_list[0]).place(x=634, y=7)

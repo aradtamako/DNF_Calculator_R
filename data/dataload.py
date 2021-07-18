@@ -70,7 +70,7 @@ class DataLoad:
                           self.dealer_job_data, self.buff_skill_data]
 
     def load_dealer_equipment_data(self, return_list):
-        json_data = self.load_json('data/dealer_opt_list.json')
+        json_data = self.load_json('./data/dealer_opt_list.json')
         equipment_code_by_name = {}
         equipment_name_by_code = {}
         equipment_set_by_code = {}
@@ -151,7 +151,7 @@ class DataLoad:
         return_list.append(equipment_purgatory_option)
 
     def load_buffer_equipment_data(self, return_list):
-        json_data = self.load_json('data/buffer_opt_list.json')
+        json_data = self.load_json('./data/buffer_opt_list.json')
         equipment_buff_option = {}
         equipment_buff_leveling_option = {}
         equipment_buff_damage_leveling_option = {}
@@ -199,7 +199,7 @@ class DataLoad:
         return_list.append(equipment_buff_damage_leveling_option)
 
     def load_dealer_skill_data(self, return_list):
-        json_data = self.load_json('data/dealer_leveling_list.json')
+        json_data = self.load_json('./data/dealer_leveling_list.json')
         job_data = {}
         for item_code, item_value in json_data.items():
             now_total_job_data = {}
@@ -229,7 +229,7 @@ class DataLoad:
         return_list.append(job_data)
 
     def load_buffer_skill_data(self, return_list):
-        json_data = self.load_json('data/buffer_leveling_list.json')
+        json_data = self.load_json('./data/buffer_leveling_list.json')
         skill_data = {}
         for item_code, item_value in json_data.items():
             skill_data[item_code] = item_value

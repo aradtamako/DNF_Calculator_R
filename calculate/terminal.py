@@ -9,6 +9,9 @@ import data.dataload
 import data.basic_arr
 
 
+is_running = False
+
+
 def divide_case(equipment_list, core_num):
     divide_list = []
     for i in range(0, core_num):
@@ -22,6 +25,12 @@ def divide_case(equipment_list, core_num):
 class Terminal:
 
     def __init__(self, dropdown_list, select_weapon_list, equipment_toggle, result_class):
+        global is_running
+        is_running = True
+        if len(dropdown_list['job'].get()) > 5:
+            if dropdown_list['job'].get()[0:4] == '(버프)':
+                is_running = False
+                return
         self.start_time = datetime.now()
         self.dropdown_list = dropdown_list
         self.select_weapon_list = select_weapon_list
@@ -190,23 +199,27 @@ class Terminal:
         # > 에픽 풀셋 존재? 신화 포함 스까세팅만 계산
         # > 없음? All 모드
 
-        full_set_list = calculate.fullset.make_full_set_case(self.set_list)
-        full_set_list_normal = full_set_list[0]
-        full_set_list_myth = full_set_list[1]
-
-        if len(full_set_list_myth) != 0:
-            now_all_case = full_set_list_normal + full_set_list_myth
-            print(len(now_all_case)*len(self.select_weapon_list_code), "가지 계산 시작")
-            self.calculate_damage(divide_case(now_all_case, self.core_num))
-            pass
-        elif len(full_set_list_normal) != 0:
-            now_all_case = full_set_list_normal + calculate.set.make_case(self.equipment_list, 1)
-            print(len(now_all_case)*len(self.select_weapon_list_code), "가지 계산 시작")
+        if self.values['mode'] == "ALL MODE":
+            now_all_case = calculate.set.make_case(self.equipment_list, 0)
+            print(len(now_all_case) * len(self.select_weapon_list_code), "가지 계산 시작")
             self.calculate_damage(divide_case(now_all_case, self.core_num))
         else:
-            now_all_case = calculate.set.make_case(self.equipment_list, 0)
-            print(len(now_all_case)*len(self.select_weapon_list_code), "가지 계산 시작")
-            self.calculate_damage(divide_case(now_all_case, self.core_num))
+            full_set_list = calculate.fullset.make_full_set_case(self.set_list)
+            full_set_list_normal = full_set_list[0]
+            full_set_list_myth = full_set_list[1]
+            if len(full_set_list_myth) != 0:
+                now_all_case = full_set_list_normal + full_set_list_myth
+                print(len(now_all_case) * len(self.select_weapon_list_code), "가지 계산 시작")
+                self.calculate_damage(divide_case(now_all_case, self.core_num))
+                pass
+            elif len(full_set_list_normal) != 0:
+                now_all_case = full_set_list_normal + calculate.set.make_case(self.equipment_list, 1)
+                print(len(now_all_case) * len(self.select_weapon_list_code), "가지 계산 시작")
+                self.calculate_damage(divide_case(now_all_case, self.core_num))
+            else:
+                now_all_case = calculate.set.make_case(self.equipment_list, 0)
+                print(len(now_all_case) * len(self.select_weapon_list_code), "가지 계산 시작")
+                self.calculate_damage(divide_case(now_all_case, self.core_num))
 
         date_diff = datetime.now() - self.start_time
         print("소모시간 = ", date_diff.seconds, "초")
@@ -239,6 +252,10 @@ class Terminal:
         result_tran_sum = [[], [], [], []]
         result_stat_sum = [[], [], [], []]
         result_level_sum = [[], [], [], []]
+        result_base_sum = [[], [], [], []]
+        result_cool_sum = [[], [], [], []]
+        result_all_sum = [[], [], [], []]
+        result_invert_sum = [[], [], [], []]
         for i in range(len(mp_list)):
             mp_list[i].join()
             if result_list[i] is not None:
@@ -249,6 +266,10 @@ class Terminal:
                         result_tran_sum[j] += result_list[i][2][j]
                         result_stat_sum[j] += result_list[i][3][j]
                         result_level_sum[j] += result_list[i][4][j]
+                        result_base_sum[j] += result_list[i][5][j]
+                        result_cool_sum[j] += result_list[i][6][j]
+                        result_all_sum[j] += result_list[i][7][j]
+                        result_invert_sum[j] += result_list[i][8][j]
                     except IndexError:
                         pass
         # print(result_values_sum[0])
@@ -260,6 +281,10 @@ class Terminal:
         ranked_result_tran_sum = [[], [], [], []]
         ranked_result_stat_sum = [[], [], [], []]
         ranked_result_level_sum = [[], [], [], []]
+        ranked_result_base_sum = [[], [], [], []]
+        ranked_result_cool_sum = [[], [], [], []]
+        ranked_result_all_sum = [[], [], [], []]
+        ranked_result_invert_sum = [[], [], [], []]
         # 순위 정렬
         cycles = len(result_values_sum[0])
         for i in range(4):
@@ -272,6 +297,10 @@ class Terminal:
                 ranked_result_tran_sum[i].append(result_tran_sum[i][now_max_index])
                 ranked_result_stat_sum[i].append(result_stat_sum[i][now_max_index])
                 ranked_result_level_sum[i].append(result_level_sum[i][now_max_index])
+                ranked_result_base_sum[i].append(result_base_sum[i][now_max_index])
+                ranked_result_cool_sum[i].append(result_cool_sum[i][now_max_index])
+                ranked_result_all_sum[i].append(result_all_sum[i][now_max_index])
+                ranked_result_invert_sum[i].append(result_invert_sum[i][now_max_index])
 
                 result_values_sum[i][now_max_index] = 0
 
@@ -282,9 +311,15 @@ class Terminal:
             ranked_result_equipments_sum,
             ranked_result_tran_sum,
             ranked_result_stat_sum,
-            ranked_result_level_sum
+            ranked_result_level_sum,
+            ranked_result_base_sum,
+            ranked_result_cool_sum,
+            ranked_result_all_sum,
+            ranked_result_invert_sum
         )
         self.result_class.start_gui()
+        global is_running
+        is_running = False
 
         # print(max(result_values_sum[1]))
         # print(result_equipments_sum[1][result_values_sum[1].index(max(result_values_sum[1]))])

@@ -1,0 +1,428 @@
+{
+	"active": [
+		{
+			"name": "테스타먼트",
+			"damage": 4732885,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 5,
+			"talisman": null
+		},
+		{
+			"name": "데이브레이크",
+			"damage": 2795522,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "쇼다운",
+			"damage": 2181098,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "풀바디",
+			"damage": 1613649,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": null
+		},
+		{
+			"name": "카타르시스",
+			"damage": 1434758,
+			"coolTime": 50,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "퍼들",
+				"damage": 1850838,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "불스아이",
+			"damage": 1338875,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": {
+				"name": "패스트 트래커",
+				"damage": 1700372,
+				"coolTime": 50,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "스트레이트 샷",
+			"damage": 1274918,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "오버 더 락",
+				"damage": 1793810,
+				"coolTime": 40,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "라스트 오더",
+			"damage": 1262708,
+			"coolTime": 40,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1.5,
+			"talisman": {
+				"name": "크레센도",
+				"damage": 1641520,
+				"coolTime": 36,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "오버페이스",
+			"damage": 784598,
+			"coolTime": 25,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 1,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": {
+				"name": "블랙잭",
+				"damage": 972902,
+				"coolTime": 20,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "나이트 폴",
+			"damage": 657561,
+			"coolTime": 20,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "콜 오브 나이트",
+				"damage": 887708,
+				"coolTime": 20,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "셰이커 블래스트",
+			"damage": 581530,
+			"coolTime": 18,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 1,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "와일드 플라워",
+			"damage": 555799,
+			"coolTime": 15,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "슈터 칵테일",
+				"damage": 807421,
+				"coolTime": 18,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "행오버",
+			"damage": 388223,
+			"coolTime": 10,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "블랙아웃",
+			"damage": 371423,
+			"coolTime": 8,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "딥 더스크",
+			"damage": 371398,
+			"coolTime": 10,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "섀터드 글래스",
+			"damage": 318265,
+			"coolTime": 8,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 3,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "블렌딩 페인",
+			"damage": 262336,
+			"coolTime": 6,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "데인저러스 훅",
+			"damage": 239998,
+			"coolTime": 8,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "사영검",
+			"damage": 182163,
+			"coolTime": 5,
+			"requireLv": 10,
+			"gapLv": 2,
+			"maxLv": 48,
+			"nowLv": 48,
+			"maxTp": 4,
+			"nowTp": 4,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "슬라이스 임팩트",
+			"damage": 174808,
+			"coolTime": 5,
+			"requireLv": 10,
+			"gapLv": 2,
+			"maxLv": 48,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "러스티 네일",
+			"damage": 143650,
+			"coolTime": 7,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 1,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 2,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "더블 샷",
+			"damage": 91861,
+			"coolTime": 4,
+			"requireLv": 1,
+			"gapLv": 2,
+			"maxLv": 50,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "평타(1사이클)",
+			"damage": 62640,
+			"coolTime": null,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 2,
+			"delay": 0.5,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "올드 패션드",
+			"requireLv": 20,
+			"maxValue": 34,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "빈티지",
+			"requireLv": 35,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "라이선스",
+			"requireLv": 48,
+			"maxValue": 32.5,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "인퍼먼스",
+			"requireLv": 75,
+			"maxValue": 46,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "데어데블",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "도",
+			"type": "COOLDOWN",
+			"target": "ALL",
+			"value": 10
+		}
+	],
+	"weapon": [
+		{
+			"type": "대검",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "둔기",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "도",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "소검",
+			"damage": 1,
+			"coolTime": 1
+		}
+	]
+}
