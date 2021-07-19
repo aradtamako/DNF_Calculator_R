@@ -184,7 +184,7 @@ class Damage:
             except KeyError:
                 print(equipment, "누락")
 
-            if purgatory_cases.__contains__(equipment[0:2]) or len(equipment) == 6:
+            if (len(equipment) != 4 and purgatory_cases.__contains__(equipment[0:2])) or len(equipment) == 6:
                 now_purgatory = calculate.calculation.equipment_purgatory_option[equipment]  # 연옥 옵션 조회
                 if now_purgatory[0] != 0:
                     # log(equipment, now_purgatory)

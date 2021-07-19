@@ -3,5 +3,5 @@
 .idea/workspace.xml
 dist/
 build/
-venv/
+venv2/
 /main.spec
