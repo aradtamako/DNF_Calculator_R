@@ -215,16 +215,24 @@ class ResultGUI:
         self.result_canvas.create_polygon(
             42, 675, 42, 455, 442, 455, 442, 675, 42, 675, fill='gray10', outline='gray', width=2
         )
-        self.result_canvas.create_line(125, 675, 125, 475, fill='gray', width=1)
-        self.result_canvas.create_line(175, 675, 175, 475, fill='gray', width=1)
+        self.result_canvas.create_polygon(
+            108, 674, 108, 456, 143, 456, 143, 674, 108, 674, fill=_from_rgb((40, 10, 10)), width=0
+        )
+        self.result_canvas.create_polygon(
+            143, 674, 143, 456, 175, 456, 175, 674, 143, 674, fill=_from_rgb((10, 40, 10)), width=0
+        )
+        self.result_canvas.create_polygon(
+            375, 674, 375, 456, 441, 456, 441, 674, 375, 674, fill=_from_rgb((10, 10, 40)), width=0
+        )
+        self.result_canvas.create_line(175, 673, 175, 455, fill='gray', width=1)
         self.result_canvas.create_text(42, 683, text='0', fill='white', font=self.fonts[1])
-        self.result_canvas.create_text(125, 683, text='25s', fill='white', font=self.fonts[1])
+        self.result_canvas.create_text(108, 683, text='20s', fill='white', font=self.fonts[1])
+        self.result_canvas.create_text(142, 683, text='30s', fill='white', font=self.fonts[1])
         self.result_canvas.create_text(175, 683, text='40s', fill='white', font=self.fonts[1])
+        self.result_canvas.create_text(375, 683, text='100s', fill='white', font=self.fonts[1])
         self.result_canvas.create_text(442, 683, text='120s', fill='white', font=self.fonts[1])
         self.result_canvas.create_text(242, 433, text='<시간 경과별 데미지 그래프>',
                                        fill='white', font=self.fonts[2])
-        self.result_canvas.create_text(44, 463, text="25초 이하 구간은 계산하지 않음",
-                                       fill='white', font=self.fonts[1], anchor='w')
         self.result_canvas.create_text(503, 454, text='<비교 선택>',
                                        fill='white', font=self.fonts[0])
         rank_num = len(self.result_values[0])
@@ -234,7 +242,7 @@ class ResultGUI:
             tran_dropdown_list.append(str(i+1)+'위')
 
         def create_tran_compare(e, index):
-            colors = ['red', 'SteelBlue1', 'green']
+            colors = ['red', 'SteelBlue1', 'green2']
             toggle = tran_dropdown_types.index(self.canvas_widget['tran_dropdown' + str(index) + '_type'].get())
             rank = self.canvas_widget['tran_dropdown' + str(index) + '_rank'].get()[0]
             if rank == 'X':
@@ -261,7 +269,7 @@ class ResultGUI:
                 "<<ComboboxSelected>>", lambda e, index=i: create_tran_compare(e, index))
         self.result_canvas.create_line(447, 485, 557, 485, width=2, fill='red')
         self.result_canvas.create_line(447, 550, 557, 550, width=2, fill='SteelBlue1')
-        self.result_canvas.create_line(447, 615, 557, 615, width=2, fill='green')
+        self.result_canvas.create_line(447, 615, 557, 615, width=2, fill='green2')
 
     def tran_detail_graph_compare(self, compare_toggle, compare_rank, color):
         try:
@@ -535,6 +543,7 @@ class ResultGUI:
                                     "<Button-1>", lambda e, toggle=3: self.rank_toggle(e, toggle))
 
 
-
+def _from_rgb(rgb):
+    return "#%02x%02x%02x" % rgb
 
 

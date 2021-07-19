@@ -6,6 +6,8 @@ from itertools import product
 hexagon_option_index = [2, 3, 4, 6, 7, 8, 0, 0, 0, 0]
 hexagon_option_index_reverse = [9, '', 0, 1, 2, '', 3, 4, 5, 0]
 
+purgatory_cases = ['12', '23', '31']
+
 index_passive = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 48, 50, 60, 70, 75, 80, 85, 95, 100]
 index_active = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 75, 80, 85, 95, 100]
 leveling_efficiency = [0, 0.05, 0.101443, 0.159328, 0, 0.231886]
@@ -182,60 +184,69 @@ class Damage:
             except KeyError:
                 print(equipment, "누락")
 
-            now_purgatory = calculate.calculation.equipment_purgatory_option[equipment]  # 연옥 옵션 조회
-            if now_purgatory[0] != 0:
-                if len(equipment) == 6:  # 무기
-                    self.weapon_type = calculate.calculation.equipment_type_by_code[equipment]
-                    # log("self.weapon_type", self.weapon_type)
-                    if now_purgatory[0] == 106 and self.purgatory_converting_option[0] != 0:  # 원초
-                        self.purgatory_converted_value[0] = 0
-                        self.purgatory_converting_value[0] = 0
-                        self.now_damage_array[6] += 15
-                    else:
-                        now_index = 0
-                        if now_purgatory[0] == 27:
-                            self.purgatory_converted_option[now_index] = 0
-                            self.purgatory_converted_value[now_index] = 0
+            if purgatory_cases.__contains__(equipment[0:2]) or len(equipment) == 6:
+                now_purgatory = calculate.calculation.equipment_purgatory_option[equipment]  # 연옥 옵션 조회
+                if now_purgatory[0] != 0:
+                    # log(equipment, now_purgatory)
+                    if len(equipment) == 6:  # 무기
+                        self.weapon_type = calculate.calculation.equipment_type_by_code[equipment]
+                        # log("self.weapon_type", self.weapon_type)
+                        if now_purgatory[0] == 106 and self.purgatory_converting_option[0] != 0:  # 원초
+                            self.purgatory_converted_value[0] = 0
+                            self.purgatory_converting_value[0] = 0
+                            self.now_damage_array[6] += 15
                         else:
-                            self.purgatory_converted_option[now_index] = now_purgatory[0]
-                            self.purgatory_converted_value[now_index] = now_purgatory[1]
-
-                        if self.purgatory_converting_option[0] == 0:
-                            continue
-                        elif self.purgatory_converting_option[0] == 9:
-                            # 각성 토글 판정식
-                            if self.purgatory_auto_converting_weapon_ult_mode == 1:  # 연옥 무기 태생유지
-                                if now_purgatory[0] != 27:
-                                    self.is_weapon_convert_ult = False
-                                    self.purgatory_converted_value[now_index] = 14
-                                else:
-                                    self.is_weapon_convert_ult = True
-                            elif self.purgatory_auto_converting_weapon_ult_mode == 2:  # 연옥 무기 각성강제
-                                self.is_weapon_convert_ult = True
-                                if now_purgatory[0] != 27:
-                                    self.purgatory_ult_value += 2
-                                    self.purgatory_converting_value[now_index] -= 14
-                            else:  # 연옥 무기 각성해제
-                                self.is_weapon_convert_ult = False
-                                if now_purgatory[0] == 27:
-                                    self.purgatory_ult_value -= 2
-                                    self.purgatory_converting_value[now_index] += 14
-                        else:
-                            if self.purgatory_weapon_ult_input:
-                                self.is_weapon_convert_ult = True
-                                if now_purgatory[0] != 27:
-                                    self.purgatory_ult_value += 2
-                                    self.purgatory_converting_value[now_index] -= 14
+                            now_index = 0
+                            if now_purgatory[0] == 27:
+                                self.purgatory_converted_option[now_index] = 0
+                                self.purgatory_converted_value[now_index] = 0
                             else:
-                                self.is_weapon_convert_ult = False
-                                if now_purgatory[0] == 27:
-                                    self.purgatory_ult_value -= 2
-                                    self.purgatory_converted_value[now_index] = 0
-                                    self.purgatory_converting_value[now_index] += 14
-                else:
-                    now_index = int(equipment[0])
-                    self.purgatory_converted_option[now_index] = now_purgatory[0]
-                    self.purgatory_converted_value[now_index] = now_purgatory[1]
+                                self.purgatory_converted_option[now_index] = now_purgatory[0]
+                                self.purgatory_converted_value[now_index] = now_purgatory[1]
+
+                            if self.purgatory_converting_option[0] == 0:
+                                continue
+                            elif self.purgatory_converting_option[0] == 9:
+                                # 각성 토글 판정식
+                                if self.purgatory_auto_converting_weapon_ult_mode == 1:  # 연옥 무기 태생유지
+                                    if now_purgatory[0] != 27:
+                                        self.is_weapon_convert_ult = False
+                                        self.purgatory_converted_value[now_index] = 14
+                                    else:
+                                        self.is_weapon_convert_ult = True
+                                elif self.purgatory_auto_converting_weapon_ult_mode == 2:  # 연옥 무기 각성강제
+                                    self.is_weapon_convert_ult = True
+                                    if now_purgatory[0] != 27:
+                                        self.purgatory_ult_value += 2
+                                        self.purgatory_converting_value[now_index] -= 14
+                                else:  # 연옥 무기 각성해제
+                                    self.is_weapon_convert_ult = False
+                                    if now_purgatory[0] == 27:
+                                        self.purgatory_ult_value -= 2
+                                        self.purgatory_converting_value[now_index] += 14
+                            else:
+                                if self.purgatory_weapon_ult_input:
+                                    self.is_weapon_convert_ult = True
+                                    if now_purgatory[0] != 27:
+                                        self.purgatory_ult_value += 2
+                                        self.purgatory_converting_value[now_index] -= 14
+                                else:
+                                    self.is_weapon_convert_ult = False
+                                    if now_purgatory[0] == 27:
+                                        self.purgatory_ult_value -= 2
+                                        self.purgatory_converted_value[now_index] = 0
+                                        self.purgatory_converting_value[now_index] += 14
+                    else:
+                        now_index = int(equipment[0])
+                        self.purgatory_converted_option[now_index] = now_purgatory[0]
+                        self.purgatory_converted_value[now_index] = now_purgatory[1]
+                else:  # 연옥 변경 불가능 장비
+                    if len(equipment) == 6:
+                        now_index = 0
+                    else:
+                        now_index = int(equipment[0])
+                    self.purgatory_converted_value[now_index] = 0
+                    self.purgatory_converting_value[now_index] = 0
 
         for i in range(4):
             if self.purgatory_converting_option[i] == 0:
@@ -283,6 +294,13 @@ class Damage:
                 self.now_damage_array[8] += 1
             if self.equipments_sets.__contains__('1063'):
                 self.now_damage_array[4] += 1
+        if self.equipments_sets.__contains__('11301'):  # 기구신화
+            if self.equipments_sets.__contains__('21300') is False:
+                self.now_damage_array[4] -= 10
+                self.now_damage_array[7] += 10
+            if self.equipments_sets.__contains__('31300') is False:
+                self.now_damage_array[4] -= 10
+                self.now_damage_array[7] += 10
 
     def calculate_damage(self):
         job_element = self.job_basic_element + sum([self.job_passive_element[i] * self.now_leveling_array[i]
@@ -528,6 +546,9 @@ class Damage:
                             is_condition = True
                         elif self.weapon_type == special["requirementValue"]:
                             is_condition = True
+                    elif requirement_type == "EQUIPMENT":
+                        if self.equipments_sets.__contains__(special["requirementValue"]):
+                            is_condition = True
                     if is_condition is False:
                         continue
                     if special["type"] == "DAMAGE":
@@ -543,6 +564,7 @@ class Damage:
                         target_list = special["target"].split("^")  # ^ 구분자를 기준으로 split
                         for name, value_list in active_dict.items():
                             if target_list.__contains__(name):
+                                # print(name + " 조건부 발동 확인됨")
                                 value_list[index] = value_list[index] * value
 
                 for name, value_list in active_dict.items():
@@ -578,11 +600,10 @@ class Damage:
         if self.is_job_detail and self.is_calc_detail:
             final_damage_ult = 0
             case = 0
-            index_name = []
             index_cool = []
             index_damage = []
             index_delay = []
-            index_use = []
+            delay_time = []
             for name, value_list in active_dict.items():
                 if value_list[1] == 0:
                     # 무쿨타임(평타)는 일단 제외
@@ -592,47 +613,15 @@ class Damage:
                 index_damage.append(value_list[0])
                 index_cool.append(int(value_list[1]*10*0.8))  # 0.8 정신자극
                 index_delay.append(int(value_list[2]*10))
+                delay_time.append(0)
                 if ult_name.__contains__(name):
                     final_damage_ult += value_list[0]
             # log("active_dict", active_dict)
 
             damage_trans = []
-            damage_25 = 0
-            delay_25 = 0
-            delay_time = []
-            # 초반 25초: 쿨타임 위주의 계산
-            for index in range(case):
-                interval_time = index_cool[index]+index_delay[index]
-                if interval_time > 270:
-                    use = 1
-                    delay_time.append(index_cool[index] - 250)
-                elif interval_time > 130:
-                    delay_time.append(int(index_cool[index] / 2 + 190) - 250)
-                    use = 2
-                elif interval_time > 86:
-                    delay_time.append(int(index_cool[index] / 2 + 210) - 250)
-                    use = 3
-                elif interval_time > 62:
-                    delay_time.append(int(index_cool[index] / 2 + 230) - 250)
-                    use = 4
-                else:
-                    delay_time.append(int(index_cool[index] / 2 + 250) - 250)
-                    use = 5
-                damage_25 += index_damage[index] * use
-                delay_25 += index_delay[index] * use
-                index_use.append(use)
-            for i in range(len(delay_time)):
-                if delay_time[i] < 0:
-                    delay_time[i] = 0
-            # log("delay_25", delay_25)
-            # log("damage_25", damage_25)
-
-            # 중후반 25~초: 쿨타임과 딜레이의 종합 계산
-            now_time_damage = damage_25
-            for c_sec in range(0, 251):
-                damage_trans.append(now_time_damage)
+            now_time_damage = 0
             cannot_damage_time = 0
-            for c_sec in range(251, 1200):
+            for c_sec in range(0, 1200):
                 cannot_damage_time -= 1
                 for index in range(case):
                     delay_time[index] -= 1
@@ -651,21 +640,21 @@ class Damage:
                 damage_trans.append(now_time_damage)
             cases = 0
             temp_damage_sum = 0
-            for c_sec in range(245, 261):
+            for c_sec in range(200, 301):
                 cases += 1
                 temp_damage_sum += damage_trans[c_sec]
             final_damage_25 = int(temp_damage_sum / cases)
             cases = 0
             temp_damage_sum = 0
-            for c_sec in range(381, 420):
+            for c_sec in range(300, 401):
                 cases += 1
                 temp_damage_sum += damage_trans[c_sec]
             final_damage_40 = int(temp_damage_sum / cases)
             cases = 0
             temp_damage_sum = 0
-            for c_sec in range(1100, 1200):
+            for c_sec in range(110, 121):
                 cases += 1
-                temp_damage_sum += damage_trans[c_sec]
+                temp_damage_sum += damage_trans[c_sec * 10 - 1]
             final_damage_120 = int(temp_damage_sum / cases)
             # log("final_damage_40", final_damage_40)
             # log("final_damage_25", final_damage_25)

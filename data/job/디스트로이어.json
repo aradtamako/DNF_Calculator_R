@@ -1,0 +1,348 @@
+{
+	"active": [
+		{
+			"name": "오비탈 디재스터",
+			"damage": 4675086,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 5,
+			"talisman": null
+		},
+		{
+			"name": "버스터 빔",
+			"damage": 2527898,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "새틀라이트 빔",
+			"damage": 2184951,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "MLDRS-95",
+			"damage": 1494505,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 7,
+			"nowLv": 7,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": null
+		},
+		{
+			"name": "FM-92 스팅어 SW",
+			"damage": 1295010,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 19,
+			"nowLv": 19,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "스커드 익스플로전",
+				"damage": 1689988,
+				"coolTime": 50,
+				"available": 1,
+				"rune": 0
+			}
+		},
+		{
+			"name": "X-1 익스트루더",
+			"damage": 1235091,
+			"coolTime": 45,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 32,
+			"nowLv": 32,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1.5,
+			"talisman": {
+				"name": "더 서클 아웃버스트",
+				"damage": 1576964,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "사이즈믹 웨이브",
+			"damage": 1224199,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 17,
+			"nowLv": 17,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "어스퀘이크 크러쉬",
+				"damage": 1631110,
+				"coolTime": 40,
+				"available": 2,
+				"rune": 1
+			}
+		},
+		{
+			"name": "MSC-7",
+			"damage": 1091139,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 14,
+			"nowLv": 14,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "에어 버스트",
+				"damage": 1453395,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "플라즈마 부스터",
+			"damage": 805004,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 24,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": {
+				"name": "에드 온 레이저",
+				"damage": 1006255,
+				"coolTime": 26.4,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "FM-92 스팅어",
+			"damage": 606675,
+			"coolTime": 20,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 37,
+			"nowLv": 37,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "양자 폭탄",
+			"damage": 575885,
+			"coolTime": 18,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 34,
+			"nowLv": 34,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "콜 더 퀸텀 스톰",
+				"damage": 787816,
+				"coolTime": 18,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "화염 강타",
+			"damage": 464742,
+			"coolTime": 12,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 39,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "FM-91 그레네이드 런처",
+			"damage": 386839,
+			"coolTime": 15,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 37,
+			"nowLv": 37,
+			"maxTp": 2,
+			"nowTp": 2,
+			"delay": 1,
+			"talisman": {
+				"name": "디 오버워크",
+				"damage": 495154,
+				"coolTime": 15,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "레이저 라이플",
+			"damage": 276954,
+			"coolTime": 7,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 42,
+			"nowLv": 42,
+			"maxTp": 5,
+			"nowTp": 4,
+			"delay": 1.5,
+			"talisman": null
+		},
+		{
+			"name": "M-3 화염방사기",
+			"damage": 230946,
+			"coolTime": 7,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 47,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "슈타이어 대전차포",
+			"damage": 185555,
+			"coolTime": 6,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 44,
+			"nowLv": 39,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "캐넌볼",
+			"damage": 161387,
+			"coolTime": 5,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 44,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "M-137 개틀링건",
+			"damage": 120545,
+			"coolTime": 5,
+			"requireLv": 5,
+			"gapLv": 2,
+			"maxLv": 51,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "평타(1사이클)",
+			"damage": 47961,
+			"coolTime": null,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 0,
+			"delay": 0,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "중화기 \n마스터리",
+			"requireLv": 15,
+			"maxValue": 13,
+			"upValue": 1,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": "WEAPON",
+			"requirementValue": "핸드캐넌"
+		}
+	],
+	"special": [
+		{
+			"requirementType": "EQUIPMENT",
+			"requirementValue": "111030",
+			"type": "DAMAGE",
+			"target": "레이저 라이플",
+			"value": 20
+		},
+		{
+			"requirementType": "EQUIPMENT",
+			"requirementValue": "111030",
+			"type": "COOL",
+			"target": "레이저 라이플",
+			"value": 30
+		}
+	],
+	"weapon": [
+		{
+			"type": "리볼버",
+			"damage": 0.8477783162604812,
+			"coolTime": 1
+		},
+		{
+			"type": "자동권총",
+			"damage": 0.7832157154332832,
+			"coolTime": 1
+		},
+		{
+			"type": "머스켓",
+			"damage": 0.8650392686667242,
+			"coolTime": 1.05
+		},
+		{
+			"type": "보우건",
+			"damage": 0.8137543235366365,
+			"coolTime": 1
+		},
+		{
+			"type": "핸드캐넌",
+			"damage": 1,
+			"coolTime": 1
+		}
+	]
+}

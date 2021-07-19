@@ -135,7 +135,7 @@
 			"requireLv": 60,
 			"gapLv": 2,
 			"maxLv": 23,
-			"nowLv": 1,
+			"nowLv": 0,
 			"maxTp": 5,
 			"nowTp": 0,
 			"delay": 1.5,
@@ -173,7 +173,7 @@
 			"requireLv": 35,
 			"gapLv": 2,
 			"maxLv": 36,
-			"nowLv": 1,
+			"nowLv": 0,
 			"maxTp": 5,
 			"nowTp": 0,
 			"delay": 0.5,
@@ -342,58 +342,7 @@
 			"talisman": null
 		}
 	],
-	"passive": [
-		{
-			"name": "올드 패션드",
-			"requireLv": 20,
-			"maxValue": 34,
-			"upValue": 2,
-			"type": "DAMAGE",
-			"target": "ALL",
-			"requirementType": null,
-			"requirementValue": null
-		},
-		{
-			"name": "빈티지",
-			"requireLv": 35,
-			"maxValue": 26,
-			"upValue": 2,
-			"type": "DAMAGE",
-			"target": "ALL",
-			"requirementType": null,
-			"requirementValue": null
-		},
-		{
-			"name": "라이선스",
-			"requireLv": 48,
-			"maxValue": 32.5,
-			"upValue": 1.5,
-			"type": "DAMAGE",
-			"target": "ALL",
-			"requirementType": null,
-			"requirementValue": null
-		},
-		{
-			"name": "인퍼먼스",
-			"requireLv": 75,
-			"maxValue": 46,
-			"upValue": 2,
-			"type": "DAMAGE",
-			"target": "ALL",
-			"requirementType": null,
-			"requirementValue": null
-		},
-		{
-			"name": "데어데블",
-			"requireLv": 95,
-			"maxValue": 26,
-			"upValue": 2,
-			"type": "DAMAGE",
-			"target": "ALL",
-			"requirementType": null,
-			"requirementValue": null
-		}
-	],
+	"passive": [],
 	"special": [
 		{
 			"requirementType": "WEAPON",
