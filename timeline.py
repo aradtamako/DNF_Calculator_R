@@ -9,10 +9,14 @@ import queue
 
 
 try:
-    api_txt_file = open("API_key.txt", "r")
-    api_key = api_txt_file.readline()
+    import api_key
+    api_key = api_key.get_api_key()
 except:
-    api_key = ""
+    try:
+        api_txt_file = open("API_key.txt", "r")
+        api_key = api_txt_file.readline()
+    except:
+        api_key = ""
 
 time_code = '504,505,506,507,508,510,511,512,513,514'
 
@@ -26,7 +30,6 @@ class Timeline:
         if self.server is None:
             tkinter.messagebox.showerror(title='타임라인 조회', message="서버 입력값 오류")
             return
-        print(api_key)
         if api_key == "":
             tkinter.messagebox.showerror(
                 title='타임라인 조회', message="api 키 미등록. API_key.txt 파일에 API 키를 입력하고 다시 실행하세요.")
@@ -59,7 +62,7 @@ class Timeline:
                 self.name) + '&apikey=' + api_key)
         cha_id_dic = loads(cha_id_api.read().decode("utf-8"))
         self.cha_id = cha_id_dic['rows'][0]['characterId']
-        print(self.cha_id)
+        # print(self.cha_id)
 
     def load_timeline_api(self):
         target_day = datetime.date(2020, 1, 1)

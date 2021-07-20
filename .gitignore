@@ -5,4 +5,4 @@ dist/
 build/
 venv2/
 /main.spec
-/API_key.txt
+/api_key.py
