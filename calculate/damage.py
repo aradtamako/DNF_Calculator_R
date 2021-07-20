@@ -502,14 +502,22 @@ class Damage:
                         is_condition = True
                     else:
                         is_condition = False
-                    if requirement_type == "WEAPON":
-                        if passive["requirementValue"][-1] != "!" and self.weapon_type == "공통":
+                    if requirement_type == "ALL":
+                        is_condition = True
+                    elif requirement_type == "WEAPON":
+                        if passive["requirementValue"][-1] == "!":
+                            only_require_type = passive["requirementValue"][:-1]
+                            if only_require_type == self.weapon_type:
+                                is_condition = True
+                        else:
+                            if self.weapon_type == "공통" or passive["requirementValue"] == self.weapon_type:
+                                is_condition = True
+                    elif requirement_type == "EQUIPMENT":
+                        if self.equipments_sets.__contains__(passive["requirementValue"]):
                             is_condition = True
-                        elif self.weapon_type == passive["requirementValue"]:
-                            is_condition = True
-                    up_lv = self.now_leveling_array[index_passive.index(passive["requireLv"])]
                     if is_condition is False:
                         continue
+                    up_lv = self.now_leveling_array[index_passive.index(passive["requireLv"])]
                     if passive["type"] == "DAMAGE":
                         index = 0
                         standard_value = 100 + passive["maxValue"]
