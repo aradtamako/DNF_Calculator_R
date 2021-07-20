@@ -3,6 +3,7 @@ import tkinter.ttk
 import tkinter.font
 import tkinter.messagebox
 import threading
+import json
 
 import data.weapon as weapon
 import data.job as job
@@ -10,6 +11,7 @@ import common
 import calculate.terminal as terminal
 import gui_result
 import gui_loading
+import timeline
 
 
 class MainGUI(tkinter.Frame):
@@ -26,25 +28,28 @@ class MainGUI(tkinter.Frame):
     result_class = None
     loading_class = None
 
-    def __init__(self, master):
+    def __init__(self, master, version):
         super(MainGUI, self).__init__(master)
         self.main_window = master
         self.font_list = common.load_font()
         self.color_list = common.load_color()
         self.image_equipment = common.load_equipment_image()
         self.image_extra = common.load_extra_image()
+        self.version = version
         self.create_main()
-        self.set_btn_equipment()
-        self.set_function_button()
-        self.set_function_weapon()
-        self.set_function_job()
-        self.set_function_scent()
-        self.set_function_purgatory()
-        self.set_function_extra()
-        self.set_extra()
+        threading.Thread(target=self.set_btn_equipment).start()
+        threading.Thread(target=self.set_function_button).start()
+        threading.Thread(target=self.set_function_weapon).start()
+        threading.Thread(target=self.set_function_job).start()
+        threading.Thread(target=self.set_function_scent).start()
+        threading.Thread(target=self.set_function_purgatory).start()
+        threading.Thread(target=self.set_function_extra).start()
+        threading.Thread(target=self.set_extra).start()
+        threading.Thread(target=self.set_save_load_function).start()
+        threading.Thread(target=self.set_timeline_function).start()
 
-        self.create_sub_gui()
-        self.debug(True)
+        threading.Thread(target=self.create_sub_gui).start()
+        threading.Thread(target=self.debug, args=(True,)).start()
 
     def debug(self, is_debug):
         if is_debug is False:
@@ -55,7 +60,7 @@ class MainGUI(tkinter.Frame):
     def create_sub_gui(self):
         self.result_class = gui_result.ResultGUI(
             self.main_window,
-            self.image_equipment, self.image_extra, self.dropdown_list
+            self.image_equipment, self.image_extra, self.dropdown_list, self.version
         )
         self.loading_class = gui_loading.LoadingGUI(
             self.main_window
@@ -193,6 +198,13 @@ class MainGUI(tkinter.Frame):
                 if not self.equipment_toggle[now_code]:
                     self.click_equipment(now_code)
 
+    def update_equipment(self):
+        for equipment, toggle in self.equipment_toggle.items():
+            if toggle is True:
+                self.btn_list[equipment]['image'] = self.image_equipment[equipment + 'n.png']
+            else:
+                self.btn_list[equipment]['image'] = self.image_equipment[equipment + 'f.png']
+
     def set_function_extra(self):
         # 계산모드 설정
         self.create_dropdown('mode', 15, [
@@ -236,19 +248,11 @@ class MainGUI(tkinter.Frame):
                 tkinter.messagebox.showerror('에러', "중복된 무기 선택 또는 한도 초과")
                 return
             self.select_weapon_list.append(now_selected)
-            wep_img_list_refresh()
+            self.wep_img_list_refresh()
 
         def wep_reset():
             self.select_weapon_list = []
-            wep_img_list_refresh()
-
-        def wep_img_list_refresh():
-            for i in range(0, 10):
-                if len(self.select_weapon_list) > i:
-                    now_image = self.image_equipment[weapon.wep_filename_image[self.select_weapon_list[i]] + '.png']
-                else:
-                    now_image = self.image_extra['00000.png']
-                self.label_list['weapon_select_image'][i].configure(image=now_image)
+            self.wep_img_list_refresh()
 
         self.create_dropdown('weapon_job', 12, list(weapon.wep_list.keys()), 110, 10)
         self.dropdown_list['weapon_job'].bind("<<ComboboxSelected>>", wep_job_selected)
@@ -268,6 +272,14 @@ class MainGUI(tkinter.Frame):
             self.label_list['weapon_select_image'][i] = tkinter.Label(self.main_window, bg=self.color_list[1], bd=0,
                                                                       image=self.image_extra['00000.png'])
             self.label_list['weapon_select_image'][i].place(x=32 + 31 * i, y=68)
+
+    def wep_img_list_refresh(self):
+        for i in range(0, 10):
+            if len(self.select_weapon_list) > i:
+                now_image = self.image_equipment[weapon.wep_filename_image[self.select_weapon_list[i]] + '.png']
+            else:
+                now_image = self.image_extra['00000.png']
+            self.label_list['weapon_select_image'][i].configure(image=now_image)
 
     def set_function_scent(self):
         def select_scent_mode(event):
@@ -347,7 +359,7 @@ class MainGUI(tkinter.Frame):
         )
 
         tkinter.Label(self.main_window, text='최적변환 각성 강제 여부', font=self.font_list[1],
-                      fg="white", bg=self.color_list[1]).place(x=312, y=462)
+                      fg="white", bg=self.color_list[1]).place(x=312, y=464)
         self.create_dropdown('purgatory_ult_mode', 15, ['태생유지', '각성강제', '각성해제'], 315, 482)
 
         self.dropdown_list['purgatory1_value']['state'] = 'disabled'
@@ -355,16 +367,27 @@ class MainGUI(tkinter.Frame):
         self.dropdown_list['purgatory3_value']['state'] = 'disabled'
         self.dropdown_list['purgatory4_value']['state'] = 'disabled'
 
+        def purgatory_toggle_all():
+            for i in range(1, 5):
+                self.dropdown_list['purgatory{}_option'.format(i)].set('최적변환')
+        self.btn_list["purgatory_toggle"] = tkinter.Button(
+            self.main_window, relief='flat', bd=0, activebackground=self.color_list[0], command=purgatory_toggle_all,
+            bg=self.color_list[0], image=self.image_extra['purgatory_toggle.png'])
+        self.btn_list["purgatory_toggle"].place(x=325, y=435)
+
     def create_dropdown(self, tag, width, values, place_x, place_y):
         now_dropdown = tkinter.ttk.Combobox(self.main_window, width=width, values=values)
-        now_dropdown.set(values[0])
+        try:
+            now_dropdown.set(values[0])
+        except IndexError:
+            pass
         now_dropdown.place(x=place_x, y=place_y)
         self.dropdown_list[tag] = now_dropdown
 
     def set_function_button(self):
         def start_calc_thread():
             if terminal.is_running is True:
-                print("이미 작동중입니다")
+                tkinter.messagebox.showinfo(title='계산하기', message='이미 작동중입니다.')
                 return
             if len(self.select_weapon_list) == 0:
                 now_selected = str(self.dropdown_list['weapon'].get())
@@ -385,9 +408,135 @@ class MainGUI(tkinter.Frame):
         self.btn_list["calculate"] = tkinter.Button(self.main_window, relief='flat', bd=0,
                                                     activebackground=self.color_list[0],
                                                     bg=self.color_list[0], image=self.image_extra['calc.png'])
-        self.btn_list["calculate"]['command'] = start_calc_thread  # 테스트
+        self.btn_list["calculate"]['command'] = start_calc_thread
         self.btn_list["calculate"].place(x=505, y=7)
-        pass
+
+    def set_timeline_function(self):
+        def load_timeline():
+            timeline_class = timeline.Timeline(self.dropdown_list['server'].get(), name_entry.get())
+            return_list = timeline_class.return_list()
+            for code in self.equipment_toggle.keys():
+                if return_list.__contains__(code):
+                    self.equipment_toggle[code] = True
+                else:
+                    self.equipment_toggle[code] = False
+            self.update_equipment()
+
+        sever_list = ['카인', '디레지에', '바칼', '힐더', '안톤', '카시야스', '프레이', '시로코']
+        self.create_dropdown('server', 8, sever_list, 512, 242)
+        name_entry = tkinter.Entry(self.main_window, width=11)
+        name_entry.insert(0, '캐릭명')
+        name_entry.place(x=510, y=270)
+        self.btn_list['timeline'] = tkinter.Button(
+            self.main_window, relief='flat', bd=0,
+            activebackground=self.color_list[0], command=load_timeline,
+            bg=self.color_list[0], image=self.image_extra['timeline.png']
+        )
+        self.btn_list['timeline'].place(x=600, y=240)
+
+    def set_save_load_function(self):
+        def get_save_names():
+            with open('./data/save.json', 'rt', encoding='UTF-8') as infile:
+                save_dict = json.load(infile)
+            save_names = list(save_dict.keys())
+            self.dropdown_list['save']['values'] = save_names
+            self.dropdown_list['save'].set(save_names[0])
+
+        def delete_save():
+            ask_del = tkinter.messagebox.askquestion(
+                title='데이터 삭제',
+                message='해당 세이브 데이터를 삭제합니다. 정말로 진행하시겠습니까?')
+            if ask_del == 'yes':
+                pass
+            else:
+                return
+            with open('./data/save.json', 'rt', encoding='UTF-8') as infile:
+                save_dict = json.load(infile)
+            del save_dict[str(self.dropdown_list['save'].get())]
+            save_names = list(save_dict.keys())
+            self.dropdown_list['save']['values'] = save_names
+            with open('./data/save.json', 'wt', encoding='UTF-8') as outfile:
+                json.dump(save_dict, outfile, ensure_ascii=False)
+
+        def save_now():
+            ask_save = tkinter.messagebox.askquestion(
+                title='저장하기',
+                message='해당 세이브 슬롯에 데이터를 저장합니다. 기존에 있던 동일 슬롯의 데이터는 전부 덮어씁니다.'
+                        '정말로 진행하시겠습니까?')
+            if ask_save == 'yes':
+                pass
+            else:
+                return
+            with open('./data/save.json', 'rt', encoding='UTF-8') as infile:
+                save_dict = json.load(infile)
+            now_save_name = str(self.dropdown_list['save'].get())
+            save_equipments = []
+            for code, toggle in self.equipment_toggle.items():
+                if toggle:
+                    save_equipments.append(code)
+            save_dropdown = {}
+            for code, dropdown in self.dropdown_list.items():
+                save_dropdown[code] = str(dropdown.get())
+            del save_dropdown['save']
+            save_dict[now_save_name] = {
+                'weapons': self.select_weapon_list,
+                'equipments': save_equipments,
+                'dropdown': save_dropdown,
+                'setting': {}
+            }
+            save_names = list(save_dict.keys())
+            self.dropdown_list['save']['values'] = save_names
+            with open('./data/save.json', 'wt', encoding='UTF-8') as outfile:
+                json.dump(save_dict, outfile, ensure_ascii=False)
+            tkinter.messagebox.showinfo(title='저장하기', message='저장 완료')
+
+        def load_now():
+            ask_load = tkinter.messagebox.askquestion(
+                title='불러오기',
+                message='해당 세이브 슬롯에 데이터를 불러옵니다. 정말로 진행하시겠습니까?')
+            if ask_load == 'yes':
+                pass
+            else:
+                return
+            with open('./data/save.json', 'rt', encoding='UTF-8') as infile:
+                save_dict = json.load(infile)
+            now_save_name = str(self.dropdown_list['save'].get())
+            save_values = save_dict.get(now_save_name)
+            if save_values is None:
+                tkinter.messagebox.showerror(title='불러오기', message='해당 이름의 저장 슬롯이 존재하지 않습니다.')
+                return
+            self.select_weapon_list = save_values['weapons']
+            self.wep_img_list_refresh()
+            save_equipment = save_values['equipments']
+            for code in self.equipment_toggle.keys():
+                if save_equipment.__contains__(code):
+                    self.equipment_toggle[code] = True
+                else:
+                    self.equipment_toggle[code] = False
+            self.update_equipment()
+            save_dropdown = save_values['dropdown']
+            for key, value in save_dropdown.items():
+                self.dropdown_list[key].set(value)
+            save_setting = save_values['setting']
+            tkinter.messagebox.showinfo(title='불러오기', message='불러오기 완료')
+
+        self.btn_list["save"] = tkinter.Button(
+            self.main_window, relief='flat', bd=0, activebackground=self.color_list[0],
+            bg=self.color_list[0], image=self.image_extra['SAVE.png'])
+        self.btn_list["save"]['command'] = save_now
+        self.btn_list["save"].place(x=510, y=340)
+        self.btn_list["load"] = tkinter.Button(
+            self.main_window, relief='flat', bd=0, activebackground=self.color_list[0],
+            bg=self.color_list[0], image=self.image_extra['LOAD.png'])
+        self.btn_list["load"]['command'] = load_now
+        self.btn_list["load"].place(x=600, y=340)
+        self.create_dropdown('save', 8, [], 513, 311)
+        self.btn_list["delete_save"] = tkinter.Button(
+            self.main_window, relief='flat', bd=0, activebackground=self.color_list[0],
+            bg=self.color_list[0], image=self.image_extra['delete_small.png'])
+        self.btn_list["delete_save"]['command'] = delete_save
+        self.btn_list["delete_save"].place(x=600, y=309)
+        get_save_names()
 
     def set_extra(self):
         def guide_speed():
