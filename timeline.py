@@ -10,13 +10,13 @@ import queue
 
 try:
     import api_key
-    api_key = api_key.get_api_key()
+    apikey = api_key.get_api_key()
 except:
     try:
         api_txt_file = open("API_key.txt", "r")
-        api_key = api_txt_file.readline()
+        apikey = api_txt_file.readline()
     except:
-        api_key = ""
+        apikey = ""
 
 time_code = '504,505,506,507,508,510,511,512,513,514'
 
@@ -30,7 +30,7 @@ class Timeline:
         if self.server is None:
             tkinter.messagebox.showerror(title='타임라인 조회', message="서버 입력값 오류")
             return
-        if api_key == "":
+        if apikey == "":
             tkinter.messagebox.showerror(
                 title='타임라인 조회', message="api 키 미등록. API_key.txt 파일에 API 키를 입력하고 다시 실행하세요.")
             return
@@ -59,7 +59,7 @@ class Timeline:
     def load_cha_id(self):
         cha_id_api = urllib.request.urlopen(
             'https://api.neople.co.kr/df/servers/' + self.server + '/characters?characterName=' + parse.quote(
-                self.name) + '&apikey=' + api_key)
+                self.name) + '&apikey=' + apikey)
         cha_id_dic = loads(cha_id_api.read().decode("utf-8"))
         self.cha_id = cha_id_dic['rows'][0]['characterId']
         # print(self.cha_id)
@@ -100,7 +100,7 @@ class Timeline:
         timeline = urllib.request.urlopen(
             'https://api.neople.co.kr/df/servers/' + self.server + '/characters/' +
             self.cha_id + '/timeline?limit=100&code=' + time_code + '&startDate=' +
-            time_end + '&endDate=' + time_start + '&apikey=' + api_key)
+            time_end + '&endDate=' + time_start + '&apikey=' + apikey)
         timeline = loads(timeline.read().decode("utf-8"))['timeline']
         show_next = timeline['next']
         if show_next is not None:
@@ -115,7 +115,7 @@ class Timeline:
     def get_api_next_list(self, next_code):
         timeline_next = urllib.request.urlopen(
             'https://api.neople.co.kr/df/servers/' + self.server + '/characters/' + self.cha_id + '/timeline?next='
-            + next_code + '&apikey=' + api_key)
+            + next_code + '&apikey=' + apikey)
         timeline_next = loads(timeline_next.read().decode("utf-8"))['timeline']
         show_next = timeline_next['next']
         if show_next is not None:
