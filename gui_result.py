@@ -41,7 +41,6 @@ class ResultGUI:
 
         # 그래프용 max_min 지정
         self.tran_max = 0
-        self.tran_min = 0
 
     def get_result_data(
             self, result_values_sum, result_equipments_sum, result_tran_sum,
@@ -198,19 +197,14 @@ class ResultGUI:
         else:
             print("tran 그래프 생성 시작")
             self.tran_max = 0
-            self.tran_min = 999999999999
             for i in range(len(self.result_tran[self.now_rank_toggle])):
                 now_max = max(self.result_tran[self.now_rank_toggle][i])
-                now_min = min(self.result_tran[self.now_rank_toggle][i])
                 if now_max > self.tran_max:
                     self.tran_max = now_max
-                if now_min < self.tran_min:
-                    self.tran_min = now_min
-            self.tran_min = self.tran_min * 0.7
             start_point = [42, 675]
             for i in range(0, 400):
                 now_value = now_tran_values[i * 3]
-                now_y = int(start_point[1] - 220 * (now_value - self.tran_min) / (self.tran_max - self.tran_min))
+                now_y = int(start_point[1] - 220 * now_value / self.tran_max)
                 self.result_canvas.create_line(42 + i, now_y, 42 + i + 1, now_y, fill='white', width=1,
                                                tag="rank_select")
 
@@ -288,7 +282,7 @@ class ResultGUI:
             start_point = [42, 675]
             for i in range(0, 400):
                 now_value = now_tran_values[i * 3]
-                now_y = int(start_point[1] - 220 * (now_value - self.tran_min) / (self.tran_max - self.tran_min))
+                now_y = int(start_point[1] - 220 * now_value / self.tran_max)
                 self.result_canvas.create_line(
                     42 + i, now_y, 42 + i + 1, now_y, fill=color, width=1,
                     tag=("tran_graph_compare_" + color)

@@ -544,11 +544,16 @@ class Damage:
                         is_condition = True
                     else:
                         is_condition = False
-                    if requirement_type == "WEAPON":
-                        if special["requirementValue"][-1] != "!" and self.weapon_type == "공통":
-                            is_condition = True
-                        elif self.weapon_type == special["requirementValue"]:
-                            is_condition = True
+                    if requirement_type == "ALL":
+                        is_condition = True
+                    elif requirement_type == "WEAPON":
+                        if special["requirementValue"][-1] == "!":
+                            only_require_type = special["requirementValue"][:-1]
+                            if only_require_type == self.weapon_type:
+                                is_condition = True
+                        else:
+                            if self.weapon_type == "공통" or special["requirementValue"] == self.weapon_type:
+                                is_condition = True
                     elif requirement_type == "EQUIPMENT":
                         if self.equipments_sets.__contains__(special["requirementValue"]):
                             is_condition = True
@@ -616,11 +621,13 @@ class Damage:
                 case += 1
                 value_list[0] = int(value_list[0] * total_damage_no_active / 383.20)
                 index_damage.append(value_list[0])
-                index_cool.append(int(value_list[1]*10*0.8))  # 0.8 정신자극
-                index_delay.append(int(value_list[2]*10))
-                delay_time.append(0)
                 if ult_name.__contains__(name):
                     final_damage_ult += value_list[0]
+                    index_cool.append(999999)
+                else:
+                    index_cool.append(int(value_list[1]*10*0.8))  # 0.8 정신자극
+                index_delay.append(int(value_list[2]*10))
+                delay_time.append(0)
             # log("active_dict", active_dict)
 
             damage_trans = []

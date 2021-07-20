@@ -1,0 +1,398 @@
+{
+	"active": [
+		{
+			"name": "G-X 스타더스트",
+			"damage": 3511759,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 5,
+			"talisman": null
+		},
+		{
+			"name": "고기동 메카 : 볼트 MX",
+			"damage": 1727518,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "트랜스 폼 : \nG-0 배틀로이드",
+			"damage": 1567921,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "하이퍼 플레어",
+			"damage": 1114753,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": null
+		},
+		{
+			"name": "G-3 랩터",
+			"damage": 840403,
+			"coolTime": 10,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "게일 포스",
+			"damage": 214023,
+			"coolTime": 10,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "얼티밋 게일 포스",
+				"damage": 908670,
+				"coolTime": 30,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "스패로우 팩토리",
+			"damage": 931207,
+			"coolTime": 45,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "스패로우 : 요격 모드",
+				"damage": 1315489,
+				"coolTime": 45,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "마그네틱 필드",
+			"damage": 879200,
+			"coolTime": 50,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "네오디뮴 마그넷",
+				"damage": 1142960,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "프리스비",
+			"damage": 770841,
+			"coolTime": 45,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "스피닝 블레이드",
+				"damage": 925009,
+				"coolTime": 40.5,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "메카 드롭",
+			"damage": 760665,
+			"coolTime": 40,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "폭격 개시",
+				"damage": 1014727,
+				"coolTime": 36,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "HS-12 플라즈마",
+			"damage": 569341,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5,
+			"nowTp": 3,
+			"delay": 0.5,
+			"talisman": {
+				"name": "이볼빙 시스템",
+				"damage": 688903,
+				"coolTime": 30,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "G-S.P. 팔콘",
+			"damage": 307295,
+			"coolTime": 15,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "에너지 순환 시스템",
+				"damage": 403785,
+				"coolTime": 13.5,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "G-2 롤링썬더",
+			"damage": 268483,
+			"coolTime": 6,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "G-마그네틱",
+			"damage": 234831,
+			"coolTime": 15,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 43,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "Ez-8 카운트다운",
+			"damage": 174397,
+			"coolTime": 7.5,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "Ex-S 바이퍼",
+			"damage": 120399,
+			"coolTime": 3.5,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "평타(한 탄창)",
+			"damage": 66884,
+			"coolTime": null,
+			"requireLv": 1,
+			"gapLv": 2,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 2,
+			"delay": 0,
+			"talisman": null
+		},
+		{
+			"name": "RX-78 랜드러너",
+			"damage": 51055,
+			"coolTime": 2.8,
+			"requireLv": 5,
+			"gapLv": 2,
+			"maxLv": 50,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "하이테크놀로지",
+			"requireLv": 15,
+			"maxValue": 13,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "트랜스포메이션",
+			"requireLv": 25,
+			"maxValue": 30,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "G-X 스타더스트^고기동 메카 : 볼트 MX^트랜스 폼 : \nG-0 배틀로이드^하이퍼 플레어^게일 포스^스패로우 팩토리^마그네틱 필드^프리스비^메카 드롭^HS-12 플라즈마^G-S.P. 팔콘^Ez-8 카운트다운^Ex-S 바이퍼^평타(한 탄창)^RX-78 랜드러너",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "G-1 코로나",
+			"requireLv": 20,
+			"maxValue": 109,
+			"upValue": 1,
+			"type": "DAMAGE",
+			"target": "G-2 롤링썬더^G-3 랩터",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "G-2 롤링썬더",
+			"requireLv": 25,
+			"maxValue": 91,
+			"upValue": 1,
+			"type": "DAMAGE",
+			"target": "G-마그네틱^G-3 랩터",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "G-3 랩터",
+			"requireLv": 30,
+			"maxValue": 113,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "G-마그네틱^G-2 롤링썬더",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "G 익스텐션",
+			"requireLv": 48,
+			"maxValue": 42.5,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "G-오퍼레이터",
+			"requireLv": 75,
+			"maxValue": 38,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "마이크로 컨트롤",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [
+		{
+			"requirementType": "ALL",
+			"requirementValue": "X",
+			"type": "COOL",
+			"target": "ALL",
+			"value": 15
+		}
+	],
+	"weapon": [
+		{
+			"type": "리볼버",
+			"damage": 0.9522237327636435,
+			"coolTime": 1
+		},
+		{
+			"type": "자동권총",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "머스켓",
+			"damage": 0.9755292289765003,
+			"coolTime": 1
+		},
+		{
+			"type": "보우건",
+			"damage": 0.9755292289765003,
+			"coolTime": 1
+		},
+		{
+			"type": "핸드캐넌",
+			"damage": 0.9164886385705963,
+			"coolTime": 1
+		}
+	]
+}

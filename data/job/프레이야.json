@@ -1,0 +1,415 @@
+{
+	"active": [
+		{
+			"name": "데피니트 솔루션",
+			"damage": 3650957,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 5,
+			"talisman": null
+		},
+		{
+			"name": "디-데이",
+			"damage": 1838872,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "EMP 스톰",
+			"damage": 1208468,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "스탠바이-레디",
+			"damage": 1172873,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "오픈 파이어",
+			"damage": 911797,
+			"coolTime": 45,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "스트랫 제트",
+				"damage": 1230926,
+				"coolTime": 45,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "피스톨 카빈",
+			"damage": 746808,
+			"coolTime": 30,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "그레네이드 머신건",
+				"damage": 962943,
+				"coolTime": 28.5,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "록 온 서포트",
+			"damage": 738046,
+			"coolTime": 45,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 18,
+			"maxTp": 5,
+			"nowTp": 1,
+			"delay": 0.5,
+			"talisman": {
+				"name": "노 머시",
+				"damage": 991935,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "G-96 열압력유탄",
+			"damage": 689736,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "에너미 스윔",
+				"damage": 889760,
+				"coolTime": 40.5,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "네이팜 탄",
+			"damage": 574461,
+			"coolTime": 20,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "빅마마",
+				"damage": 747153,
+				"coolTime": 18.8,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "버스터 샷",
+			"damage": 523708,
+			"coolTime": 18,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "G-61 중력류탄",
+			"damage": 434016,
+			"coolTime": 20,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 1,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": {
+				"name": "매시브 그라비티",
+				"damage": 544050,
+				"coolTime": 20,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "C4",
+			"damage": 411676,
+			"coolTime": 20,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "일렉트릭쇼크",
+				"damage": 514596,
+				"coolTime": 20,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "교차 사격",
+			"damage": 263579,
+			"coolTime": 8,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "M18 클레이모어",
+			"damage": 120411,
+			"coolTime": 6,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "G-18C 빙결류탄",
+			"damage": 68990,
+			"coolTime": 4,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "G-35L 섬광류탄",
+			"damage": 60712,
+			"coolTime": 3,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "G-14 파열류탄",
+			"damage": 35442,
+			"coolTime": 2,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "폭발탄(10발)",
+			"damage": 140377,
+			"coolTime": null,
+			"requireLv": 30,
+			"gapLv": 3,
+			"maxLv": 10,
+			"nowLv": 10,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "병기 숙련",
+			"requireLv": 20,
+			"maxValue": 16,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "병기 숙련",
+			"requireLv": 20,
+			"maxValue": 13,
+			"upValue": 1,
+			"type": "COOL",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "유탄 마스터리",
+			"requireLv": 20,
+			"maxValue": 100,
+			"upValue": 10,
+			"type": "DAMAGE",
+			"target": "G-18C 빙결류탄^G-35L 섬광류탄^G-14 파열류탄",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "니트로모터",
+			"requireLv": 15,
+			"maxValue": 20,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "폭발탄(10발)",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "니트로모터",
+			"requireLv": 15,
+			"maxValue": 20,
+			"upValue": 1,
+			"type": "DAMAGE",
+			"target": "교차 사격^버스터 샷^네이팜 탄^피스톨 카빈",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "섬광류탄",
+			"requireLv": 25,
+			"maxValue": 23,
+			"upValue": 1,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "병기 강화",
+			"requireLv": 48,
+			"maxValue": 40.5,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "증명의 열쇠",
+			"requireLv": 75,
+			"maxValue": 42,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "니트로모터-02X",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "머스켓",
+			"type": "COOL",
+			"target": "ALL",
+			"value": 13
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "보우건!",
+			"type": "COOL",
+			"target": "ALL",
+			"value": 13
+		}
+	],
+	"weapon": [
+		{
+			"type": "리볼버",
+			"damage": 0.84,
+			"coolTime": 1
+		},
+		{
+			"type": "자동권총",
+			"damage": 0.84,
+			"coolTime": 1
+		},
+		{
+			"type": "머스켓",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "보우건",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "핸드캐넌",
+			"damage": 0.84,
+			"coolTime": 1
+		}
+	]
+}
