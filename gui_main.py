@@ -9,6 +9,7 @@ import data.job as job
 import common
 import calculate.terminal as terminal
 import gui_result
+import gui_loading
 
 
 class MainGUI(tkinter.Frame):
@@ -23,6 +24,7 @@ class MainGUI(tkinter.Frame):
     equipment_toggle = {}
     main_window = None
     result_class = None
+    loading_class = None
 
     def __init__(self, master):
         super(MainGUI, self).__init__(master)
@@ -41,7 +43,7 @@ class MainGUI(tkinter.Frame):
         self.set_function_extra()
         self.set_extra()
 
-        self.create_result_gui()
+        self.create_sub_gui()
         self.debug(True)
 
     def debug(self, is_debug):
@@ -50,10 +52,13 @@ class MainGUI(tkinter.Frame):
         tkinter.Label(self.main_window, text='베타 버전(기능 구현중)', font=self.font_list[3],
                       fg="red", bg=self.color_list[0]).place(x=640, y=50)
 
-    def create_result_gui(self):
+    def create_sub_gui(self):
         self.result_class = gui_result.ResultGUI(
             self.main_window,
             self.image_equipment, self.image_extra, self.dropdown_list
+        )
+        self.loading_class = gui_loading.LoadingGUI(
+            self.main_window
         )
 
     def create_main(self):
@@ -368,9 +373,14 @@ class MainGUI(tkinter.Frame):
                 select_weapon_list = self.select_weapon_list
             calc_start = threading.Thread(target=terminal.Terminal, args=(
                 self.dropdown_list, select_weapon_list, self.equipment_toggle,
-                self.result_class
+                self.result_class, self.label_list["dialog"]
             ), daemon=True)
             calc_start.start()
+
+        self.label_list["dialog"] = tkinter.Label(
+            self.main_window, text="준비중...", font=self.font_list[1],
+            fg="white", bg=self.color_list[1])
+        self.label_list["dialog"].place(x=691, y=107)
 
         self.btn_list["calculate"] = tkinter.Button(self.main_window, relief='flat', bd=0,
                                                     activebackground=self.color_list[0],

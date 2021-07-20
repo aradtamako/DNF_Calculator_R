@@ -50,10 +50,10 @@ class Calculation:
         is_buffer = False
         # sum, groggy, sustain, ult
         min_value = [0 for i in range(4)]
-        result_value_saved = [[0 for i in range(20)], [0 for i in range(20)],
-                              [0 for i in range(20)], [0 for i in range(20)]]
-        result_equipment_saved = [[0 for i in range(20)], [0 for i in range(20)],
-                                  [0 for i in range(20)], [0 for i in range(20)]]
+        result_value_saved = [[0 for i in range(50)], [0 for i in range(50)],
+                              [0 for i in range(50)], [0 for i in range(50)]]
+        result_equipment_saved = [[0 for i in range(50)], [0 for i in range(50)],
+                                  [0 for i in range(50)], [0 for i in range(50)]]
 
         if len(equipment_cases) * len(weapon_cases) == 0:
             return
@@ -84,6 +84,7 @@ class Calculation:
                     result_value_saved[i].remove(0)
                     result_equipment_saved[i].remove(0)
 
+            print("정밀 재계산 시작")
             # 정밀 재계산
             detail_result_value_saved = [[], [], [], []]
             detail_result_equipment_saved = [[], [], [], []]

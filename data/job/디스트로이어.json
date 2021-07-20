@@ -300,6 +300,56 @@
 			"target": "ALL",
 			"requirementType": "WEAPON",
 			"requirementValue": "핸드캐넌"
+		},
+		{
+			"name": "중화기 \n마스터리",
+			"requireLv": 15,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "오버부스트 팩",
+			"requireLv": 25,
+			"maxValue": 10,
+			"upValue": 1,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "스펙트럴 서치 아이",
+			"requireLv": 48,
+			"maxValue": 37.5,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "중화기 개조",
+			"requireLv": 75,
+			"maxValue": 47,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "인터록 새틀라이트",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
 		}
 	],
 	"special": [

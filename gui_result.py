@@ -219,7 +219,7 @@ class ResultGUI:
             108, 674, 108, 456, 143, 456, 143, 674, 108, 674, fill=_from_rgb((40, 10, 10)), width=0
         )
         self.result_canvas.create_polygon(
-            143, 674, 143, 456, 175, 456, 175, 674, 143, 674, fill=_from_rgb((10, 40, 10)), width=0
+            143, 674, 143, 456, 208, 456, 208, 674, 143, 674, fill=_from_rgb((10, 40, 10)), width=0
         )
         self.result_canvas.create_polygon(
             375, 674, 375, 456, 441, 456, 441, 674, 375, 674, fill=_from_rgb((10, 10, 40)), width=0
@@ -229,6 +229,7 @@ class ResultGUI:
         self.result_canvas.create_text(108, 683, text='20s', fill='white', font=self.fonts[1])
         self.result_canvas.create_text(142, 683, text='30s', fill='white', font=self.fonts[1])
         self.result_canvas.create_text(175, 683, text='40s', fill='white', font=self.fonts[1])
+        self.result_canvas.create_text(208, 683, text='50s', fill='white', font=self.fonts[1])
         self.result_canvas.create_text(375, 683, text='100s', fill='white', font=self.fonts[1])
         self.result_canvas.create_text(442, 683, text='120s', fill='white', font=self.fonts[1])
         self.result_canvas.create_text(242, 433, text='<시간 경과별 데미지 그래프>',

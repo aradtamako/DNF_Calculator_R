@@ -1,8 +1,9 @@
 import itertools
 
 # 일반 풀셋이 있어도 스까 가능 방어구 정리
-# 트로피카 역작 흐름 선택
-able_mix_armor = [8, 11, 13, 14]
+# 역작
+# able_mix_armor = [11]
+able_mix_armor = [11]
 
 
 def make_full_set_case(set_list):

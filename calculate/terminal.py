@@ -24,7 +24,7 @@ def divide_case(equipment_list, core_num):
 
 class Terminal:
 
-    def __init__(self, dropdown_list, select_weapon_list, equipment_toggle, result_class):
+    def __init__(self, dropdown_list, select_weapon_list, equipment_toggle, result_class, dialog_label):
         global is_running
         is_running = True
         if len(dropdown_list['job'].get()) > 5:
@@ -36,7 +36,9 @@ class Terminal:
         self.select_weapon_list = select_weapon_list
         self.equipment_toggle = equipment_toggle
         self.result_class = result_class
+        self.dialog_label = dialog_label
 
+        self.dialog_label.configure(text="입력값 추출중")
         self.values = {}  # 설정값 저장
         self.equipment_list = {
             '11': [], '12': [], '13': [], '14': [], '15': [], '21': [], '22': [], '23': [], '31': [], '32': [],
@@ -67,13 +69,17 @@ class Terminal:
             self.core_num = 8
         elif self.core_num < 1:
             self.core_num = 1
-        print("최대 가용 코어 개수 = " + str(self.core_num))
+        self.dialog_label.configure(text="계산 시작")
+        is_error = False
         try:
             self.case_terminal()
         except IndexError as e:
-            print("에러 발생으로 인한 강제 종료")
+            is_error = True
+            self.dialog_label.configure(text="에러 발생으로 인한 강제 종료")
         finally:
             is_running = False
+            if is_error is False:
+                self.dialog_label.configure(text="계산 종료")
 
     def get_equipment_values(self):
         # 무기
@@ -208,7 +214,7 @@ class Terminal:
             now_all_case = calculate.set.make_case(self.equipment_list, 0)
             print(len(now_all_case) * len(self.select_weapon_list_code), "가지 계산 시작")
             self.calculate_damage(divide_case(now_all_case, self.core_num))
-        else:
+        elif self.values['mode'] == "AUTO MODE":
             full_set_list = calculate.fullset.make_full_set_case(self.set_list)
             full_set_list_normal = full_set_list[0]
             full_set_list_myth = full_set_list[1]
@@ -225,6 +231,13 @@ class Terminal:
                 now_all_case = calculate.set.make_case(self.equipment_list, 0)
                 print(len(now_all_case) * len(self.select_weapon_list_code), "가지 계산 시작")
                 self.calculate_damage(divide_case(now_all_case, self.core_num))
+        elif self.values['mode'] == "API MODE":
+            full_set_list = calculate.fullset.make_full_set_case(self.set_list)
+            full_set_list_normal = full_set_list[0]
+            full_set_list_myth = full_set_list[1]
+            now_all_case = full_set_list_normal + full_set_list_myth
+            print(len(now_all_case) * len(self.select_weapon_list_code), "가지 계산 시작")
+            self.calculate_damage(divide_case(now_all_case, self.core_num))
 
         date_diff = datetime.now() - self.start_time
         print("소모시간 = ", date_diff.seconds, "초")

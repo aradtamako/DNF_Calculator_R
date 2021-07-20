@@ -533,6 +533,7 @@ class Damage:
                     if active_dict[key][1] != 0:
                         after_passive += active_dict[key][0] / active_dict[key][1]
                 passive_efficiency = after_passive / before_passive
+                # log("passive_efficiency", passive_efficiency)
 
                 # 특수 처리
                 for special in self.detail_special_list:
@@ -646,7 +647,7 @@ class Damage:
             final_damage_25 = int(temp_damage_sum / cases)
             cases = 0
             temp_damage_sum = 0
-            for c_sec in range(300, 401):
+            for c_sec in range(300, 501):
                 cases += 1
                 temp_damage_sum += damage_trans[c_sec]
             final_damage_40 = int(temp_damage_sum / cases)

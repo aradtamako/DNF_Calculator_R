@@ -300,6 +300,56 @@
 			"target": "ALL",
 			"requirementType": "WEAPON",
 			"requirementValue": "핸드캐넌"
+		},
+		{
+			"name": "중화기 \n마스터리",
+			"requireLv": 15,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "APG-63",
+			"requireLv": 25,
+			"maxValue": 24,
+			"upValue": 1,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "오버 히트",
+			"requireLv": 48,
+			"maxValue": 44,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "알파 서포트",
+			"requireLv": 75,
+			"maxValue": 47,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "Pandora_01",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
 		}
 	],
 	"special": [
