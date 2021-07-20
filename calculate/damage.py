@@ -514,10 +514,12 @@ class Damage:
                         index = 0
                         standard_value = 100 + passive["maxValue"]
                         now_value = standard_value + up_lv * passive["upValue"]
-                    else:
+                    elif passive["type"] == "COOL":
                         index = 1
                         standard_value = 100 - passive["maxValue"]
                         now_value = standard_value - up_lv * passive["upValue"]
+                    else:
+                        continue
                     total_rate = now_value / standard_value
                     if passive["target"] == "ALL":
                         for name, value_list in active_dict.items():
@@ -555,9 +557,11 @@ class Damage:
                     if special["type"] == "DAMAGE":
                         index = 0
                         value = special["value"] / 100 + 1
-                    else:
+                    elif special["type"] == "COOL":
                         index = 1
                         value = 1 - special["value"] / 100
+                    else:
+                        continue
                     if special["target"] == "ALL":
                         for name, value_list in active_dict.items():
                             value_list[index] = value_list[index] * value

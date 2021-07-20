@@ -398,7 +398,7 @@
 		{
 			"requirementType": "WEAPON",
 			"requirementValue": "도",
-			"type": "COOLDOWN",
+			"type": "COOL",
 			"target": "ALL",
 			"value": 10
 		}
