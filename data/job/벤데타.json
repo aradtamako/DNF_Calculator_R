@@ -308,7 +308,7 @@
 			"coolTime": 7,
 			"requireLv": 1,
 			"gapLv": 1,
-			"maxLv": 1,
+			"maxLv": 100,
 			"nowLv": 100,
 			"maxTp": 3,
 			"nowTp": 2,

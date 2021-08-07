@@ -22,6 +22,7 @@ class MainGUI(tkinter.Frame):
     btn_list = {}
     dropdown_list = {}
     label_list = {}
+    entry_list = {}
     select_weapon_list = []
     equipment_toggle = {}
     main_window = None
@@ -36,6 +37,7 @@ class MainGUI(tkinter.Frame):
         self.image_equipment = common.load_equipment_image()
         self.image_extra = common.load_extra_image()
         self.version = version
+        self.is_custom_open = False
         self.create_main()
         threading.Thread(target=self.set_btn_equipment).start()
         threading.Thread(target=self.set_function_button).start()
@@ -47,15 +49,9 @@ class MainGUI(tkinter.Frame):
         threading.Thread(target=self.set_extra).start()
         threading.Thread(target=self.set_save_load_function).start()
         threading.Thread(target=self.set_timeline_function).start()
+        threading.Thread(target=self.set_custom_function).start()
 
         threading.Thread(target=self.create_sub_gui).start()
-        threading.Thread(target=self.debug, args=(True,)).start()
-
-    def debug(self, is_debug):
-        if is_debug is False:
-            return
-        tkinter.Label(self.main_window, text='베타 버전(기능 구현중)', font=self.font_list[3],
-                      fg="red", bg=self.color_list[0]).place(x=640, y=50)
 
     def create_sub_gui(self):
         self.result_class = gui_result.ResultGUI(
@@ -67,11 +63,11 @@ class MainGUI(tkinter.Frame):
         )
 
     def create_main(self):
-        self.main_window.geometry("909x720+0+0")
+        self.main_window.geometry("909x720")
         self.main_window.resizable(False, False)
         self.main_window.title('에픽조합계산기R Beta')
         self.main_window.iconbitmap('ext_img/icon.ico')
-        tkinter.Label(self.main_window, image=self.image_extra['bg_img.png']).place(x=-2, y=0)
+        tkinter.Label(self.main_window, image=self.image_extra['bg_img.png'], bd=0).place(x=-2, y=0)
         self.main_window.configure(bg=self.color_list[0])
 
     def set_btn_equipment(self):
@@ -207,7 +203,7 @@ class MainGUI(tkinter.Frame):
 
     def set_function_extra(self):
         # 계산모드 설정
-        self.create_dropdown('mode', 15, [
+        self.create_dropdown('mode', 18, [
             'AUTO MODE', 'ALL MODE'
         ], 750, 11)
         # 칭호/크리쳐/쿨감보정
@@ -370,6 +366,7 @@ class MainGUI(tkinter.Frame):
         def purgatory_toggle_all():
             for i in range(1, 5):
                 self.dropdown_list['purgatory{}_option'.format(i)].set('최적변환')
+
         self.btn_list["purgatory_toggle"] = tkinter.Button(
             self.main_window, relief='flat', bd=0, activebackground=self.color_list[0], command=purgatory_toggle_all,
             bg=self.color_list[0], image=self.image_extra['purgatory_toggle.png'])
@@ -537,6 +534,23 @@ class MainGUI(tkinter.Frame):
         self.btn_list["delete_save"]['command'] = delete_save
         self.btn_list["delete_save"].place(x=600, y=309)
         get_save_names()
+
+    def set_custom_function(self):
+        def open_custom():
+            if self.is_custom_open:
+                self.is_custom_open = False
+                self.main_window.geometry('909x720')
+            else:
+                self.is_custom_open = True
+                self.main_window.geometry('1160x720')
+        self.btn_list['custom'] = tkinter.Button(
+            self.main_window, command=open_custom, image=self.image_extra['custom.png'], bd=0,
+            activebackground=self.color_list[0], bg=self.color_list[0])
+        self.btn_list['custom'].place(x=813, y=40)
+
+        self.entry_list['cool_ratio_groggy'] = tkinter.ttk.Entry(
+            self.main_window, width=7)
+        self.entry_list['cool_ratio_groggy'].place(x=920, y=30)
 
     def set_extra(self):
         def guide_speed():

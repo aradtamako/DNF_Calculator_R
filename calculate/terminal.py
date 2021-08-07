@@ -69,7 +69,7 @@ class Terminal:
             self.core_num = 8
         elif self.core_num < 1:
             self.core_num = 1
-        self.dialog_label.configure(text="계산 시작")
+        self.dialog_label.configure(text="계산중... 잠시만 기다려주세요")
         is_error = False
         try:
             self.case_terminal()

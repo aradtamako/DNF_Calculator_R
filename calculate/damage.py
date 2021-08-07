@@ -295,7 +295,7 @@ class Damage:
             if self.equipments_sets.__contains__('1063'):
                 self.now_damage_array[4] += 1
         if self.equipments_sets.__contains__('11301'):  # 기구신화
-            if self.equipments_sets.__contains__('21300') is False:
+            if self.equipments_sets.__contains__('22300') is False:
                 self.now_damage_array[4] -= 10
                 self.now_damage_array[7] += 10
             if self.equipments_sets.__contains__('31300') is False:
