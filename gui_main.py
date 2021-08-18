@@ -36,6 +36,7 @@ class MainGUI(tkinter.Frame):
         self.color_list = common.load_color()
         self.image_equipment = common.load_equipment_image()
         self.image_extra = common.load_extra_image()
+        self.custom_frame = None
         self.version = version
         self.is_custom_open = False
         self.create_main()
@@ -69,6 +70,10 @@ class MainGUI(tkinter.Frame):
         self.main_window.iconbitmap('ext_img/icon.ico')
         tkinter.Label(self.main_window, image=self.image_extra['bg_img.png'], bd=0).place(x=-2, y=0)
         self.main_window.configure(bg=self.color_list[0])
+        self.custom_frame = tkinter.Frame(
+            self.main_window, bd=0, bg=self.color_list[1], width=240, height=700
+        )
+        self.custom_frame.place(x=910, y=10)
 
     def set_btn_equipment(self):
         def create_btn_set(range_x, range_y, start_x, start_y, myth_index, *no_set):
@@ -392,13 +397,13 @@ class MainGUI(tkinter.Frame):
             else:
                 select_weapon_list = self.select_weapon_list
             calc_start = threading.Thread(target=terminal.Terminal, args=(
-                self.dropdown_list, select_weapon_list, self.equipment_toggle,
+                self.dropdown_list, self.entry_list, select_weapon_list, self.equipment_toggle,
                 self.result_class, self.label_list["dialog"]
             ), daemon=True)
             calc_start.start()
 
         self.label_list["dialog"] = tkinter.Label(
-            self.main_window, text="준비중...", font=self.font_list[1],
+            self.main_window, text="대기중...", font=self.font_list[1],
             fg="white", bg=self.color_list[1])
         self.label_list["dialog"].place(x=691, y=107)
 
@@ -475,11 +480,14 @@ class MainGUI(tkinter.Frame):
             for code, dropdown in self.dropdown_list.items():
                 save_dropdown[code] = str(dropdown.get())
             del save_dropdown['save']
+            save_setting = {}
+            for code, entry in self.entry_list.items():
+                save_setting[code] = str(entry.get())
             save_dict[now_save_name] = {
                 'weapons': self.select_weapon_list,
                 'equipments': save_equipments,
                 'dropdown': save_dropdown,
-                'setting': {}
+                'setting': save_setting
             }
             save_names = list(save_dict.keys())
             self.dropdown_list['save']['values'] = save_names
@@ -515,6 +523,9 @@ class MainGUI(tkinter.Frame):
             for key, value in save_dropdown.items():
                 self.dropdown_list[key].set(value)
             save_setting = save_values['setting']
+            for key, value in save_setting.items():
+                self.entry_list[key].delete(0, "end")
+                self.entry_list[key].insert(0, value)
             tkinter.messagebox.showinfo(title='불러오기', message='불러오기 완료')
 
         self.btn_list["save"] = tkinter.Button(
@@ -538,9 +549,11 @@ class MainGUI(tkinter.Frame):
     def set_custom_function(self):
         def open_custom():
             if self.is_custom_open:
+                self.result_class.get_main_expand(False)
                 self.is_custom_open = False
                 self.main_window.geometry('909x720')
             else:
+                self.result_class.get_main_expand(True)
                 self.is_custom_open = True
                 self.main_window.geometry('1160x720')
         self.btn_list['custom'] = tkinter.Button(
@@ -548,9 +561,57 @@ class MainGUI(tkinter.Frame):
             activebackground=self.color_list[0], bg=self.color_list[0])
         self.btn_list['custom'].place(x=813, y=40)
 
-        self.entry_list['cool_ratio_groggy'] = tkinter.ttk.Entry(
-            self.main_window, width=7)
-        self.entry_list['cool_ratio_groggy'].place(x=920, y=30)
+        def create_entry(tag, text, inv, value, x, y, width):
+            tkinter.Label(self.custom_frame, text=text, fg='white', bg=self.color_list[1],
+                          font=self.font_list[0]).place(x=x, y=y)
+            self.entry_list[tag] = tkinter.ttk.Entry(self.custom_frame, width=width)
+            self.entry_list[tag].insert(0, value)
+            self.entry_list[tag].place(x=x+inv, y=y)
+        tkinter.Label(self.custom_frame, text="<속강 커스텀>", fg='white', bg=self.color_list[1],
+                      font=self.font_list[2]).place(x=50, y=5)
+        tkinter.Label(self.custom_frame, text="주속성=", fg='white', bg=self.color_list[1],
+                      font=self.font_list[0]).place(x=5, y=40)
+        self.dropdown_list['element_type'] = tkinter.ttk.Combobox(
+            self.custom_frame, width=4, values=['화', '수', '명', '암', '모속']
+        )
+        tkinter.Label(self.custom_frame, text="모속강은 수문장 전용", fg='red', bg=self.color_list[1],
+                      font=self.font_list[1]).place(x=120, y=42)
+        self.dropdown_list['element_type'].set('화')
+        self.dropdown_list['element_type'].place(x=60, y=40)
+        create_entry('element_single', "단속강=", 55, 163, 5, 70, 6)
+        create_entry('element_all', "모속강=", 55, 153, 5, 100, 6)
+        create_entry('element_debuff', "총속깎=", 55, 60, 120, 70, 6)
+        create_entry('element_resist', "몹속저=", 55, 50, 120, 100, 6)
+
+        tkinter.Label(self.custom_frame, text="<딜러 커스텀>", fg='white', bg=self.color_list[1],
+                      font=self.font_list[2]).place(x=50, y=140)
+        create_entry('sunset_reinforce', "먼동강화=            강 (0~13)", 67, 10, 5, 175, 6)
+        tkinter.Label(self.custom_frame, text="사막축복=", fg='white', bg=self.color_list[1],
+                      font=self.font_list[0]).place(x=5, y=205)
+        self.dropdown_list['desert_super_armor'] = tkinter.ttk.Combobox(
+            self.custom_frame, width=9, values=['노피격(6+4)', '슈아유지(6)', '슈아파괴(X)']
+        )
+        self.dropdown_list['desert_super_armor'].set('슈아유지(6)')
+        self.dropdown_list['desert_super_armor'].place(x=70, y=205)
+
+        tkinter.Label(self.custom_frame, text="-가환산 특수딜 보정%-", fg='white', bg=self.color_list[1],
+                      font=self.font_list[0]).place(x=50, y=235)
+        create_entry('flow_shoulder', "흐름어깨=", 65, 0, 5, 260, 6)
+        create_entry('flow_jacket', "흐름상의=", 65, 0, 120, 260, 6)
+        create_entry('flow_pants', "흐름하의=", 65, 0, 5, 295, 6)
+        create_entry('flow_waist', "흐름벨트=", 65, 0, 120, 295, 6)
+        create_entry('flow_shoes', "흐름신발=", 65, 0, 5, 330, 6)
+        create_entry('selection_shoes', "선택신발=", 65, 15, 120, 330, 6)
+        tkinter.Label(self.custom_frame, text="-가환산 쿨감보정-", fg='white', bg=self.color_list[1],
+                      font=self.font_list[0]).place(x=62, y=360)
+        create_entry('cool_ratio_groggy', "순간딜=", 55, 20, 5, 385, 6)
+        create_entry('cool_ratio_sustain', "지속딜=", 55, 70, 120, 385, 6)
+        tkinter.Label(self.custom_frame, text="-정밀계산 보정-", fg='white', bg=self.color_list[1],
+                      font=self.font_list[0]).place(x=70, y=415)
+        create_entry('fix_delay', "고정 딜레이=            초 (0.0~1.0)", 85, 0.5, 5, 440, 6)
+        create_entry('section_groggy', "순간딜 구간=              초 (20이상)", 85, "20~30", 5, 470, 8)
+        create_entry('section_total', "종합딜 구간=              초", 85, "30~50", 5, 500, 8)
+        create_entry('section_sustain', "지속딜 구간=              초 (120이하)", 85, "110~120", 5, 530, 8)
 
     def set_extra(self):
         def guide_speed():

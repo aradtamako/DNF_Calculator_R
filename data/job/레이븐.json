@@ -2,7 +2,7 @@
 	"active": [
 		{
 			"name": "데스 크라이시스",
-			"damage": 3452178,
+			"damage": 4276225,
 			"coolTime": 290,
 			"requireLv": 100,
 			"gapLv": 5,
@@ -15,7 +15,7 @@
 		},
 		{
 			"name": "세븐스 플로우",
-			"damage": 1889224,
+			"damage": 2427819,
 			"coolTime": 180,
 			"requireLv": 85,
 			"gapLv": 5,
@@ -28,7 +28,7 @@
 		},
 		{
 			"name": "더블 건호크",
-			"damage": 1552315,
+			"damage": 1595888,
 			"coolTime": 44.6,
 			"requireLv": 45,
 			"gapLv": 2,
@@ -39,7 +39,7 @@
 			"delay": 3,
 			"talisman": {
 				"name": "더블 그라인더",
-				"damage": 1937176,
+				"damage": 1991553,
 				"coolTime": 44.6,
 				"available": 1,
 				"rune": 1
@@ -47,7 +47,7 @@
 		},
 		{
 			"name": "스커드 제노사이드",
-			"damage": 1762992,
+			"damage": 2236086,
 			"coolTime": 145,
 			"requireLv": 50,
 			"gapLv": 5,
@@ -60,7 +60,7 @@
 		},
 		{
 			"name": "엑셀레이션 트리거",
-			"damage": 1240282,
+			"damage": 1549204,
 			"coolTime": 60,
 			"requireLv": 95,
 			"gapLv": 2,
@@ -73,7 +73,7 @@
 		},
 		{
 			"name": "제압 사격",
-			"damage": 1104065,
+			"damage": 1373315,
 			"coolTime": 50,
 			"requireLv": 70,
 			"gapLv": 2,
@@ -84,7 +84,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "매거진 핸들링",
-				"damage": 1459581,
+				"damage": 1815531,
 				"coolTime": 50,
 				"available": 0,
 				"rune": 0
@@ -92,7 +92,7 @@
 		},
 		{
 			"name": "패스트 드로우",
-			"damage": 1109428,
+			"damage": 1418719,
 			"coolTime": 40,
 			"requireLv": 75,
 			"gapLv": 2,
@@ -103,7 +103,7 @@
 			"delay": 1.5,
 			"talisman": {
 				"name": "듀얼 리액션",
-				"damage": 1511873,
+				"damage": 1933360,
 				"coolTime": 40,
 				"available": 2,
 				"rune": 0
@@ -111,7 +111,7 @@
 		},
 		{
 			"name": "와이프 아웃",
-			"damage": 914812,
+			"damage": 1178395,
 			"coolTime": 45,
 			"requireLv": 80,
 			"gapLv": 2,
@@ -122,7 +122,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "불릿 스톰",
-				"damage": 1220176,
+				"damage": 1571743,
 				"coolTime": 45,
 				"available": 0,
 				"rune": 0
@@ -130,7 +130,7 @@
 		},
 		{
 			"name": "이동사격",
-			"damage": 731683,
+			"damage": 922764,
 			"coolTime": 24.3,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -143,7 +143,7 @@
 		},
 		{
 			"name": "데들리 어프로치",
-			"damage": 775884,
+			"damage": 970736,
 			"coolTime": 30,
 			"requireLv": 60,
 			"gapLv": 2,
@@ -154,7 +154,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "먹이사냥",
-				"damage": 1016408,
+				"damage": 1271664,
 				"coolTime": 27,
 				"available": 0,
 				"rune": 0
@@ -162,7 +162,7 @@
 		},
 		{
 			"name": "난사",
-			"damage": 532025,
+			"damage": 678014,
 			"coolTime": 17.6,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -173,7 +173,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "엑셀레이션 리볼버",
-				"damage": 713977,
+				"damage": 909895,
 				"coolTime": 17.6,
 				"available": 3,
 				"rune": 0
@@ -181,7 +181,7 @@
 		},
 		{
 			"name": "멀티 헤드샷",
-			"damage": 519777,
+			"damage": 694640,
 			"coolTime": 19.8,
 			"requireLv": 40,
 			"gapLv": 2,
@@ -192,7 +192,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "와이드 아웃",
-				"damage": 680907,
+				"damage": 909979,
 				"coolTime": 19.8,
 				"available": 0,
 				"rune": 0
@@ -200,7 +200,7 @@
 		},
 		{
 			"name": "에어레이드",
-			"damage": 187314,
+			"damage": 234163,
 			"coolTime": 4.2,
 			"requireLv": 25,
 			"gapLv": 2,
@@ -213,7 +213,7 @@
 		},
 		{
 			"name": "트리플 탭",
-			"damage": 299427,
+			"damage": 338603,
 			"coolTime": 8,
 			"requireLv": 30,
 			"gapLv": 2,
@@ -226,7 +226,7 @@
 		},
 		{
 			"name": "더스트 샷",
-			"damage": 146303,
+			"damage": 182587,
 			"coolTime": 5,
 			"requireLv": 10,
 			"gapLv": 2,
@@ -239,7 +239,7 @@
 		},
 		{
 			"name": "마하킥",
-			"damage": 122108,
+			"damage": 151642,
 			"coolTime": 4,
 			"requireLv": 15,
 			"gapLv": 2,
@@ -252,7 +252,7 @@
 		},
 		{
 			"name": "웨스턴 파이어",
-			"damage": 146370,
+			"damage": 191409,
 			"coolTime": 8.7,
 			"requireLv": 15,
 			"gapLv": 2,
@@ -265,7 +265,7 @@
 		},
 		{
 			"name": "윈드밀",
-			"damage": 105948,
+			"damage": 132427,
 			"coolTime": 4,
 			"requireLv": 10,
 			"gapLv": 2,
@@ -278,7 +278,7 @@
 		},
 		{
 			"name": "헤드샷",
-			"damage": 97580,
+			"damage": 127606,
 			"coolTime": 6.9,
 			"requireLv": 15,
 			"gapLv": 2,
@@ -291,8 +291,8 @@
 		},
 		{
 			"name": "평타(1사이클)",
-			"damage": 155033,
-			"coolTime": null,
+			"damage": 186671,
+			"coolTime": 100,
 			"requireLv": 1,
 			"gapLv": 1,
 			"maxLv": 100,
@@ -325,9 +325,9 @@
 			"requirementValue": null
 		},
 		{
-			"name": "베일드 컷",
+			"name": "죽음의 표식",
 			"requireLv": 48,
-			"maxValue": 42.5,
+			"maxValue": 46.5,
 			"upValue": 2,
 			"type": "DAMAGE",
 			"target": "ALL",
@@ -335,7 +335,7 @@
 			"requirementValue": null
 		},
 		{
-			"name": "쏘우 블레이드",
+			"name": "사격술",
 			"requireLv": 75,
 			"maxValue": 46,
 			"upValue": 2,
@@ -345,7 +345,7 @@
 			"requirementValue": null
 		},
 		{
-			"name": "체인 인라이튼",
+			"name": "아웃 스탠딩",
 			"requireLv": 95,
 			"maxValue": 26,
 			"upValue": 2,

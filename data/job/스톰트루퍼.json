@@ -2,7 +2,7 @@
 	"active": [
 		{
 			"name": "디사이시브 배틀",
-			"damage": 3747917,
+			"damage": 4531159,
 			"coolTime": 290,
 			"requireLv": 100,
 			"gapLv": 5,
@@ -15,7 +15,7 @@
 		},
 		{
 			"name": "오퍼레이션 레이즈",
-			"damage": 2218813,
+			"damage": 2605469,
 			"coolTime": 180,
 			"requireLv": 85,
 			"gapLv": 5,
@@ -28,7 +28,7 @@
 		},
 		{
 			"name": "에인션트 트리거",
-			"damage": 1761383,
+			"damage": 2067864,
 			"coolTime": 145,
 			"requireLv": 50,
 			"gapLv": 5,
@@ -41,7 +41,7 @@
 		},
 		{
 			"name": "UHT-03 플레게톤",
-			"damage": 1373064,
+			"damage": 1658715,
 			"coolTime": 60,
 			"requireLv": 95,
 			"gapLv": 2,
@@ -54,7 +54,7 @@
 		},
 		{
 			"name": "FM-92 mk2 랜서 SW",
-			"damage": 1227694,
+			"damage": 1353500,
 			"coolTime": 50,
 			"requireLv": 70,
 			"gapLv": 2,
@@ -65,26 +65,26 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "MIBC유도장치",
-				"damage": 1559171,
+				"damage": 1718946,
 				"coolTime": 45,
-				"available": 1,
-				"rune": 1
+				"available": 0,
+				"rune": 0
 			}
 		},
 		{
 			"name": "X-1 익스트루터",
-			"damage": 986292,
+			"damage": 1227070,
 			"coolTime": 45,
 			"requireLv": 40,
 			"gapLv": 2,
 			"maxLv": 32,
-			"nowLv": 32,
+			"nowLv": 10,
 			"maxTp": 5,
-			"nowTp": 5,
+			"nowTp": 0,
 			"delay": 1.5,
 			"talisman": {
 				"name": "ACX-1 익스트루더",
-				"damage": 1163825,
+				"damage": 1447943,
 				"coolTime": 39.6,
 				"available": 0,
 				"rune": 0
@@ -92,7 +92,7 @@
 		},
 		{
 			"name": "FSC-7",
-			"damage": 973762,
+			"damage": 1164624,
 			"coolTime": 40,
 			"requireLv": 75,
 			"gapLv": 2,
@@ -103,7 +103,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "라이트웨이트",
-				"damage": 623208,
+				"damage": 745359,
 				"coolTime": 18,
 				"available": 0,
 				"rune": 0
@@ -111,7 +111,7 @@
 		},
 		{
 			"name": "PT-15 프로토타입",
-			"damage": 1076292,
+			"damage": 1287715,
 			"coolTime": 45,
 			"requireLv": 80,
 			"gapLv": 2,
@@ -122,34 +122,34 @@
 			"delay": 1,
 			"talisman": {
 				"name": "PT-15 테라모듈",
-				"damage": 1452994,
+				"damage": 1738416,
 				"coolTime": 45,
-				"available": 2,
+				"available": 3,
 				"rune": 0
 			}
 		},
 		{
 			"name": "플라즈마 부스터",
-			"damage": 729497,
+			"damage": 911487,
 			"coolTime": 30,
 			"requireLv": 60,
 			"gapLv": 2,
 			"maxLv": 24,
-			"nowLv": 0,
+			"nowLv": 23,
 			"maxTp": 5,
-			"nowTp": 0,
-			"delay": 3,
+			"nowTp": 5,
+			"delay": 1,
 			"talisman": {
 				"name": "고출력 플라즈마",
-				"damage": 685727,
+				"damage": 856798,
 				"coolTime": 18,
-				"available": 0,
-				"rune": 0
+				"available": 1,
+				"rune": 1
 			}
 		},
 		{
 			"name": "FM-92 mk2 랜서",
-			"damage": 548228,
+			"damage": 654637,
 			"coolTime": 20,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -162,7 +162,7 @@
 		},
 		{
 			"name": "양자 폭탄",
-			"damage": 500067,
+			"damage": 597303,
 			"coolTime": 18,
 			"requireLv": 40,
 			"gapLv": 2,
@@ -173,15 +173,15 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "라인 배커",
-				"damage": 671329,
+				"damage": 801854,
 				"coolTime": 16.2,
-				"available": 3,
+				"available": 2,
 				"rune": 0
 			}
 		},
 		{
 			"name": "화염 강타",
-			"damage": 390152,
+			"damage": 466093,
 			"coolTime": 12,
 			"requireLv": 30,
 			"gapLv": 2,
@@ -194,7 +194,7 @@
 		},
 		{
 			"name": "FM-31 그레네이드 런처",
-			"damage": 337582,
+			"damage": 403201,
 			"coolTime": 15,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -205,7 +205,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "M102-CERM 탄약",
-				"damage": 107182,
+				"damage": 128016,
 				"coolTime": 4,
 				"available": 0,
 				"rune": 0
@@ -213,20 +213,20 @@
 		},
 		{
 			"name": "레이저 라이플",
-			"damage": 223528,
+			"damage": 266901,
 			"coolTime": 7,
 			"requireLv": 25,
 			"gapLv": 2,
 			"maxLv": 42,
 			"nowLv": 42,
 			"maxTp": 5,
-			"nowTp": 4,
+			"nowTp": 5,
 			"delay": 1.5,
 			"talisman": null
 		},
 		{
 			"name": "M-3 화염방사기",
-			"damage": 185931,
+			"damage": 212906,
 			"coolTime": 7,
 			"requireLv": 15,
 			"gapLv": 2,
@@ -239,12 +239,12 @@
 		},
 		{
 			"name": "슈타이어 대전차포",
-			"damage": 177985,
+			"damage": 211238,
 			"coolTime": 6,
 			"requireLv": 20,
 			"gapLv": 2,
 			"maxLv": 44,
-			"nowLv": 39,
+			"nowLv": 0,
 			"maxTp": 5,
 			"nowTp": 0,
 			"delay": 0.5,
@@ -252,7 +252,7 @@
 		},
 		{
 			"name": "캐넌볼",
-			"damage": 139717,
+			"damage": 166735,
 			"coolTime": 5,
 			"requireLv": 20,
 			"gapLv": 2,
@@ -265,7 +265,7 @@
 		},
 		{
 			"name": "M-137 개틀링건",
-			"damage": 108884,
+			"damage": 87676,
 			"coolTime": 5,
 			"requireLv": 5,
 			"gapLv": 2,

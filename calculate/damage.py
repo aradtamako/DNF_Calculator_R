@@ -51,16 +51,12 @@ class Damage:
      * 27: 쿨타임 감소(2각캐 기준)
      * 28~30: 50,85,100레벨 스킬 공격력 증가
      """
-    base_element = 131 + 25 + 7 + 60 - 50
-    cool_efficiency_groggy = 0.2
-    cool_efficiency_sustain = 0.7
     ratio_groggy_sustain = 0.5
-    is_cool_down_on = 1
 
     def __init__(self, job, basic_damage_arr, basic_leveling_arr, is_calc_detail,
                  is_scent2_on, scent_option_input,
                  purgatory_option_input, purgatory_value_input, purgatory_weapon_ult_input,
-                 purgatory_auto_converting_weapon_ult_mode):
+                 purgatory_auto_converting_weapon_ult_mode, values_dicts):
         job_data = calculate.calculation.dealer_job_data[job]
         self.job_active_efficiency = job_data['nowJobActiveLevelingArray']
         self.job_passive_efficiency = job_data['nowJobPassiveLeveling']
@@ -70,6 +66,34 @@ class Damage:
         self.weapon_type = "공통"
         self.basic_damage_arr = basic_damage_arr
         self.basic_leveling_arr = basic_leveling_arr
+
+        try:
+            self.cool_efficiency_groggy = float(values_dicts.get('cool_ratio_groggy')) / 100
+            self.cool_efficiency_sustain = float(values_dicts.get('cool_ratio_sustain')) / 100
+        except TypeError:
+            self.cool_efficiency_groggy = 0.2
+            self.cool_efficiency_sustain = 0.7
+        if values_dicts.get('cool_down') == 'O(그로기포함)':
+            self.is_cool_down_on = 1
+        else:
+            self.is_cool_down_on = 0
+        try:
+            self.fix_delay = int(float(values_dicts.get('fix_delay')) * 10)
+        except TypeError:
+            self.fix_delay = 0.5
+        self.timing_section_list = [201, 300, 301, 500, 1101, 1200]
+        try:
+            section_groggy = values_dicts.get('section_groggy').split('~')
+            self.timing_section_list[0] = int(section_groggy[0]) * 10 + 1
+            self.timing_section_list[1] = int(section_groggy[1]) * 10
+            section_total = values_dicts.get('section_total').split('~')
+            self.timing_section_list[2] = int(section_total[0]) * 10 + 1
+            self.timing_section_list[3] = int(section_total[1]) * 10
+            section_sustain = values_dicts.get('section_sustain').split('~')
+            self.timing_section_list[4] = int(section_sustain[0]) * 10 + 1
+            self.timing_section_list[5] = int(section_sustain[1]) * 10
+        except TypeError:
+            self.timing_section_list = [201, 300, 301, 500, 1101, 1200]
 
         self.is_calc_detail = is_calc_detail
         if is_calc_detail is True:
@@ -305,7 +329,7 @@ class Damage:
     def calculate_damage(self):
         job_element = self.job_basic_element + sum([self.job_passive_element[i] * self.now_leveling_array[i]
                                                     for i in range(19)])
-        self.now_damage_array[9] += job_element + self.base_element + standard_base_element
+        self.now_damage_array[9] += job_element + standard_base_element
         # log("total_element", self.now_damage_array[9])
 
         self.now_damage_array[4] += \
@@ -641,7 +665,7 @@ class Damage:
             damage_trans = []
             now_time_damage = 0
             cannot_damage_time = 0
-            for c_sec in range(0, 1200):
+            for c_sec in range(0, 1201):
                 cannot_damage_time -= 1
                 for index in range(case):
                     delay_time[index] -= 1
@@ -650,7 +674,7 @@ class Damage:
                     continue
                 for index in range(case):
                     if delay_time[index] <= 0:
-                        cannot_damage_time = index_delay[index]
+                        cannot_damage_time = index_delay[index] + self.fix_delay
                         delay_time[index] = index_cool[index]
                         if c_sec > 400:
                             now_time_damage += index_damage[index] * 0.6
@@ -660,21 +684,21 @@ class Damage:
                 damage_trans.append(now_time_damage)
             cases = 0
             temp_damage_sum = 0
-            for c_sec in range(200, 301):
+            for c_sec in range(self.timing_section_list[0], self.timing_section_list[1]):
                 cases += 1
                 temp_damage_sum += damage_trans[c_sec]
             final_damage_25 = int(temp_damage_sum / cases)
             cases = 0
             temp_damage_sum = 0
-            for c_sec in range(300, 501):
+            for c_sec in range(self.timing_section_list[2], self.timing_section_list[3]):
                 cases += 1
                 temp_damage_sum += damage_trans[c_sec]
             final_damage_40 = int(temp_damage_sum / cases)
             cases = 0
             temp_damage_sum = 0
-            for c_sec in range(110, 121):
+            for c_sec in range(self.timing_section_list[4], self.timing_section_list[5]):
                 cases += 1
-                temp_damage_sum += damage_trans[c_sec * 10 - 1]
+                temp_damage_sum += damage_trans[c_sec]
             final_damage_120 = int(temp_damage_sum / cases)
             # log("final_damage_40", final_damage_40)
             # log("final_damage_25", final_damage_25)
@@ -715,7 +739,7 @@ class Damage:
             cool_down_value = (1.0 / cool_down_point - 1.0) / (
                     ((1 - cool_down_point) / 0.55) * ((1 - cool_down_point) / 0.55) * (
                         (1 - cool_down_point) / 0.55) + 1)
-            cool_down_groggy = cool_down_value * self.cool_efficiency_groggy + 1
+            cool_down_groggy = cool_down_value * self.cool_efficiency_groggy * self.is_cool_down_on + 1
             cool_down_sustain = cool_down_value * self.cool_efficiency_sustain + 1
 
             total_damage = total_damage_no_active * total_passive_damage

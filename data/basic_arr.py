@@ -3,6 +3,30 @@ import data.damage_data
 
 class BasicArr:
 
+    """nowDamageArray index
+         * 0: 추가 스탯 수치
+         * 1: 추가 공격력 수치
+         * 2: 데미지 추가 증가
+         * 3: 크리티컬 데미지 추가 증가
+         * 4: 추가 데미지
+         * 5: 속성 추가 데미지
+         * 6: 모든 공격력 증가
+         * 7: 공격력 % 증가
+         * 8: 힘, 지능 % 증가
+         * 9: 속성 강화
+         * 10: 지속 데미지
+         * 11: 스킬 공격력 증가
+         * 12: 기타 특수성 데미지
+         * 13: 공격속도 증가
+         * 14: 크리티컬 확률 증가
+         * 15~20: 액티브 레벨링 (1~45, 50, 60~80, 85, 95, 100)
+         * 21~24: (안 쓰임)패시브 레벨링(전직패, 1각패, 2각패, 진각패)
+         * 25: 기타 특수성 액티브 레벨링 실효율%
+         * 26: 쿨타임 감소(진각캐 기준)
+         * 27: 쿨타임 감소(2각캐 기준)
+         * 28~30: 50,85,100레벨 스킬 공격력 증가
+         """
+
     def __init__(self, value_dict, is_scent2_on):
         self.basic_damage_arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -15,10 +39,19 @@ class BasicArr:
         self.purgatory_auto_converting_weapon_ult_mode = 1  # 1: 태생유지, 2: 각성강제, 3: 각성해제
         self.value_dict = value_dict
         self.is_scent2_on = is_scent2_on
+        self.set_element_value()
         self.set_title_value()
         self.set_creature_value()
         self.set_scent_value()
         self.set_purgatory_value()
+
+    def set_element_value(self):
+        if self.value_dict['element_type'] == '모속':
+            element_value = int(self.value_dict['element_all'])
+        else:
+            element_value = int(self.value_dict['element_single'])
+        element_value += (int(self.value_dict['element_debuff']) - int(self.value_dict['element_resist']))
+        self.basic_damage_arr[9] = element_value
 
     def get_basic_arr_input(self):
         return [self.basic_damage_arr, self.basic_leveling_arr]

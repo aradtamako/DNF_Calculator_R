@@ -45,7 +45,7 @@ class Calculation:
                  basic_damage_arr, basic_leveling_arr,
                  is_scent2_on, scent_option_input,
                  purgatory_option_input, purgatory_value_input, purgatory_weapon_ult_input,
-                 purgatory_auto_converting_weapon_ult_mode):
+                 purgatory_auto_converting_weapon_ult_mode, values_dicts):
 
         is_buffer = False
         # sum, groggy, sustain, ult
@@ -65,7 +65,7 @@ class Calculation:
                 job, basic_damage_arr, basic_leveling_arr, False,
                 is_scent2_on, scent_option_input,
                 purgatory_option_input, purgatory_value_input, purgatory_weapon_ult_input,
-                purgatory_auto_converting_weapon_ult_mode
+                purgatory_auto_converting_weapon_ult_mode, values_dicts
             )
             for fusion in fusion_cases:
                 for weapon in weapon_cases:
@@ -100,7 +100,7 @@ class Calculation:
                 job, basic_damage_arr, basic_leveling_arr, True,
                 is_scent2_on, scent_option_input,
                 purgatory_option_input, purgatory_value_input, purgatory_weapon_ult_input,
-                purgatory_auto_converting_weapon_ult_mode
+                purgatory_auto_converting_weapon_ult_mode, values_dicts
             )
             for i in range(4):
                 damage_class_detail.get_detail_code(i)

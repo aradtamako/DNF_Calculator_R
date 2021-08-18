@@ -32,6 +32,7 @@ class ResultGUI:
         self.result_cool = None
         self.result_all = None
         self.result_invert = None
+        self.is_expand = False
 
         self.now_creature = "크증18%"
 
@@ -41,6 +42,9 @@ class ResultGUI:
 
         # 그래프용 max_min 지정
         self.tran_max = 0
+
+    def get_main_expand(self, is_expand):
+        self.is_expand = is_expand
 
     def get_result_data(
             self, result_values_sum, result_equipments_sum, result_tran_sum,
@@ -59,6 +63,7 @@ class ResultGUI:
         self.result_invert = ranked_result_invert_sum  # 연옥 변환 옵션
 
     def start_gui(self):
+        self.parent.geometry('909x720')
         self.now_rank_toggle = 0
         self.now_rank_selected = 0
         self.create_main()
@@ -104,6 +109,8 @@ class ResultGUI:
                                        anchor='w', font=self.fonts[1], fill='white')
 
         def destroy_result(*e):
+            if self.is_expand:
+                self.parent.geometry('1160x720')
             self.result_canvas.destroy()
             try:
                 for i in range(3):
@@ -223,12 +230,9 @@ class ResultGUI:
         )
         self.result_canvas.create_line(175, 673, 175, 455, fill='gray', width=1)
         self.result_canvas.create_text(42, 683, text='0', fill='white', font=self.fonts[1])
-        self.result_canvas.create_text(108, 683, text='20s', fill='white', font=self.fonts[1])
-        self.result_canvas.create_text(142, 683, text='30s', fill='white', font=self.fonts[1])
-        self.result_canvas.create_text(175, 683, text='40s', fill='white', font=self.fonts[1])
-        self.result_canvas.create_text(208, 683, text='50s', fill='white', font=self.fonts[1])
-        self.result_canvas.create_text(375, 683, text='100s', fill='white', font=self.fonts[1])
-        self.result_canvas.create_text(442, 683, text='120s', fill='white', font=self.fonts[1])
+        for i in range(1, 13):
+            now_x = (442 - 75) * (i-1)/11 + 75
+            self.result_canvas.create_text(now_x, 683, text=str(i)+'0s', fill='white', font=self.fonts[1])
         self.result_canvas.create_text(242, 433, text='<시간 경과별 데미지 그래프>',
                                        fill='white', font=self.fonts[2])
         self.result_canvas.create_text(503, 454, text='<비교 선택>',

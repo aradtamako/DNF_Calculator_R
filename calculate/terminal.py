@@ -7,6 +7,7 @@ from datetime import datetime
 
 import data.dataload
 import data.basic_arr
+import calculate.application
 
 
 is_running = False
@@ -24,7 +25,9 @@ def divide_case(equipment_list, core_num):
 
 class Terminal:
 
-    def __init__(self, dropdown_list, select_weapon_list, equipment_toggle, result_class, dialog_label):
+    def __init__(
+            self, dropdown_list, entry_list, select_weapon_list, equipment_toggle, result_class, dialog_label
+    ):
         global is_running
         is_running = True
         if len(dropdown_list['job'].get()) > 5:
@@ -33,6 +36,7 @@ class Terminal:
                 return
         self.start_time = datetime.now()
         self.dropdown_list = dropdown_list
+        self.entry_list = entry_list
         self.select_weapon_list = select_weapon_list
         self.equipment_toggle = equipment_toggle
         self.result_class = result_class
@@ -181,8 +185,11 @@ class Terminal:
     def get_setting_values(self):
         for key, value in self.dropdown_list.items():
             self.values[key] = value.get()
+        for key, value in self.entry_list.items():
+            self.values[key] = value.get()
 
         basic_arr_class = data.basic_arr.BasicArr(self.values, self.is_scent2_on)
+        calculate.application.Application(self.values)
 
         basic_arrays = basic_arr_class.get_basic_arr_input()
         self.basic_damage_arr = basic_arrays[0]
@@ -258,7 +265,7 @@ class Terminal:
                         self.basic_damage_arr, self.basic_leveling_arr,
                         self.is_scent2_on, self.scent_option_input,
                         self.purgatory_option_input, self.purgatory_value_input, self.purgatory_weapon_ult_input,
-                        self.purgatory_auto_converting_weapon_ult_mode
+                        self.purgatory_auto_converting_weapon_ult_mode, self.values
                     )
                 )
             )

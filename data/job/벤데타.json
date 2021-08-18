@@ -177,7 +177,13 @@
 			"maxTp": 5,
 			"nowTp": 0,
 			"delay": 0.5,
-			"talisman": null
+			"talisman": {
+				"name": "슈터 칵테일",
+				"damage": 807421,
+				"coolTime": 18,
+				"available": 0,
+				"rune": 0
+			}
 		},
 		{
 			"name": "와일드 플라워",
@@ -190,13 +196,7 @@
 			"maxTp": 5,
 			"nowTp": 5,
 			"delay": 0.5,
-			"talisman": {
-				"name": "슈터 칵테일",
-				"damage": 807421,
-				"coolTime": 18,
-				"available": 0,
-				"rune": 0
-			}
+			"talisman": null
 		},
 		{
 			"name": "행오버",
