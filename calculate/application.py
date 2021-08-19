@@ -46,7 +46,7 @@ class Application:
         # 대자연 속강
         element_type = self.value_dict.get('element_type')
         if element_type == "모속":
-            equipment_damage_option['41540'][9] = 80
+            equipment_damage_option['41540'][9] = 90
             equipment_damage_option['12150'][9] = 6
             equipment_damage_option['13150'][9] = 6
             equipment_damage_option['14150'][9] = 6

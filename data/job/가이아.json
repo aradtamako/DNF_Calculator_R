@@ -328,16 +328,6 @@
 			"requirementValue": null
 		},
 		{
-			"name": "강인한 신념",
-			"requireLv": 15,
-			"maxValue": 10,
-			"upValue": 0,
-			"type": "COOL",
-			"target": "에우디아의 성채^체인 스트라이크^신뢰의 돌파^분쇄^자연의 분노^생명의 전조^런지 에볼루션^자연의 속박^뱅가드 스트랏슈^신록의 검^엘비쉬 점프^에이션트 보어^압도^선고^에이션트 디어^무장 해제",
-			"requirementType": null,
-			"requirementValue": null
-		},
-		{
 			"name": "체인러쉬",
 			"requireLv": 30,
 			"maxValue": 90,
@@ -388,7 +378,15 @@
 			"requirementValue": null
 		}
 	],
-	"special": [],
+	"special": [
+		{
+			"requirementType": "ALL",
+			"requirementValue": "X",
+			"type": "COOL",
+			"target": "에우디아의 성채^체인 스트라이크^신뢰의 돌파^분쇄^자연의 분노^생명의 전조^런지 에볼루션^자연의 속박^뱅가드 스트랏슈^신록의 검^엘비쉬 점프^에이션트 보어^압도^선고^에이션트 디어^무장 해제",
+			"value": 10
+		}
+	],
 	"weapon": [
 		{
 			"type": "대검",

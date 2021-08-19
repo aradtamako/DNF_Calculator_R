@@ -2,7 +2,7 @@
 	"active": [
 		{
 			"name": "G-X 스타더스트",
-			"damage": 3511759,
+			"damage": 4158697,
 			"coolTime": 290,
 			"requireLv": 100,
 			"gapLv": 5,
@@ -15,7 +15,7 @@
 		},
 		{
 			"name": "고기동 메카 : 볼트 MX",
-			"damage": 1727518,
+			"damage": 2058631,
 			"coolTime": 180,
 			"requireLv": 85,
 			"gapLv": 5,
@@ -28,7 +28,7 @@
 		},
 		{
 			"name": "트랜스 폼 : \nG-0 배틀로이드",
-			"damage": 1567921,
+			"damage": 1857036,
 			"coolTime": 145,
 			"requireLv": 50,
 			"gapLv": 5,
@@ -41,7 +41,7 @@
 		},
 		{
 			"name": "하이퍼 플레어",
-			"damage": 1114753,
+			"damage": 1317780,
 			"coolTime": 60,
 			"requireLv": 95,
 			"gapLv": 2,
@@ -54,7 +54,7 @@
 		},
 		{
 			"name": "G-3 랩터",
-			"damage": 840403,
+			"damage": 1004945,
 			"coolTime": 10,
 			"requireLv": 30,
 			"gapLv": 2,
@@ -67,7 +67,7 @@
 		},
 		{
 			"name": "게일 포스",
-			"damage": 214023,
+			"damage": 236871,
 			"coolTime": 10,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -78,7 +78,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "얼티밋 게일 포스",
-				"damage": 908670,
+				"damage": 1031343,
 				"coolTime": 30,
 				"available": 3,
 				"rune": 0
@@ -86,7 +86,7 @@
 		},
 		{
 			"name": "스패로우 팩토리",
-			"damage": 931207,
+			"damage": 1092946,
 			"coolTime": 45,
 			"requireLv": 45,
 			"gapLv": 2,
@@ -97,7 +97,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "스패로우 : 요격 모드",
-				"damage": 1315489,
+				"damage": 1543998,
 				"coolTime": 45,
 				"available": 2,
 				"rune": 0
@@ -105,7 +105,7 @@
 		},
 		{
 			"name": "마그네틱 필드",
-			"damage": 879200,
+			"damage": 1052097,
 			"coolTime": 50,
 			"requireLv": 80,
 			"gapLv": 2,
@@ -116,7 +116,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "네오디뮴 마그넷",
-				"damage": 1142960,
+				"damage": 1367726,
 				"coolTime": 45,
 				"available": 0,
 				"rune": 0
@@ -124,7 +124,7 @@
 		},
 		{
 			"name": "프리스비",
-			"damage": 770841,
+			"damage": 920109,
 			"coolTime": 45,
 			"requireLv": 70,
 			"gapLv": 2,
@@ -135,7 +135,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "스피닝 블레이드",
-				"damage": 925009,
+				"damage": 1104130,
 				"coolTime": 40.5,
 				"available": 0,
 				"rune": 0
@@ -143,7 +143,7 @@
 		},
 		{
 			"name": "메카 드롭",
-			"damage": 760665,
+			"damage": 895489,
 			"coolTime": 40,
 			"requireLv": 40,
 			"gapLv": 2,
@@ -154,7 +154,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "폭격 개시",
-				"damage": 1014727,
+				"damage": 1194582,
 				"coolTime": 36,
 				"available": 0,
 				"rune": 0
@@ -162,7 +162,7 @@
 		},
 		{
 			"name": "HS-12 플라즈마",
-			"damage": 569341,
+			"damage": 675355,
 			"coolTime": 30,
 			"requireLv": 60,
 			"gapLv": 2,
@@ -173,7 +173,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "이볼빙 시스템",
-				"damage": 688903,
+				"damage": 817180,
 				"coolTime": 30,
 				"available": 0,
 				"rune": 0
@@ -181,7 +181,7 @@
 		},
 		{
 			"name": "G-S.P. 팔콘",
-			"damage": 307295,
+			"damage": 366333,
 			"coolTime": 15,
 			"requireLv": 75,
 			"gapLv": 2,
@@ -192,7 +192,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "에너지 순환 시스템",
-				"damage": 403785,
+				"damage": 481362,
 				"coolTime": 13.5,
 				"available": 1,
 				"rune": 1
@@ -200,7 +200,7 @@
 		},
 		{
 			"name": "G-2 롤링썬더",
-			"damage": 268483,
+			"damage": 320506,
 			"coolTime": 6,
 			"requireLv": 25,
 			"gapLv": 2,
@@ -213,7 +213,7 @@
 		},
 		{
 			"name": "G-마그네틱",
-			"damage": 234831,
+			"damage": 280613,
 			"coolTime": 15,
 			"requireLv": 20,
 			"gapLv": 2,
@@ -239,7 +239,7 @@
 		},
 		{
 			"name": "Ex-S 바이퍼",
-			"damage": 120399,
+			"damage": 137473,
 			"coolTime": 3.5,
 			"requireLv": 25,
 			"gapLv": 2,

@@ -2,7 +2,7 @@
 	"active": [
 		{
 			"name": "크림슨 가든",
-			"damage": 3472192,
+			"damage": 4412097,
 			"coolTime": 290,
 			"requireLv": 100,
 			"gapLv": 5,
@@ -15,7 +15,7 @@
 		},
 		{
 			"name": "블러드 앤 체인",
-			"damage": 1859193,
+			"damage": 2280275,
 			"coolTime": 180,
 			"requireLv": 85,
 			"gapLv": 5,
@@ -28,7 +28,7 @@
 		},
 		{
 			"name": "더블 건호크",
-			"damage": 1665683,
+			"damage": 1712439,
 			"coolTime": 44.6,
 			"requireLv": 45,
 			"gapLv": 2,
@@ -39,7 +39,7 @@
 			"delay": 3,
 			"talisman": {
 				"name": "스피닝 탑 건호크",
-				"damage": 2137374,
+				"damage": 2197371,
 				"coolTime": 44.6,
 				"available": 1,
 				"rune": 1
@@ -47,7 +47,7 @@
 		},
 		{
 			"name": "블러디 카니발",
-			"damage": 1590145,
+			"damage": 1950380,
 			"coolTime": 145,
 			"requireLv": 50,
 			"gapLv": 5,
@@ -60,7 +60,7 @@
 		},
 		{
 			"name": "루이네이션 에어리어",
-			"damage": 1319077,
+			"damage": 1617873,
 			"coolTime": 60,
 			"requireLv": 95,
 			"gapLv": 2,
@@ -73,7 +73,7 @@
 		},
 		{
 			"name": "제압 사격",
-			"damage": 1173781,
+			"damage": 1439584,
 			"coolTime": 50,
 			"requireLv": 70,
 			"gapLv": 2,
@@ -84,15 +84,15 @@
 			"delay": 1,
 			"talisman": {
 				"name": "블레이드 스톰",
-				"damage": 1521849,
+				"damage": 1866471,
 				"coolTime": 50,
-				"available": 2,
+				"available": 0,
 				"rune": 0
 			}
 		},
 		{
 			"name": "킬 포인트",
-			"damage": 870433,
+			"damage": 1157082,
 			"coolTime": 40,
 			"requireLv": 75,
 			"gapLv": 3,
@@ -103,15 +103,15 @@
 			"delay": 1,
 			"talisman": {
 				"name": "핀 포인트",
-				"damage": 1177275,
+				"damage": 1564967,
 				"coolTime": 40,
-				"available": 0,
+				"available": 3,
 				"rune": 0
 			}
 		},
 		{
 			"name": "체인 디바이더",
-			"damage": 844848,
+			"damage": 1127396,
 			"coolTime": 45,
 			"requireLv": 80,
 			"gapLv": 2,
@@ -122,7 +122,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "윈드 디바인더",
-				"damage": 1132097,
+				"damage": 1510710,
 				"coolTime": 45,
 				"available": 0,
 				"rune": 0
@@ -130,7 +130,7 @@
 		},
 		{
 			"name": "이동사격",
-			"damage": 786238,
+			"damage": 921485,
 			"coolTime": 24.3,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -143,7 +143,7 @@
 		},
 		{
 			"name": "블러디 스파이크",
-			"damage": 614312,
+			"damage": 815974,
 			"coolTime": 25,
 			"requireLv": 60,
 			"gapLv": 2,
@@ -154,7 +154,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "블러디 스타",
-				"damage": 843084,
+				"damage": 1119851,
 				"coolTime": 25,
 				"available": 0,
 				"rune": 0
@@ -162,7 +162,7 @@
 		},
 		{
 			"name": "권총의 춤",
-			"damage": 531071,
+			"damage": 651270,
 			"coolTime": 17.6,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -173,15 +173,15 @@
 			"delay": 1,
 			"talisman": {
 				"name": "블레이드 댄싱",
-				"damage": 703531,
-				"coolTime": 15.84,
-				"available": 3,
+				"damage": 862975,
+				"coolTime": 15.8,
+				"available": 2,
 				"rune": 0
 			}
 		},
 		{
 			"name": "멀티 헤드샷",
-			"damage": 522738,
+			"damage": 698659,
 			"coolTime": 19.8,
 			"requireLv": 40,
 			"gapLv": 2,
@@ -192,7 +192,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "스타일리쉬 헤드샷",
-				"damage": 663877,
+				"damage": 887297,
 				"coolTime": 19.8,
 				"available": 0,
 				"rune": 0
@@ -200,7 +200,7 @@
 		},
 		{
 			"name": "소닉 스파이크",
-			"damage": 202490,
+			"damage": 248333,
 			"coolTime": 4.4,
 			"requireLv": 30,
 			"gapLv": 2,
@@ -213,7 +213,7 @@
 		},
 		{
 			"name": "체인 스내치",
-			"damage": 180756,
+			"damage": 185830,
 			"coolTime": 5,
 			"requireLv": 25,
 			"gapLv": 3,
@@ -226,7 +226,7 @@
 		},
 		{
 			"name": "더스트 샷",
-			"damage": 155249,
+			"damage": 190411,
 			"coolTime": 5,
 			"requireLv": 10,
 			"gapLv": 2,
@@ -239,7 +239,7 @@
 		},
 		{
 			"name": "니들 소배트",
-			"damage": 142753,
+			"damage": 181245,
 			"coolTime": 4.4,
 			"requireLv": 15,
 			"gapLv": 2,
@@ -252,7 +252,7 @@
 		},
 		{
 			"name": "웨스턴 파이어",
-			"damage": 126380,
+			"damage": 129928,
 			"coolTime": 12.5,
 			"requireLv": 15,
 			"gapLv": 2,
@@ -265,7 +265,7 @@
 		},
 		{
 			"name": "탑스핀",
-			"damage": 124491,
+			"damage": 158062,
 			"coolTime": 4.5,
 			"requireLv": 10,
 			"gapLv": 2,
@@ -278,7 +278,7 @@
 		},
 		{
 			"name": "헤드샷",
-			"damage": 105317,
+			"damage": 129168,
 			"coolTime": 6.2,
 			"requireLv": 15,
 			"gapLv": 2,
@@ -291,7 +291,7 @@
 		},
 		{
 			"name": "평타(한 탄창)",
-			"damage": 84687,
+			"damage": 87064,
 			"coolTime": null,
 			"requireLv": 1,
 			"gapLv": 1,
@@ -327,7 +327,7 @@
 		{
 			"name": "베일드 컷",
 			"requireLv": 48,
-			"maxValue": 42.5,
+			"maxValue": 46.5,
 			"upValue": 2,
 			"type": "DAMAGE",
 			"target": "ALL",

@@ -2,7 +2,7 @@
 	"active": [
 		{
 			"name": "황야의 폭풍",
-			"damage": 3689439,
+			"damage": 4400718,
 			"coolTime": 290,
 			"requireLv": 100,
 			"gapLv": 5,
@@ -15,7 +15,7 @@
 		},
 		{
 			"name": "슈퍼노바",
-			"damage": 1397733,
+			"damage": 1733142,
 			"coolTime": 180,
 			"requireLv": 85,
 			"gapLv": 5,
@@ -28,7 +28,7 @@
 		},
 		{
 			"name": "블랙 로즈",
-			"damage": 1365072,
+			"damage": 1712314,
 			"coolTime": 145,
 			"requireLv": 50,
 			"gapLv": 5,
@@ -41,7 +41,7 @@
 		},
 		{
 			"name": "이터널 버스터",
-			"damage": 1324576,
+			"damage": 1496184,
 			"coolTime": 60,
 			"requireLv": 95,
 			"gapLv": 2,
@@ -54,7 +54,7 @@
 		},
 		{
 			"name": "데인저 클로즈",
-			"damage": 926839,
+			"damage": 1100133,
 			"coolTime": 45,
 			"requireLv": 75,
 			"gapLv": 2,
@@ -65,7 +65,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "킵 어시스턴스",
-				"damage": 1251233,
+				"damage": 1485180,
 				"coolTime": 45,
 				"available": 2,
 				"rune": 0
@@ -73,7 +73,7 @@
 		},
 		{
 			"name": "피스톨 카빈",
-			"damage": 728289,
+			"damage": 860369,
 			"coolTime": 30,
 			"requireLv": 70,
 			"gapLv": 2,
@@ -84,7 +84,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "태스크포스",
-				"damage": 933924,
+				"damage": 1103297,
 				"coolTime": 28.5,
 				"available": 0,
 				"rune": 0
@@ -92,7 +92,7 @@
 		},
 		{
 			"name": "록 온 서포트",
-			"damage": 724675,
+			"damage": 847392,
 			"coolTime": 45,
 			"requireLv": 45,
 			"gapLv": 2,
@@ -103,7 +103,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "RFA",
-				"damage": 985559,
+				"damage": 1152454,
 				"coolTime": 45,
 				"available": 0,
 				"rune": 0
@@ -111,7 +111,7 @@
 		},
 		{
 			"name": "G-38ARG 반응류탄",
-			"damage": 865515,
+			"damage": 998290,
 			"coolTime": 40,
 			"requireLv": 80,
 			"gapLv": 2,
@@ -122,7 +122,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "G-13EV 열압력 반응류탄",
-				"damage": 1095778,
+				"damage": 1263883,
 				"coolTime": 40,
 				"available": 3,
 				"rune": 0
@@ -130,7 +130,7 @@
 		},
 		{
 			"name": "네이팜 탄",
-			"damage": 577058,
+			"damage": 684373,
 			"coolTime": 20,
 			"requireLv": 40,
 			"gapLv": 2,
@@ -141,7 +141,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "빅 밤",
-				"damage": 749539,
+				"damage": 886355,
 				"coolTime": 18.8,
 				"available": 1,
 				"rune": 1
@@ -149,7 +149,7 @@
 		},
 		{
 			"name": "버스터 샷",
-			"damage": 531788,
+			"damage": 630026,
 			"coolTime": 18,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -162,7 +162,7 @@
 		},
 		{
 			"name": "G-61 중력류탄",
-			"damage": 431658,
+			"damage": 507966,
 			"coolTime": 20,
 			"requireLv": 60,
 			"gapLv": 2,
@@ -173,7 +173,7 @@
 			"delay": 2,
 			"talisman": {
 				"name": "스쿼시 그라비티",
-				"damage": 541965,
+				"damage": 637844,
 				"coolTime": 20,
 				"available": 0,
 				"rune": 0
@@ -181,7 +181,7 @@
 		},
 		{
 			"name": "C4",
-			"damage": 384812,
+			"damage": 446303,
 			"coolTime": 20,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -192,7 +192,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "래피드 익스팅션",
-				"damage": 507951,
+				"damage": 589121,
 				"coolTime": 20,
 				"available": 0,
 				"rune": 0
@@ -200,7 +200,7 @@
 		},
 		{
 			"name": "교차 사격",
-			"damage": 319239,
+			"damage": 377768,
 			"coolTime": 10,
 			"requireLv": 25,
 			"gapLv": 2,
@@ -213,7 +213,7 @@
 		},
 		{
 			"name": "M18 클레이모어",
-			"damage": 120167,
+			"damage": 134748,
 			"coolTime": 6,
 			"requireLv": 20,
 			"gapLv": 2,
@@ -226,7 +226,7 @@
 		},
 		{
 			"name": "G-18C 빙결류탄",
-			"damage": 68478,
+			"damage": 79208,
 			"coolTime": 4,
 			"requireLv": 30,
 			"gapLv": 2,
@@ -239,7 +239,7 @@
 		},
 		{
 			"name": "G-35L 섬광류탄",
-			"damage": 58323,
+			"damage": 67155,
 			"coolTime": 3,
 			"requireLv": 25,
 			"gapLv": 2,
@@ -252,7 +252,7 @@
 		},
 		{
 			"name": "G-14 파열류탄",
-			"damage": 31657,
+			"damage": 34473,
 			"coolTime": 2,
 			"requireLv": 15,
 			"gapLv": 2,
@@ -265,7 +265,7 @@
 		},
 		{
 			"name": "폭발탄(10발)",
-			"damage": 178709,
+			"damage": 207329,
 			"coolTime": null,
 			"requireLv": 30,
 			"gapLv": 3,
@@ -329,8 +329,8 @@
 			"requirementValue": null
 		},
 		{
-			"name": "섬광류탄",
-			"requireLv": 25,
+			"name": "강화탄",
+			"requireLv": 15,
 			"maxValue": 23,
 			"upValue": 1,
 			"type": "DAMAGE",

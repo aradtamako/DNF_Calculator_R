@@ -2,7 +2,7 @@
 	"active": [
 		{
 			"name": "데피니트 솔루션",
-			"damage": 3650957,
+			"damage": 4489204,
 			"coolTime": 290,
 			"requireLv": 100,
 			"gapLv": 5,
@@ -15,7 +15,7 @@
 		},
 		{
 			"name": "디-데이",
-			"damage": 1838872,
+			"damage": 2172605,
 			"coolTime": 180,
 			"requireLv": 85,
 			"gapLv": 5,
@@ -28,7 +28,7 @@
 		},
 		{
 			"name": "EMP 스톰",
-			"damage": 1208468,
+			"damage": 1488663,
 			"coolTime": 145,
 			"requireLv": 50,
 			"gapLv": 5,
@@ -41,7 +41,7 @@
 		},
 		{
 			"name": "스탠바이-레디",
-			"damage": 1172873,
+			"damage": 1348540,
 			"coolTime": 60,
 			"requireLv": 95,
 			"gapLv": 2,
@@ -54,7 +54,7 @@
 		},
 		{
 			"name": "오픈 파이어",
-			"damage": 911797,
+			"damage": 1038276,
 			"coolTime": 45,
 			"requireLv": 75,
 			"gapLv": 2,
@@ -65,7 +65,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "스트랫 제트",
-				"damage": 1230926,
+				"damage": 1401672,
 				"coolTime": 45,
 				"available": 3,
 				"rune": 0
@@ -73,7 +73,7 @@
 		},
 		{
 			"name": "피스톨 카빈",
-			"damage": 746808,
+			"damage": 869906,
 			"coolTime": 30,
 			"requireLv": 70,
 			"gapLv": 2,
@@ -84,7 +84,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "그레네이드 머신건",
-				"damage": 962943,
+				"damage": 1121667,
 				"coolTime": 28.5,
 				"available": 2,
 				"rune": 0
@@ -92,7 +92,7 @@
 		},
 		{
 			"name": "록 온 서포트",
-			"damage": 738046,
+			"damage": 856716,
 			"coolTime": 45,
 			"requireLv": 45,
 			"gapLv": 2,
@@ -103,7 +103,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "노 머시",
-				"damage": 991935,
+				"damage": 1151426,
 				"coolTime": 45,
 				"available": 0,
 				"rune": 0
@@ -111,7 +111,7 @@
 		},
 		{
 			"name": "G-96 열압력유탄",
-			"damage": 689736,
+			"damage": 790575,
 			"coolTime": 45,
 			"requireLv": 80,
 			"gapLv": 2,
@@ -122,7 +122,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "에너미 스윔",
-				"damage": 889760,
+				"damage": 1019842,
 				"coolTime": 40.5,
 				"available": 0,
 				"rune": 0
@@ -130,7 +130,7 @@
 		},
 		{
 			"name": "네이팜 탄",
-			"damage": 574461,
+			"damage": 692030,
 			"coolTime": 20,
 			"requireLv": 40,
 			"gapLv": 2,
@@ -141,7 +141,7 @@
 			"delay": 0.5,
 			"talisman": {
 				"name": "빅마마",
-				"damage": 747153,
+				"damage": 899947,
 				"coolTime": 18.8,
 				"available": 1,
 				"rune": 1
@@ -149,7 +149,7 @@
 		},
 		{
 			"name": "버스터 샷",
-			"damage": 523708,
+			"damage": 636990,
 			"coolTime": 18,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -162,7 +162,7 @@
 		},
 		{
 			"name": "G-61 중력류탄",
-			"damage": 434016,
+			"damage": 506514,
 			"coolTime": 20,
 			"requireLv": 60,
 			"gapLv": 2,
@@ -173,7 +173,7 @@
 			"delay": 2,
 			"talisman": {
 				"name": "매시브 그라비티",
-				"damage": 544050,
+				"damage": 634866,
 				"coolTime": 20,
 				"available": 0,
 				"rune": 0
@@ -181,7 +181,7 @@
 		},
 		{
 			"name": "C4",
-			"damage": 411676,
+			"damage": 473837,
 			"coolTime": 20,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -192,7 +192,7 @@
 			"delay": 1,
 			"talisman": {
 				"name": "일렉트릭쇼크",
-				"damage": 514596,
+				"damage": 592297,
 				"coolTime": 20,
 				"available": 0,
 				"rune": 0
@@ -200,7 +200,7 @@
 		},
 		{
 			"name": "교차 사격",
-			"damage": 263579,
+			"damage": 303907,
 			"coolTime": 8,
 			"requireLv": 25,
 			"gapLv": 2,
@@ -213,7 +213,7 @@
 		},
 		{
 			"name": "M18 클레이모어",
-			"damage": 120411,
+			"damage": 136259,
 			"coolTime": 6,
 			"requireLv": 20,
 			"gapLv": 2,
@@ -226,7 +226,7 @@
 		},
 		{
 			"name": "G-18C 빙결류탄",
-			"damage": 68990,
+			"damage": 76810,
 			"coolTime": 4,
 			"requireLv": 30,
 			"gapLv": 2,
@@ -239,7 +239,7 @@
 		},
 		{
 			"name": "G-35L 섬광류탄",
-			"damage": 60712,
+			"damage": 67879,
 			"coolTime": 3,
 			"requireLv": 25,
 			"gapLv": 2,
@@ -265,7 +265,7 @@
 		},
 		{
 			"name": "폭발탄(10발)",
-			"damage": 140377,
+			"damage": 162422,
 			"coolTime": null,
 			"requireLv": 30,
 			"gapLv": 3,
@@ -329,8 +329,8 @@
 			"requirementValue": null
 		},
 		{
-			"name": "섬광류탄",
-			"requireLv": 25,
+			"name": "강화탄",
+			"requireLv": 15,
 			"maxValue": 23,
 			"upValue": 1,
 			"type": "DAMAGE",
