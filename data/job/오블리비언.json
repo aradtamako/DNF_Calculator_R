@@ -1,0 +1,386 @@
+{
+	"active": [
+		{
+			"name": "마이크로 유니버스",
+			"damage": 4236064,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "아마겟돈 스트라이크",
+			"damage": 2294119,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "엘레멘탈 버스터",
+			"damage": 1948569,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "컨버전스 리액트",
+			"damage": 1423110,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "엘레멘탈 레인",
+			"damage": 1086542,
+			"coolTime": 40,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1.5,
+			"talisman": {
+				"name": "엘레멘탈 오브",
+				"damage": 1422770,
+				"coolTime": 40,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "컨버젼스 캐넌",
+			"damage": 1061006,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "데들리 거터볼",
+				"damage": 1411138,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "엘레멘탈 스트라이크",
+			"damage": 992273,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "엘레멘탈 게더링",
+				"damage": 1304813,
+				"coolTime": 50,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "엘레멘탈 필드",
+			"damage": 960977,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "원소 폭풍",
+				"damage": 1191612,
+				"coolTime": 36,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "컨센트레이트",
+			"damage": 718510,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "듀플리케이트",
+				"damage": 948427,
+				"coolTime": 30,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "라이트닝 윌",
+			"damage": 482969,
+			"coolTime": 20,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "일렉트릭 트레인",
+				"damage": 605836,
+				"coolTime": 20,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "플레임 서클",
+			"damage": 467094,
+			"coolTime": 20,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 32,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": {
+				"name": "서클 익스플로전",
+				"damage": 620824,
+				"coolTime": 20,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "다크니스 맨틀",
+			"damage": 449138,
+			"coolTime": 20,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "암전",
+			"damage": 408203,
+			"coolTime": 15,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "체인라이트닝",
+			"damage": 386546,
+			"coolTime": 12,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": null
+		},
+		{
+			"name": "아이스 크리스탈 샤워",
+			"damage": 274162,
+			"coolTime": 9,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "크리스탈 어택",
+			"damage": 221180,
+			"coolTime": 8,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "파이어로드",
+			"damage": 178862,
+			"coolTime": 5,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5,
+			"nowTp": 4,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "엘레멘탈 캐넌",
+			"damage": 109827,
+			"coolTime": 5,
+			"requireLv": 15,
+			"gapLv": 5,
+			"maxLv": 19,
+			"nowLv": 19,
+			"maxTp": 4,
+			"nowTp": 4,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "연속발사",
+			"damage": 89489,
+			"coolTime": 2,
+			"requireLv": 15,
+			"gapLv": 5,
+			"maxLv": 19,
+			"nowLv": 19,
+			"maxTp": 4,
+			"nowTp": 4,
+			"delay": 2,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "원소의 이해",
+			"requireLv": 30,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "페이탈 엘레멘트",
+			"requireLv": 48,
+			"maxValue": 33.5,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "검은 눈",
+			"requireLv": 75,
+			"maxValue": 47,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "위키드 오브 아이",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "엘레멘탈 캐넌",
+			"requireLv": 15,
+			"maxValue": 400,
+			"upValue": 10,
+			"type": "DAMAGE",
+			"target": "엘레멘탈 캐넌",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "연속발사",
+			"requireLv": 5,
+			"maxValue": 10,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "연속발사",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [
+		{
+			"requirementType": "ALL",
+			"requirementValue": "X",
+			"type": "COOL",
+			"target": "ALL",
+			"value": 20
+		}
+	],
+	"weapon": [
+		{
+			"type": "로드",
+			"damage": 0.9745944889583741,
+			"coolTime": 1
+		},
+		{
+			"type": "스태프",
+			"damage": 1,
+			"coolTime": 1.1
+		},
+		{
+			"type": "봉",
+			"damage": 0.9245651749071722,
+			"coolTime": 1
+		},
+		{
+			"type": "창",
+			"damage": 0.9120578463943717,
+			"coolTime": 0.95
+		}
+	]
+}

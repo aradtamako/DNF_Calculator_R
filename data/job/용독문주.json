@@ -1,0 +1,365 @@
+{
+	"active": [
+		{
+			"name": "사흑주 독아혼천",
+			"damage": 3628776,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "금기 : 독사굴",
+			"damage": 1590719,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "독무",
+			"damage": 1502831,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "페인킬러",
+			"damage": 1378083,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": null
+		},
+		{
+			"name": "정크 스핀",
+			"damage": 1223418,
+			"coolTime": 45,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": {
+				"name": "대방출",
+				"damage": 1578662,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "비전 : 진천뢰",
+			"damage": 1157284,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "비각술",
+				"damage": 1539188,
+				"coolTime": 36,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "만병지왕 - 파진포",
+			"damage": 974799,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "오버 더 리미트",
+				"damage": 1430811,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "베놈 마인",
+			"damage": 801191,
+			"coolTime": 24,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1.5,
+			"talisman": {
+				"name": "바이퍼 마인",
+				"damage": 938303,
+				"coolTime": 21.6,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "블록 봄",
+			"damage": 757200,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "버스터 봄",
+				"damage": 943752,
+				"coolTime": 50,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "크레이지 발칸",
+			"damage": 740742,
+			"coolTime": 15,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "맹독 일발화약성",
+			"damage": 737676,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "들끓는 독수",
+				"damage": 922564,
+				"coolTime": 24,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "그라운드 킥",
+			"damage": 665062,
+			"coolTime": 20,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "백스트리트 킥",
+				"damage": 904485,
+				"coolTime": 20,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "블록 버스터",
+			"damage": 202793,
+			"coolTime": 5.5,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "히든 스팅",
+			"damage": 191891,
+			"coolTime": 6,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 43,
+			"maxTp": 5,
+			"nowTp": 1,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "일발 화약성",
+			"damage": 182376,
+			"coolTime": 6,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 46,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "천라지망",
+			"damage": 145139,
+			"coolTime": 11,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 1,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "헬터 스켈터",
+			"damage": 79650,
+			"coolTime": 3,
+			"requireLv": 10,
+			"gapLv": 2,
+			"maxLv": 48,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "평타(1초/50%)",
+			"damage": 32477,
+			"coolTime": 1,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "클로 마스터리",
+			"requireLv": 25,
+			"maxValue": 41,
+			"upValue": 1,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": "WEAPON",
+			"requirementValue": "클로"
+		},
+		{
+			"name": "도발",
+			"requireLv": 35,
+			"maxValue": 29,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "맹독",
+			"requireLv": 48,
+			"maxValue": 33.5,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "용독술",
+			"requireLv": 75,
+			"maxValue": 40,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "독문무공",
+			"requireLv": 85,
+			"maxValue": 12,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "독문마경",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [],
+	"weapon": [
+		{
+			"type": "너클",
+			"damage": 0.7373901468212092,
+			"coolTime": 1.05
+		},
+		{
+			"type": "건틀렛",
+			"damage": 0.7468775497395344,
+			"coolTime": 1.1
+		},
+		{
+			"type": "통파",
+			"damage": 0.7092198581560284,
+			"coolTime": 1
+		},
+		{
+			"type": "클로",
+			"damage": 1,
+			"coolTime": 1
+		}
+	]
+}

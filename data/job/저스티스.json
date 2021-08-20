@@ -1,0 +1,407 @@
+{
+	"active": [
+		{
+			"name": "정의 집행 :\n레미디오스의 성좌",
+			"damage": 4415382,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "신의 분노",
+			"damage": 2701982,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "빅뱅 펀치",
+			"damage": 2090731,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "어그레시브 저지먼트",
+			"damage": 1549879,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": null
+		},
+		{
+			"name": "아토믹 쵸퍼",
+			"damage": 1416538,
+			"coolTime": 50,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "격동하는 대지",
+				"damage": 1912326,
+				"coolTime": 50,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "핵 펀치",
+			"damage": 1416081,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "사상 최강의 펀치",
+				"damage": 1925871,
+				"coolTime": 40,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "허리케인 롤",
+			"damage": 1355285,
+			"coolTime": 45,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 2,
+			"talisman": {
+				"name": "태풍의 눈",
+				"damage": 584021,
+				"coolTime": 15,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "데몰리션 펀치",
+			"damage": 1195588,
+			"coolTime": 40,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "디바인 체이서",
+				"damage": 1530352,
+				"coolTime": 40,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "개틀링 펀치",
+			"damage": 1140337,
+			"coolTime": 35,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 2,
+			"talisman": {
+				"name": "압도적인 힘",
+				"damage": 1505709,
+				"coolTime": 30.8,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "코크 스크류 블로우",
+			"damage": 725762,
+			"coolTime": 20,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 31,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "코크 스크류 허리케인",
+				"damage": 994292,
+				"coolTime": 20,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "헤븐리 컴비네이션",
+			"damage": 644747,
+			"coolTime": 16,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "신격권의 계승자",
+				"damage": 812382,
+				"coolTime": 16,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "머신건 잽",
+			"damage": 441237,
+			"coolTime": 10,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "고저스 컴비네이션",
+			"damage": 287986,
+			"coolTime": 7,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5,
+			"nowTp": 1,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "쵸핑 해머",
+			"damage": 275109,
+			"coolTime": 6,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "디바인 크러시",
+			"damage": 190403,
+			"coolTime": 5,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "사이드 와인드",
+			"damage": 178335,
+			"coolTime": 4,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "더킹 바디블로",
+			"damage": 162391,
+			"coolTime": 3.5,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 25,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "더킹 어퍼",
+			"damage": 160649,
+			"coolTime": 3.5,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "더킹 스트레이트",
+			"damage": 160343,
+			"coolTime": 3.5,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "럭키 스트레이트",
+			"damage": 115606,
+			"coolTime": 3,
+			"requireLv": 5,
+			"gapLv": 2,
+			"maxLv": 50,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "평타(1사이클)",
+			"damage": 64430,
+			"coolTime": null,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 1,
+			"delay": 0,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "윌 드라이버",
+			"requireLv": 15,
+			"maxValue": 27.3,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "테크니컬\n마스터리",
+			"requireLv": 20,
+			"maxValue": 10,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "드라이아웃",
+			"requireLv": 48,
+			"maxValue": 42.5,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "데스블로우",
+			"requireLv": 75,
+			"maxValue": 46,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "하나의 정의",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "토템",
+			"type": "COOL",
+			"target": "ALL",
+			"value": 10
+		}
+	],
+	"weapon": [
+		{
+			"type": "십자가",
+			"damage": 0.9869997968718262,
+			"coolTime": 0.95
+		},
+		{
+			"type": "낫",
+			"damage": 0.9750152346130408,
+			"coolTime": 0.95
+		},
+		{
+			"type": "염주",
+			"damage": 0.9609993906154783,
+			"coolTime": 0.95
+		},
+		{
+			"type": "배틀액스",
+			"damage": 1.039406865732277,
+			"coolTime": 1.1
+		},
+		{
+			"type": "토템",
+			"damage": 1,
+			"coolTime": 1
+		}
+	]
+}

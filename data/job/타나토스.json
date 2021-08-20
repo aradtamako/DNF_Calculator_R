@@ -1,0 +1,408 @@
+{
+	"active": [
+		{
+			"name": "태초의 공포 : 모로스",
+			"damage": 4327844,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 5.5,
+			"talisman": null
+		},
+		{
+			"name": "발라크르 현신",
+			"damage": 2181124,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "팬텀스트롬",
+			"damage": 1905957,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "코쿤 오브 언데드",
+			"damage": 1491992,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "리빙데드",
+			"damage": 1308730,
+			"coolTime": 45,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "익스큐서너 슬래쉬",
+			"damage": 1131402,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "굶주린 집행자",
+				"damage": 1482137,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "기요틴",
+			"damage": 1108224,
+			"coolTime": 45,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 3,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": {
+				"name": "갈퀴손",
+				"damage": 1402569,
+				"coolTime": 40.05,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "망자의 집념",
+			"damage": 940035,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "응어리",
+				"damage": 1282960,
+				"coolTime": 30,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "분기암경파",
+			"damage": 911999,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "거미왕의 힘",
+				"damage": 1233934,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "발라크르의 야망",
+			"damage": 722115,
+			"coolTime": 25,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "위압",
+				"damage": 1005473,
+				"coolTime": 23.5,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "흡기암경파",
+			"damage": 698048,
+			"coolTime": 35,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "블랙 아라크니아",
+			"damage": 561964,
+			"coolTime": 20,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "추억거리",
+				"damage": 763442,
+				"coolTime": 18,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "흑사진",
+			"damage": 540681,
+			"coolTime": 20,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "망자의 원한",
+			"damage": 362461,
+			"coolTime": 10,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "야행혼",
+			"damage": 341278,
+			"coolTime": 12,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 1,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "좀비 강령",
+			"damage": 271838,
+			"coolTime": 8,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "어둠의 손톱",
+			"damage": 244654,
+			"coolTime": 7,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "커스 스피어",
+			"damage": 226029,
+			"coolTime": 10,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "살육 난무",
+			"damage": 127839,
+			"coolTime": 7,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "살의",
+				"damage": 274046,
+				"coolTime": 7,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "다크 소울",
+			"damage": 125836,
+			"coolTime": 3.5,
+			"requireLv": 5,
+			"gapLv": 2,
+			"maxLv": 50,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "안개 뿜기(10초, 50%)",
+			"damage": 54646,
+			"coolTime": 10,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.1,
+			"talisman": {
+				"name": "안개 뿜기(10초, 50%)",
+				"damage": 54646,
+				"coolTime": 10,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "니콜라스(10초, 50%)",
+			"damage": 238754,
+			"coolTime": 10,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 46,
+			"maxTp": 5,
+			"nowTp": 1,
+			"delay": 0.1,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "발라크르의 맹약",
+			"requireLv": 40,
+			"maxValue": 44,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "흑마법서",
+			"requireLv": 30,
+			"maxValue": 22.5,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "학살자의 공포",
+			"requireLv": 48,
+			"maxValue": 37.5,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "언홀리 마스터리",
+			"requireLv": 75,
+			"maxValue": 42,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "아케론의 열쇠",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [],
+	"weapon": [
+		{
+			"type": "단검",
+			"damage": 0.9364608076009501,
+			"coolTime": 0.95
+		},
+		{
+			"type": "쌍검",
+			"damage": 0.9020190023752969,
+			"coolTime": 0.9
+		},
+		{
+			"type": "완드",
+			"damage": 1,
+			"coolTime": 1
+		}
+	]
+}

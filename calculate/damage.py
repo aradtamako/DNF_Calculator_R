@@ -61,6 +61,9 @@ class Damage:
         self.job_active_efficiency = job_data['nowJobActiveLevelingArray']
         self.job_passive_efficiency = job_data['nowJobPassiveLeveling']
         self.job_basic_element = job_data['nowBasicSkillElementalReinforce']
+        self.standard_damage_no_active = 383.20 * (
+                1.05 + 0.0045 * 452) / (1.05 + 0.0045 * (self.job_basic_element + 452))
+        # log("self.standard_damage_no_active", self.standard_damage_no_active)
         self.job_passive_element = job_data['nowLvSkillElementalReinforce']
 
         self.weapon_type = "공통"
@@ -651,7 +654,7 @@ class Damage:
                     # 무쿨타임(평타)는 일단 제외
                     continue
                 case += 1
-                value_list[0] = int(value_list[0] * total_damage_no_active / 383.20)
+                value_list[0] = int(value_list[0] * total_damage_no_active / self.standard_damage_no_active)
                 index_damage.append(value_list[0])
                 if ult_name.__contains__(name):
                     final_damage_ult += value_list[0]

@@ -1,0 +1,368 @@
+{
+	"active": [
+		{
+			"name": "피날레 오브 더 퀸",
+			"damage": 3762270,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "허리케인 슈퍼 플렉스",
+			"damage": 2093462,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "기간틱 타이푼",
+			"damage": 1820236,
+			"coolTime": 140,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 5,
+			"talisman": null
+		},
+		{
+			"name": "샤이닝 윙즈 플랩",
+			"damage": 1410761,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": null
+		},
+		{
+			"name": "싸이클론 어택",
+			"damage": 1140971,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "맥스 허리케인 어택",
+				"damage": 1494672,
+				"coolTime": 50,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "토르베지노",
+			"damage": 1126135,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "익스트림 소닉 붐",
+				"damage": 1535490,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "와일드 캐넌 스파이크",
+			"damage": 1060097,
+			"coolTime": 45,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "하이퍼 캐넌 스파이크",
+				"damage": 1388727,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "자이언트 스윙",
+			"damage": 1044171,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "자이언트 허리케인",
+				"damage": 1380917,
+				"coolTime": 36,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "에어클러치",
+			"damage": 958052,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": {
+				"name": "스카이 엠프레스 클러치",
+				"damage": 1159243,
+				"coolTime": 30,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "수플렉스 싸이클론",
+			"damage": 948896,
+			"coolTime": 30,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "래피드 무브 싸이클론",
+				"damage": 1252543,
+				"coolTime": 27,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "스파이어",
+			"damage": 654162,
+			"coolTime": 20,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "엑셀레이트 스파이어",
+				"damage": 843869,
+				"coolTime": 17.6,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "조인트 스매쉬",
+			"damage": 631105,
+			"coolTime": 20,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "브레이킹 엘보",
+			"damage": 400700,
+			"coolTime": 12,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "숄더 태클",
+			"damage": 307988,
+			"coolTime": 8,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5,
+			"nowTp": 1,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "에어슈타이너",
+			"damage": 297473,
+			"coolTime": 7,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "로플링",
+			"damage": 278482,
+			"coolTime": 8.5,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "넥 스냅",
+			"damage": 278072,
+			"coolTime": 7.7,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 1,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "수플렉스",
+			"damage": 123068,
+			"coolTime": 5,
+			"requireLv": 5,
+			"gapLv": 2,
+			"maxLv": 50,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "평타(1사이클)",
+			"damage": 60994,
+			"coolTime": null,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 1,
+			"delay": 0,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "파워 슬램",
+			"requireLv": 20,
+			"maxValue": 20,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "강렬한\n테이크 다운",
+			"requireLv": 15,
+			"maxValue": 16,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "옷깃 잡기",
+			"requireLv": 48,
+			"maxValue": 39,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "체인 그랩",
+			"requireLv": 75,
+			"maxValue": 42,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "스테이블 : \n디 얼티밋",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [],
+	"weapon": [
+		{
+			"type": "너클",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "건틀렛",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "통파",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "클로",
+			"damage": 1,
+			"coolTime": 1
+		}
+	]
+}

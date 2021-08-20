@@ -1,0 +1,368 @@
+{
+	"active": [
+		{
+			"name": "진(眞) : 각성연환격",
+			"damage": 4001029,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "극진 : 패황단공권",
+			"damage": 2035790,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": null
+		},
+		{
+			"name": "사상최강의 로킥",
+			"damage": 1590292,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "라이트닝 시프트",
+			"damage": 1533311,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "일주연환격",
+			"damage": 1228791,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1.5,
+			"talisman": {
+				"name": "섬극연환오의",
+				"damage": 1617182,
+				"coolTime": 50,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "무영각",
+			"damage": 1158810,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "두발당성",
+				"damage": 1533487,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "호격권",
+			"damage": 1152790,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "맹호복초",
+				"damage": 1570041,
+				"coolTime": 40,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "비트 드라이브",
+			"damage": 1130776,
+			"coolTime": 40,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 3,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 2.5,
+			"talisman": {
+				"name": "슈페리어 비트",
+				"damage": 1484146,
+				"coolTime": 40,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "파쇄권",
+			"damage": 941562,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "파쇄권 : 멸",
+				"damage": 1205199,
+				"coolTime": 30,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "라이트닝 댄스",
+			"damage": 811620,
+			"coolTime": 20,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1.5,
+			"talisman": {
+				"name": "섬광의 춤",
+				"damage": 1033077,
+				"coolTime": 17,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "라이징 너클",
+			"damage": 609313,
+			"coolTime": 20,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "원인치 펀치",
+			"damage": 573580,
+			"coolTime": 15,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.3,
+			"talisman": {
+				"name": "일격일살",
+				"damage": 762862,
+				"coolTime": 15,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "본 크러셔",
+			"damage": 285039,
+			"coolTime": 7,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5,
+			"nowTp": 1,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "철산고",
+			"damage": 278902,
+			"coolTime": 7,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "질풍각",
+			"damage": 250667,
+			"coolTime": 8,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "붕권",
+			"damage": 211677,
+			"coolTime": 6,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "로킥",
+			"damage": 72690,
+			"coolTime": 2,
+			"requireLv": 5,
+			"gapLv": 2,
+			"maxLv": 50,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "평타(1사이클)",
+			"damage": 53276,
+			"coolTime": null,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 1,
+			"delay": 0,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "머슬 시프트",
+			"requireLv": 30,
+			"maxValue": 20,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "급소 지정",
+			"requireLv": 30,
+			"maxValue": 17,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "스탬피드",
+			"requireLv": 48,
+			"maxValue": 45,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "리미트 브레이크",
+			"requireLv": 75,
+			"maxValue": 46,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "질풍경초",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "권투글러브",
+			"type": "COOL",
+			"target": "ALL",
+			"value": 10
+		}
+	],
+	"weapon": [
+		{
+			"type": "너클",
+			"damage": 0.9737964655697745,
+			"coolTime": 0.95
+		},
+		{
+			"type": "건틀렛",
+			"damage": 1.039406865732277,
+			"coolTime": 1.1
+		},
+		{
+			"type": "통파",
+			"damage": 0.9737964655697745,
+			"coolTime": 0.95
+		},
+		{
+			"type": "클로",
+			"damage": 0.9869997968718262,
+			"coolTime": 1
+		},
+		{
+			"type": "권투글러브",
+			"damage": 1,
+			"coolTime": 0.9
+		}
+	]
+}

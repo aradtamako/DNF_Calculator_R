@@ -1,0 +1,368 @@
+{
+	"active": [
+		{
+			"name": "네버모어",
+			"damage": 4460043,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "데모닉 인페르노",
+			"damage": 2530706,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "유 다이드",
+			"damage": 1881007,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1.5,
+			"talisman": null
+		},
+		{
+			"name": "브루탈 디몰리셔",
+			"damage": 1591593,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "둠 글레이브",
+			"damage": 1419948,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "둠 슬래쉬",
+				"damage": 1845932,
+				"coolTime": 50,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "디베스테이트",
+			"damage": 1172705,
+			"coolTime": 40,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 12,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": {
+				"name": "사이클론 데모닉 스피어",
+				"damage": 1569803,
+				"coolTime": 40,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "데들리 매서커",
+			"damage": 1137263,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "크루얼 매서커",
+				"damage": 1512559,
+				"coolTime": 40,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "버스트 슬래쉬",
+			"damage": 1110150,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "버스트 스매쉬",
+				"damage": 1498703,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "런지 스트라이크",
+			"damage": 874815,
+			"coolTime": 25,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1,
+			"talisman": {
+				"name": "파워 스트라이크",
+				"damage": 1157409,
+				"coolTime": 22.5,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "블레이드 스톰",
+			"damage": 655118,
+			"coolTime": 18,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 2,
+			"talisman": {
+				"name": "광풍마창",
+				"damage": 891006,
+				"coolTime": 18,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "드레드보어",
+			"damage": 597854,
+			"coolTime": 16,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1.5,
+			"talisman": {
+				"name": "나선마환창",
+				"damage": 771232,
+				"coolTime": 16,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "비헤드",
+			"damage": 494267,
+			"coolTime": 14,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "크레센트 슬래쉬",
+			"damage": 318077,
+			"coolTime": 7,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "브랜디쉬",
+			"damage": 247351,
+			"coolTime": 6,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "헤드온 차지",
+			"damage": 217492,
+			"coolTime": 5,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "앵클 컷",
+			"damage": 173757,
+			"coolTime": 5,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "임팩트 스매쉬",
+			"damage": 130127,
+			"coolTime": 2.4,
+			"requireLv": 25,
+			"gapLv": 3,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.1,
+			"talisman": null
+		},
+		{
+			"name": "평타(1사이클)",
+			"damage": 67015,
+			"coolTime": null,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 3,
+			"delay": 0,
+			"talisman": null
+		},
+		{
+			"name": "스매쉬(3타)",
+			"damage": 38094,
+			"coolTime": null,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 3,
+			"delay": 0,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "임팩트 스매쉬",
+			"requireLv": 25,
+			"maxValue": 16,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "마창 제어",
+			"requireLv": 15,
+			"maxValue": 30,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": "WEAPON",
+			"requirementValue": "미늘창"
+		},
+		{
+			"name": "마창 지배",
+			"requireLv": 48,
+			"maxValue": 42.5,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "마창 각성",
+			"requireLv": 75,
+			"maxValue": 47,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "마창 : 천멸",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [],
+	"weapon": [
+		{
+			"type": "장창",
+			"damage": 0.740067046496595,
+			"coolTime": 1
+		},
+		{
+			"type": "미늘창",
+			"damage": 1,
+			"coolTime": 1.1
+		},
+		{
+			"type": "광창",
+			"damage": 0.7206746741630462,
+			"coolTime": 1
+		},
+		{
+			"type": "투창",
+			"damage": 0.7206746741630462,
+			"coolTime": 0.95
+		}
+	]
+}

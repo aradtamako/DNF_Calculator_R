@@ -1,0 +1,383 @@
+{
+	"active": [
+		{
+			"name": "차원괴리 : 이성붕괴",
+			"damage": 4466945,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "차원괴리 : 금단의 연회(사상 - 풀 채널링)",
+			"damage": 3285366,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 5,
+			"talisman": null
+		},
+		{
+			"name": "괴리 : 모서리의 짐승",
+			"damage": 1812359,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "괴리 : 형용할 수 없는 공포",
+			"damage": 1765915,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "괴리 : 저편의 자장가",
+			"damage": 1222602,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "저편의 단말마",
+				"damage": 1589383,
+				"coolTime": 45,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "차원 : \n포지트론 블래스트",
+			"damage": 1167199,
+			"coolTime": 40,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "그라비톤 블래스트",
+				"damage": 1515842,
+				"coolTime": 40,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "차원 : 싱귤래리티 \n매니플레이션",
+			"damage": 1160597,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0,
+			"nowTp": 0,
+			"delay": 1,
+			"talisman": {
+				"name": "각인영창",
+				"damage": 1508777,
+				"coolTime": 36,
+				"available": 1,
+				"rune": 0
+			}
+		},
+		{
+			"name": "차원 : 패러다임 \n디토네이션",
+			"damage": 1043805,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 2,
+			"talisman": {
+				"name": "역장왜곡해석",
+				"damage": 1345172,
+				"coolTime": 27,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "괴리 : 칙 잇",
+			"damage": 1090891,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 2,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "에프터 케어",
+				"damage": 1254525,
+				"coolTime": 50,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "괴리 : 패러사이트 스웜",
+			"damage": 811889,
+			"coolTime": 25,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "고통의 안내자",
+				"damage": 1056064,
+				"coolTime": 22.5,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "차원 : 시공폭뢰",
+			"damage": 679151,
+			"coolTime": 16,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": {
+				"name": "임계점 조작",
+				"damage": 848938,
+				"coolTime": 16,
+				"available": 2,
+				"rune": 1
+			}
+		},
+		{
+			"name": "차원 : 차원회랑",
+			"damage": 455148,
+			"coolTime": 15,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "차원 : 칼레이도스코프",
+			"damage": 399174,
+			"coolTime": 14,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 1.5,
+			"talisman": null
+		},
+		{
+			"name": "괴리 : 할리퀸",
+			"damage": 365101,
+			"coolTime": 10,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 1,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "차원 : 차원광",
+			"damage": 335744,
+			"coolTime": 7,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "차원 : 실루엣",
+			"damage": 201741,
+			"coolTime": 5,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "차원 : 디멘션 리프",
+			"damage": 192841,
+			"coolTime": 12.1,
+			"requireLv": 20,
+			"gapLv": 3,
+			"maxLv": 20,
+			"nowLv": 0,
+			"maxTp": 5,
+			"nowTp": 0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "차원 : 액시던트",
+			"damage": 139350,
+			"coolTime": 4,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 4,
+			"nowTp": 0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "연속발사",
+			"damage": 91771,
+			"coolTime": 3,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3,
+			"nowTp": 1,
+			"delay": 0,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "도그마 디바이스",
+			"requireLv": 20,
+			"maxValue": 21,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "괴리 : 디멘션 할로우",
+			"requireLv": 15,
+			"maxValue": 15,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "차원괴리 : 이성붕괴^차원괴리 : 금단의 연회(사상 - 풀 채널링)^차원 : \n포지트론 블래스트^차원 : 싱귤래리티 \n매니플레이션^차원 : 패러다임 \n디토네이션^차원 : 시공폭뢰^차원 : 차원회랑^차원 : 칼레이도스코프^차원 : 차원광^차원 : 실루엣^차원 : 디멘션 리프^차원 : 액시던트",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "운명왜곡",
+			"requireLv": 48,
+			"maxValue": 42.5,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "SSTH",
+			"requireLv": 75,
+			"maxValue": 41,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "연대기의 단편",
+			"requireLv": 95,
+			"maxValue": 26,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "연속발사",
+			"requireLv": 5,
+			"maxValue": 10,
+			"upValue": 2,
+			"type": "DAMAGE",
+			"target": "연속발사",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [],
+	"weapon": [
+		{
+			"type": "로드",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "스태프",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "봉",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "창",
+			"damage": 1,
+			"coolTime": 1
+		},
+		{
+			"type": "빗자루",
+			"damage": 1,
+			"coolTime": 1
+		}
+	]
+}
