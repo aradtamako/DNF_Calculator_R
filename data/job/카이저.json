@@ -363,6 +363,11 @@
 			"type": "권투글러브",
 			"damage": 1,
 			"coolTime": 0.9
+		},
+		{
+			"type": "공통",
+			"damage": 1,
+			"coolTime": 0.9
 		}
 	]
 }

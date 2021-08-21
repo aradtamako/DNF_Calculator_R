@@ -371,6 +371,11 @@
 			"type": "둔기",
 			"damage": 1,
 			"coolTime": 1.05
+		},
+		{
+			"type": "공통",
+			"damage": 1,
+			"coolTime": 1.05
 		}
 	]
 }

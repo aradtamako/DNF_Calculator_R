@@ -368,6 +368,11 @@
 			"type": "토템",
 			"damage": 0.8084766054164485,
 			"coolTime": 1
+		},
+		{
+			"type": "공통",
+			"damage": 1,
+			"coolTime": 1.1
 		}
 	]
 }

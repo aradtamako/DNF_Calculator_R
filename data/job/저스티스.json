@@ -402,6 +402,11 @@
 			"type": "토템",
 			"damage": 1,
 			"coolTime": 1
+		},
+		{
+			"type": "공통",
+			"damage": 1,
+			"coolTime": 1
 		}
 	]
 }

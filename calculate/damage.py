@@ -410,17 +410,13 @@ class Damage:
                 # 무기 보정 판정
                 weapon_atk_rate = 1
                 weapon_cool_rate = 1
-                if self.weapon_type == "공통":
-                    pass
-                else:
-                    for weapon in self.detail_weapon_list:
-                        if self.weapon_type == weapon["type"]:
-                            weapon_atk_rate = weapon["damage"]
-                            weapon_cool_rate = weapon["coolTime"]
-                            break
+                for weapon in self.detail_weapon_list:
+                    if self.weapon_type == weapon["type"]:
+                        weapon_atk_rate = weapon["damage"]
+                        weapon_cool_rate = weapon["coolTime"]
+                        break
 
                 # 액티브 정리
-                ult_name = []
                 active_leveling_arr = self.now_leveling_array.copy()
                 # 사전에 패시브 전용 레벨링 제거
                 if self.basic_leveling_arr[14] == 1:  # 크리쳐 2각패 레벨링 삭제
@@ -480,16 +476,10 @@ class Damage:
                                  (1 + 0.1 * now_tp) / (1 + 0.1 * max_tp) *
                                  weapon_atk_rate)
                     if active["requireLv"] == 50:
-                        if now_lv != 0:
-                            ult_name.append(active["name"])
                         damage = int(damage * (self.now_damage_array[28] / 100 + 1))
                     elif active["requireLv"] == 85:
-                        if now_lv != 0:
-                            ult_name.append(active["name"])
                         damage = int(damage * (self.now_damage_array[29] / 100 + 1))
                     elif active["requireLv"] == 100:
-                        if now_lv != 0:
-                            ult_name.append(active["name"])
                         damage = int(damage * (self.now_damage_array[30] / 100 + 1))
                     # 흐름
                     elif active["requireLv"] == 45:
@@ -656,11 +646,7 @@ class Damage:
                 case += 1
                 value_list[0] = int(value_list[0] * total_damage_no_active / self.standard_damage_no_active)
                 index_damage.append(value_list[0])
-                if ult_name.__contains__(name):
-                    final_damage_ult += value_list[0]
-                    index_cool.append(999999)
-                else:
-                    index_cool.append(int(value_list[1]*10*0.8))  # 0.8 정신자극
+                index_cool.append(int(value_list[1] * 10 * 0.8))  # 0.8 정신자극
                 index_delay.append(int(value_list[2]*10))
                 delay_time.append(0)
             # log("active_dict", active_dict)

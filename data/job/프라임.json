@@ -49,7 +49,7 @@
 			"nowLv": 6,
 			"maxTp": 0,
 			"nowTp": 0,
-			"delay": 0.5,
+			"delay": 0.3,
 			"talisman": null
 		},
 		{
@@ -62,7 +62,7 @@
 			"nowLv": 31,
 			"maxTp": 5,
 			"nowTp": 5,
-			"delay": 0.1,
+			"delay": 0.3,
 			"talisman": {
 				"name": "스패로우 : 격추 모드",
 				"damage": 1676092,
@@ -81,7 +81,7 @@
 			"nowLv": 3,
 			"maxTp": 5,
 			"nowTp": 0,
-			"delay": 0.1,
+			"delay": 0.3,
 			"talisman": {
 				"name": "능동 방호 체계",
 				"damage": 1682625,
@@ -100,7 +100,7 @@
 			"nowLv": 16,
 			"maxTp": 0,
 			"nowTp": 0,
-			"delay": 0.5,
+			"delay": 0.3,
 			"talisman": {
 				"name": "커버링 파이어",
 				"damage": 1525863,
@@ -119,7 +119,7 @@
 			"nowLv": 13,
 			"maxTp": 0,
 			"nowTp": 0,
-			"delay": 0.1,
+			"delay": 0.3,
 			"talisman": {
 				"name": "프리즈!",
 				"damage": 1177797,
@@ -138,7 +138,7 @@
 			"nowLv": 33,
 			"maxTp": 5,
 			"nowTp": 5,
-			"delay": 0.5,
+			"delay": 0.3,
 			"talisman": {
 				"name": "언카운터블 메카 드롭",
 				"damage": 1109737,
@@ -157,7 +157,7 @@
 			"nowLv": 23,
 			"maxTp": 5,
 			"nowTp": 5,
-			"delay": 0.1,
+			"delay": 0.3,
 			"talisman": {
 				"name": "카운트다운 스타트",
 				"damage": 955133,
@@ -176,7 +176,7 @@
 			"nowLv": 0,
 			"maxTp": 5,
 			"nowTp": 0,
-			"delay": 0.1,
+			"delay": 0.3,
 			"talisman": {
 				"name": "얼티밋 템페스터",
 				"damage": 928514,
@@ -195,7 +195,7 @@
 			"nowLv": 38,
 			"maxTp": 5,
 			"nowTp": 5,
-			"delay": 0.1,
+			"delay": 0.3,
 			"talisman": null
 		},
 		{
@@ -208,7 +208,7 @@
 			"nowLv": 46,
 			"maxTp": 5,
 			"nowTp": 0,
-			"delay": 0.1,
+			"delay": 0.3,
 			"talisman": null
 		},
 		{
@@ -221,7 +221,7 @@
 			"nowLv": 41,
 			"maxTp": 5,
 			"nowTp": 4,
-			"delay": 0.1,
+			"delay": 0.3,
 			"talisman": null
 		},
 		{
@@ -234,7 +234,7 @@
 			"nowLv": 50,
 			"maxTp": 4,
 			"nowTp": 4,
-			"delay": 0.1,
+			"delay": 0.3,
 			"talisman": null
 		},
 		{
@@ -336,6 +336,11 @@
 		{
 			"type": "핸드캐넌",
 			"damage": 0.9164886385705963,
+			"coolTime": 1
+		},
+		{
+			"type": "공통",
+			"damage": 1,
 			"coolTime": 1
 		}
 	]

@@ -5,6 +5,7 @@ import tkinter.messagebox
 import threading
 import json
 
+import data.job_rank
 import data.weapon as weapon
 import data.job as job
 import common
@@ -621,3 +622,9 @@ class MainGUI(tkinter.Frame):
 
         tkinter.Button(self.main_window, command=guide_speed, image=self.image_extra['select_speed.png'], bd=0,
                        activebackground=self.color_list[0], bg=self.color_list[0]).place(x=634, y=7)
+
+        def run_job_rank():
+            data.job_rank.JobRank(self.main_window)
+        tkinter.Button(
+            self.main_window, command=run_job_rank, text="직업 비교"
+        ).place(x=700, y=650)

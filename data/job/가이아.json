@@ -407,6 +407,11 @@
 			"type": "소검",
 			"damage": 0.9396059657521634,
 			"coolTime": 1
+		},
+		{
+			"type": "공통",
+			"damage": 1,
+			"coolTime": 1.1
 		}
 	]
 }

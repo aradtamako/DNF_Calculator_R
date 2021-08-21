@@ -53,19 +53,6 @@
 			"talisman": null
 		},
 		{
-			"name": "G-3 랩터",
-			"damage": 1004945,
-			"coolTime": 10,
-			"requireLv": 30,
-			"gapLv": 2,
-			"maxLv": 38,
-			"nowLv": 38,
-			"maxTp": 5,
-			"nowTp": 5,
-			"delay": 0.3,
-			"talisman": null
-		},
-		{
 			"name": "게일 포스",
 			"damage": 236871,
 			"coolTime": 10,
@@ -275,6 +262,19 @@
 			"nowTp": 0,
 			"delay": 0.5,
 			"talisman": null
+		},
+		{
+			"name": "G-3 랩터",
+			"damage": 100494,
+			"coolTime": 1,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5,
+			"nowTp": 5,
+			"delay": 0,
+			"talisman": null
 		}
 	],
 	"passive": [
@@ -392,6 +392,11 @@
 		{
 			"type": "핸드캐넌",
 			"damage": 0.9164886385705963,
+			"coolTime": 1
+		},
+		{
+			"type": "공통",
+			"damage": 1,
 			"coolTime": 1
 		}
 	]
