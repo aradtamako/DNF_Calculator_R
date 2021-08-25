@@ -626,5 +626,5 @@ class MainGUI(tkinter.Frame):
         def run_job_rank():
             data.job_rank.JobRank(self.main_window)
         tkinter.Button(
-            self.main_window, command=run_job_rank, text="직업 비교"
+            self.main_window, command=run_job_rank, text="직업DB 수정"
         ).place(x=700, y=650)

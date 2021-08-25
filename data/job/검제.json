@@ -9,7 +9,7 @@
 			"maxLv": 2,
 			"nowLv": 2,
 			"maxTp": 0,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 5,
 			"talisman": null
 		},
@@ -22,7 +22,7 @@
 			"maxLv": 5,
 			"nowLv": 5,
 			"maxTp": 0,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
 		},
@@ -35,7 +35,7 @@
 			"maxLv": 12,
 			"nowLv": 0,
 			"maxTp": 0,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
 		},
@@ -48,7 +48,7 @@
 			"maxLv": 6,
 			"nowLv": 6,
 			"maxTp": 0,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -61,7 +61,7 @@
 			"maxLv": 13,
 			"nowLv": 13,
 			"maxTp": 0,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 1.5,
 			"talisman": {
 				"name": "이형환위섬",
@@ -80,7 +80,7 @@
 			"maxLv": 16,
 			"nowLv": 16,
 			"maxTp": 0,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "무비일검",
@@ -99,7 +99,7 @@
 			"maxLv": 18,
 			"nowLv": 18,
 			"maxTp": 5,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "무형장",
@@ -118,7 +118,7 @@
 			"maxLv": 31,
 			"nowLv": 31,
 			"maxTp": 5,
-			"nowTp": 5,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "만리일섬",
@@ -137,7 +137,7 @@
 			"maxLv": 33,
 			"nowLv": 33,
 			"maxTp": 5,
-			"nowTp": 5,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "파적공",
@@ -156,7 +156,7 @@
 			"maxLv": 24,
 			"nowLv": 24,
 			"maxTp": 5,
-			"nowTp": 5,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": {
 				"name": "일화통암",
@@ -175,7 +175,7 @@
 			"maxLv": 23,
 			"nowLv": 0,
 			"maxTp": 5,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 2,
 			"talisman": {
 				"name": "일몰여평섬",
@@ -194,7 +194,7 @@
 			"maxLv": 33,
 			"nowLv": 33,
 			"maxTp": 5,
-			"nowTp": 5,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -207,7 +207,7 @@
 			"maxLv": 36,
 			"nowLv": 36,
 			"maxTp": 5,
-			"nowTp": 5,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -220,7 +220,7 @@
 			"maxLv": 38,
 			"nowLv": 30,
 			"maxTp": 5,
-			"nowTp": 1,
+			"nowTp": 1.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -233,7 +233,7 @@
 			"maxLv": 38,
 			"nowLv": 0,
 			"maxTp": 5,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -246,7 +246,7 @@
 			"maxLv": 46,
 			"nowLv": 0,
 			"maxTp": 5,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -259,7 +259,7 @@
 			"maxLv": 41,
 			"nowLv": 0,
 			"maxTp": 5,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -272,7 +272,7 @@
 			"maxLv": 41,
 			"nowLv": 0,
 			"maxTp": 5,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -285,7 +285,7 @@
 			"maxLv": 46,
 			"nowLv": 0,
 			"maxTp": 5,
-			"nowTp": 0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -298,7 +298,7 @@
 			"maxLv": 100,
 			"nowLv": 100,
 			"maxTp": 3,
-			"nowTp": 1,
+			"nowTp": 1.0,
 			"delay": 0,
 			"talisman": null
 		}
