@@ -6,3 +6,5 @@ build/
 venv2/
 /main.spec
 /api_key.py
+*.exe
+*.zip
