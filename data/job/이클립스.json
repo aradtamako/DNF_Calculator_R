@@ -1,0 +1,597 @@
+{
+	"active": [
+		{
+			"name": "라모스(방생)",
+			"damage": 59750,
+			"coolTime": 5,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"limit_f": 80,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "카시야스(방생)",
+			"damage": 156168,
+			"coolTime": 5,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 12,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"limit_f": 90,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "쿠루타(방생)",
+			"damage": 155225,
+			"coolTime": 5,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": {
+				"name": "쿠루타(방생)",
+				"damage": 203345,
+				"coolTime": 5,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "에체베리아(방생)",
+			"damage": 184738,
+			"coolTime": 5,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": {
+				"name": "에체베리아(방생)",
+				"damage": 257871,
+				"coolTime": 5,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "루이즈(방생)",
+			"damage": 101578,
+			"coolTime": 5,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": {
+				"name": "루이즈(방생)",
+				"damage": 101578,
+				"coolTime": 5,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "아우쿠소(방생)",
+			"damage": 97995,
+			"coolTime": 5,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "플레임 헐크(방생)",
+			"damage": 89714,
+			"coolTime": 5,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "아퀘리스(방생)",
+			"damage": 83997,
+			"coolTime": 5,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "글레어린(방생)",
+			"damage": 72170,
+			"coolTime": 5,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "데드 멀커(방생)",
+			"damage": 90607,
+			"coolTime": 5,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "산도르(방생)",
+			"damage": 90344,
+			"coolTime": 5,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5.0,
+			"nowTp": 1.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "포식의 델라리온",
+			"damage": 2916687,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "식락",
+			"damage": 1228465,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1.5,
+			"talisman": null
+		},
+		{
+			"name": "천귀살",
+			"damage": 1171236,
+			"coolTime": 200,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "지고의 정령왕",
+			"damage": 1050430,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "분노의 난타",
+			"damage": 877772,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.7,
+			"talisman": {
+				"name": "극한의 분노",
+				"damage": 1056867,
+				"coolTime": 45,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "전설소환 : 월영",
+			"damage": 766306,
+			"coolTime": 43,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 1,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.7,
+			"talisman": {
+				"name": "델라리온의 마물",
+				"damage": 1011525,
+				"coolTime": 43,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "다크 문",
+			"damage": 0,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
+			"talisman": {
+				"name": "칠흑속에 잠긴 달",
+				"damage": 826927,
+				"coolTime": 36,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "맹렬한 분노",
+			"damage": 395830,
+			"coolTime": 40,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.3,
+			"talisman": {
+				"name": "진정한 타우킹(교감)",
+				"damage": 518537,
+				"coolTime": 36,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "초고밀도 레이저",
+			"damage": 364563,
+			"coolTime": 30,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.3,
+			"talisman": {
+				"name": "스피릿 디비전(하이브)",
+				"damage": 419248,
+				"coolTime": 30,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "정령희생",
+			"damage": 356013,
+			"coolTime": 20,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 43,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "지옥도",
+			"damage": 351295,
+			"coolTime": 200,
+			"requireLv": 50,
+			"gapLv": 2,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "메테오 스트라이크",
+			"damage": 223431,
+			"coolTime": 20,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.3,
+			"talisman": {
+				"name": "대마법사 루이즈",
+				"damage": 297789,
+				"coolTime": 20,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "임페일",
+			"damage": 218891,
+			"coolTime": 15,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "썬더콜링",
+			"damage": 175441,
+			"coolTime": 15,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "블랙 스웜",
+			"damage": 175499,
+			"coolTime": 15,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "헵타 아이스",
+			"damage": 175470,
+			"coolTime": 15,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "화염폭검술",
+			"damage": 175254,
+			"coolTime": 15,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "식선",
+			"damage": 153576,
+			"coolTime": 10,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
+			"limit_f": 80,
+			"talisman": null
+		},
+		{
+			"name": "소드 포스",
+			"damage": 141358,
+			"coolTime": 12,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5.0,
+			"nowTp": 1.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "채찍질",
+			"damage": 77160,
+			"coolTime": 3,
+			"requireLv": 10,
+			"gapLv": 3,
+			"maxLv": 32,
+			"nowLv": 32,
+			"maxTp": 2.5,
+			"nowTp": 0.5,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "평타(1사이클)",
+			"damage": 45188,
+			"coolTime": 0,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"cool_fix": true,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "환수 강화 오라",
+			"requireLv": 15,
+			"maxValue": 40.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "교감",
+			"requireLv": 15,
+			"maxValue": 21.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "헤일롬",
+			"requireLv": 60,
+			"maxValue": 22.0,
+			"upValue": 2.0,
+			"type": "ELEMENT",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "스피릿 본드",
+			"requireLv": 48,
+			"maxValue": 40.5,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "이클립스 하이브",
+			"requireLv": 75,
+			"maxValue": 46.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "포스티쿠스 루나",
+			"requireLv": 95,
+			"maxValue": 26.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "쇼타임",
+			"requireLv": 20,
+			"maxValue": 21.6,
+			"upValue": 2.2,
+			"type": "COOL",
+			"target": "분노의 난타^정령희생",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [
+		{
+			"requirementType": "ALL",
+			"requirementValue": "X",
+			"type": "COOL",
+			"target": "분노의 난타^정령희생",
+			"value": 21.6
+		}
+	],
+	"weapon": [
+		{
+			"type": "로드",
+			"damage": 0.9745944889583741,
+			"coolTime": 1.0
+		},
+		{
+			"type": "스태프",
+			"damage": 1.0,
+			"coolTime": 1.1
+		},
+		{
+			"type": "봉",
+			"damage": 0.9245651749071722,
+			"coolTime": 1.0
+		},
+		{
+			"type": "창",
+			"damage": 0.9120578463943717,
+			"coolTime": 0.95
+		},
+		{
+			"type": "공통",
+			"damage": 1.0,
+			"coolTime": 1.1
+		}
+	]
+}

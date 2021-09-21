@@ -8,8 +8,8 @@
 			"gapLv": 5,
 			"maxLv": 2,
 			"nowLv": 2,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 5,
 			"talisman": null
 		},
@@ -21,8 +21,8 @@
 			"gapLv": 5,
 			"maxLv": 5,
 			"nowLv": 5,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
 		},
@@ -34,8 +34,8 @@
 			"gapLv": 5,
 			"maxLv": 12,
 			"nowLv": 0,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
 		},
@@ -47,8 +47,8 @@
 			"gapLv": 2,
 			"maxLv": 6,
 			"nowLv": 6,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1.5,
 			"talisman": null
 		},
@@ -60,8 +60,8 @@
 			"gapLv": 2,
 			"maxLv": 13,
 			"nowLv": 13,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "퍼들",
@@ -79,8 +79,8 @@
 			"gapLv": 2,
 			"maxLv": 18,
 			"nowLv": 18,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 1.5,
 			"talisman": {
 				"name": "패스트 트래커",
@@ -98,8 +98,8 @@
 			"gapLv": 2,
 			"maxLv": 16,
 			"nowLv": 16,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "오버 더 락",
@@ -117,8 +117,8 @@
 			"gapLv": 2,
 			"maxLv": 31,
 			"nowLv": 31,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1.5,
 			"talisman": {
 				"name": "크레센도",
@@ -136,8 +136,8 @@
 			"gapLv": 2,
 			"maxLv": 23,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 1.5,
 			"talisman": {
 				"name": "블랙잭",
@@ -155,8 +155,8 @@
 			"gapLv": 2,
 			"maxLv": 33,
 			"nowLv": 33,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": {
 				"name": "콜 오브 나이트",
@@ -174,8 +174,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "슈터 칵테일",
@@ -193,8 +193,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -206,8 +206,8 @@
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -219,8 +219,8 @@
 			"gapLv": 2,
 			"maxLv": 43,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -232,8 +232,8 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 38,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -245,8 +245,8 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 38,
-			"maxTp": 5,
-			"nowTp": 3,
+			"maxTp": 5.0,
+			"nowTp": 3.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -258,8 +258,8 @@
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -271,8 +271,8 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -284,8 +284,8 @@
 			"gapLv": 2,
 			"maxLv": 48,
 			"nowLv": 48,
-			"maxTp": 4,
-			"nowTp": 4,
+			"maxTp": 4.0,
+			"nowTp": 4.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -297,8 +297,8 @@
 			"gapLv": 2,
 			"maxLv": 48,
 			"nowLv": 0,
-			"maxTp": 4,
-			"nowTp": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -310,8 +310,8 @@
 			"gapLv": 1,
 			"maxLv": 100,
 			"nowLv": 100,
-			"maxTp": 3,
-			"nowTp": 2,
+			"maxTp": 3.0,
+			"nowTp": 2.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -323,22 +323,23 @@
 			"gapLv": 2,
 			"maxLv": 50,
 			"nowLv": 0,
-			"maxTp": 4,
-			"nowTp": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
 		{
 			"name": "평타(1사이클)",
 			"damage": 62640,
-			"coolTime": null,
+			"coolTime": 0,
 			"requireLv": 1,
 			"gapLv": 1,
 			"maxLv": 100,
 			"nowLv": 100,
-			"maxTp": 3,
-			"nowTp": 2,
-			"delay": 0.5,
+			"maxTp": 3.0,
+			"nowTp": 2.0,
+			"delay": 1,
+			"cool_fix": true,
 			"talisman": null
 		}
 	],
@@ -346,8 +347,8 @@
 		{
 			"name": "올드 패션드",
 			"requireLv": 20,
-			"maxValue": 34,
-			"upValue": 2,
+			"maxValue": 34.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -356,8 +357,8 @@
 		{
 			"name": "빈티지",
 			"requireLv": 35,
-			"maxValue": 26,
-			"upValue": 2,
+			"maxValue": 26.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -376,8 +377,8 @@
 		{
 			"name": "인퍼먼스",
 			"requireLv": 75,
-			"maxValue": 46,
-			"upValue": 2,
+			"maxValue": 46.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -386,8 +387,8 @@
 		{
 			"name": "데어데블",
 			"requireLv": 95,
-			"maxValue": 26,
-			"upValue": 2,
+			"maxValue": 26.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -400,34 +401,34 @@
 			"requirementValue": "도",
 			"type": "COOL",
 			"target": "ALL",
-			"value": 10
+			"value": 10.0
 		}
 	],
 	"weapon": [
 		{
 			"type": "대검",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "둔기",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "도",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "소검",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "공통",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		}
 	]
 }

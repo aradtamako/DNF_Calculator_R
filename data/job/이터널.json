@@ -8,8 +8,8 @@
 			"gapLv": 5,
 			"maxLv": 2,
 			"nowLv": 2,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 6,
 			"talisman": null
 		},
@@ -21,8 +21,8 @@
 			"gapLv": 5,
 			"maxLv": 12,
 			"nowLv": 0,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
 		},
@@ -34,8 +34,8 @@
 			"gapLv": 5,
 			"maxLv": 5,
 			"nowLv": 5,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -47,8 +47,8 @@
 			"gapLv": 2,
 			"maxLv": 6,
 			"nowLv": 6,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -60,8 +60,8 @@
 			"gapLv": 2,
 			"maxLv": 16,
 			"nowLv": 16,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "아이스버그 하보크",
@@ -79,8 +79,8 @@
 			"gapLv": 2,
 			"maxLv": 31,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 2,
 			"talisman": {
 				"name": "빙룡승천파",
@@ -98,8 +98,8 @@
 			"gapLv": 2,
 			"maxLv": 18,
 			"nowLv": 8,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "서릿발",
@@ -117,8 +117,8 @@
 			"gapLv": 2,
 			"maxLv": 23,
 			"nowLv": 23,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "창백한 쐐기",
@@ -136,8 +136,8 @@
 			"gapLv": 2,
 			"maxLv": 33,
 			"nowLv": 33,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1.5,
 			"talisman": {
 				"name": "프리즈 브레이크\n(핀포인트 러시)",
@@ -155,8 +155,8 @@
 			"gapLv": 2,
 			"maxLv": 13,
 			"nowLv": 13,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "아몰포스 웨이브",
@@ -174,8 +174,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "냉기의 조율자",
@@ -193,8 +193,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -206,8 +206,8 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 38,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -219,8 +219,8 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 38,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -232,8 +232,8 @@
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 41,
-			"maxTp": 5,
-			"nowTp": 4,
+			"maxTp": 5.0,
+			"nowTp": 4.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -245,8 +245,8 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 46,
-			"maxTp": 4,
-			"nowTp": 4,
+			"maxTp": 4.0,
+			"nowTp": 4.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -258,22 +258,23 @@
 			"gapLv": 2,
 			"maxLv": 43,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
 		{
 			"name": "평타(1사이클)",
 			"damage": 62342,
-			"coolTime": null,
+			"coolTime": 0,
 			"requireLv": 1,
 			"gapLv": 1,
 			"maxLv": 100,
 			"nowLv": 100,
-			"maxTp": 3,
-			"nowTp": 0,
-			"delay": 0,
+			"maxTp": 3.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"cool_fix": true,
 			"talisman": null
 		}
 	],
@@ -281,8 +282,8 @@
 		{
 			"name": "발현",
 			"requireLv": 25,
-			"maxValue": 18,
-			"upValue": 2,
+			"maxValue": 18.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -291,8 +292,8 @@
 		{
 			"name": "프로즌웨펀 \n마스터리",
 			"requireLv": 15,
-			"maxValue": 20,
-			"upValue": 1,
+			"maxValue": 20.0,
+			"upValue": 1.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -311,8 +312,8 @@
 		{
 			"name": "아이스 크래프트",
 			"requireLv": 75,
-			"maxValue": 40,
-			"upValue": 2,
+			"maxValue": 40.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -321,8 +322,8 @@
 		{
 			"name": "프로스트헌트",
 			"requireLv": 95,
-			"maxValue": 26,
-			"upValue": 2,
+			"maxValue": 26.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -333,8 +334,8 @@
 	"weapon": [
 		{
 			"type": "로드",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "스태프",
@@ -344,7 +345,7 @@
 		{
 			"type": "봉",
 			"damage": 0.948666532985763,
-			"coolTime": 1
+			"coolTime": 1.0
 		},
 		{
 			"type": "창",
@@ -353,8 +354,8 @@
 		},
 		{
 			"type": "공통",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		}
 	]
 }

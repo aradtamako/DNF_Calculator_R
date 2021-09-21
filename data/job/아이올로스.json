@@ -1,8 +1,8 @@
 {
 	"active": [
 		{
-			"name": "월하무즉정야",
-			"damage": 3592622,
+			"name": "로드 오브 템페스트 :\n아라칸",
+			"damage": 3966900,
 			"coolTime": 290,
 			"requireLv": 100,
 			"gapLv": 5,
@@ -10,12 +10,12 @@
 			"nowLv": 2,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 5,
+			"delay": 6,
 			"talisman": null
 		},
 		{
-			"name": "월광비무",
-			"damage": 2112200,
+			"name": "스톰 엘리미네이트",
+			"damage": 2088838,
 			"coolTime": 180,
 			"requireLv": 85,
 			"gapLv": 5,
@@ -23,12 +23,12 @@
 			"nowLv": 5,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 3,
+			"delay": 5,
 			"talisman": null
 		},
 		{
-			"name": "경전지화",
-			"damage": 1681423,
+			"name": "볼텍스 허리케인",
+			"damage": 1868108,
 			"coolTime": 145,
 			"requireLv": 50,
 			"gapLv": 5,
@@ -40,8 +40,8 @@
 			"talisman": null
 		},
 		{
-			"name": "엽해소옥",
-			"damage": 1204487,
+			"name": "터뷸런트 럼블",
+			"damage": 1288710,
 			"coolTime": 60,
 			"requireLv": 95,
 			"gapLv": 2,
@@ -49,12 +49,12 @@
 			"nowLv": 6,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 0.5,
+			"delay": 2,
 			"talisman": null
 		},
 		{
-			"name": "연화섬",
-			"damage": 1084147,
+			"name": "바이올런트 스톰",
+			"damage": 1181667,
 			"coolTime": 45,
 			"requireLv": 80,
 			"gapLv": 2,
@@ -62,18 +62,37 @@
 			"nowLv": 13,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 1.5,
+			"delay": 1,
 			"talisman": {
-				"name": "이형환위섬",
-				"damage": 1409391,
-				"coolTime": 40.5,
+				"name": "스네이크 게일",
+				"damage": 1500717,
+				"coolTime": 40.05,
 				"available": 1,
 				"rune": 1
 			}
 		},
 		{
-			"name": "연화검무",
-			"damage": 1038428,
+			"name": "스톰 스트라이크",
+			"damage": 1135861,
+			"coolTime": 45,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "소닉붐",
+				"damage": 1471007,
+				"coolTime": 45,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "스파이럴 프레스",
+			"damage": 1084006,
 			"coolTime": 40,
 			"requireLv": 75,
 			"gapLv": 2,
@@ -83,125 +102,55 @@
 			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
-				"name": "무비일검",
-				"damage": 1381109,
-				"coolTime": 40,
-				"available": 0,
-				"rune": 0
-			}
-		},
-		{
-			"name": "백보신장",
-			"damage": 1014178,
-			"coolTime": 50,
-			"requireLv": 70,
-			"gapLv": 2,
-			"maxLv": 18,
-			"nowLv": 18,
-			"maxTp": 5.0,
-			"nowTp": 0.0,
-			"delay": 0.5,
-			"talisman": {
-				"name": "무형장",
-				"damage": 1281885,
-				"coolTime": 50,
-				"available": 0,
-				"rune": 0
-			}
-		},
-		{
-			"name": "혜성만리",
-			"damage": 932005,
-			"coolTime": 40,
-			"requireLv": 45,
-			"gapLv": 2,
-			"maxLv": 31,
-			"nowLv": 31,
-			"maxTp": 5.0,
-			"nowTp": 5.0,
-			"delay": 0.5,
-			"talisman": {
-				"name": "만리일섬",
-				"damage": 1189251,
+				"name": "굉풍격",
+				"damage": 1417529,
 				"coolTime": 40,
 				"available": 2,
 				"rune": 0
 			}
 		},
 		{
-			"name": "폭멸장",
-			"damage": 767260,
-			"coolTime": 30,
-			"requireLv": 40,
+			"name": "스톰 퀘이커",
+			"damage": 983399,
+			"coolTime": 50,
+			"requireLv": 70,
 			"gapLv": 2,
-			"maxLv": 33,
-			"nowLv": 33,
+			"maxLv": 18,
+			"nowLv": 11,
 			"maxTp": 5.0,
-			"nowTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
-				"name": "파적공",
-				"damage": 997439,
+				"name": "레이징 템페스트",
+				"damage": 1278419,
+				"coolTime": 50,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "질풍가도",
+			"damage": 754803,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.3,
+			"talisman": {
+				"name": "격풍회류",
+				"damage": 958600,
 				"coolTime": 30,
 				"available": 0,
 				"rune": 0
 			}
 		},
 		{
-			"name": "난화검",
-			"damage": 676403,
-			"coolTime": 25,
-			"requireLv": 35,
-			"gapLv": 3,
-			"maxLv": 24,
-			"nowLv": 24,
-			"maxTp": 5.0,
-			"nowTp": 5.0,
-			"delay": 1,
-			"talisman": {
-				"name": "일화통암",
-				"damage": 913248,
-				"coolTime": 25,
-				"available": 3,
-				"rune": 0
-			}
-		},
-		{
-			"name": "십자검",
-			"damage": 667059,
-			"coolTime": 30,
-			"requireLv": 60,
-			"gapLv": 2,
-			"maxLv": 23,
-			"nowLv": 0,
-			"maxTp": 5.0,
-			"nowTp": 0.0,
-			"delay": 2,
-			"talisman": {
-				"name": "일몰여평섬",
-				"damage": 728473,
-				"coolTime": 24,
-				"available": 0,
-				"rune": 0
-			}
-		},
-		{
-			"name": "폭검",
-			"damage": 591342,
-			"coolTime": 20,
-			"requireLv": 40,
-			"gapLv": 2,
-			"maxLv": 33,
-			"nowLv": 33,
-			"maxTp": 5.0,
-			"nowTp": 5.0,
-			"delay": 0.5,
-			"talisman": null
-		},
-		{
-			"name": "비연장",
-			"damage": 440477,
-			"coolTime": 12,
+			"name": "칼날 바람",
+			"damage": 591856,
+			"coolTime": 18,
 			"requireLv": 35,
 			"gapLv": 2,
 			"maxLv": 36,
@@ -212,61 +161,86 @@
 			"talisman": null
 		},
 		{
-			"name": "거압",
-			"damage": 344209,
-			"coolTime": 12,
+			"name": "휘몰아치는 바람",
+			"damage": 540426,
+			"coolTime": 25,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 1,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "메가 토네이도",
+				"damage": 634995,
+				"coolTime": 20,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "싹슬바람",
+			"damage": 416225,
+			"coolTime": 14,
 			"requireLv": 30,
 			"gapLv": 2,
 			"maxLv": 38,
-			"nowLv": 30,
+			"nowLv": 38,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "폭풍의 눈",
+			"damage": 406271,
+			"coolTime": 16,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "스톰 익스플로전",
+				"damage": 556591,
+				"coolTime": 14.4,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "윈드 블래스터",
+			"damage": 298727,
+			"coolTime": 8.5,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
 			"maxTp": 5.0,
 			"nowTp": 1.0,
 			"delay": 0.5,
 			"talisman": null
 		},
 		{
-			"name": "극검",
-			"damage": 255852,
-			"coolTime": 11,
-			"requireLv": 30,
+			"name": "대진공",
+			"damage": 234532,
+			"coolTime": 10,
+			"requireLv": 20,
 			"gapLv": 2,
-			"maxLv": 38,
+			"maxLv": 43,
 			"nowLv": 0,
 			"maxTp": 5.0,
 			"nowTp": 0.0,
-			"delay": 1,
+			"delay": 2,
 			"talisman": null
 		},
 		{
-			"name": "회륜",
-			"damage": 223739,
+			"name": "회오리 바람",
+			"damage": 220843,
 			"coolTime": 7,
-			"requireLv": 15,
-			"gapLv": 2,
-			"maxLv": 46,
-			"nowLv": 0,
-			"maxTp": 5.0,
-			"nowTp": 0.0,
-			"delay": 1,
-			"talisman": null
-		},
-		{
-			"name": "비상",
-			"damage": 216328,
-			"coolTime": 7,
-			"requireLv": 25,
-			"gapLv": 2,
-			"maxLv": 41,
-			"nowLv": 0,
-			"maxTp": 5.0,
-			"nowTp": 0.0,
-			"delay": 1,
-			"talisman": null
-		},
-		{
-			"name": "일화도강",
-			"damage": 205393,
-			"coolTime": 5,
 			"requireLv": 25,
 			"gapLv": 2,
 			"maxLv": 41,
@@ -277,8 +251,8 @@
 			"talisman": null
 		},
 		{
-			"name": "삼재검",
-			"damage": 164994,
+			"name": "소닉 무브",
+			"damage": 175518,
 			"coolTime": 5,
 			"requireLv": 15,
 			"gapLv": 2,
@@ -286,12 +260,25 @@
 			"nowLv": 0,
 			"maxTp": 5.0,
 			"nowTp": 0.0,
-			"delay": 0.5,
+			"delay": 0.7,
+			"talisman": null
+		},
+		{
+			"name": "삭풍",
+			"damage": 173487,
+			"coolTime": 5.5,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
 			"talisman": null
 		},
 		{
 			"name": "평타(1사이클)",
-			"damage": 73235,
+			"damage": 50552,
 			"coolTime": 0,
 			"requireLv": 1,
 			"gapLv": 1,
@@ -306,19 +293,29 @@
 	],
 	"passive": [
 		{
-			"name": "삼화취정",
-			"requireLv": 20,
-			"maxValue": 32.0,
-			"upValue": 4.0,
+			"name": "봉 마스터리",
+			"requireLv": 15,
+			"maxValue": 26.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": "WEAPON",
+			"requirementValue": "봉"
+		},
+		{
+			"name": "태풍의 전조",
+			"requireLv": 30,
+			"maxValue": 10.0,
+			"upValue": 1.5,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
 			"requirementValue": null
 		},
 		{
-			"name": "삼매진화",
+			"name": "풍신의 힘",
 			"requireLv": 48,
-			"maxValue": 46.5,
+			"maxValue": 42.5,
 			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
@@ -326,9 +323,9 @@
 			"requirementValue": null
 		},
 		{
-			"name": "등봉조극",
+			"name": "세컨드 윈드",
 			"requireLv": 75,
-			"maxValue": 40.0,
+			"maxValue": 46.0,
 			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
@@ -336,7 +333,7 @@
 			"requirementValue": null
 		},
 		{
-			"name": "검선지경",
+			"name": "제네시스 벤투스",
 			"requireLv": 95,
 			"maxValue": 26.0,
 			"upValue": 2.0,
@@ -349,42 +346,37 @@
 	"special": [
 		{
 			"requirementType": "WEAPON",
-			"requirementValue": "광검",
-			"type": "COOLDOWN",
+			"requirementValue": "봉",
+			"type": "COOL",
 			"target": "ALL",
 			"value": 10.0
 		}
 	],
 	"weapon": [
 		{
-			"type": "광검",
-			"damage": 1.0,
-			"coolTime": 0.9
-		},
-		{
-			"type": "대검",
-			"damage": 1.0693049812955306,
-			"coolTime": 1.1
-		},
-		{
-			"type": "둔기",
-			"damage": 1.0431187241582989,
-			"coolTime": 1.05
-		},
-		{
-			"type": "도",
-			"damage": 1.004725339633786,
+			"type": "로드",
+			"damage": 0.7574235422336688,
 			"coolTime": 0.95
 		},
 		{
-			"type": "소검",
-			"damage": 1.004725339633786,
+			"type": "스태프",
+			"damage": 0.7676219701536157,
 			"coolTime": 1.0
+		},
+		{
+			"type": "봉",
+			"damage": 1.0,
+			"coolTime": 1.0
+		},
+		{
+			"type": "창",
+			"damage": 0.8175486023587288,
+			"coolTime": 1.05
 		},
 		{
 			"type": "공통",
 			"damage": 1.0,
-			"coolTime": 0.9
+			"coolTime": 1.0
 		}
 	]
 }

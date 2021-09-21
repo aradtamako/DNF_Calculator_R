@@ -1,8 +1,8 @@
 {
 	"active": [
 		{
-			"name": "흑패성진 : 사문격쇄",
-			"damage": 3848247,
+			"name": "블랙 호라이즌",
+			"damage": 3821106,
 			"coolTime": 290,
 			"requireLv": 100,
 			"gapLv": 5,
@@ -14,8 +14,8 @@
 			"talisman": null
 		},
 		{
-			"name": "일자전승 : \n극의 진천노호",
-			"damage": 2258533,
+			"name": "익시드",
+			"damage": 2194273,
 			"coolTime": 180,
 			"requireLv": 85,
 			"gapLv": 5,
@@ -27,8 +27,8 @@
 			"talisman": null
 		},
 		{
-			"name": "나의 공격리듬은!!",
-			"damage": 1806833,
+			"name": "버스트 필드",
+			"damage": 1847519,
 			"coolTime": 145,
 			"requireLv": 50,
 			"gapLv": 5,
@@ -36,31 +36,12 @@
 			"nowLv": 0,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 2,
+			"delay": 4.5,
 			"talisman": null
 		},
 		{
-			"name": "한놈만 팬다!!",
-			"damage": 1466237,
-			"coolTime": 45,
-			"requireLv": 70,
-			"gapLv": 2,
-			"maxLv": 18,
-			"nowLv": 18,
-			"maxTp": 5.0,
-			"nowTp": 5.0,
-			"delay": 2,
-			"talisman": {
-				"name": "강맹격파",
-				"damage": 1812983,
-				"coolTime": 40.5,
-				"available": 1,
-				"rune": 1
-			}
-		},
-		{
-			"name": "천지역전 : 무뢰",
-			"damage": 1348385,
+			"name": "블랙 시드",
+			"damage": 1402396,
 			"coolTime": 60,
 			"requireLv": 95,
 			"gapLv": 2,
@@ -68,50 +49,31 @@
 			"nowLv": 6,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 1.5,
+			"delay": 0.5,
 			"talisman": null
 		},
 		{
-			"name": "오의 : 질풍노도",
-			"damage": 1057349,
+			"name": "디바이드 어쓰",
+			"damage": 1107205,
 			"coolTime": 45,
-			"requireLv": 80,
-			"gapLv": 2,
-			"maxLv": 13,
-			"nowLv": 13,
-			"maxTp": 0.0,
-			"nowTp": 0.0,
-			"delay": 1,
-			"talisman": {
-				"name": "페이스 투 페이스",
-				"damage": 1427421,
-				"coolTime": 45,
-				"available": 0,
-				"rune": 0
-			}
-		},
-		{
-			"name": "와일드 캐넌 스파이크",
-			"damage": 1051160,
-			"coolTime": 40,
 			"requireLv": 45,
 			"gapLv": 2,
 			"maxLv": 31,
 			"nowLv": 31,
 			"maxTp": 5.0,
 			"nowTp": 5.0,
-			"delay": 0.5,
+			"delay": 1,
 			"talisman": {
-				"name": "와일드 크러셔",
-				"damage": 1345484,
-				"coolTime": 40,
+				"name": "에너지 업히브",
+				"damage": 1365657,
+				"coolTime": 45,
 				"available": 0,
 				"rune": 0
 			}
 		},
 		{
-			"name": "흑진광풍",
-			"damage": 1032707,
+			"name": "라이트 브랜디쉬",
+			"damage": 1105767,
 			"coolTime": 40,
 			"requireLv": 75,
 			"gapLv": 2,
@@ -121,16 +83,54 @@
 			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
-				"name": "완전제압",
-				"damage": 1373501,
+				"name": "라이트 램페이지",
+				"damage": 1492786,
 				"coolTime": 40,
-				"available": 0,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "디스펄션",
+			"damage": 1104865,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 1.5,
+			"talisman": {
+				"name": "래피드 디스펄션",
+				"damage": 1420317,
+				"coolTime": 45,
+				"available": 3,
 				"rune": 0
 			}
 		},
 		{
-			"name": "롤링 스파이크",
-			"damage": 700556,
+			"name": "CEAB-2",
+			"damage": 1064030,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "오버서플라이",
+				"damage": 1479002,
+				"coolTime": 40.5,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "라이트닝 슬래쉬",
+			"damage": 673384,
 			"coolTime": 25,
 			"requireLv": 40,
 			"gapLv": 2,
@@ -138,56 +138,37 @@
 			"nowLv": 33,
 			"maxTp": 5.0,
 			"nowTp": 5.0,
-			"delay": 1,
-			"talisman": {
-				"name": "사이클론 스파이크",
-				"damage": 937355,
-				"coolTime": 25,
-				"available": 3,
-				"rune": 0
-			}
-		},
-		{
-			"name": "피어스",
-			"damage": 674086,
-			"coolTime": 25,
-			"requireLv": 60,
-			"gapLv": 2,
-			"maxLv": 23,
-			"nowLv": 4,
-			"maxTp": 5.0,
-			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
-				"name": "콤비네이션 러쉬",
-				"damage": 734754,
-				"coolTime": 22,
+				"name": "페이탈 슬래쉬",
+				"damage": 912086,
+				"coolTime": 25,
 				"available": 0,
 				"rune": 0
 			}
 		},
 		{
-			"name": "매그넘설트",
-			"damage": 510304,
-			"coolTime": 15,
-			"requireLv": 35,
+			"name": "에너지 바운스",
+			"damage": 623952,
+			"coolTime": 30,
+			"requireLv": 60,
 			"gapLv": 2,
-			"maxLv": 36,
-			"nowLv": 36,
+			"maxLv": 23,
+			"nowLv": 1,
 			"maxTp": 5.0,
-			"nowTp": 5.0,
-			"delay": 0.5,
+			"nowTp": 0.0,
+			"delay": 0.7,
 			"talisman": {
-				"name": "뇌천파쇄",
-				"damage": 709323,
-				"coolTime": 15,
-				"available": 2,
+				"name": "에너지 리액션",
+				"damage": 854965,
+				"coolTime": 30,
+				"available": 0,
 				"rune": 0
 			}
 		},
 		{
-			"name": "블로우 스트라이크",
-			"damage": 487713,
+			"name": "어트랙트 에뮤니션",
+			"damage": 475100,
 			"coolTime": 15,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -195,13 +176,32 @@
 			"nowLv": 36,
 			"maxTp": 5.0,
 			"nowTp": 5.0,
-			"delay": 1,
+			"delay": 0.7,
+			"talisman": {
+				"name": "익세시브 차징",
+				"damage": 551117,
+				"coolTime": 15,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "이미션",
+			"damage": 466495,
+			"coolTime": 20,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 1,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 1.5,
 			"talisman": null
 		},
 		{
-			"name": "스냅 샷",
-			"damage": 366986,
-			"coolTime": 12,
+			"name": "일렉트릭 필러",
+			"damage": 328979,
+			"coolTime": 10,
 			"requireLv": 30,
 			"gapLv": 2,
 			"maxLv": 38,
@@ -212,86 +212,86 @@
 			"talisman": null
 		},
 		{
-			"name": "숄더 태클",
-			"damage": 314278,
-			"coolTime": 8,
+			"name": "엑소셋",
+			"damage": 279836,
+			"coolTime": 7.5,
 			"requireLv": 25,
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 41,
 			"maxTp": 5.0,
-			"nowTp": 1.0,
-			"delay": 0.3,
+			"nowTp": 5.0,
+			"delay": 0.5,
 			"talisman": null
 		},
 		{
-			"name": "브레이크 다운",
-			"damage": 297823,
-			"coolTime": 10,
+			"name": "스퀘어리",
+			"damage": 256963,
+			"coolTime": 8,
 			"requireLv": 25,
 			"gapLv": 2,
 			"maxLv": 41,
-			"nowLv": 1,
+			"nowLv": 23,
 			"maxTp": 5.0,
 			"nowTp": 0.0,
-			"delay": 1,
+			"delay": 0.7,
 			"talisman": null
 		},
 		{
-			"name": "에어슈타이너",
-			"damage": 256997,
-			"coolTime": 7,
-			"requireLv": 30,
+			"name": "테이저",
+			"damage": 239966,
+			"coolTime": 10,
+			"requireLv": 20,
 			"gapLv": 2,
-			"maxLv": 38,
-			"nowLv": 1,
+			"maxLv": 43,
+			"nowLv": 0,
 			"maxTp": 5.0,
 			"nowTp": 0.0,
-			"delay": 1,
+			"delay": 0.4,
 			"talisman": null
 		},
 		{
-			"name": "로플링",
-			"damage": 220773,
-			"coolTime": 7,
+			"name": "코어 실드",
+			"damage": 239809,
+			"coolTime": 8,
 			"requireLv": 15,
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 0,
-			"maxTp": 4.0,
+			"maxTp": 5.0,
 			"nowTp": 0.0,
-			"delay": 1,
+			"delay": 0.4,
 			"talisman": null
 		},
 		{
-			"name": "무릎 찍기",
-			"damage": 107572,
+			"name": "로테이션 웨이브",
+			"damage": 180254,
 			"coolTime": 5,
-			"requireLv": 5,
+			"requireLv": 15,
 			"gapLv": 2,
-			"maxLv": 50,
-			"nowLv": 0,
-			"maxTp": 4.0,
-			"nowTp": 0.0,
-			"delay": 1,
-			"talisman": null
-		},
-		{
-			"name": "넥스냅",
-			"damage": 89438,
-			"coolTime": 9,
-			"requireLv": 25,
-			"gapLv": 2,
-			"maxLv": 41,
+			"maxLv": 46,
 			"nowLv": 0,
 			"maxTp": 5.0,
 			"nowTp": 0.0,
-			"delay": 0.3,
+			"delay": 0.4,
+			"talisman": null
+		},
+		{
+			"name": "빔 슬래쉬",
+			"damage": 117943,
+			"coolTime": 5,
+			"requireLv": 10,
+			"gapLv": 2,
+			"maxLv": 48,
+			"nowLv": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
+			"delay": 0.4,
 			"talisman": null
 		},
 		{
 			"name": "평타(1사이클)",
-			"damage": 71580,
+			"damage": 68708,
 			"coolTime": 0,
 			"requireLv": 1,
 			"gapLv": 1,
@@ -306,27 +306,27 @@
 	],
 	"passive": [
 		{
-			"name": "임팩트 \n콤비네이션",
+			"name": "인젝션",
+			"requireLv": 25,
+			"maxValue": 27.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "코어 블레이드 \n마스터리",
 			"requireLv": 20,
-			"maxValue": 38.0,
+			"maxValue": 29.0,
 			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
-			"requirementType": null,
-			"requirementValue": null
+			"requirementType": "WEAPON",
+			"requirementValue": "코어블레이드"
 		},
 		{
-			"name": "강렬한\n테이크 다운",
-			"requireLv": 15,
-			"maxValue": 26.0,
-			"upValue": 2.0,
-			"type": "DAMAGE",
-			"target": "ALL",
-			"requirementType": null,
-			"requirementValue": null
-		},
-		{
-			"name": "반격",
+			"name": "엠플리파이",
 			"requireLv": 48,
 			"maxValue": 42.5,
 			"upValue": 2.0,
@@ -336,9 +336,9 @@
 			"requirementValue": null
 		},
 		{
-			"name": "가장 강한 녀석은 누구냐?",
+			"name": "코어 패러다임",
 			"requireLv": 75,
-			"maxValue": 46.0,
+			"maxValue": 42.0,
 			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
@@ -346,7 +346,7 @@
 			"requirementValue": null
 		},
 		{
-			"name": "부동심",
+			"name": "싱귤래리티 코어",
 			"requireLv": 95,
 			"maxValue": 26.0,
 			"upValue": 2.0,
@@ -356,40 +356,32 @@
 			"requirementValue": null
 		}
 	],
-	"special": [
-		{
-			"requirementType": "WEAPON",
-			"requirementValue": "건틀릿",
-			"type": "COOL",
-			"target": "ALL",
-			"value": 10.0
-		}
-	],
+	"special": [],
 	"weapon": [
 		{
-			"type": "너클",
-			"damage": 0.9389312977099237,
-			"coolTime": 0.9
+			"type": "소태도",
+			"damage": 0.7468401791247209,
+			"coolTime": 1.0
 		},
 		{
-			"type": "건틀렛",
+			"type": "중검",
+			"damage": 0.7272557204157751,
+			"coolTime": 1.0
+		},
+		{
+			"type": "장도",
+			"damage": 0.7272557204157751,
+			"coolTime": 1.0
+		},
+		{
+			"type": "코어블레이드",
 			"damage": 1.0,
-			"coolTime": 1.1
-		},
-		{
-			"type": "통파",
-			"damage": 0.9389312977099237,
-			"coolTime": 1.0
-		},
-		{
-			"type": "클로",
-			"damage": 0.9514056972630796,
-			"coolTime": 1.0
+			"coolTime": 1.05
 		},
 		{
 			"type": "공통",
 			"damage": 1.0,
-			"coolTime": 1.1
+			"coolTime": 1.05
 		}
 	]
 }

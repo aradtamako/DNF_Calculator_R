@@ -1,0 +1,376 @@
+{
+	"active": [
+		{
+			"name": "괴멸의 복음",
+			"damage": 4289382,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "언홀리 퓨리",
+			"damage": 2241409,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "다이어 스트림",
+			"damage": 1456494,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "처형",
+			"damage": 1378472,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "파멸의 강타",
+			"damage": 1160794,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": {
+				"name": "언스토퍼블 레이지",
+				"damage": 1567073,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "재앙",
+			"damage": 1124671,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 1,
+			"talisman": {
+				"name": "디재스터 랩소디",
+				"damage": 1459823,
+				"coolTime": 50,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "다크 하울링",
+			"damage": 1107225,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": {
+				"name": "악의의 절규",
+				"damage": 1428321,
+				"coolTime": 34.4,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "어둠의 권능",
+			"damage": 996778,
+			"coolTime": 40,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.7,
+			"talisman": {
+				"name": "오버파워 피날레",
+				"damage": 1274078,
+				"coolTime": 36,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "복마전",
+			"damage": 816713,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "팬텀 게이트",
+				"damage": 992307,
+				"coolTime": 26.4,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "데빌 클러치",
+			"damage": 768071,
+			"coolTime": 30,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 31,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "스피닝 디포메이션",
+			"damage": 665847,
+			"coolTime": 24,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "데스 클로 디포메이션",
+				"damage": 892236,
+				"coolTime": 24,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "데빌 피스트",
+			"damage": 581851,
+			"coolTime": 20,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5.0,
+			"nowTp": 1.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "악몽의 씨앗",
+				"damage": 777362,
+				"coolTime": 17,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "복수의 가시",
+			"damage": 481793,
+			"coolTime": 16,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "스핀커터",
+			"damage": 468360,
+			"coolTime": 15,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.7,
+			"talisman": null
+		},
+		{
+			"name": "지뢰진",
+			"damage": 252187,
+			"coolTime": 7.75,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 7,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "데스 사이드",
+			"damage": 242429,
+			"coolTime": 8,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "분노의 움켜쥠",
+			"damage": 161912,
+			"coolTime": 9.6,
+			"requireLv": 10,
+			"gapLv": 2,
+			"maxLv": 48,
+			"nowLv": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "평타(1사이클)",
+			"damage": 183675,
+			"coolTime": 0,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 12,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"cool_fix": true,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "낫 마스터리",
+			"requireLv": 20,
+			"maxValue": 20.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "환청",
+			"requireLv": 30,
+			"maxValue": 39.0,
+			"upValue": 3.0,
+			"type": "DAMAGE",
+			"target": "괴멸의 복음^언홀리 퓨리^다이어 스트림^처형^파멸의 강타^재앙^다크 하울링^어둠의 권능^복마전^데빌 클러치^스피닝 디포메이션^데빌 피스트^복수의 가시^스핀커터^지뢰진^데스 사이드",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "악몽",
+			"requireLv": 48,
+			"maxValue": 30.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "괴멸의 복음^언홀리 퓨리^다이어 스트림^처형^파멸의 강타^재앙^다크 하울링^어둠의 권능^복마전^데빌 클러치^스피닝 디포메이션^데빌 피스트^복수의 가시^스핀커터^지뢰진^데스 사이드^분노의 움켜쥠",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "이블 스트라이커",
+			"requireLv": 75,
+			"maxValue": 41.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "레쳐스\n데빌라이즈",
+			"requireLv": 95,
+			"maxValue": 26.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "악몽",
+			"requireLv": 48,
+			"maxValue": 20.0,
+			"upValue": 1.0,
+			"type": "DAMAGE",
+			"target": "평타(1사이클)",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [],
+	"weapon": [
+		{
+			"type": "십자가",
+			"damage": 0.8224070450097847,
+			"coolTime": 0.95
+		},
+		{
+			"type": "낫",
+			"damage": 1.0,
+			"coolTime": 1.0
+		},
+		{
+			"type": "염주",
+			"damage": 0.8649706457925637,
+			"coolTime": 1.05
+		},
+		{
+			"type": "배틀엑스",
+			"damage": 0.8008806262230921,
+			"coolTime": 0.9
+		},
+		{
+			"type": "토템",
+			"damage": 0.8114807566862362,
+			"coolTime": 0.95
+		},
+		{
+			"type": "공통",
+			"damage": 1.0,
+			"coolTime": 1.0
+		}
+	]
+}

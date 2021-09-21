@@ -1,0 +1,551 @@
+{
+	"active": [
+		{
+			"name": "천제극섬",
+			"damage": 3544118,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "극 귀검술 : 폭풍식",
+			"damage": 1833810,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "이기어검술",
+			"damage": 1652861,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"talisman": null
+		},
+		{
+			"name": "비전의 자상",
+			"damage": 183637,
+			"coolTime": 5,
+			"requireLv": 15,
+			"gapLv": 3,
+			"maxLv": 22,
+			"nowLv": 22,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "극 발검술 : 무형참",
+			"damage": 1188885,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "극 귀검술 : 섬단",
+			"damage": 1122065,
+			"coolTime": 50,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": {
+				"name": "최후일각",
+				"damage": 1481125,
+				"coolTime": 50,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "환영검무",
+			"damage": 1131818,
+			"coolTime": 45,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 2,
+			"talisman": {
+				"name": "그림자 유희",
+				"damage": 1560074,
+				"coolTime": 45,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "극초발도",
+			"damage": 1069665,
+			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.3,
+			"talisman": {
+				"name": "쾌속발도",
+				"damage": 1272902,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "극 귀검술 : 유성락",
+			"damage": 945070,
+			"coolTime": 35,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 3,
+			"talisman": {
+				"name": "유성의 심판",
+				"damage": 1404386,
+				"coolTime": 35,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "극 귀검술 : 심검",
+			"damage": 971410,
+			"coolTime": 35,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "일합잔상",
+				"damage": 1306662,
+				"coolTime": 35,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "차지버스트",
+			"damage": 660899,
+			"coolTime": 25,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "맹룡단공참",
+			"damage": 567209,
+			"coolTime": 20,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 1,
+			"talisman": {
+				"name": "맹룡선풍참",
+				"damage": 799721,
+				"coolTime": 20,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "발도",
+			"damage": 451002,
+			"coolTime": 15,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "명가의 손놀림",
+				"damage": 606147,
+				"coolTime": 15,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "류심 승",
+			"damage": 375407,
+			"coolTime": 9,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "차지 크래시",
+			"damage": 321652,
+			"coolTime": 10,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.6,
+			"talisman": null
+		},
+		{
+			"name": "류심 쾌",
+			"damage": 243031,
+			"coolTime": 7,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "류심 충",
+			"damage": 173976,
+			"coolTime": 5,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 21,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "단공참",
+			"damage": 132803,
+			"coolTime": 6,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "리 귀검술",
+			"damage": 55151,
+			"coolTime": 0,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3.0,
+			"nowTp": 3.0,
+			"delay": 1,
+			"cool_fix": true,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "검기상인",
+			"requireLv": 20,
+			"maxValue": 16.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "극 귀검술 : \n참철식",
+			"requireLv": 48,
+			"maxValue": 42.5,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "극한의 경지",
+			"requireLv": 75,
+			"maxValue": 46.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "천제극섬^극 귀검술 : 폭풍식^이기어검술^극 발검술 : 무형참^극 귀검술 : 섬단^극초발도^극 귀검술 : 유성락^차지버스트^발도^차지 크래시^단공참^환영검무^극 귀검술 : 심검^맹룡단공참",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "무형지경",
+			"requireLv": 95,
+			"maxValue": 26.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "마스터리",
+			"requireLv": 15,
+			"maxValue": 41.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "류심 강",
+			"requireLv": 30,
+			"maxValue": 40.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "류심 충^류심 쾌^류심 승",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "리 귀검술",
+			"requireLv": 15,
+			"maxValue": 0.1,
+			"upValue": 3.0,
+			"type": "DAMAGE",
+			"target": "리 귀검술",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "광검 사용 가능",
+			"requireLv": 15,
+			"maxValue": 10.0,
+			"upValue": 1.0,
+			"type": "COOL",
+			"target": "ALL",
+			"requirementType": "WEAPON",
+			"requirementValue": "광검"
+		}
+	],
+	"special": [
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "소검!",
+			"type": "DAMAGE",
+			"target": "환영검무",
+			"value": 9.25
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "둔기!",
+			"type": "DAMAGE",
+			"target": "환영검무",
+			"value": 3.6
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "대검!",
+			"type": "DAMAGE",
+			"target": "심검",
+			"value": -0.1
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "소검!",
+			"type": "DAMAGE",
+			"target": "심검",
+			"value": -7.5
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "둔기!",
+			"type": "DAMAGE",
+			"target": "심검",
+			"value": -7.5
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "광검",
+			"type": "DAMAGE",
+			"target": "비전의 자상",
+			"value": -100.0
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "대검!",
+			"type": "DAMAGE",
+			"target": "비전의 자상",
+			"value": -100.0
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "소검!",
+			"type": "DAMAGE",
+			"target": "비전의 자상",
+			"value": -100.0
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "둔기!",
+			"type": "DAMAGE",
+			"target": "비전의 자상",
+			"value": -100.0
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "도!",
+			"type": "DAMAGE",
+			"target": "발도",
+			"value": -3.85
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "소검!",
+			"type": "DAMAGE",
+			"target": "발도",
+			"value": 7.7
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "대검!",
+			"type": "DAMAGE",
+			"target": "류심 충",
+			"value": 19.0
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "소검!",
+			"type": "DAMAGE",
+			"target": "류심 충",
+			"value": 19.0
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "둔기!",
+			"type": "DAMAGE",
+			"target": "류심 충",
+			"value": -0.8
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "둔기!",
+			"type": "DAMAGE",
+			"target": "류심 쾌",
+			"value": 25.0
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "대검!",
+			"type": "DAMAGE",
+			"target": "류심 승",
+			"value": -12.5
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "소검!",
+			"type": "DAMAGE",
+			"target": "류심 승",
+			"value": -12.5
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "둔기!",
+			"type": "DAMAGE",
+			"target": "류심 승",
+			"value": -12.5
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "광검",
+			"type": "COOL",
+			"target": "ALL",
+			"value": 10.0
+		},
+		{
+			"requirementType": "WEAPON",
+			"requirementValue": "소검!",
+			"type": "DAMAGE",
+			"target": "맹룡단공참",
+			"value": 25.0
+		}
+	],
+	"weapon": [
+		{
+			"type": "광검",
+			"damage": 1.0,
+			"coolTime": 0.9
+		},
+		{
+			"type": "소검",
+			"damage": 1.0242796434482384,
+			"coolTime": 1.0
+		},
+		{
+			"type": "둔기",
+			"damage": 1.03331891131096,
+			"coolTime": 1.05
+		},
+		{
+			"type": "대검",
+			"damage": 1.0563458291117864,
+			"coolTime": 1.1
+		},
+		{
+			"type": "도",
+			"damage": 0.9745399281569493,
+			"coolTime": 0.95
+		},
+		{
+			"type": "공통",
+			"damage": 1.0,
+			"coolTime": 0.9
+		}
+	]
+}

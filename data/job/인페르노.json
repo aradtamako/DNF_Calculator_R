@@ -8,8 +8,8 @@
 			"gapLv": 5,
 			"maxLv": 2,
 			"nowLv": 2,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 6,
 			"talisman": null
 		},
@@ -21,8 +21,8 @@
 			"gapLv": 5,
 			"maxLv": 5,
 			"nowLv": 5,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
 		},
@@ -34,8 +34,8 @@
 			"gapLv": 5,
 			"maxLv": 12,
 			"nowLv": 0,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
 		},
@@ -47,8 +47,8 @@
 			"gapLv": 2,
 			"maxLv": 6,
 			"nowLv": 6,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 2,
 			"talisman": null
 		},
@@ -60,8 +60,8 @@
 			"gapLv": 2,
 			"maxLv": 16,
 			"nowLv": 16,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "멸악대천벌",
@@ -79,8 +79,8 @@
 			"gapLv": 2,
 			"maxLv": 13,
 			"nowLv": 13,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "분쇄차륜형",
@@ -98,8 +98,8 @@
 			"gapLv": 2,
 			"maxLv": 31,
 			"nowLv": 31,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1.5,
 			"talisman": {
 				"name": "이교도의 최후",
@@ -117,8 +117,8 @@
 			"gapLv": 2,
 			"maxLv": 18,
 			"nowLv": 15,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "타오르는 성찬",
@@ -136,8 +136,8 @@
 			"gapLv": 2,
 			"maxLv": 33,
 			"nowLv": 33,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1.5,
 			"talisman": {
 				"name": "왜곡된 자비",
@@ -155,8 +155,8 @@
 			"gapLv": 2,
 			"maxLv": 23,
 			"nowLv": 1,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 2.5,
 			"talisman": {
 				"name": "율법의 전도자",
@@ -174,8 +174,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": {
 				"name": "단호한 심판",
@@ -193,8 +193,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1.5,
 			"talisman": null
 		},
@@ -206,8 +206,8 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 38,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -219,8 +219,8 @@
 			"gapLv": 2,
 			"maxLv": 43,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -232,8 +232,8 @@
 			"gapLv": 1,
 			"maxLv": 100,
 			"nowLv": 100,
-			"maxTp": 3,
-			"nowTp": 3,
+			"maxTp": 3.0,
+			"nowTp": 3.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -245,8 +245,8 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -258,8 +258,8 @@
 			"gapLv": 3,
 			"maxLv": 29,
 			"nowLv": 29,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": null
 		},
@@ -271,22 +271,23 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": null
 		},
 		{
 			"name": "평타(1사이클)",
 			"damage": 55233,
-			"coolTime": null,
+			"coolTime": 0,
 			"requireLv": 1,
 			"gapLv": 1,
 			"maxLv": 100,
 			"nowLv": 100,
-			"maxTp": 3,
-			"nowTp": 3,
-			"delay": 0,
+			"maxTp": 3.0,
+			"nowTp": 3.0,
+			"delay": 1,
+			"cool_fix": true,
 			"talisman": null
 		}
 	],
@@ -294,8 +295,8 @@
 		{
 			"name": "배틀액스 마스터리",
 			"requireLv": 20,
-			"maxValue": 19,
-			"upValue": 2,
+			"maxValue": 19.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": "WEAPON",
@@ -304,8 +305,8 @@
 		{
 			"name": "성화",
 			"requireLv": 25,
-			"maxValue": 17,
-			"upValue": 2,
+			"maxValue": 17.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -324,8 +325,8 @@
 		{
 			"name": "세큐리스 \n말레피카룸",
 			"requireLv": 75,
-			"maxValue": 47,
-			"upValue": 2,
+			"maxValue": 47.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -334,15 +335,23 @@
 		{
 			"name": "광염의 고해성사",
 			"requireLv": 95,
-			"maxValue": 26,
-			"upValue": 2,
+			"maxValue": 26.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
 			"requirementValue": null
 		}
 	],
-	"special": [],
+	"special": [
+		{
+			"requirementType": "EQUIPMENT",
+			"requirementValue": "111048",
+			"type": "DAMAGE",
+			"target": "무쌍격",
+			"value": 40.0
+		}
+	],
 	"weapon": [
 		{
 			"type": "십자가",
@@ -361,17 +370,17 @@
 		},
 		{
 			"type": "배틀액스",
-			"damage": 1,
+			"damage": 1.0,
 			"coolTime": 1.1
 		},
 		{
 			"type": "토템",
 			"damage": 0.8084766054164485,
-			"coolTime": 1
+			"coolTime": 1.0
 		},
 		{
 			"type": "공통",
-			"damage": 1,
+			"damage": 1.0,
 			"coolTime": 1.1
 		}
 	]

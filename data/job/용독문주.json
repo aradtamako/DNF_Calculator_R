@@ -8,9 +8,9 @@
 			"gapLv": 5,
 			"maxLv": 2,
 			"nowLv": 2,
-			"maxTp": 0,
-			"nowTp": 0,
-			"delay": 6,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 5.5,
 			"talisman": null
 		},
 		{
@@ -21,9 +21,9 @@
 			"gapLv": 5,
 			"maxLv": 6,
 			"nowLv": 6,
-			"maxTp": 0,
-			"nowTp": 0,
-			"delay": 2,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1.5,
 			"talisman": null
 		},
 		{
@@ -34,9 +34,9 @@
 			"gapLv": 5,
 			"maxLv": 12,
 			"nowLv": 0,
-			"maxTp": 0,
-			"nowTp": 0,
-			"delay": 1,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
 			"talisman": null
 		},
 		{
@@ -47,9 +47,9 @@
 			"gapLv": 2,
 			"maxLv": 6,
 			"nowLv": 6,
-			"maxTp": 0,
-			"nowTp": 0,
-			"delay": 1.5,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1,
 			"talisman": null
 		},
 		{
@@ -60,9 +60,9 @@
 			"gapLv": 2,
 			"maxLv": 31,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
-			"delay": 3,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 2.5,
 			"talisman": {
 				"name": "대방출",
 				"damage": 1578662,
@@ -79,9 +79,9 @@
 			"gapLv": 2,
 			"maxLv": 16,
 			"nowLv": 16,
-			"maxTp": 0,
-			"nowTp": 0,
-			"delay": 1,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
 			"talisman": {
 				"name": "비각술",
 				"damage": 1539188,
@@ -98,9 +98,9 @@
 			"gapLv": 2,
 			"maxLv": 13,
 			"nowLv": 13,
-			"maxTp": 0,
-			"nowTp": 0,
-			"delay": 1,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
 			"talisman": {
 				"name": "오버 더 리미트",
 				"damage": 1430811,
@@ -117,9 +117,9 @@
 			"gapLv": 2,
 			"maxLv": 33,
 			"nowLv": 33,
-			"maxTp": 5,
-			"nowTp": 5,
-			"delay": 1.5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 1,
 			"talisman": {
 				"name": "바이퍼 마인",
 				"damage": 938303,
@@ -136,9 +136,9 @@
 			"gapLv": 2,
 			"maxLv": 18,
 			"nowLv": 18,
-			"maxTp": 5,
-			"nowTp": 0,
-			"delay": 1,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
 			"talisman": {
 				"name": "버스터 봄",
 				"damage": 943752,
@@ -155,9 +155,9 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 38,
-			"maxTp": 5,
-			"nowTp": 5,
-			"delay": 1,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.5,
 			"talisman": null
 		},
 		{
@@ -168,9 +168,9 @@
 			"gapLv": 2,
 			"maxLv": 23,
 			"nowLv": 23,
-			"maxTp": 5,
-			"nowTp": 5,
-			"delay": 1,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.5,
 			"talisman": {
 				"name": "들끓는 독수",
 				"damage": 922564,
@@ -187,9 +187,9 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
-			"delay": 1,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.1,
 			"talisman": {
 				"name": "백스트리트 킥",
 				"damage": 904485,
@@ -206,9 +206,9 @@
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 41,
-			"maxTp": 5,
-			"nowTp": 5,
-			"delay": 1,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.1,
 			"talisman": null
 		},
 		{
@@ -219,9 +219,9 @@
 			"gapLv": 2,
 			"maxLv": 43,
 			"nowLv": 43,
-			"maxTp": 5,
-			"nowTp": 1,
-			"delay": 0.5,
+			"maxTp": 5.0,
+			"nowTp": 1.0,
+			"delay": 0.1,
 			"talisman": null
 		},
 		{
@@ -232,9 +232,9 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 46,
-			"maxTp": 5,
-			"nowTp": 0,
-			"delay": 1,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.1,
 			"talisman": null
 		},
 		{
@@ -245,9 +245,9 @@
 			"gapLv": 1,
 			"maxLv": 100,
 			"nowLv": 100,
-			"maxTp": 3,
-			"nowTp": 1,
-			"delay": 0.5,
+			"maxTp": 3.0,
+			"nowTp": 1.0,
+			"delay": 0.1,
 			"talisman": null
 		},
 		{
@@ -258,22 +258,23 @@
 			"gapLv": 2,
 			"maxLv": 48,
 			"nowLv": 0,
-			"maxTp": 4,
-			"nowTp": 0,
-			"delay": 0.5,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
+			"delay": 0.1,
 			"talisman": null
 		},
 		{
-			"name": "평타(1초/50%)",
-			"damage": 32477,
-			"coolTime": 1,
+			"name": "평타(4타)",
+			"damage": 142653,
+			"coolTime": 0,
 			"requireLv": 85,
 			"gapLv": 5,
 			"maxLv": 6,
 			"nowLv": 6,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
+			"cool_fix": true,
 			"talisman": null
 		}
 	],
@@ -281,8 +282,8 @@
 		{
 			"name": "클로 마스터리",
 			"requireLv": 25,
-			"maxValue": 41,
-			"upValue": 1,
+			"maxValue": 41.0,
+			"upValue": 1.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": "WEAPON",
@@ -291,8 +292,8 @@
 		{
 			"name": "도발",
 			"requireLv": 35,
-			"maxValue": 29,
-			"upValue": 2,
+			"maxValue": 29.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -311,8 +312,8 @@
 		{
 			"name": "용독술",
 			"requireLv": 75,
-			"maxValue": 40,
-			"upValue": 2,
+			"maxValue": 40.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -321,8 +322,8 @@
 		{
 			"name": "독문무공",
 			"requireLv": 85,
-			"maxValue": 12,
-			"upValue": 2,
+			"maxValue": 12.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -331,8 +332,8 @@
 		{
 			"name": "독문마경",
 			"requireLv": 95,
-			"maxValue": 26,
-			"upValue": 2,
+			"maxValue": 26.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -354,17 +355,17 @@
 		{
 			"type": "통파",
 			"damage": 0.7092198581560284,
-			"coolTime": 1
+			"coolTime": 1.0
 		},
 		{
 			"type": "클로",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "공통",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		}
 	]
 }

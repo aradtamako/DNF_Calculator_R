@@ -1,8 +1,8 @@
 {
 	"active": [
 		{
-			"name": "진(眞) : 각성연환격",
-			"damage": 4001029,
+			"name": "익스터미티 페리쉬",
+			"damage": 3901370,
 			"coolTime": 290,
 			"requireLv": 100,
 			"gapLv": 5,
@@ -14,8 +14,8 @@
 			"talisman": null
 		},
 		{
-			"name": "극진 : 패황단공권",
-			"damage": 2035790,
+			"name": "블러드 스트림",
+			"damage": 2163909,
 			"coolTime": 180,
 			"requireLv": 85,
 			"gapLv": 5,
@@ -23,25 +23,25 @@
 			"nowLv": 5,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 1.5,
+			"delay": 3,
 			"talisman": null
 		},
 		{
-			"name": "사상최강의 로킥",
-			"damage": 1590292,
-			"coolTime": 145,
+			"name": "체페슈",
+			"damage": 1735243,
+			"coolTime": 160,
 			"requireLv": 50,
 			"gapLv": 5,
 			"maxLv": 12,
 			"nowLv": 0,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 1,
+			"delay": 3,
 			"talisman": null
 		},
 		{
-			"name": "라이트닝 시프트",
-			"damage": 1533311,
+			"name": "블러드 스틴저",
+			"damage": 1364246,
 			"coolTime": 60,
 			"requireLv": 95,
 			"gapLv": 2,
@@ -49,32 +49,32 @@
 			"nowLv": 6,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 1,
+			"delay": 0.5,
 			"talisman": null
 		},
 		{
-			"name": "일주연환격",
-			"damage": 1228791,
-			"coolTime": 50,
-			"requireLv": 70,
+			"name": "커럽션",
+			"damage": 1228891,
+			"coolTime": 40,
+			"requireLv": 45,
 			"gapLv": 2,
-			"maxLv": 18,
-			"nowLv": 18,
+			"maxLv": 31,
+			"nowLv": 31,
 			"maxTp": 5.0,
 			"nowTp": 5.0,
-			"delay": 1.5,
+			"delay": 1,
 			"talisman": {
-				"name": "섬극연환오의",
-				"damage": 1617182,
-				"coolTime": 50,
+				"name": "커럽션 오브 다크블러드",
+				"damage": 1572981,
+				"coolTime": 40,
 				"available": 3,
 				"rune": 0
 			}
 		},
 		{
-			"name": "무영각",
-			"damage": 1158810,
-			"coolTime": 45,
+			"name": "페이탈리티",
+			"damage": 1208198,
+			"coolTime": 50,
 			"requireLv": 80,
 			"gapLv": 2,
 			"maxLv": 13,
@@ -83,55 +83,55 @@
 			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
-				"name": "두발당성",
-				"damage": 1533487,
-				"coolTime": 45,
+				"name": "페이탈 레이크",
+				"damage": 1618985,
+				"coolTime": 50,
 				"available": 0,
 				"rune": 0
 			}
 		},
 		{
-			"name": "호격권",
-			"damage": 1152790,
-			"coolTime": 40,
+			"name": "팬텀 베일",
+			"damage": 984809,
+			"coolTime": 30,
 			"requireLv": 75,
 			"gapLv": 2,
 			"maxLv": 16,
 			"nowLv": 16,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 1,
+			"delay": 0.5,
 			"talisman": {
-				"name": "맹호복초",
-				"damage": 1570041,
-				"coolTime": 40,
-				"available": 0,
+				"name": "헬 하운드",
+				"damage": 1270404,
+				"coolTime": 27,
+				"available": 2,
 				"rune": 0
 			}
 		},
 		{
-			"name": "비트 드라이브",
-			"damage": 1130776,
-			"coolTime": 40,
-			"requireLv": 45,
+			"name": "머로더",
+			"damage": 955938,
+			"coolTime": 50,
+			"requireLv": 70,
 			"gapLv": 2,
-			"maxLv": 31,
-			"nowLv": 3,
+			"maxLv": 18,
+			"nowLv": 18,
 			"maxTp": 5.0,
 			"nowTp": 0.0,
-			"delay": 2.5,
+			"delay": 0.3,
 			"talisman": {
-				"name": "슈페리어 비트",
-				"damage": 1484146,
-				"coolTime": 40,
+				"name": "블러드 둠",
+				"damage": 1271398,
+				"coolTime": 50,
 				"available": 0,
 				"rune": 0
 			}
 		},
 		{
-			"name": "파쇄권",
-			"damage": 941562,
-			"coolTime": 30,
+			"name": "럼블독",
+			"damage": 751894,
+			"coolTime": 25,
 			"requireLv": 60,
 			"gapLv": 2,
 			"maxLv": 23,
@@ -140,16 +140,16 @@
 			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": {
-				"name": "파쇄권 : 멸",
-				"damage": 1205199,
-				"coolTime": 30,
+				"name": "스웜프 오브 헬독",
+				"damage": 917311,
+				"coolTime": 20,
 				"available": 0,
 				"rune": 0
 			}
 		},
 		{
-			"name": "라이트닝 댄스",
-			"damage": 811620,
+			"name": "소울 스틸",
+			"damage": 656035,
 			"coolTime": 20,
 			"requireLv": 40,
 			"gapLv": 2,
@@ -157,115 +157,128 @@
 			"nowLv": 33,
 			"maxTp": 5.0,
 			"nowTp": 5.0,
-			"delay": 1.5,
+			"delay": 0.5,
 			"talisman": {
-				"name": "섬광의 춤",
-				"damage": 1033077,
-				"coolTime": 17,
+				"name": "블러드 소울 번",
+				"damage": 858094,
+				"coolTime": 16.4,
 				"available": 1,
 				"rune": 1
 			}
 		},
 		{
-			"name": "라이징 너클",
-			"damage": 609313,
-			"coolTime": 20,
+			"name": "토먼트",
+			"damage": 545709,
+			"coolTime": 18,
 			"requireLv": 35,
 			"gapLv": 2,
 			"maxLv": 36,
-			"nowLv": 36,
+			"nowLv": 7,
 			"maxTp": 5.0,
-			"nowTp": 5.0,
-			"delay": 1,
-			"talisman": null
-		},
-		{
-			"name": "원인치 펀치",
-			"damage": 573580,
-			"coolTime": 15,
-			"requireLv": 35,
-			"gapLv": 2,
-			"maxLv": 36,
-			"nowLv": 36,
-			"maxTp": 5.0,
-			"nowTp": 5.0,
-			"delay": 0.3,
+			"nowTp": 0.0,
+			"delay": 0.5,
 			"talisman": {
-				"name": "일격일살",
-				"damage": 762862,
-				"coolTime": 15,
-				"available": 2,
+				"name": "블러드 필드",
+				"damage": 703964,
+				"coolTime": 16.2,
+				"available": 0,
 				"rune": 0
 			}
 		},
 		{
-			"name": "본 크러셔",
-			"damage": 285039,
-			"coolTime": 7,
-			"requireLv": 25,
+			"name": "팽",
+			"damage": 330928,
+			"coolTime": 12,
+			"requireLv": 30,
 			"gapLv": 2,
-			"maxLv": 41,
-			"nowLv": 41,
+			"maxLv": 38,
+			"nowLv": 38,
 			"maxTp": 5.0,
-			"nowTp": 1.0,
+			"nowTp": 5.0,
 			"delay": 0.3,
 			"talisman": null
 		},
 		{
-			"name": "철산고",
-			"damage": 278902,
-			"coolTime": 7,
-			"requireLv": 25,
-			"gapLv": 2,
-			"maxLv": 41,
-			"nowLv": 41,
-			"maxTp": 5.0,
-			"nowTp": 0.0,
-			"delay": 0.3,
-			"talisman": null
-		},
-		{
-			"name": "질풍각",
-			"damage": 250667,
-			"coolTime": 8,
+			"name": "헬베루즈",
+			"damage": 259315,
+			"coolTime": 10,
 			"requireLv": 30,
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 0,
 			"maxTp": 5.0,
 			"nowTp": 0.0,
-			"delay": 1.5,
+			"delay": 0.5,
 			"talisman": null
 		},
 		{
-			"name": "붕권",
-			"damage": 211677,
+			"name": "쉬카리",
+			"damage": 258891,
+			"coolTime": 8,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5.0,
+			"nowTp": 1.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "릴로이",
+			"damage": 238316,
 			"coolTime": 6,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 1,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "릴리악",
+			"damage": 206935,
+			"coolTime": 5,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 46,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "오퍼링",
+			"damage": 206402,
+			"coolTime": 6,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "블러드 윙",
+			"damage": 169860,
+			"coolTime": 5,
 			"requireLv": 15,
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 0,
 			"maxTp": 5.0,
 			"nowTp": 0.0,
-			"delay": 0.1,
-			"talisman": null
-		},
-		{
-			"name": "로킥",
-			"damage": 72690,
-			"coolTime": 2,
-			"requireLv": 5,
-			"gapLv": 2,
-			"maxLv": 50,
-			"nowLv": 0,
-			"maxTp": 4.0,
-			"nowTp": 0.0,
-			"delay": 0.1,
+			"delay": 0.5,
 			"talisman": null
 		},
 		{
 			"name": "평타(1사이클)",
-			"damage": 53276,
+			"damage": 62619,
 			"coolTime": 0,
 			"requireLv": 1,
 			"gapLv": 1,
@@ -280,9 +293,29 @@
 	],
 	"passive": [
 		{
-			"name": "머슬 시프트",
-			"requireLv": 30,
-			"maxValue": 20.0,
+			"name": "블러드",
+			"requireLv": 15,
+			"maxValue": 14.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "블러드 혼",
+			"requireLv": 20,
+			"maxValue": 12.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "어벤던",
+			"requireLv": 48,
+			"maxValue": 40.5,
 			"upValue": 1.5,
 			"type": "DAMAGE",
 			"target": "ALL",
@@ -290,27 +323,7 @@
 			"requirementValue": null
 		},
 		{
-			"name": "급소 지정",
-			"requireLv": 30,
-			"maxValue": 17.0,
-			"upValue": 2.0,
-			"type": "DAMAGE",
-			"target": "ALL",
-			"requirementType": null,
-			"requirementValue": null
-		},
-		{
-			"name": "스탬피드",
-			"requireLv": 48,
-			"maxValue": 45.0,
-			"upValue": 2.0,
-			"type": "DAMAGE",
-			"target": "ALL",
-			"requirementType": null,
-			"requirementValue": null
-		},
-		{
-			"name": "리미트 브레이크",
+			"name": "트루 블러드",
 			"requireLv": 75,
 			"maxValue": 46.0,
 			"upValue": 2.0,
@@ -320,7 +333,7 @@
 			"requirementValue": null
 		},
 		{
-			"name": "질풍경초",
+			"name": "블러드비스",
 			"requireLv": 95,
 			"maxValue": 26.0,
 			"upValue": 2.0,
@@ -332,43 +345,45 @@
 	],
 	"special": [
 		{
-			"requirementType": "WEAPON",
-			"requirementValue": "권투글러브",
+			"requirementType": "ALL",
+			"requirementValue": "X",
 			"type": "COOL",
-			"target": "ALL",
+			"target": "커럽션^페이탈리티^머로더^토먼트^쉬카리^팽^오퍼링^블러드 윙",
 			"value": 10.0
+		},
+		{
+			"requirementType": "EQUIPMENT",
+			"requirementValue": "111038",
+			"type": "DAMAGE",
+			"target": "팽",
+			"value": 50.0
 		}
 	],
 	"weapon": [
 		{
-			"type": "너클",
-			"damage": 0.9737964655697745,
-			"coolTime": 0.95
-		},
-		{
-			"type": "건틀렛",
-			"damage": 1.039406865732277,
-			"coolTime": 1.1
-		},
-		{
-			"type": "통파",
-			"damage": 0.9737964655697745,
-			"coolTime": 0.95
-		},
-		{
-			"type": "클로",
-			"damage": 0.9869997968718262,
+			"type": "로드",
+			"damage": 0.9264568981567678,
 			"coolTime": 1.0
 		},
 		{
-			"type": "권투글러브",
+			"type": "스태프",
+			"damage": 0.9389312977099237,
+			"coolTime": 1.0
+		},
+		{
+			"type": "봉",
+			"damage": 0.9707689443306646,
+			"coolTime": 1.0
+		},
+		{
+			"type": "창",
 			"damage": 1.0,
-			"coolTime": 0.9
+			"coolTime": 1.05
 		},
 		{
 			"type": "공통",
 			"damage": 1.0,
-			"coolTime": 0.9
+			"coolTime": 1.05
 		}
 	]
 }

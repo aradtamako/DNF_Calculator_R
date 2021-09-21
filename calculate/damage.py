@@ -80,10 +80,12 @@ class Damage:
             self.is_cool_down_on = 1
         else:
             self.is_cool_down_on = 0
+
+        self.no_cool_efficiency = 0.5
         try:
             self.fix_delay = int(float(values_dicts.get('fix_delay')) * 10)
         except TypeError:
-            self.fix_delay = 0.5
+            self.fix_delay = 5
         self.timing_section_list = [201, 300, 301, 500, 1101, 1200]
         try:
             section_groggy = values_dicts.get('section_groggy').split('~')
@@ -470,6 +472,14 @@ class Damage:
                     now_tp = active["nowTp"]
                     max_tp = active["maxTp"]
                     skill_delay = active["delay"]
+                    try:
+                        limit_s = active["limit_s"]
+                    except KeyError:
+                        limit_s = 0
+                    try:
+                        limit_f = active["limit_f"]
+                    except KeyError:
+                        limit_f = 9999
                     now_eff = leveling_efficiency[active["gapLv"]]
                     damage = int(damage *
                                  (1 + now_eff * (now_lv + up_lv - 1)) / (1 + now_eff * (max_lv - 1)) *
@@ -497,15 +507,26 @@ class Damage:
                     elif active["requireLv"] == 25:
                         if self.equipments_sets.__contains__("15130"):
                             damage = int(damage * 0.7)
-                    if cool_time is None:
-                        cool_time = 0
-                    cool_time = round(cool_time * weapon_cool_rate *
-                                      total_cool_down[index_active.index(active["requireLv"])],
-                                      1)
+                    cool_fix = False
+                    if active.get("cool_fix") is not None:
+                        cool_fix = True
+                        if active.get("talisman") is None:
+                            cool_time = active["coolTime"]
+                        else:
+                            if active["talisman"]["available"] == 0:
+                                cool_time = active["coolTime"]
+                            else:
+                                cool_time = active["talisman"]["coolTime"]
+                    else:
+                        try:
+                            cool_time = round(cool_time * weapon_cool_rate *
+                                              total_cool_down[index_active.index(active["requireLv"])], 1)
+                        except TypeError:
+                            cool_time = 0
                     # log("스킬명", active["name"])
                     # log("damage", damage)
                     # log("cool_time", cool_time)
-                    active_dict[active["name"]] = [damage, cool_time, skill_delay]
+                    active_dict[active["name"]] = [damage, cool_time, skill_delay, limit_s, limit_f, cool_fix]
                 # log("active_dict", active_dict)
                 before_passive = 0
                 for key, value in active_dict.items():
@@ -548,12 +569,16 @@ class Damage:
                     total_rate = now_value / standard_value
                     if passive["target"] == "ALL":
                         for name, value_list in active_dict.items():
+                            if index == 1 and value_list[5] is True:
+                                continue
                             value_list[index] = value_list[index] * total_rate
                     else:
                         target_list = passive["target"].split("^")  # ^ 구분자를 기준으로 split
-                        for name, value_list in active_dict.items():
-                            if target_list.__contains__(name):
-                                value_list[index] = value_list[index] * total_rate
+                        for target in target_list:
+                            try:
+                                active_dict[target][index] = active_dict[target][index] * total_rate
+                            except KeyError:
+                                pass
                 # log("active_dict", active_dict)
                 after_passive = 0
                 for key, value in active_dict.items():
@@ -594,13 +619,16 @@ class Damage:
                         continue
                     if special["target"] == "ALL":
                         for name, value_list in active_dict.items():
+                            if index == 1 and value_list[5] is True:
+                                continue
                             value_list[index] = value_list[index] * value
                     else:
                         target_list = special["target"].split("^")  # ^ 구분자를 기준으로 split
-                        for name, value_list in active_dict.items():
-                            if target_list.__contains__(name):
-                                # print(name + " 조건부 발동 확인됨")
-                                value_list[index] = value_list[index] * value
+                        for target in target_list:
+                            try:
+                                active_dict[target][index] = active_dict[target][index] * value
+                            except KeyError:
+                                pass
 
                 for name, value_list in active_dict.items():
                     value_list[0] = int(value_list[0])
@@ -638,17 +666,33 @@ class Damage:
             index_cool = []
             index_damage = []
             index_delay = []
+            index_limit_s = []
+            index_limit_f = []
             delay_time = []
+            value_no_cool_sum = [0, 1, 1 - self.fix_delay]
             for name, value_list in active_dict.items():
                 if value_list[1] == 0:
-                    # 무쿨타임(평타)는 일단 제외
-                    continue
-                case += 1
-                value_list[0] = int(value_list[0] * total_damage_no_active / self.standard_damage_no_active)
-                index_damage.append(value_list[0])
-                index_cool.append(int(value_list[1] * 10 * 0.8))  # 0.8 정신자극
-                index_delay.append(int(value_list[2]*10))
-                delay_time.append(0)
+                    # 무쿨타임(평타)
+                    value_no_cool_sum[0] += int(value_list[0] * total_damage_no_active
+                                                / self.standard_damage_no_active * self.no_cool_efficiency)
+                    value_no_cool_sum[1] = 1  # 쿨타임 없음
+                    value_no_cool_sum[2] = int(value_list[2] * 10 - self.fix_delay)  # 선입력 고정 딜레이를 감안하여 입력
+                else:
+                    case += 1
+                    value_list[0] = int(value_list[0] * total_damage_no_active / self.standard_damage_no_active)
+                    index_damage.append(value_list[0])
+                    index_cool.append(int(value_list[1] * 10 * 0.8))  # 0.8 정신자극
+                    index_delay.append(int(value_list[2] * 10))
+                    index_limit_s.append(int(value_list[3] * 10))
+                    index_limit_f.append(int(value_list[4] * 10))
+                    delay_time.append(0)
+            case += 1
+            index_damage.append(value_no_cool_sum[0])
+            index_cool.append(value_no_cool_sum[1])
+            index_delay.append(value_no_cool_sum[2])
+            delay_time.append(0)
+            index_limit_s.append(0)
+            index_limit_f.append(9999)
             # log("active_dict", active_dict)
 
             damage_trans = []
@@ -663,6 +707,8 @@ class Damage:
                     continue
                 for index in range(case):
                     if delay_time[index] <= 0:
+                        if index_limit_f[index] < c_sec or index_limit_s[index] > c_sec:
+                            continue
                         cannot_damage_time = index_delay[index] + self.fix_delay
                         delay_time[index] = index_cool[index]
                         if c_sec > 400:

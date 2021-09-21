@@ -1,0 +1,395 @@
+{
+	"active": [
+		{
+			"name": "흑염의 칼라",
+			"damage": 131512,
+			"coolTime": 5,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 32,
+			"nowLv": 32,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "구천강림 : 귀문",
+			"damage": 3749509,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "지그 강림",
+			"damage": 1468152,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "탐식의 크레바스",
+			"damage": 1350355,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "광폭의 블라슈",
+			"damage": 1334566,
+			"coolTime": 140,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "블레이드 팬텀",
+			"damage": 1063447,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"talisman": {
+				"name": "망령의 진격",
+				"damage": 1408826,
+				"coolTime": 40,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "검귀강령 : 식",
+			"damage": 927052,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "망령의 송곳니",
+				"damage": 1242250,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "흑염검",
+			"damage": 876197,
+			"coolTime": 45,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 32,
+			"nowLv": 32,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 1,
+			"talisman": {
+				"name": "흑염 : 일섬",
+				"damage": 1121532,
+				"coolTime": 45,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "귀참 : 나락",
+			"damage": 692698,
+			"coolTime": 30,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "파고드는 고통",
+				"damage": 897370,
+				"coolTime": 27,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "툼스톤 스웜프",
+			"damage": 613764,
+			"coolTime": 40,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 6,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"talisman": {
+				"name": "백귀야행",
+				"damage": 785618,
+				"coolTime": 40,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "귀참 : 광폭",
+			"damage": 560747,
+			"coolTime": 20,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.3,
+			"talisman": {
+				"name": "영혼분쇄",
+				"damage": 757008,
+				"coolTime": 20,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "역병의 라사",
+			"damage": 541439,
+			"coolTime": 20,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 37,
+			"nowLv": 37,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": -1,
+			"talisman": {
+				"name": "역병아귀",
+				"damage": 667053,
+				"coolTime": 20,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "툼스톤",
+			"damage": 506960,
+			"coolTime": 18,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "냉기의 사야",
+			"damage": 439454,
+			"coolTime": 15,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 39,
+			"nowLv": 39,
+			"maxTp": 6.0,
+			"nowTp": 1.0,
+			"delay": -1,
+			"talisman": null
+		},
+		{
+			"name": "귀영섬",
+			"damage": 437968,
+			"coolTime": 20,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "귀검편",
+			"damage": 276834,
+			"coolTime": 8,
+			"requireLv": 30,
+			"gapLv": 3,
+			"maxLv": 26,
+			"nowLv": 26,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "귀참 드라이브",
+			"damage": 169315,
+			"coolTime": 6,
+			"requireLv": 1,
+			"gapLv": 2,
+			"maxLv": 52,
+			"nowLv": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
+			"delay": 0.7,
+			"talisman": null
+		},
+		{
+			"name": "만월 달빛베기",
+			"damage": 130363,
+			"coolTime": 4,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "평타(1사이클)",
+			"damage": 83213,
+			"coolTime": 0,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3.9,
+			"nowTp": 2.9,
+			"delay": 1,
+			"cool_fix": true,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "도 마스터리",
+			"requireLv": 15,
+			"maxValue": 41.0,
+			"upValue": 1.3,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "브레멘",
+			"requireLv": 15,
+			"maxValue": 25.0,
+			"upValue": 1.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "칠흑의 공포",
+			"requireLv": 48,
+			"maxValue": 40.5,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "팬텀 마스터리",
+			"requireLv": 75,
+			"maxValue": 46.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "달의 커튼",
+			"requireLv": 15,
+			"maxValue": 40.0,
+			"upValue": 5.0,
+			"type": "ELEMENT",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "카잔",
+			"requireLv": 5,
+			"maxValue": 15.0,
+			"upValue": 1.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "데모닉 크라운",
+			"requireLv": 95,
+			"maxValue": 26.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [],
+	"weapon": [
+		{
+			"type": "대검",
+			"damage": 0.9916361157628949,
+			"coolTime": 1.0
+		},
+		{
+			"type": "소검",
+			"damage": 1.0082612935478958,
+			"coolTime": 1.05
+		},
+		{
+			"type": "도",
+			"damage": 1.0,
+			"coolTime": 1.0
+		},
+		{
+			"type": "둔기",
+			"damage": 1.0049881293794773,
+			"coolTime": 1.0
+		},
+		{
+			"type": "공통",
+			"damage": 1.0,
+			"coolTime": 1.0
+		}
+	]
+}

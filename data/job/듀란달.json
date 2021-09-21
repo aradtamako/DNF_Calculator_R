@@ -8,7 +8,7 @@
 			"gapLv": 5,
 			"maxLv": 2,
 			"nowLv": 2,
-			"maxTp": 0,
+			"maxTp": 0.0,
 			"nowTp": 0.0,
 			"delay": 6,
 			"talisman": null
@@ -21,7 +21,7 @@
 			"gapLv": 5,
 			"maxLv": 5,
 			"nowLv": 5,
-			"maxTp": 0,
+			"maxTp": 0.0,
 			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
@@ -34,7 +34,7 @@
 			"gapLv": 5,
 			"maxLv": 12,
 			"nowLv": 0,
-			"maxTp": 0,
+			"maxTp": 0.0,
 			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
@@ -47,7 +47,7 @@
 			"gapLv": 2,
 			"maxLv": 6,
 			"nowLv": 6,
-			"maxTp": 0,
+			"maxTp": 0.0,
 			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": null
@@ -60,7 +60,7 @@
 			"gapLv": 2,
 			"maxLv": 31,
 			"nowLv": 31,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 5.0,
 			"delay": 0.3,
 			"talisman": {
@@ -79,7 +79,7 @@
 			"gapLv": 2,
 			"maxLv": 18,
 			"nowLv": 18,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 5.0,
 			"delay": 0.3,
 			"talisman": {
@@ -98,7 +98,7 @@
 			"gapLv": 2,
 			"maxLv": 16,
 			"nowLv": 16,
-			"maxTp": 0,
+			"maxTp": 0.0,
 			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": {
@@ -117,7 +117,7 @@
 			"gapLv": 2,
 			"maxLv": 13,
 			"nowLv": 13,
-			"maxTp": 0,
+			"maxTp": 0.0,
 			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": {
@@ -136,7 +136,7 @@
 			"gapLv": 2,
 			"maxLv": 23,
 			"nowLv": 23,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 5.0,
 			"delay": 0.3,
 			"talisman": {
@@ -155,7 +155,7 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 9,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": {
@@ -174,7 +174,7 @@
 			"gapLv": 2,
 			"maxLv": 33,
 			"nowLv": 0,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": {
@@ -193,7 +193,7 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 5.0,
 			"delay": 0.3,
 			"talisman": null
@@ -206,7 +206,7 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 38,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 1.0,
 			"delay": 0.3,
 			"talisman": null
@@ -219,7 +219,7 @@
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 0,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": null
@@ -232,7 +232,7 @@
 			"gapLv": 2,
 			"maxLv": 43,
 			"nowLv": 0,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": null
@@ -245,7 +245,7 @@
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 41,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
@@ -258,7 +258,7 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 0,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": null
@@ -271,7 +271,7 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 0,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": null
@@ -284,7 +284,7 @@
 			"gapLv": 2,
 			"maxLv": 43,
 			"nowLv": 43,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
@@ -297,7 +297,7 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 46,
-			"maxTp": 5,
+			"maxTp": 5.0,
 			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
@@ -310,7 +310,7 @@
 			"gapLv": 2,
 			"maxLv": 51,
 			"nowLv": 0,
-			"maxTp": 4,
+			"maxTp": 4.0,
 			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": null
@@ -318,14 +318,15 @@
 		{
 			"name": "평타(1사이클)",
 			"damage": 66118,
-			"coolTime": null,
+			"coolTime": 0,
 			"requireLv": 1,
 			"gapLv": 1,
 			"maxLv": 100,
 			"nowLv": 100,
-			"maxTp": 3,
+			"maxTp": 3.0,
 			"nowTp": 1.0,
-			"delay": 0,
+			"delay": 1,
+			"cool_fix": true,
 			"talisman": null
 		}
 	],
@@ -333,8 +334,8 @@
 		{
 			"name": "장창 숙련",
 			"requireLv": 15,
-			"maxValue": 20,
-			"upValue": 2,
+			"maxValue": 20.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": "WEAPON",
@@ -343,8 +344,8 @@
 		{
 			"name": "미라지 부스트",
 			"requireLv": 25,
-			"maxValue": 21,
-			"upValue": 2,
+			"maxValue": 21.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -353,7 +354,7 @@
 		{
 			"name": "미라지 스트림",
 			"requireLv": 48,
-			"maxValue": 36,
+			"maxValue": 36.0,
 			"upValue": 1.5,
 			"type": "DAMAGE",
 			"target": "천하포무 : 투극^살극쌍연무^오러 포스 재블린^레조넌스 임페일^뇌격점혈섬^삼일참월^쿼드라플 드라이브^미스트 플레어^롤링 벌컨^공아^메조싸이클론^스파이럴 웨이브^파동연환창^슈트롬^트윈 펀토^앵클 컷^퀵 펀토^평타(1사이클)",
@@ -363,8 +364,8 @@
 		{
 			"name": "무형의 창술사",
 			"requireLv": 75,
-			"maxValue": 40,
-			"upValue": 2,
+			"maxValue": 40.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "천하포무 : 투극^살극쌍연무^오러 포스 재블린^레조넌스 임페일^뇌격점혈섬^삼일참월^쿼드라플 드라이브^미스트 플레어^롤링 벌컨^공아^메조싸이클론^스파이럴 웨이브^파동연환창^슈트롬^트윈 펀토^앵클 컷^퀵 펀토^평타(1사이클)",
 			"requirementType": null,
@@ -373,8 +374,8 @@
 		{
 			"name": "일신사담",
 			"requireLv": 95,
-			"maxValue": 26,
-			"upValue": 2,
+			"maxValue": 26.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -393,7 +394,7 @@
 		{
 			"name": "미라지 스트림",
 			"requireLv": 48,
-			"maxValue": 38,
+			"maxValue": 38.0,
 			"upValue": 1.5,
 			"type": "DAMAGE",
 			"target": "그라운드 씨커",
@@ -413,7 +414,7 @@
 		{
 			"name": "미라지 스트림",
 			"requireLv": 48,
-			"maxValue": 41,
+			"maxValue": 41.0,
 			"upValue": 1.5,
 			"type": "DAMAGE",
 			"target": "서라운드 브레이크",
@@ -423,8 +424,8 @@
 		{
 			"name": "무형의 창술사",
 			"requireLv": 75,
-			"maxValue": 41,
-			"upValue": 2,
+			"maxValue": 41.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "스월링 스피어^그라운드 씨커^라이징 랜서^서라운드 브레이크",
 			"requirementType": null,
@@ -437,14 +438,14 @@
 			"requirementValue": "장창",
 			"type": "COOL",
 			"target": "ALL",
-			"value": 13
+			"value": 13.0
 		}
 	],
 	"weapon": [
 		{
 			"type": "장창",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "미늘창",
@@ -454,7 +455,7 @@
 		{
 			"type": "광창",
 			"damage": 0.8114970546414788,
-			"coolTime": 1
+			"coolTime": 1.0
 		},
 		{
 			"type": "투창",
@@ -463,8 +464,8 @@
 		},
 		{
 			"type": "공통",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		}
 	]
 }

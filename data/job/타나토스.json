@@ -8,9 +8,23 @@
 			"gapLv": 5,
 			"maxLv": 2,
 			"nowLv": 2,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 5.5,
+			"talisman": null
+		},
+		{
+			"name": "니콜라스(5초, 50%)",
+			"damage": 119377,
+			"coolTime": 5,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 46,
+			"maxTp": 5.0,
+			"nowTp": 1.0,
+			"delay": -1,
+			"cool_fix": true,
 			"talisman": null
 		},
 		{
@@ -21,8 +35,8 @@
 			"gapLv": 5,
 			"maxLv": 5,
 			"nowLv": 5,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
 		},
@@ -34,8 +48,8 @@
 			"gapLv": 5,
 			"maxLv": 12,
 			"nowLv": 0,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -47,8 +61,8 @@
 			"gapLv": 2,
 			"maxLv": 6,
 			"nowLv": 6,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -60,8 +74,8 @@
 			"gapLv": 2,
 			"maxLv": 31,
 			"nowLv": 31,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -73,8 +87,8 @@
 			"gapLv": 2,
 			"maxLv": 13,
 			"nowLv": 13,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "굶주린 집행자",
@@ -92,8 +106,8 @@
 			"gapLv": 2,
 			"maxLv": 31,
 			"nowLv": 3,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 1.5,
 			"talisman": {
 				"name": "갈퀴손",
@@ -111,8 +125,8 @@
 			"gapLv": 2,
 			"maxLv": 23,
 			"nowLv": 23,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "응어리",
@@ -130,8 +144,8 @@
 			"gapLv": 2,
 			"maxLv": 18,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "거미왕의 힘",
@@ -149,8 +163,8 @@
 			"gapLv": 2,
 			"maxLv": 33,
 			"nowLv": 33,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": {
 				"name": "위압",
@@ -168,8 +182,8 @@
 			"gapLv": 2,
 			"maxLv": 33,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -181,8 +195,8 @@
 			"gapLv": 2,
 			"maxLv": 16,
 			"nowLv": 16,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "추억거리",
@@ -200,8 +214,8 @@
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 41,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -213,8 +227,8 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 38,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -226,8 +240,8 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 1,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -239,8 +253,8 @@
 			"gapLv": 2,
 			"maxLv": 43,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -252,8 +266,8 @@
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 41,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -265,8 +279,8 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -278,8 +292,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "살의",
@@ -297,50 +311,38 @@
 			"gapLv": 2,
 			"maxLv": 50,
 			"nowLv": 0,
-			"maxTp": 4,
-			"nowTp": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
 		{
-			"name": "안개 뿜기(10초, 50%)",
-			"damage": 54646,
-			"coolTime": 10,
+			"name": "안개 뿜기(1.5사이클)",
+			"damage": 81970,
+			"coolTime": 0,
 			"requireLv": 35,
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
-			"delay": 0.1,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 1,
+			"cool_fix": true,
 			"talisman": {
-				"name": "안개 뿜기(10초, 50%)",
-				"damage": 54646,
-				"coolTime": 10,
+				"name": "안개 뿜기(1.5사이클)",
+				"damage": 81970,
+				"coolTime": 0,
 				"available": 2,
 				"rune": 0
 			}
-		},
-		{
-			"name": "니콜라스(10초, 50%)",
-			"damage": 238754,
-			"coolTime": 10,
-			"requireLv": 15,
-			"gapLv": 2,
-			"maxLv": 46,
-			"nowLv": 46,
-			"maxTp": 5,
-			"nowTp": 1,
-			"delay": 0.1,
-			"talisman": null
 		}
 	],
 	"passive": [
 		{
 			"name": "발라크르의 맹약",
 			"requireLv": 40,
-			"maxValue": 44,
-			"upValue": 2,
+			"maxValue": 44.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -360,7 +362,7 @@
 			"name": "학살자의 공포",
 			"requireLv": 48,
 			"maxValue": 37.5,
-			"upValue": 2,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -369,8 +371,8 @@
 		{
 			"name": "언홀리 마스터리",
 			"requireLv": 75,
-			"maxValue": 42,
-			"upValue": 2,
+			"maxValue": 42.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -379,8 +381,8 @@
 		{
 			"name": "아케론의 열쇠",
 			"requireLv": 95,
-			"maxValue": 26,
-			"upValue": 2,
+			"maxValue": 26.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -401,13 +403,13 @@
 		},
 		{
 			"type": "완드",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "공통",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		}
 	]
 }

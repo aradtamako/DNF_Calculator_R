@@ -1,8 +1,8 @@
 {
 	"active": [
 		{
-			"name": "참성연격 : \n인피니티 노바",
-			"damage": 4253814,
+			"name": "천녀동화",
+			"damage": 3685840,
 			"coolTime": 290,
 			"requireLv": 100,
 			"gapLv": 5,
@@ -10,12 +10,12 @@
 			"nowLv": 2,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 5,
+			"delay": 6,
 			"talisman": null
 		},
 		{
-			"name": "종언을 고하는 빛",
-			"damage": 2590406,
+			"name": "현신 : 신룡진노",
+			"damage": 1972772,
 			"coolTime": 180,
 			"requireLv": 85,
 			"gapLv": 5,
@@ -27,8 +27,8 @@
 			"talisman": null
 		},
 		{
-			"name": "울부짖는 뇌광",
-			"damage": 1867728,
+			"name": "신탁 : 신룡뇌우제",
+			"damage": 1763923,
 			"coolTime": 145,
 			"requireLv": 50,
 			"gapLv": 5,
@@ -36,12 +36,26 @@
 			"nowLv": 0,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 2,
+			"delay": 3,
 			"talisman": null
 		},
 		{
-			"name": "뇌룡격멸 : 포효",
-			"damage": 1577592,
+			"name": "신룡의 여의주",
+			"damage": 87838,
+			"coolTime": 5,
+			"requireLv": 48,
+			"gapLv": 3,
+			"maxLv": 20,
+			"nowLv": 20,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "탄천신룡진",
+			"damage": 1426775,
 			"coolTime": 60,
 			"requireLv": 95,
 			"gapLv": 2,
@@ -53,27 +67,8 @@
 			"talisman": null
 		},
 		{
-			"name": "비룡천상",
-			"damage": 1263895,
-			"coolTime": 50,
-			"requireLv": 70,
-			"gapLv": 2,
-			"maxLv": 18,
-			"nowLv": 18,
-			"maxTp": 5.0,
-			"nowTp": 5.0,
-			"delay": 1,
-			"talisman": {
-				"name": "광룡패천격",
-				"damage": 1655703,
-				"coolTime": 50,
-				"available": 0,
-				"rune": 0
-			}
-		},
-		{
-			"name": "미티어 버스트",
-			"damage": 1208006,
+			"name": "마혼부 : 퇴마음양옥",
+			"damage": 1191205,
 			"coolTime": 40,
 			"requireLv": 75,
 			"gapLv": 2,
@@ -81,56 +76,94 @@
 			"nowLv": 16,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 1,
+			"delay": 0.7,
 			"talisman": {
-				"name": "초토화",
-				"damage": 1654969,
+				"name": "마혼폭염진",
+				"damage": 1572391,
 				"coolTime": 40,
 				"available": 2,
 				"rune": 0
 			}
 		},
 		{
-			"name": "용제출진",
-			"damage": 1164726,
+			"name": "탈명대염진",
+			"damage": 1122417,
 			"coolTime": 50,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.7,
+			"talisman": {
+				"name": "신룡승천제",
+				"damage": 1481591,
+				"coolTime": 50,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "부동주박진",
+			"damage": 1085965,
+			"coolTime": 45,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 2.5,
+			"talisman": {
+				"name": "주박술의 극의",
+				"damage": 1270579,
+				"coolTime": 40.5,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "염폭모대주",
+			"damage": 1022544,
+			"coolTime": 45,
 			"requireLv": 80,
 			"gapLv": 2,
 			"maxLv": 13,
 			"nowLv": 13,
 			"maxTp": 0.0,
 			"nowTp": 0.0,
-			"delay": 1,
+			"delay": 0.3,
 			"talisman": {
-				"name": "천위광룡제",
-				"damage": 1539595,
-				"coolTime": 45,
-				"available": 0,
+				"name": "벽력부태주",
+				"damage": 1312850,
+				"coolTime": 38.7,
+				"available": 3,
 				"rune": 0
 			}
 		},
 		{
-			"name": "폭풍의 숨결",
-			"damage": 1041479,
-			"coolTime": 40,
-			"requireLv": 45,
+			"name": "백팔염주",
+			"damage": 835147,
+			"coolTime": 25,
+			"requireLv": 40,
 			"gapLv": 2,
-			"maxLv": 31,
-			"nowLv": 31,
+			"maxLv": 33,
+			"nowLv": 33,
 			"maxTp": 5.0,
 			"nowTp": 5.0,
-			"delay": 1,
+			"delay": 0.3,
 			"talisman": {
-				"name": "드래곤 테이머",
-				"damage": 1353923,
-				"coolTime": 36,
-				"available": 0,
-				"rune": 0
+				"name": "무진어주술",
+				"damage": 1043934,
+				"coolTime": 22.5,
+				"available": 1,
+				"rune": 1
 			}
 		},
 		{
-			"name": "용왕파천",
-			"damage": 862982,
+			"name": "시폭염화부",
+			"damage": 746874,
 			"coolTime": 30,
 			"requireLv": 60,
 			"gapLv": 2,
@@ -138,18 +171,18 @@
 			"nowLv": 23,
 			"maxTp": 5.0,
 			"nowTp": 5.0,
-			"delay": 1.5,
+			"delay": 0.3,
 			"talisman": {
-				"name": "용악쇄",
-				"damage": 1139137,
+				"name": "나포마귀진",
+				"damage": 993343,
 				"coolTime": 30,
-				"available": 3,
+				"available": 0,
 				"rune": 0
 			}
 		},
 		{
-			"name": "태도 용제무쌍",
-			"damage": 747467,
+			"name": "용의 격노",
+			"damage": 571843,
 			"coolTime": 20,
 			"requireLv": 40,
 			"gapLv": 2,
@@ -157,18 +190,12 @@
 			"nowLv": 33,
 			"maxTp": 5.0,
 			"nowTp": 5.0,
-			"delay": 1,
-			"talisman": {
-				"name": "용제비무 : 천뢰",
-				"damage": 1024030,
-				"coolTime": 20,
-				"available": 1,
-				"rune": 1
-			}
+			"delay": 0.5,
+			"talisman": null
 		},
 		{
-			"name": "드래곤 스매쉬",
-			"damage": 582904,
+			"name": "심혼흡성부",
+			"damage": 454883,
 			"coolTime": 15,
 			"requireLv": 35,
 			"gapLv": 2,
@@ -176,122 +203,83 @@
 			"nowLv": 36,
 			"maxTp": 5.0,
 			"nowTp": 5.0,
-			"delay": 1,
+			"delay": 0.3,
 			"talisman": {
-				"name": "콤비네이션 너클",
-				"damage": 783614,
-				"coolTime": 13.5,
+				"name": "심혼폭류",
+				"damage": 598291,
+				"coolTime": 14.25,
 				"available": 0,
 				"rune": 0
 			}
 		},
 		{
-			"name": "스피닝 레이드",
-			"damage": 462327,
+			"name": "마혼제령술",
+			"damage": 408504,
 			"coolTime": 12,
-			"requireLv": 35,
-			"gapLv": 2,
-			"maxLv": 36,
-			"nowLv": 31,
-			"maxTp": 5.0,
-			"nowTp": 0.0,
-			"delay": 0.5,
-			"talisman": null
-		},
-		{
-			"name": "버스트 혼",
-			"damage": 333500,
-			"coolTime": 8,
 			"requireLv": 25,
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 0,
 			"maxTp": 5.0,
 			"nowTp": 0.0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "공력의 구",
+			"damage": 408119,
+			"coolTime": 15,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
 		{
-			"name": "드래곤 팽",
-			"damage": 306607,
-			"coolTime": 10,
-			"requireLv": 30,
-			"gapLv": 2,
-			"maxLv": 38,
-			"nowLv": 1,
-			"maxTp": 5.0,
-			"nowTp": 0.0,
-			"delay": -1,
-			"talisman": null
-		},
-		{
-			"name": "투기 방출",
-			"damage": 92773,
+			"name": "구속제압부",
+			"damage": 186100,
 			"coolTime": 7,
-			"requireLv": 20,
-			"gapLv": 3,
-			"maxLv": 20,
-			"nowLv": 20,
-			"maxTp": 0.0,
-			"nowTp": 0.0,
-			"delay": -1,
-			"talisman": null
-		},
-		{
-			"name": "너클 블래스터",
-			"damage": 304564,
-			"coolTime": 8,
-			"requireLv": 30,
-			"gapLv": 2,
-			"maxLv": 38,
-			"nowLv": 0,
-			"maxTp": 5.0,
-			"nowTp": 0.0,
-			"delay": 0.5,
-			"talisman": null
-		},
-		{
-			"name": "블릿츠 스트라이크",
-			"damage": 179040,
-			"coolTime": 4,
 			"requireLv": 20,
 			"gapLv": 2,
 			"maxLv": 43,
 			"nowLv": 0,
 			"maxTp": 5.0,
 			"nowTp": 0.0,
-			"delay": 1,
+			"delay": 0.3,
 			"talisman": null
 		},
 		{
-			"name": "파이어 브레스",
-			"damage": 157736,
+			"name": "목환자경",
+			"damage": 124564,
+			"coolTime": 4,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 37,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "날벼락부",
+			"damage": 133954,
 			"coolTime": 5,
 			"requireLv": 15,
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 0,
-			"maxTp": 5.0,
+			"maxTp": 4.0,
 			"nowTp": 0.0,
-			"delay": 0.5,
-			"talisman": null
-		},
-		{
-			"name": "드래곤투스",
-			"damage": 138143,
-			"coolTime": 3,
-			"requireLv": 1,
-			"gapLv": 1,
-			"maxLv": 100,
-			"nowLv": 100,
-			"maxTp": 3.0,
-			"nowTp": 3.0,
 			"delay": 0.3,
 			"talisman": null
 		},
 		{
-			"name": "평타(1사이클)",
-			"damage": 64618,
+			"name": "염주 사출",
+			"damage": 70434,
 			"coolTime": 0,
 			"requireLv": 1,
 			"gapLv": 1,
@@ -306,9 +294,9 @@
 	],
 	"passive": [
 		{
-			"name": "대식가",
-			"requireLv": 35,
-			"maxValue": 16.0,
+			"name": "법력 강화",
+			"requireLv": 30,
+			"maxValue": 24.0,
 			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
@@ -316,9 +304,9 @@
 			"requirementValue": null
 		},
 		{
-			"name": "아스트라",
-			"requireLv": 20,
-			"maxValue": 15.0,
+			"name": "천녀기우제",
+			"requireLv": 25,
+			"maxValue": 22.0,
 			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
@@ -326,9 +314,9 @@
 			"requirementValue": null
 		},
 		{
-			"name": "드래곤포스",
+			"name": "신룡의 여의주",
 			"requireLv": 48,
-			"maxValue": 40.5,
+			"maxValue": 41.5,
 			"upValue": 1.5,
 			"type": "DAMAGE",
 			"target": "ALL",
@@ -336,9 +324,9 @@
 			"requirementValue": null
 		},
 		{
-			"name": "계승자",
+			"name": "용신의 힘",
 			"requireLv": 75,
-			"maxValue": 45.0,
+			"maxValue": 47.0,
 			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
@@ -346,7 +334,7 @@
 			"requirementValue": null
 		},
 		{
-			"name": "용혈의 서약",
+			"name": "대행자의 권능",
 			"requireLv": 95,
 			"maxValue": 26.0,
 			"upValue": 2.0,
@@ -354,34 +342,49 @@
 			"target": "ALL",
 			"requirementType": null,
 			"requirementValue": null
+		},
+		{
+			"name": "용신의 힘",
+			"requireLv": 75,
+			"maxValue": 42.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "염주 사출",
+			"requirementType": null,
+			"requirementValue": null
 		}
 	],
 	"special": [],
 	"weapon": [
 		{
-			"type": "대검",
-			"damage": 1.0,
+			"type": "십자가",
+			"damage": 0.9507918552036199,
+			"coolTime": 0.95
+		},
+		{
+			"type": "낫",
+			"damage": 0.9634238310708899,
 			"coolTime": 1.0
 		},
 		{
-			"type": "소검",
+			"type": "염주",
 			"damage": 1.0,
-			"coolTime": 1.0
+			"coolTime": 1.05
 		},
 		{
-			"type": "도",
-			"damage": 1.0,
-			"coolTime": 1.0
+			"type": "배틀엑스",
+			"damage": 0.9259049773755657,
+			"coolTime": 0.9
 		},
 		{
-			"type": "둔기",
-			"damage": 1.0,
-			"coolTime": 1.0
+			"type": "토템",
+			"damage": 0.9381598793363499,
+			"coolTime": 0.95
 		},
 		{
 			"type": "공통",
 			"damage": 1.0,
-			"coolTime": 1.0
+			"coolTime": 1.05
 		}
 	]
 }

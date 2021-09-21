@@ -8,8 +8,8 @@
 			"gapLv": 5,
 			"maxLv": 2,
 			"nowLv": 2,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 5,
 			"talisman": null
 		},
@@ -21,8 +21,8 @@
 			"gapLv": 5,
 			"maxLv": 5,
 			"nowLv": 5,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
 		},
@@ -34,8 +34,8 @@
 			"gapLv": 2,
 			"maxLv": 31,
 			"nowLv": 31,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 3,
 			"talisman": {
 				"name": "더블 그라인더",
@@ -53,8 +53,8 @@
 			"gapLv": 5,
 			"maxLv": 12,
 			"nowLv": 0,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 2,
 			"talisman": null
 		},
@@ -66,8 +66,8 @@
 			"gapLv": 2,
 			"maxLv": 6,
 			"nowLv": 6,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -79,8 +79,8 @@
 			"gapLv": 2,
 			"maxLv": 18,
 			"nowLv": 18,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": {
 				"name": "매거진 핸들링",
@@ -98,8 +98,8 @@
 			"gapLv": 2,
 			"maxLv": 16,
 			"nowLv": 11,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1.5,
 			"talisman": {
 				"name": "듀얼 리액션",
@@ -117,8 +117,8 @@
 			"gapLv": 2,
 			"maxLv": 13,
 			"nowLv": 13,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "불릿 스톰",
@@ -136,8 +136,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 1,
+			"maxTp": 5.0,
+			"nowTp": 1.0,
 			"delay": 2,
 			"talisman": null
 		},
@@ -149,8 +149,8 @@
 			"gapLv": 2,
 			"maxLv": 23,
 			"nowLv": 18,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "먹이사냥",
@@ -168,8 +168,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": {
 				"name": "엑셀레이션 리볼버",
@@ -187,8 +187,8 @@
 			"gapLv": 2,
 			"maxLv": 33,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "와이드 아웃",
@@ -206,8 +206,8 @@
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -219,8 +219,8 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 38,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -232,8 +232,8 @@
 			"gapLv": 2,
 			"maxLv": 48,
 			"nowLv": 0,
-			"maxTp": 4,
-			"nowTp": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -245,8 +245,8 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 0,
-			"maxTp": 4,
-			"nowTp": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -258,8 +258,8 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 46,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -271,8 +271,8 @@
 			"gapLv": 2,
 			"maxLv": 48,
 			"nowLv": 0,
-			"maxTp": 4,
-			"nowTp": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -284,22 +284,37 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 46,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
 		},
 		{
-			"name": "평타(1사이클)",
-			"damage": 186671,
-			"coolTime": 100,
+			"name": "평타(기숙)",
+			"damage": 59065,
+			"coolTime": 0,
 			"requireLv": 1,
 			"gapLv": 1,
 			"maxLv": 100,
 			"nowLv": 100,
-			"maxTp": 3,
-			"nowTp": 1,
-			"delay": 0,
+			"maxTp": 3.0,
+			"nowTp": 1.0,
+			"delay": 1,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "평타(헤샷)",
+			"damage": 127606,
+			"coolTime": 0,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 46,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 1,
+			"cool_fix": true,
 			"talisman": null
 		}
 	],
@@ -307,8 +322,8 @@
 		{
 			"name": "리볼버 강화",
 			"requireLv": 15,
-			"maxValue": 20,
-			"upValue": 2,
+			"maxValue": 20.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -317,8 +332,8 @@
 		{
 			"name": "스타일리쉬",
 			"requireLv": 20,
-			"maxValue": 16,
-			"upValue": 2,
+			"maxValue": 16.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -328,7 +343,7 @@
 			"name": "죽음의 표식",
 			"requireLv": 48,
 			"maxValue": 46.5,
-			"upValue": 2,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -337,8 +352,8 @@
 		{
 			"name": "사격술",
 			"requireLv": 75,
-			"maxValue": 46,
-			"upValue": 2,
+			"maxValue": 46.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -347,8 +362,8 @@
 		{
 			"name": "아웃 스탠딩",
 			"requireLv": 95,
-			"maxValue": 26,
-			"upValue": 2,
+			"maxValue": 26.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -359,13 +374,13 @@
 	"weapon": [
 		{
 			"type": "리볼버",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "자동권총",
 			"damage": 0.41059775515531194,
-			"coolTime": 1
+			"coolTime": 1.0
 		},
 		{
 			"type": "머스켓",
@@ -375,7 +390,7 @@
 		{
 			"type": "보우건",
 			"damage": 0.42660750021752375,
-			"coolTime": 1
+			"coolTime": 1.0
 		},
 		{
 			"type": "핸드캐넌",
@@ -384,8 +399,8 @@
 		},
 		{
 			"type": "공통",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		}
 	]
 }

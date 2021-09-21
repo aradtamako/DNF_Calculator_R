@@ -8,8 +8,8 @@
 			"gapLv": 5,
 			"maxLv": 2,
 			"nowLv": 2,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 5,
 			"talisman": null
 		},
@@ -21,8 +21,8 @@
 			"gapLv": 5,
 			"maxLv": 5,
 			"nowLv": 5,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
 		},
@@ -34,9 +34,23 @@
 			"gapLv": 5,
 			"maxLv": 12,
 			"nowLv": 0,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "퍼스트 프라나",
+			"damage": 93856,
+			"coolTime": 5,
+			"requireLv": 75,
+			"gapLv": 3,
+			"maxLv": 12,
+			"nowLv": 12,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"cool_fix": true,
 			"talisman": null
 		},
 		{
@@ -47,8 +61,8 @@
 			"gapLv": 2,
 			"maxLv": 6,
 			"nowLv": 6,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1.5,
 			"talisman": null
 		},
@@ -60,8 +74,8 @@
 			"gapLv": 2,
 			"maxLv": 13,
 			"nowLv": 13,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1.5,
 			"talisman": {
 				"name": "컨퓨즈 티어",
@@ -79,8 +93,8 @@
 			"gapLv": 2,
 			"maxLv": 18,
 			"nowLv": 18,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 2,
 			"talisman": {
 				"name": "패스트 인테이크",
@@ -98,8 +112,8 @@
 			"gapLv": 2,
 			"maxLv": 31,
 			"nowLv": 31,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "컨트롤 더 라스",
@@ -117,8 +131,8 @@
 			"gapLv": 2,
 			"maxLv": 16,
 			"nowLv": 16,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "익스트리미스트",
@@ -136,8 +150,8 @@
 			"gapLv": 2,
 			"maxLv": 23,
 			"nowLv": 23,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": {
 				"name": "패시네이션",
@@ -155,8 +169,8 @@
 			"gapLv": 2,
 			"maxLv": 33,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 2,
 			"talisman": {
 				"name": "어나이어레이터",
@@ -174,8 +188,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -187,8 +201,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 15,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "앤드리스 그리드",
@@ -206,8 +220,8 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 38,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -219,8 +233,8 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 1.5,
 			"talisman": null
 		},
@@ -232,8 +246,8 @@
 			"gapLv": 3,
 			"maxLv": 27,
 			"nowLv": 27,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -245,8 +259,8 @@
 			"gapLv": 2,
 			"maxLv": 43,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -258,8 +272,8 @@
 			"gapLv": 2,
 			"maxLv": 43,
 			"nowLv": 43,
-			"maxTp": 5,
-			"nowTp": 1,
+			"maxTp": 5.0,
+			"nowTp": 1.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -271,8 +285,8 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -284,35 +298,23 @@
 			"gapLv": 2,
 			"maxLv": 48,
 			"nowLv": 0,
-			"maxTp": 4,
-			"nowTp": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
 		{
 			"name": "평타(1사이클)",
 			"damage": 45149,
-			"coolTime": null,
+			"coolTime": 0,
 			"requireLv": 1,
 			"gapLv": 1,
 			"maxLv": 100,
 			"nowLv": 100,
-			"maxTp": 3,
-			"nowTp": 1,
-			"delay": 0,
-			"talisman": null
-		},
-		{
-			"name": "퍼스트 프라나",
-			"damage": 93856,
-			"coolTime": 5,
-			"requireLv": 75,
-			"gapLv": 3,
-			"maxLv": 12,
-			"nowLv": 12,
-			"maxTp": 0,
-			"nowTp": 0,
-			"delay": 0.1,
+			"maxTp": 3.0,
+			"nowTp": 1.0,
+			"delay": 1,
+			"cool_fix": true,
 			"talisman": null
 		}
 	],
@@ -320,8 +322,8 @@
 		{
 			"name": "낫 마스터리",
 			"requireLv": 15,
-			"maxValue": 25,
-			"upValue": 2,
+			"maxValue": 25.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": "WEAPON",
@@ -330,8 +332,8 @@
 		{
 			"name": "죄업에\n짓눌린 육신",
 			"requireLv": 15,
-			"maxValue": 14,
-			"upValue": 2,
+			"maxValue": 14.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -340,8 +342,8 @@
 		{
 			"name": "죄를 고하는 자",
 			"requireLv": 48,
-			"maxValue": 44,
-			"upValue": 2,
+			"maxValue": 44.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -350,8 +352,8 @@
 		{
 			"name": "퍼스트 프라나",
 			"requireLv": 75,
-			"maxValue": 49,
-			"upValue": 2,
+			"maxValue": 49.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -360,8 +362,8 @@
 		{
 			"name": "죄의 근원",
 			"requireLv": 95,
-			"maxValue": 26,
-			"upValue": 2,
+			"maxValue": 26.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -377,8 +379,8 @@
 		},
 		{
 			"type": "낫",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "염주",
@@ -397,8 +399,8 @@
 		},
 		{
 			"type": "공통",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		}
 	]
 }

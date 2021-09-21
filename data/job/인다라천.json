@@ -8,8 +8,8 @@
 			"gapLv": 5,
 			"maxLv": 2,
 			"nowLv": 2,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 6,
 			"talisman": null
 		},
@@ -21,9 +21,37 @@
 			"gapLv": 5,
 			"maxLv": 5,
 			"nowLv": 5,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 2,
+			"talisman": null
+		},
+		{
+			"name": "천뇌 바주라(5초, 80%)",
+			"damage": 134148,
+			"coolTime": 5,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "뇌신의 기운(5초, 80%)",
+			"damage": 98018,
+			"coolTime": 5,
+			"requireLv": 75,
+			"gapLv": 3,
+			"maxLv": 12,
+			"nowLv": 12,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"cool_fix": true,
 			"talisman": null
 		},
 		{
@@ -34,8 +62,8 @@
 			"gapLv": 2,
 			"maxLv": 6,
 			"nowLv": 6,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -47,8 +75,8 @@
 			"gapLv": 2,
 			"maxLv": 16,
 			"nowLv": 16,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "파동폭뢰",
@@ -66,8 +94,8 @@
 			"gapLv": 2,
 			"maxLv": 31,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": {
 				"name": "광명부동진",
@@ -85,8 +113,8 @@
 			"gapLv": 5,
 			"maxLv": 12,
 			"nowLv": 0,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 0.3,
 			"talisman": null
 		},
@@ -98,8 +126,8 @@
 			"gapLv": 2,
 			"maxLv": 18,
 			"nowLv": 2,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "불꽃의 해일",
@@ -117,8 +145,8 @@
 			"gapLv": 2,
 			"maxLv": 13,
 			"nowLv": 13,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "뇌운천진",
@@ -136,8 +164,8 @@
 			"gapLv": 2,
 			"maxLv": 33,
 			"nowLv": 33,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": {
 				"name": "파동연격",
@@ -155,8 +183,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "절제된 파동검",
@@ -174,8 +202,8 @@
 			"gapLv": 2,
 			"maxLv": 23,
 			"nowLv": 23,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "극빙검 : 절대 영도",
@@ -193,8 +221,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -206,8 +234,8 @@
 			"gapLv": 2,
 			"maxLv": 43,
 			"nowLv": 43,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": null
 		},
@@ -219,8 +247,8 @@
 			"gapLv": 3,
 			"maxLv": 27,
 			"nowLv": 27,
-			"maxTp": 5,
-			"nowTp": 1,
+			"maxTp": 5.0,
+			"nowTp": 1.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -232,8 +260,8 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 46,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -245,8 +273,8 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -258,48 +286,23 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 0,
-			"maxTp": 4,
-			"nowTp": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
 		{
 			"name": "평타(1사이클)",
 			"damage": 63062,
-			"coolTime": null,
+			"coolTime": 0,
 			"requireLv": 1,
 			"gapLv": 1,
 			"maxLv": 100,
 			"nowLv": 100,
-			"maxTp": 3,
-			"nowTp": 3,
-			"delay": 0,
-			"talisman": null
-		},
-		{
-			"name": "천뇌 바주라(10초, 80%)",
-			"damage": 268297,
-			"coolTime": 10,
-			"requireLv": 80,
-			"gapLv": 2,
-			"maxLv": 13,
-			"nowLv": 13,
-			"maxTp": 0,
-			"nowTp": 0,
-			"delay": 0.1,
-			"talisman": null
-		},
-		{
-			"name": "뇌신의 기운(10초, 80%)",
-			"damage": 196037,
-			"coolTime": 10,
-			"requireLv": 75,
-			"gapLv": 3,
-			"maxLv": 12,
-			"nowLv": 12,
-			"maxTp": 0,
-			"nowTp": 0,
-			"delay": 0.1,
+			"maxTp": 3.0,
+			"nowTp": 3.0,
+			"delay": 1,
+			"cool_fix": true,
 			"talisman": null
 		}
 	],
@@ -307,7 +310,7 @@
 		{
 			"name": "파동각인",
 			"requireLv": 15,
-			"maxValue": 10,
+			"maxValue": 10.0,
 			"upValue": 1.5,
 			"type": "DAMAGE",
 			"target": "ALL",
@@ -317,8 +320,8 @@
 		{
 			"name": "정신이 번쩍",
 			"requireLv": 25,
-			"maxValue": 37,
-			"upValue": 2,
+			"maxValue": 37.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -327,8 +330,8 @@
 		{
 			"name": "심안",
 			"requireLv": 48,
-			"maxValue": 35,
-			"upValue": 2,
+			"maxValue": 35.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -337,8 +340,8 @@
 		{
 			"name": "뇌신의 기운",
 			"requireLv": 75,
-			"maxValue": 32,
-			"upValue": 2,
+			"maxValue": 32.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -347,8 +350,8 @@
 		{
 			"name": "파동비전 : 혜안",
 			"requireLv": 95,
-			"maxValue": 26,
-			"upValue": 2,
+			"maxValue": 26.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -357,8 +360,8 @@
 		{
 			"name": "수라 진공참",
 			"requireLv": 15,
-			"maxValue": 50,
-			"upValue": 5,
+			"maxValue": 50.0,
+			"upValue": 5.0,
 			"type": "DAMAGE",
 			"target": "수라 진공참",
 			"requirementType": null,
@@ -369,28 +372,28 @@
 	"weapon": [
 		{
 			"type": "대검",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "소검",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "도",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "둔기",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		},
 		{
 			"type": "공통",
-			"damage": 1,
-			"coolTime": 1
+			"damage": 1.0,
+			"coolTime": 1.0
 		}
 	]
 }

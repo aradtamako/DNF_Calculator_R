@@ -8,8 +8,8 @@
 			"gapLv": 5,
 			"maxLv": 2,
 			"nowLv": 2,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 6,
 			"talisman": null
 		},
@@ -21,8 +21,8 @@
 			"gapLv": 5,
 			"maxLv": 5,
 			"nowLv": 5,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
 		},
@@ -34,8 +34,8 @@
 			"gapLv": 5,
 			"maxLv": 12,
 			"nowLv": 0,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 3,
 			"talisman": null
 		},
@@ -47,8 +47,8 @@
 			"gapLv": 2,
 			"maxLv": 6,
 			"nowLv": 6,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1.5,
 			"talisman": null
 		},
@@ -60,8 +60,8 @@
 			"gapLv": 2,
 			"maxLv": 13,
 			"nowLv": 13,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 1,
 			"talisman": {
 				"name": "귀멸악섬",
@@ -79,8 +79,8 @@
 			"gapLv": 2,
 			"maxLv": 31,
 			"nowLv": 45,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": {
 				"name": "천쇄참수",
@@ -98,8 +98,8 @@
 			"gapLv": 2,
 			"maxLv": 18,
 			"nowLv": 18,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 1,
 			"talisman": {
 				"name": "나락참 : 극",
@@ -117,8 +117,8 @@
 			"gapLv": 2,
 			"maxLv": 16,
 			"nowLv": 16,
-			"maxTp": 0,
-			"nowTp": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "원귀 : 흑풍섬",
@@ -136,8 +136,8 @@
 			"gapLv": 2,
 			"maxLv": 23,
 			"nowLv": 3,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "최후의 집행귀",
@@ -155,8 +155,8 @@
 			"gapLv": 2,
 			"maxLv": 33,
 			"nowLv": 1,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "회천 : 광폭",
@@ -174,8 +174,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -187,8 +187,8 @@
 			"gapLv": 2,
 			"maxLv": 36,
 			"nowLv": 36,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": {
 				"name": "분쇄참 : 혼",
@@ -206,8 +206,8 @@
 			"gapLv": 2,
 			"maxLv": 38,
 			"nowLv": 1,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -219,8 +219,8 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 46,
-			"maxTp": 5,
-			"nowTp": 5,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -232,8 +232,8 @@
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 41,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -245,8 +245,8 @@
 			"gapLv": 2,
 			"maxLv": 41,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -258,8 +258,8 @@
 			"gapLv": 2,
 			"maxLv": 43,
 			"nowLv": 0,
-			"maxTp": 5,
-			"nowTp": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
 			"delay": 0.5,
 			"talisman": null
 		},
@@ -271,22 +271,23 @@
 			"gapLv": 2,
 			"maxLv": 46,
 			"nowLv": 46,
-			"maxTp": 5,
-			"nowTp": 1,
+			"maxTp": 5.0,
+			"nowTp": 1.0,
 			"delay": 0.5,
 			"talisman": null
 		},
 		{
 			"name": "평타(1사이클)",
 			"damage": 67940,
-			"coolTime": 5,
+			"coolTime": 0,
 			"requireLv": 1,
 			"gapLv": 1,
 			"maxLv": 100,
 			"nowLv": 100,
-			"maxTp": 3,
-			"nowTp": 1,
-			"delay": 0,
+			"maxTp": 3.0,
+			"nowTp": 1.0,
+			"delay": 1,
+			"cool_fix": true,
 			"talisman": null
 		}
 	],
@@ -294,8 +295,8 @@
 		{
 			"name": "도 마스터리",
 			"requireLv": 20,
-			"maxValue": 26,
-			"upValue": 2,
+			"maxValue": 26.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -304,8 +305,8 @@
 		{
 			"name": "청혈투귀",
 			"requireLv": 30,
-			"maxValue": 30,
-			"upValue": 2,
+			"maxValue": 30.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -315,7 +316,7 @@
 			"name": "야차라 \n불리는 자",
 			"requireLv": 48,
 			"maxValue": 43.5,
-			"upValue": 2,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -324,8 +325,8 @@
 		{
 			"name": "악귀현신",
 			"requireLv": 75,
-			"maxValue": 46,
-			"upValue": 2,
+			"maxValue": 46.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -334,8 +335,8 @@
 		{
 			"name": "악귀무쌍",
 			"requireLv": 95,
-			"maxValue": 26,
-			"upValue": 2,
+			"maxValue": 26.0,
+			"upValue": 2.0,
 			"type": "DAMAGE",
 			"target": "ALL",
 			"requirementType": null,
@@ -352,11 +353,11 @@
 		{
 			"type": "소검",
 			"damage": 0.7936507936507936,
-			"coolTime": 1
+			"coolTime": 1.0
 		},
 		{
 			"type": "도",
-			"damage": 1,
+			"damage": 1.0,
 			"coolTime": 0.95
 		},
 		{
@@ -366,7 +367,7 @@
 		},
 		{
 			"type": "공통",
-			"damage": 1,
+			"damage": 1.0,
 			"coolTime": 0.95
 		}
 	]
