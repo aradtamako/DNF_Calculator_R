@@ -7,7 +7,7 @@ import multiprocessing as mp
 pyinstaller -w --onefile --icon="./ext_img/icon.ico" main.py
 """
 
-version = '0.4.7 beta'
+version = '0.4.8 beta'
 
 if __name__ == '__main__':
     mp.freeze_support()
