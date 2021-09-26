@@ -1,0 +1,320 @@
+{
+	"active": [
+		{
+			"name": "종말",
+			"damage": 3245684,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "창조의 공간",
+			"damage": 1649816,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": null
+		},
+		{
+			"name": "링크",
+			"damage": 863389,
+			"coolTime": 27,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 18,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": -1,
+			"talisman": {
+				"name": "소울 링크스",
+				"damage": 1139674,
+				"coolTime": 27,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "창세의 빛",
+			"damage": 1194877,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0,
+			"talisman": null
+		},
+		{
+			"name": "빙하시대",
+			"damage": 538496,
+			"coolTime": 15.75,
+			"requireLv": 60,
+			"gapLv": 3,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0,
+			"talisman": {
+				"name": "혹한의 길",
+				"damage": 295096,
+				"coolTime": 6.3,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "타임 포워드",
+			"damage": 779325,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 3,
+			"maxLv": 9,
+			"nowLv": 9,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"talisman": {
+				"name": "타임 엑셀레이트",
+				"damage": 1067997,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "웜홀",
+			"damage": 646544,
+			"coolTime": 45,
+			"requireLv": 50,
+			"gapLv": 3,
+			"maxLv": 19,
+			"nowLv": 19,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"talisman": {
+				"name": "블랙홀",
+				"damage": 827576,
+				"coolTime": 45,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "윈드 프레스",
+			"damage": 245275,
+			"coolTime": 10,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5.0,
+			"nowTp": 4.0,
+			"delay": 0,
+			"talisman": {
+				"name": "갈래 바람",
+				"damage": 323763,
+				"coolTime": 10,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "윈드 스톰",
+			"damage": 226749,
+			"coolTime": 10,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 33,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"talisman": {
+				"name": "스프링 클리닝",
+				"damage": 251485,
+				"coolTime": 8.5,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "플레임 허리케인",
+			"damage": 286913,
+			"coolTime": 8.57,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0,
+			"talisman": {
+				"name": "수호의 양면성",
+				"damage": 312735,
+				"coolTime": 8.14,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "아이스 스톤",
+			"damage": 265999,
+			"coolTime": 10,
+			"requireLv": 10,
+			"gapLv": 2,
+			"maxLv": 48,
+			"nowLv": 48,
+			"maxTp": 4.0,
+			"nowTp": 4.0,
+			"delay": -1,
+			"talisman": null
+		},
+		{
+			"name": "아이스 플레이트",
+			"damage": 234024,
+			"coolTime": 10,
+			"requireLv": 10,
+			"gapLv": 2,
+			"maxLv": 48,
+			"nowLv": 48,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"talisman": null
+		},
+		{
+			"name": "파이어월",
+			"damage": 156639,
+			"coolTime": 5,
+			"requireLv": 5,
+			"gapLv": 2,
+			"maxLv": 51,
+			"nowLv": 51,
+			"maxTp": 4.0,
+			"nowTp": 4.0,
+			"delay": 0,
+			"talisman": null
+		},
+		{
+			"name": "아이스 실드",
+			"damage": 151693,
+			"coolTime": 8.57,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0,
+			"talisman": null
+		},
+		{
+			"name": "운석 낙하",
+			"damage": 146436,
+			"coolTime": 5,
+			"requireLv": 5,
+			"gapLv": 2,
+			"maxLv": 51,
+			"nowLv": 51,
+			"maxTp": 4.0,
+			"nowTp": 4.0,
+			"delay": -1,
+			"talisman": null
+		},
+		{
+			"name": "평타",
+			"damage": 36205,
+			"coolTime": 0,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"cool_fix": true,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "상상력",
+			"requireLv": 20,
+			"maxValue": 10.0,
+			"upValue": 1.5,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "계열 강화",
+			"requireLv": 25,
+			"maxValue": 37.5,
+			"upValue": 2.5,
+			"type": "DAMAGE",
+			"target": "종말^창조의 공간^링크^창세의 빛^빙하시대^타임 포워드^웜홀^윈드 프레스^윈드 스톰^플레임 허리케인^아이스 스톤^아이스 플레이트^파이어월^아이스 실드^운석 낙하",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "이해",
+			"requireLv": 48,
+			"maxValue": 42.5,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "천지창조",
+			"requireLv": 75,
+			"maxValue": 46.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "창조의 아티팩트",
+			"requireLv": 95,
+			"maxValue": 26.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [],
+	"weapon": [
+		{
+			"type": "공통",
+			"damage": 1.0,
+			"coolTime": 1.0
+		},
+		{
+			"type": "빗자루",
+			"damage": 1.0,
+			"coolTime": 1.0
+		}
+	]
+}

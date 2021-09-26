@@ -1,0 +1,411 @@
+{
+	"active": [
+		{
+			"name": "붉은 달의 사냥제",
+			"damage": 4294520,
+			"coolTime": 290,
+			"requireLv": 100,
+			"gapLv": 5,
+			"maxLv": 2,
+			"nowLv": 2,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 6,
+			"talisman": null
+		},
+		{
+			"name": "데스 차지",
+			"damage": 2553392,
+			"coolTime": 180,
+			"requireLv": 85,
+			"gapLv": 5,
+			"maxLv": 5,
+			"nowLv": 5,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "드래곤 슬레이어",
+			"damage": 1938530,
+			"coolTime": 145,
+			"requireLv": 50,
+			"gapLv": 5,
+			"maxLv": 12,
+			"nowLv": 0,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 3,
+			"talisman": null
+		},
+		{
+			"name": "서펀트 랜스",
+			"damage": 249303,
+			"coolTime": 5,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3.0,
+			"nowTp": 3.0,
+			"delay": -1,
+			"cool_fix": true,
+			"talisman": null
+		},
+		{
+			"name": "인시디우스 파이크",
+			"damage": 1390788,
+			"coolTime": 60,
+			"requireLv": 95,
+			"gapLv": 2,
+			"maxLv": 6,
+			"nowLv": 6,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"talisman": null
+		},
+		{
+			"name": "스케일 그라인더",
+			"damage": 1206021,
+			"coolTime": 45,
+			"requireLv": 45,
+			"gapLv": 2,
+			"maxLv": 31,
+			"nowLv": 31,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 1,
+			"talisman": {
+				"name": "카타스트로피",
+				"damage": 1577361,
+				"coolTime": 40.5,
+				"available": 2,
+				"rune": 0
+			}
+		},
+		{
+			"name": "데보닝 슬래셔",
+			"damage": 1192485,
+			"coolTime": 45,
+			"requireLv": 80,
+			"gapLv": 2,
+			"maxLv": 13,
+			"nowLv": 13,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": {
+				"name": "세컨드 그라인더",
+				"damage": 1631147,
+				"coolTime": 45,
+				"available": 3,
+				"rune": 0
+			}
+		},
+		{
+			"name": "광룡분쇄창",
+			"damage": 1053579,
+			"coolTime": 40,
+			"requireLv": 75,
+			"gapLv": 2,
+			"maxLv": 16,
+			"nowLv": 16,
+			"maxTp": 0.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "프리퍼래이션",
+				"damage": 1401261,
+				"coolTime": 40,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "어스웜 헌트",
+			"damage": 1028993,
+			"coolTime": 40,
+			"requireLv": 70,
+			"gapLv": 2,
+			"maxLv": 18,
+			"nowLv": 2,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": {
+				"name": "오버 퀘이크",
+				"damage": 1286241,
+				"coolTime": 40,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "팔티잔 스큐어",
+			"damage": 821341,
+			"coolTime": 25,
+			"requireLv": 60,
+			"gapLv": 2,
+			"maxLv": 23,
+			"nowLv": 23,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 1,
+			"talisman": {
+				"name": "산군투멸",
+				"damage": 1107168,
+				"coolTime": 25,
+				"available": 1,
+				"rune": 1
+			}
+		},
+		{
+			"name": "페니트레잇 헤드",
+			"damage": 678863,
+			"coolTime": 25,
+			"requireLv": 40,
+			"gapLv": 2,
+			"maxLv": 33,
+			"nowLv": 1,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 1,
+			"talisman": {
+				"name": "초지니 : 강습",
+				"damage": 807848,
+				"coolTime": 22.5,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "램 펜스",
+			"damage": 589804,
+			"coolTime": 20,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 19,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.7,
+			"talisman": null
+		},
+		{
+			"name": "번 로커스트",
+			"damage": 540127,
+			"coolTime": 15,
+			"requireLv": 35,
+			"gapLv": 2,
+			"maxLv": 36,
+			"nowLv": 36,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 1,
+			"talisman": {
+				"name": "바투 서포트",
+				"damage": 642753,
+				"coolTime": 13.5,
+				"available": 0,
+				"rune": 0
+			}
+		},
+		{
+			"name": "날개 꿰기",
+			"damage": 416778,
+			"coolTime": 12,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "서번트 랜스 : 인게이저",
+			"damage": 324844,
+			"coolTime": 10,
+			"requireLv": 30,
+			"gapLv": 2,
+			"maxLv": 38,
+			"nowLv": 38,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": -1,
+			"talisman": null
+		},
+		{
+			"name": "버팔로 폴",
+			"damage": 306770,
+			"coolTime": 8,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 41,
+			"maxTp": 5.0,
+			"nowTp": 5.0,
+			"delay": 0.7,
+			"talisman": null
+		},
+		{
+			"name": "서번트 랜스 : 어썰트",
+			"damage": 304974,
+			"coolTime": 9,
+			"requireLv": 25,
+			"gapLv": 2,
+			"maxLv": 41,
+			"nowLv": 3,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": -1,
+			"talisman": null
+		},
+		{
+			"name": "니들러",
+			"damage": 226023,
+			"coolTime": 6,
+			"requireLv": 20,
+			"gapLv": 2,
+			"maxLv": 43,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.5,
+			"talisman": null
+		},
+		{
+			"name": "두더지 사냥",
+			"damage": 192067,
+			"coolTime": 5,
+			"requireLv": 15,
+			"gapLv": 2,
+			"maxLv": 46,
+			"nowLv": 0,
+			"maxTp": 5.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "파르티잔 슈트",
+			"damage": 145537,
+			"coolTime": 4.5,
+			"requireLv": 10,
+			"gapLv": 2,
+			"maxLv": 48,
+			"nowLv": 0,
+			"maxTp": 4.0,
+			"nowTp": 0.0,
+			"delay": 0.3,
+			"talisman": null
+		},
+		{
+			"name": "평타(1사이클)",
+			"damage": 55138,
+			"coolTime": 0,
+			"requireLv": 1,
+			"gapLv": 1,
+			"maxLv": 100,
+			"nowLv": 100,
+			"maxTp": 3.0,
+			"nowTp": 3.0,
+			"delay": 1,
+			"cool_fix": true,
+			"talisman": null
+		}
+	],
+	"passive": [
+		{
+			"name": "광창 마스터리",
+			"requireLv": 15,
+			"maxValue": 31.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": "WEAPON",
+			"requirementValue": "광창"
+		},
+		{
+			"name": "헌터즈 샤프니스",
+			"requireLv": 20,
+			"maxValue": 30.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "잔류 감각",
+			"requireLv": 48,
+			"maxValue": 42.5,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "힘의 근원",
+			"requireLv": 75,
+			"maxValue": 46.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "케라브노스",
+			"requireLv": 95,
+			"maxValue": 26.0,
+			"upValue": 2.0,
+			"type": "DAMAGE",
+			"target": "ALL",
+			"requirementType": null,
+			"requirementValue": null
+		},
+		{
+			"name": "서펀트 랜스",
+			"requireLv": 15,
+			"maxValue": 310.0,
+			"upValue": 32.0,
+			"type": "DAMAGE",
+			"target": "서펀트 랜스",
+			"requirementType": null,
+			"requirementValue": null
+		}
+	],
+	"special": [],
+	"weapon": [
+		{
+			"type": "장창",
+			"damage": 0.7161525796460686,
+			"coolTime": 1.0
+		},
+		{
+			"type": "미늘창",
+			"damage": 0.7067976926531035,
+			"coolTime": 0.9
+		},
+		{
+			"type": "광창",
+			"damage": 1.0,
+			"coolTime": 1.05
+		},
+		{
+			"type": "투창",
+			"damage": 0.744217240624964,
+			"coolTime": 1.0
+		},
+		{
+			"type": "공통",
+			"damage": 1.0,
+			"coolTime": 1.05
+		}
+	]
+}
