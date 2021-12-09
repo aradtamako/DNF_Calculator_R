@@ -452,8 +452,8 @@ class ResultGUI:
                                        tag="rank_select")
 
         # 연옥 변환 옵션
-        convert_index = ['-', '', '증뎀', '크증', '추뎀', '', '모공', '공%', '스탯']
-        convert_part_index = ['잔향1', '잔향2', '무기', '하의', '반지', '보조']
+        convert_index = ['-', '', 'ダメ増加', 'クリダメ増加', '追加ダメ', '', 'すべ攻', '攻撃力増加', 'ステ']
+        convert_part_index = ['残響1', '残響2', '武器', 'パンツ', 'リング', '補助']
         for i in range(6):
             convert_string = convert_index[now_convert[i]]
             if i == 2 and now_convert[i] != 0:
