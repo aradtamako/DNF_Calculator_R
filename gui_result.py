@@ -105,7 +105,7 @@ class ResultGUI:
         self.result_canvas = tkinter.Canvas(self.parent, width=1000, height=800, bd=0, bg=self.colors[0])
         self.result_canvas.place(x=-2, y=-2)
         self.result_canvas.create_image(0, 0, image=self.image_extra["bg_big_result.png"], anchor='nw')
-        self.result_canvas.create_text(10, 10, text='클라이언트 버전=' + self.version,
+        self.result_canvas.create_text(10, 10, text='クライアントバージョン=' + self.version,
                                        anchor='w', font=self.fonts[1], fill='white')
 
         def destroy_result(*e):
@@ -233,15 +233,15 @@ class ResultGUI:
         for i in range(1, 13):
             now_x = (442 - 75) * (i-1)/11 + 75
             self.result_canvas.create_text(now_x, 683, text=str(i)+'0s', fill='white', font=self.fonts[1])
-        self.result_canvas.create_text(242, 433, text='<시간 경과별 데미지 그래프>',
+        self.result_canvas.create_text(242, 433, text='<時間経過によるダメージグラフ>',
                                        fill='white', font=self.fonts[2])
-        self.result_canvas.create_text(503, 454, text='<비교 선택>',
+        self.result_canvas.create_text(503, 454, text='<比較対象選択>',
                                        fill='white', font=self.fonts[0])
         rank_num = len(self.result_values[0])
         tran_dropdown_list = ['X']
-        tran_dropdown_types = ['종합', '순간', '지속', '각성']
+        tran_dropdown_types = ['総合', '瞬間', '持続', '覚醒']
         for i in range(rank_num):
-            tran_dropdown_list.append(str(i+1)+'위')
+            tran_dropdown_list.append(str(i+1)+'位')
 
         def create_tran_compare(e, index):
             colors = ['red', 'SteelBlue1', 'green2']
@@ -308,13 +308,13 @@ class ResultGUI:
 
         # 메인 부분
         if self.now_rank_toggle == 0:
-            toggle_text = "종합"
+            toggle_text = "総合"
         elif self.now_rank_toggle == 1:
-            toggle_text = "순딜"
+            toggle_text = "瞬間"
         elif self.now_rank_toggle == 2:
-            toggle_text = "지딜"
+            toggle_text = "持続"
         else:
-            toggle_text = "각성"
+            toggle_text = "覚醒"
         self.result_canvas.create_text(122, 110, text=toggle_text, font=self.fonts[0], fill='white',
                                        tag="rank_select")
         self.result_canvas.create_text(122, 130, text=now_value_show, font=self.fonts[2], fill='white',
@@ -391,22 +391,22 @@ class ResultGUI:
 
         # 6각 단리 스탯
         max_stat = max([now_stat[2], now_stat[3], now_stat[4], now_stat[6], now_stat[7], now_stat[8]])
-        self.result_canvas.create_text(125, 200, anchor='s', text='증뎀\n' + str(round(now_stat[2], 1)) + "%",
+        self.result_canvas.create_text(125, 200, anchor='s', text='ダメ増加\n' + str(round(now_stat[2], 1)) + "%",
                                        fill='white', font=self.fonts[1],
                                        tag="rank_select")
-        self.result_canvas.create_text(200, 240, anchor='sw', text='크증\n' + str(round(now_stat[3], 1)) + "%",
+        self.result_canvas.create_text(200, 240, anchor='sw', text='クリダメ\n増加\n' + str(round(now_stat[3], 1)) + "%",
                                        fill='white', font=self.fonts[1],
                                        tag="rank_select")
-        self.result_canvas.create_text(200, 330, anchor='nw', text='추뎀\n' + str(round(now_stat[4], 1)) + "%",
+        self.result_canvas.create_text(200, 330, anchor='nw', text='追加ダメ\n' + str(round(now_stat[4], 1)) + "%",
                                        fill='white', font=self.fonts[1],
                                        tag="rank_select")
-        self.result_canvas.create_text(125, 370, anchor='n', text='모공\n' + str(round(now_stat[6], 1)) + "%",
+        self.result_canvas.create_text(125, 370, anchor='n', text='すべ攻\n' + str(round(now_stat[6], 1)) + "%",
                                        fill='white', font=self.fonts[1],
                                        tag="rank_select")
-        self.result_canvas.create_text(50, 330, anchor='ne', text='공%\n' + str(round(now_stat[7], 1)) + "%",
+        self.result_canvas.create_text(50, 330, anchor='ne', text='攻撃力\n増加\n' + str(round(now_stat[7], 1)) + "%",
                                        fill='white', font=self.fonts[1],
                                        tag="rank_select")
-        self.result_canvas.create_text(50, 240, anchor='se', text='스탯\n' + str(round(now_stat[8], 1)) + "%",
+        self.result_canvas.create_text(50, 240, anchor='se', text='ステ\n' + str(round(now_stat[8], 1)) + "%",
                                        fill='white', font=self.fonts[1],
                                        tag="rank_select")
         point = [[], [], [], [], [], []]
@@ -473,12 +473,12 @@ class ResultGUI:
 
     def create_background(self):
         # 절대 바뀌지 않는 배경 생성 관련
-        self.result_canvas.create_text(122, 50, text="<직업>", font=self.fonts[0], fill='white')
+        self.result_canvas.create_text(122, 50, text="<職業>", font=self.fonts[0], fill='white')
 
         # 변환 박스
         self.result_canvas.create_polygon(243, 20, 343, 20, 343, 167, 243, 167, 243, 20,
                                           fill='gray25', width=3, outline='black')
-        self.result_canvas.create_text(293, 33, text="<변환 옵션>", font=self.fonts[0], fill='white')
+        self.result_canvas.create_text(293, 33, text="<変換オプション>", font=self.fonts[0], fill='white')
         self.result_canvas.create_line(284, 45, 284, 167, width=1, fill='black')
         self.result_canvas.create_line(243, 45, 343, 45, width=1, fill='black')
         self.result_canvas.create_line(243, 65, 343, 65, width=1, fill='black')
@@ -499,7 +499,7 @@ class ResultGUI:
         # 기타 스탯 박스
         self.result_canvas.create_polygon(243, 222, 343, 222, 343, 387, 243, 387, 243, 222,
                                           fill='gray25', width=3, outline='black')
-        self.result_canvas.create_text(293, 235, text="<기타 스탯>", font=self.fonts[0], fill='white')
+        self.result_canvas.create_text(293, 235, text="<その他ステータス>", font=self.fonts[0], fill='white')
         self.result_canvas.create_line(284, 247, 284, 387, width=1, fill='black')
         self.result_canvas.create_line(243, 247, 343, 247, width=1, fill='black')
         self.result_canvas.create_line(243, 267, 343, 267, width=1, fill='black')
@@ -519,7 +519,7 @@ class ResultGUI:
         # 레벨링 박스
         self.result_canvas.create_polygon(355, 20, 545, 20, 545, 388, 355, 388, 355, 20,
                                           fill='gray25', width=3, outline='black')
-        self.result_canvas.create_text(450, 33, text="<레벨 구간별 장비%/쿨감>", font=self.fonts[0], fill='white')
+        self.result_canvas.create_text(450, 33, text="<Lv別 装備％／クール減少率>", font=self.fonts[0], fill='white')
         leveling_index = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 75, 80, 85, 95, 100]
         for i in range(0, 18):
             self.result_canvas.create_line(355, 45 + i * 19, 545, 45 + i * 19, width=1, fill='black')
