@@ -50,7 +50,7 @@ class MainGUI(tkinter.Frame):
         threading.Thread(target=self.set_function_extra).start()
         threading.Thread(target=self.set_extra).start()
         threading.Thread(target=self.set_save_load_function).start()
-        threading.Thread(target=self.set_timeline_function).start()
+        # threading.Thread(target=self.set_timeline_function).start()
         threading.Thread(target=self.set_custom_function).start()
 
         threading.Thread(target=self.create_sub_gui).start()
