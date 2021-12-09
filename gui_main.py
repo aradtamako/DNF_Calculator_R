@@ -213,8 +213,8 @@ class MainGUI(tkinter.Frame):
             'AUTO MODE', 'ALL MODE'
         ], 750, 11)
         # 칭호/크리쳐/쿨감보정
-        self.create_dropdown('title', 13, ['증뎀15%', '속강32', '증뎀10%', '추뎀10%', '크증10%', '기타(직접비교)'], 373, 302)
-        self.create_dropdown('creature', 13, ['크증18%', '모공15%', '물마독공18%', '기타(직접비교)'], 373, 332)
+        self.create_dropdown('title', 13, list(data.damage_data.titles.keys()), 373, 302)
+        self.create_dropdown('creature', 13, list(data.damage_data.creatures.keys()), 373, 332)
         self.create_dropdown('cool_down', 13, ['×(持続ディールのみ)', '○(クールタイム補正)'], 373, 362)
 
     def set_function_job(self):

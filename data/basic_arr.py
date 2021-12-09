@@ -57,13 +57,44 @@ class BasicArr:
         return [self.basic_damage_arr, self.basic_leveling_arr]
 
     def set_title_value(self):
+        # ステータス値が全て同じ事が前提で作られている。
+        # 異なる値が実装された場合は以下を参考にして修正する必要がある。
+        # https://github.com/aradtamako/DNF_Calculator_R/blob/9dd8f8ae43e243306c5d8d5166de1762390a9747/data/dataload.py#L169
+        # now_buff_arr.append(now_stat_option['upSpiritStat'])
+        # now_buff_arr.append(now_stat_option['upIntelligenceStat'])
         title = self.value_dict["title"]
-        title_opt_arr = data.damage_data.title[title]
-        self.basic_damage_arr[title_opt_arr[0]] += title_opt_arr[1]
+        for x in data.damage_data.titles[title]:
+            if x['option'] == 15:
+                self.basic_leveling_arr[0] += x['value'] # Lv.1
+                self.basic_leveling_arr[1] += x['value'] # Lv.5
+                self.basic_leveling_arr[2] += x['value'] # Lv.10
+                self.basic_leveling_arr[3] += x['value'] # Lv.15
+                self.basic_leveling_arr[4] += x['value'] # Lv.20
+                self.basic_leveling_arr[5] += x['value'] # Lv.25
+                self.basic_leveling_arr[6] += x['value'] # Lv.30
+                self.basic_leveling_arr[7] += x['value'] # Lv.35
+                self.basic_leveling_arr[8] += x['value'] # Lv.40
+                self.basic_leveling_arr[9] += x['value'] # Lv.45
+            elif x['option'] == 16:
+                # self.basic_leveling_arr[10] += x['value'] # Lv.48
+                self.basic_leveling_arr[11] += x['value'] # Lv.50
+            elif x['option'] == 17:
+                self.basic_leveling_arr[12] += x['value'] # Lv.60
+                self.basic_leveling_arr[13] += x['value'] # Lv.70
+                self.basic_leveling_arr[14] += x['value'] # Lv.75
+                self.basic_leveling_arr[15] += x['value'] # Lv.80
+            elif x['option'] == 18:
+                self.basic_leveling_arr[16] += x['value'] # Lv.85
+            elif x['option'] == 19:
+                self.basic_leveling_arr[17] += x['value'] # Lv.95
+            elif x['option'] == 20:
+                self.basic_leveling_arr[18] += x['value'] # Lv.100
+            else:
+                self.basic_damage_arr[x['option']] += x['value']
 
     def set_creature_value(self):
         creature = self.value_dict["creature"]
-        creature_opt_arr = data.damage_data.creature[creature]
+        creature_opt_arr = data.damage_data.creatures[creature]
         self.basic_damage_arr[creature_opt_arr[0]] += creature_opt_arr[1]
         if creature == "크증18%" or creature == "물마독공18%":
             self.basic_leveling_arr[14] += 1
