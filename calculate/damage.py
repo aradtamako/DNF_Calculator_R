@@ -470,7 +470,7 @@ class Damage:
                                     damage = damage * 1.45
                                     cool_time = cool_time * 0.75
                     max_lv = active["maxLv"]
-                    up_lv = active_leveling_arr[index_passive.index(active["requireLv"])]
+                    up_lv = active_leveling_arr[index_active.index(active["requireLv"])]
                     now_tp = active["nowTp"]
                     max_tp = active["maxTp"]
                     skill_delay = active["delay"]
