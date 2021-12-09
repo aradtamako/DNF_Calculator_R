@@ -1,5 +1,6 @@
 import json
 import multiprocessing as mp
+from . import translate
 
 total_database = None
 
@@ -224,7 +225,8 @@ class DataLoad:
             now_total_job_data['nowJobWeaponAtkRate'] = now_weapon_atk
             now_total_job_data['nowJobWeaponCoolRate'] = now_weapon_cool
 
-            job_data[item_code] = now_total_job_data
+            jpn_job_name = translate.get_job_name('kor', 'jpn', item_code)
+            job_data[jpn_job_name] = now_total_job_data
 
         return_list.append(job_data)
 

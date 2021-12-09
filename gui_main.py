@@ -224,7 +224,7 @@ class MainGUI(tkinter.Frame):
             self.dropdown_list['job'].set(now_list[0])
 
         self.create_dropdown('job_type', 13, list(job.job_list.keys()), 373, 242)
-        self.create_dropdown('job', 13, job.job_list['귀검사(남)'], 373, 272)
+        self.create_dropdown('job', 13, job.job_list[list(job.job_list.keys())[0]], 373, 272)
         self.dropdown_list['job_type'].bind("<<ComboboxSelected>>", job_type_select)
 
     def set_function_weapon(self):

@@ -5,7 +5,7 @@ import common
 import data.load_job
 import os
 import json
-
+from . import translate
 
 index_passive = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 48, 50, 60, 70, 75, 80, 85, 95, 100]
 index_active = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 75, 80, 85, 95, 100]
@@ -520,7 +520,8 @@ class JobRank:
                 if active_data[i]['talisman'] is not None:
                     active_data[i]['talisman']['available'] = int(self.entries['skill_talisman{}'.format(i)].get())
             self.job_main_data["active"] = active_data
-            with open('data/job/' + job + '.json', 'w', encoding='utf-8') as f:
+            kor_job_name = translate.get_job_name('jpn', 'kor', job)
+            with open('data/job/' + kor_job_name + '.json', 'w', encoding='utf-8') as f:
                 json.dump(self.job_main_data, f, indent='\t', ensure_ascii=False)
             self.get_job_data(0)
             self.canvas.itemconfig(self.alert, text="저장 완료", fill='green')
