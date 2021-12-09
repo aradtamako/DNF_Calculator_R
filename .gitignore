@@ -8,3 +8,5 @@ venv2/
 /api_key.py
 *.exe
 *.zip
+
+__pycache__/
