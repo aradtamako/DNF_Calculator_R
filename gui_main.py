@@ -360,9 +360,9 @@ class MainGUI(tkinter.Frame):
             set_purgatory_option(event, self.dropdown_list['purgatory4_option'], self.dropdown_list['purgatory4_value'])
         )
 
-        tkinter.Label(self.main_window, text='최적변환 각성 강제 여부', font=self.font_list[1],
+        tkinter.Label(self.main_window, text='最適変換時の覚醒ブースト', font=self.font_list[1],
                       fg="white", bg=self.color_list[1]).place(x=312, y=464)
-        self.create_dropdown('purgatory_ult_mode', 15, ['태생유지', '각성강제', '각성해제'], 315, 482)
+        self.create_dropdown('purgatory_ult_mode', 15, ['維持', '強制ON', '強制OFF'], 315, 482)
 
         self.dropdown_list['purgatory1_value']['state'] = 'disabled'
         self.dropdown_list['purgatory2_value']['state'] = 'disabled'
