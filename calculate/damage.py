@@ -296,7 +296,9 @@ class Damage:
         for index in simple_sum_index:
             self.now_damage_array[index] += sum([damage_list[x][index] for x in range(0, size)])
         for index in complex_sum_index:
-            self.now_damage_array[index] = multiply_list([damage_list[x][index] for x in range(0, size)])
+            items = [damage_list[x][index] for x in range(0, size)]
+            items.append(self.now_damage_array[index])
+            self.now_damage_array[index] = multiply_list(items)
         self.now_damage_array[26] = anti_multiply_list([damage_list[x][26] for x in range(0, size)])
         for i in range(19):
             self.now_leveling_array[i] += sum([leveling_list[x][i] for x in range(0, size)])
